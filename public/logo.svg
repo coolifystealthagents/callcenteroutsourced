@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Site logo">
-  <rect width="96" height="96" rx="24" fill="#17324D"/>
-  <path d="M24 60V29h13l22 28V29h13v38H59L37 39v28H24z" fill="#FFF8EE"/>
-  <circle cx="70" cy="26" r="8" fill="#F27B3D"/>
-  <path d="M22 73c15-8 36-8 52 0" fill="none" stroke="#0F8F73" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Call coverage logo">
+  <rect width="96" height="96" rx="24" fill="#0B3038"/>
+  <path d="M22 24h52a8 8 0 0 1 8 8v25a8 8 0 0 1-8 8H52L35 78V65H22a8 8 0 0 1-8-8V32a8 8 0 0 1 8-8Z" fill="#F7F1E5"/>
+  <path d="M31 41h34M31 51h23" fill="none" stroke="#0B3038" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="69" cy="65" r="10" fill="#B9F73A"/>
 </svg>
