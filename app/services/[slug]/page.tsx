@@ -92,10 +92,10 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
               <p className="eyebrow">{site.brand} service</p>
               <h1>{service.title}</h1>
               <p className="lead">{service.desc}</p>
-              <a className="btn" href="/contact">Plan this role</a>
+              <a className="btn" href="/contact">Plan this service</a>
             </div>
             <div className="hero-card">
-              <img src={site.serviceImage} alt={`${service.title} offshore service team`} />
+              <img src={site.serviceImage} alt={`${service.title} call center team`} />
             </div>
           </div>
         </section>

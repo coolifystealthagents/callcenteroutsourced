@@ -76,7 +76,7 @@ export default function Home() {
             <div className="cco-ops-copy">
               <p className="eyebrow cco-eyebrow-light">The operating brief</p>
               <h2>A calmer queue starts with written rules.</h2>
-              <p>Good outsourced support is not a vague promise to “handle the phones.” It is a working brief your team can inspect, coach, and improve.</p>
+              <p>Good outsourced support runs on a written brief. Your team should be able to inspect the work, coach the agent, and fix unclear rules.</p>
               <a className="cco-text-link light" href="/services/reporting-and-qa">See the QA scope <span>↗</span></a>
             </div>
             <div className="cco-desk">
@@ -119,8 +119,8 @@ export default function Home() {
         </section>
 
         <section className="container cco-final">
-          <div><p className="eyebrow cco-eyebrow-light">Ready to map the queue?</p><h2>Make every handoff easier to see.</h2></div>
-          <a className="btn cco-btn-lime" href="/contact">Request a coverage plan</a>
+          <div><p className="eyebrow cco-eyebrow-light">Ready to map the queue?</p><h2>Make the next handoff clear.</h2></div>
+          <a className="btn cco-btn-lime" href="/contact">Map my coverage</a>
         </section>
       </main>
       <Footer />
