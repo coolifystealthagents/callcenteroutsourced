@@ -104,7 +104,156 @@ export const services = [
     ]
   }
 ] as const;
-export const blogPosts = [
+export type BlogPost = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  minutes: number;
+  intro: string;
+  keyword?: string;
+  published?: string;
+  updated?: string;
+  sections: readonly {
+    title: string;
+    body?: string;
+    paragraphs?: readonly string[];
+    items?: readonly string[];
+  }[];
+  stats?: readonly { value: string; label: string; note: string; source: number }[];
+  controlTable?: readonly { data: string; agent: string; manager: string }[];
+  chart?: readonly { label: string; value: number; display: string }[];
+  scripts?: readonly { situation: string; text: string }[];
+  expertQuote?: { text: string; attribution: string; source: number };
+  faqs?: readonly { question: string; answer: string }[];
+  sources?: readonly { name: string; organization: string; date: string; url: string; note: string }[];
+  related?: readonly { label: string; href: string }[];
+  banners?: readonly { label: string; title: string; body: string; href: string; cta: string }[];
+};
+
+export const blogPosts: readonly BlogPost[] = [
+  {
+    slug: 'philippines-call-center-data-security-checklist',
+    title: 'Philippines call center data security checklist for outsourced teams',
+    excerpt: 'Set safe access, customer verification, call notes, recordings, and manager handoffs for a Philippines-based support team.',
+    minutes: 12,
+    keyword: 'Philippines call center data security checklist',
+    published: '2026-07-25',
+    updated: '2026-07-25',
+    intro: 'A Philippines call center data security checklist should tell agents what they may see, change, and send to a manager. It should also help managers check calls and account access. Write those rules before a Filipino agent enters a live queue.',
+    stats: [
+      { value: '30%', label: 'of breaches involved a third party', note: 'Verizon 2025 DBIR; global breach data, not a Philippines-only rate.', source: 1 },
+      { value: '22%', label: 'began with credential abuse', note: 'Verizon 2025 DBIR initial access finding.', source: 1 },
+      { value: '44%', label: 'included ransomware', note: 'Verizon 2025 DBIR confirmed breach analysis.', source: 1 },
+      { value: '193,407', label: 'phishing or spoofing complaints', note: 'FBI IC3 2024 US complaint count, not confirmed incidents.', source: 2 },
+    ],
+    sections: [
+      {
+        title: 'What this checklist should cover',
+        paragraphs: [
+          'List the data agents handle, the tools they enter, the actions they may take, and the cases a manager must decide. A rule such as "protect customer data" is too broad for a live call. Write the field, action, and handoff instead.',
+          'Start with one queue and one customer journey. An order-status line may need a name, order number, shipping status, and approved notes. An account-recovery line exposes different details and needs a different access plan.',
+        ],
+        items: ['Name every system and data field used in the first queue', 'List actions the agent can complete without approval', 'Name one manager for exceptions and urgent cases', 'Keep a review sample for calls, notes, transfers, and access logs'],
+      },
+      {
+        title: 'Map the customer data before granting access',
+        paragraphs: [
+          'Walk through a real call and note every piece of customer information that appears. Include spoken data, CRM fields, recordings, transcripts, and notes left for the next shift. Redact the example before using it for training.',
+          'The Philippines Data Privacy Act covers organizations that control personal information and those that process it for them.[5] The client should decide why data is used and which actions are allowed. The staffing team then needs matching written instructions.',
+          'Remove fields the agent does not need for the assigned queue. An appointment agent may not need payment history or identity documents. Narrow screens, role permissions, and named accounts make the rule easier to enforce.',
+        ],
+      },
+      {
+        title: 'Read the risk numbers without stretching them',
+        paragraphs: [
+          'The 2025 Verizon Data Breach Investigations Report reviewed more than 22,000 security incidents and 12,195 confirmed breaches.[1] It found third-party involvement in 30% of breaches, credential abuse as an initial path in 22%, and ransomware in 44%. These are global findings, so they show common control problems rather than a failure rate for Filipino workers.',
+          'The FBI received 859,532 internet-crime complaints in 2024.[2] Its category table includes 193,407 phishing or spoofing complaints, 64,882 personal-data-breach complaints, and 36,002 tech-support complaints. Complaints are reports from the United States, not proof that every report became a confirmed crime.',
+          'The practical lesson is simple: a remote support plan needs controls for people, accounts, and outside vendors. It would be wrong to use these figures to predict what will happen in one call center. Use them to decide what your manager should test before launch.',
+        ],
+      },
+      {
+        title: 'Split agent work from manager control',
+        paragraphs: [
+          'Give the Filipino agent enough access to complete the assigned call, but keep high-impact changes behind a manager check. The agent can collect facts, follow an approved verification step, record the request, and route it. Your manager should keep control of identity overrides, refunds, account ownership, exports, and policy exceptions.',
+          'NIST says location and device ownership are not enough reasons to trust an account. A user on a company network still needs the right check before access is granted. The exact NIST wording appears in the source quote below.[3]',
+          'Use named accounts rather than shared logins. Turn on the strongest sign-in protection the tool supports, set the smallest useful role, and remove access when the person leaves the queue. CISA also advises people to recognize and report phishing instead of acting on unexpected links or urgent requests.[4]',
+        ],
+      },
+      {
+        title: 'Run a controlled first week',
+        paragraphs: [
+          'Day one should use practice calls and redacted records. Ask the agent to show the customer check, approved action, note, and manager handoff. Fix the written steps before adding live volume.',
+          'On days two and three, open one live queue for a limited shift. Review the first calls quickly enough that the agent can remember what happened, and check both the recording and the account history. A correct answer with an unsafe data view is still a control miss.',
+          'By day five, compare the written rule with the work your team saw. Rewrite steps that caused repeated questions and close unused permissions. Add a second queue only after the first has clean notes, safe access, and a reliable handoff.',
+        ],
+        items: ['Practice with redacted examples before live data', 'Review the first twenty call records and account actions', 'Check that every exception reached the named manager', 'Remove unused fields, permissions, and temporary files'],
+      },
+      {
+        title: 'Give agents safe words for risky calls',
+        paragraphs: [
+          'Agents need a sentence they can use when a caller pushes past the approved process. Without one, a helpful person may improvise, reveal a field, or make a change to calm the caller. Practice the sentence during training so it sounds normal on a real call.',
+          'A manager also needs a short handoff note that separates facts from guesses. The note should record what the caller requested, which check passed or failed, what the agent did, and what decision remains. Do not copy sensitive data into chat when a case number will point the manager to the protected record.',
+        ],
+      },
+      {
+        title: 'Review calls and prepare for incidents',
+        paragraphs: [
+          'Sample calls by risk instead of relying only on a random set. Include account-recovery attempts, requests to change contact details, unusual urgency, failed verification, repeated callbacks, and any case where an agent opened more than one system. A small focused sample often finds clearer rule gaps than a large pile of easy calls.',
+          'Keep an incident card beside the normal call guide. It should tell the agent to stop the action, preserve the case number and time, alert the named manager, and avoid discussing the event outside the approved channel. The manager then follows the client incident plan and decides whether privacy, security, legal, or customer notices are required.',
+          'Review access logs as well as conversations. A polite call can still involve the wrong screen, an unnecessary export, or a login from an unapproved device. Close the loop by recording the fix in the checklist and testing it on the next sample.',
+        ],
+        items: ['Failed or bypassed customer checks', 'Changes to contact, login, or account ownership details', 'Downloads, exports, screenshots, and copied records', 'Shared credentials or sign-ins from an unapproved device', 'Urgent requests that ask the agent to ignore the normal process'],
+      },
+    ],
+    controlTable: [
+      { data: 'Customer name and case number', agent: 'Open the assigned record and confirm the approved fields', manager: 'Approve any manual identity override' },
+      { data: 'Contact details', agent: 'Read or update only through the written customer check', manager: 'Review unusual or repeated change requests' },
+      { data: 'Call recordings', agent: 'Use recordings only in the approved call and review tools', manager: 'Set retention, download, and sharing rules' },
+      { data: 'Order or appointment status', agent: 'Share the status allowed by the call guide', manager: 'Decide exceptions, credits, and policy changes' },
+      { data: 'Login or recovery request', agent: 'Follow the approved check and create a handoff', manager: 'Own overrides and account-ownership changes' },
+      { data: 'Exports and reports', agent: 'Prepare only the fields named in the task', manager: 'Approve recipients and sensitive-data exports' },
+    ],
+    chart: [
+      { label: 'Phishing or spoofing', value: 193407, display: '193,407' },
+      { label: 'Personal data breach', value: 64882, display: '64,882' },
+      { label: 'Tech support', value: 36002, display: '36,002' },
+    ],
+    scripts: [
+      { situation: 'Caller asks to skip a security check', text: '"I cannot make that change until the approved check is complete. I can record the request and send it to the account manager now."' },
+      { situation: 'Agent sees a suspicious link or message', text: '"I have stopped the action and saved the case number and time. Please review the message in the approved system before anyone opens it."' },
+      { situation: 'Manager handoff after a failed check', text: '"The caller asked for [action]. The approved check failed at [step]. I made no account change and routed case [number] for your decision."' },
+    ],
+    expertQuote: {
+      text: 'Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned).',
+      attribution: 'NIST Special Publication 800-207, published August 2020',
+      source: 3,
+    },
+    faqs: [
+      { question: 'What should a Philippines call center data security checklist include?', answer: 'Include the data fields used in each queue, named tools, agent permissions, customer checks, manager-only actions, escalation contacts, recording rules, access removal, and the samples managers will review. Keep the checklist tied to one real customer journey instead of using a broad policy alone.' },
+      { question: 'Should Filipino call center agents use shared accounts?', answer: 'No. Named accounts make access easier to limit, review, and remove. A client should also use the strongest sign-in protection available and avoid giving one role access to unrelated customer data.' },
+      { question: 'Who owns a customer identity override?', answer: 'A named client manager should own manual identity overrides and account-ownership changes. An agent can collect the facts, document which check failed, and route the case without making the final change.' },
+      { question: 'How often should managers review calls?', answer: 'Review early calls every day during launch, then set a schedule based on queue risk and past misses. Add focused samples for failed checks, contact-detail changes, unusual urgency, and requests that cross the written authority line.' },
+      { question: 'Do global breach figures measure Philippine call center risk?', answer: 'No. The Verizon figures cover its global breach data, and the FBI figures are US complaint counts. They help teams choose controls, but they do not predict the performance or honesty of a Filipino agent.' },
+    ],
+    sources: [
+      { name: '2025 Data Breach Investigations Report release', organization: 'Verizon Business', date: 'April 23, 2025', url: 'https://www.verizon.com/about/news/2025-data-breach-investigations-report', note: 'Global incident and breach sample, third-party involvement, credential abuse, and ransomware findings.' },
+      { name: '2024 IC3 Annual Report', organization: 'Federal Bureau of Investigation', date: 'April 23, 2025', url: 'https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf', note: 'US internet-crime complaint totals and complaint-category counts.' },
+      { name: 'Zero Trust Architecture, SP 800-207', organization: 'National Institute of Standards and Technology', date: 'August 2020', url: 'https://csrc.nist.gov/pubs/sp/800/207/final', note: 'Exact zero-trust definition and access-control framing.' },
+      { name: 'Recognize and Report Phishing', organization: 'Cybersecurity and Infrastructure Security Agency', date: 'May 21, 2024', url: 'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing', note: 'Government guidance for recognizing and reporting suspicious messages.' },
+      { name: 'Republic Act No. 10173', organization: 'The Lawphil Project', date: 'August 15, 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html', note: 'Text of the Philippine Data Privacy Act of 2012.' },
+    ],
+    related: [
+      { label: 'Plan an inbound call handling role', href: '/services/inbound-call-handling' },
+      { label: 'Prepare your first-week call center checklist', href: '/blog/call-center-outsourced-onboarding-checklist' },
+      { label: 'Ask a provider about tools and customer data', href: '/blog/call-center-outsourced-provider-questions' },
+      { label: 'Build a reporting and QA support lane', href: '/services/workforce-reporting-support' },
+    ],
+    banners: [
+      { label: 'Access plan', title: 'Map each tool before the first shift', body: 'List the fields an agent needs and the changes a manager must approve.', href: '/services/inbound-call-handling', cta: 'Review inbound call support' },
+      { label: 'Launch plan', title: 'Test one queue with real review', body: 'Use practice calls, narrow access, and a named manager before adding volume.', href: '/blog/call-center-outsourced-onboarding-checklist', cta: 'Open the first-week checklist' },
+      { label: 'Staffing handoff', title: 'Turn the security rules into a role brief', body: 'Share the queue, systems, hours, and approval points with the coverage team.', href: '/contact', cta: 'Discuss the role' },
+    ],
+  },
   {
     slug: 'call-center-outsourced-planning',
     title: 'How to plan outsourced call center coverage',
