@@ -244,113 +244,16 @@ export const blogPosts: readonly BlogPost[] = [
     ],
     related: [
       { label: 'Plan an inbound call handling role', href: '/services/inbound-call-handling' },
-      { label: 'Prepare your first-week call center checklist', href: '/blog/call-center-outsourced-onboarding-checklist' },
-      { label: 'Ask a provider about tools and customer data', href: '/blog/call-center-outsourced-provider-questions' },
+      { label: 'Prepare your first-week call center checklist', href: '/blog' },
+      { label: 'Ask a provider about tools and customer data', href: '/blog' },
       { label: 'Build a reporting and QA support lane', href: '/services/workforce-reporting-support' },
     ],
     banners: [
       { label: 'Access plan', title: 'Map each tool before the first shift', body: 'List the fields an agent needs and the changes a manager must approve.', href: '/services/inbound-call-handling', cta: 'Review inbound call support' },
-      { label: 'Launch plan', title: 'Test one queue with real review', body: 'Use practice calls, narrow access, and a named manager before adding volume.', href: '/blog/call-center-outsourced-onboarding-checklist', cta: 'Open the first-week checklist' },
+      { label: 'Launch plan', title: 'Test one queue with real review', body: 'Use practice calls, narrow access, and a named manager before adding volume.', href: '/blog', cta: 'Open the first-week checklist' },
       { label: 'Staffing handoff', title: 'Turn the security rules into a role brief', body: 'Share the queue, systems, hours, and approval points with the coverage team.', href: '/contact', cta: 'Discuss the role' },
     ],
-  },
-  {
-    slug: 'call-center-outsourced-planning',
-    title: 'How to plan outsourced call center coverage',
-    excerpt: 'Turn call reasons, hours, scripts, and escalation rules into a scope a provider can price and staff.',
-    minutes: 6,
-    intro: 'A useful call center plan is specific enough for a provider to staff and for your manager to review. Write down the work before you compare proposals.',
-    sections: [
-      {
-        title: 'Start with the queue',
-        body: 'List the channels, hours, and common reasons people contact you. Separate routine questions from calls that need a manager or specialist.',
-        items: ['Phone, chat, email, and ticket volume by hour', 'Common questions and approved answers', 'Calls that must be transferred or escalated'],
-      },
-      {
-        title: 'Set the service rules',
-        body: 'Define what a good response looks like and when the agent must stop and ask for help. This gives both sides something concrete to review.',
-        items: ['Response windows by channel', 'Required call or ticket notes', 'Refund, privacy, safety, and account-access limits'],
-      },
-      {
-        title: 'Ask for a review plan',
-        body: 'A proposal should explain how supervisors sample work, coach agents, report open issues, and hand unfinished work to the next shift.',
-        items: ['Who owns daily queue decisions?', 'How are calls or tickets sampled?', 'What appears in the weekly report?'],
-      },
-    ],
-  },
-  {
-    slug: 'call-center-outsourced-tasks-to-outsource',
-    title: 'Which call center tasks should you outsource first?',
-    excerpt: 'Choose a narrow queue with repeat questions, approved answers, and work your manager can check.',
-    minutes: 7,
-    intro: 'The safest first queue is repetitive, documented, and easy to review. Leave unusual customer decisions with your own team until the handoff is working.',
-    sections: [
-      {
-        title: 'Good first tasks',
-        body: 'Start where agents can follow an approved answer or a short checklist. Give them finished examples so they can see the level of detail you expect.',
-        items: ['Order or appointment status', 'Basic account and product questions', 'Callback scheduling and ticket follow-up'],
-      },
-      {
-        title: 'Keep sensitive decisions in-house',
-        body: 'An outsourced agent can collect facts and route the issue without making the final call. Write those boundaries into the script.',
-        items: ['Refunds, credits, and policy exceptions', 'Legal, medical, financial, or safety advice', 'Account ownership and security changes'],
-      },
-      {
-        title: 'Check the first batch',
-        body: 'Review a small group of calls or tickets together. Fix missing answers and unclear escalation rules before you add another queue.',
-        items: ['Was the answer correct?', 'Were the notes complete?', 'Did the agent escalate at the right point?'],
-      },
-    ],
-  },
-  {
-    slug: 'call-center-outsourced-provider-questions',
-    title: 'Questions to ask an outsourced call center provider',
-    excerpt: 'Use these questions to compare staffing, supervision, coverage, security, and quality review.',
-    minutes: 8,
-    intro: 'A polished sales deck will not tell you how your queue works on a busy Monday. Ask the provider to walk through the people, rules, and reports behind the service.',
-    sections: [
-      {
-        title: 'Staffing and coverage',
-        body: 'Find out who will answer your customers and what happens when an assigned agent is absent or the queue jumps.',
-        items: ['Will agents be dedicated or shared?', 'Who covers breaks, absences, and volume spikes?', 'Which time zones and holidays are included?'],
-      },
-      {
-        title: 'Supervision and quality',
-        body: 'Ask to see the review process, not a general promise about quality. The answer should name an owner and show how problems reach your team.',
-        items: ['Who supervises the shift?', 'How many calls or tickets are sampled?', 'How are script gaps and repeat complaints reported?'],
-      },
-      {
-        title: 'Tools and customer data',
-        body: 'Confirm where agents work, which permissions they receive, and how access is removed when someone leaves the account.',
-        items: ['Can access begin with limited permissions?', 'How are passwords and recordings handled?', 'What is the incident and access-removal process?'],
-      },
-    ],
-  },
-  {
-    slug: 'call-center-outsourced-onboarding-checklist',
-    title: 'First-week checklist for an outsourced call center',
-    excerpt: 'Set up tools, scripts, sample calls, escalation rules, and a simple review before the queue expands.',
-    minutes: 9,
-    intro: "The first week should test the handoff instead of forcing the agent to guess. Keep the starting queue small and review real work every day.",
-    sections: [
-      {
-        title: 'Before access is granted',
-        body: 'Prepare the exact tools, permissions, scripts, and examples the agent needs for the first queue. Do not open every system on day one.',
-        items: ['Approved answers and call flows', 'Limited tool permissions', 'Named manager and escalation contacts'],
-      },
-      {
-        title: 'During the first live shifts',
-        body: 'Listen to or read a small sample while the work is fresh. Note where the script, tool, or handoff caused confusion.',
-        items: ['Review notes and dispositions', 'Check transfers and escalations', 'Update answers that agents could not find'],
-      },
-      {
-        title: 'Before adding volume',
-        body: 'Agree on what the manager will see each day and each week. Expand only when agents can handle the first queue without hidden cleanup.',
-        items: ['Open callbacks and unresolved tickets', 'Quality sample and coaching notes', 'Schedule gaps and questions for your manager'],
-      },
-    ],
-  },
-] as const;
+  },] as const;
 
 export const staffingOffer = {
   partner: 'the coverage team',
