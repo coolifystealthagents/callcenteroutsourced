@@ -1,7 +1,12 @@
 import { Footer, Header, JsonLd } from './components';
 import { blogPosts, services, site } from './data';
 
-const serviceIcon = ['↗', '◎', '⌁', '✓'];
+const serviceIcons = [
+  '/icons/getillustrations/blueprint-communication-icons-svg/inbound-calls.svg',
+  '/icons/getillustrations/blueprint-communication-icons-svg/chat-support.svg',
+  '/icons/getillustrations/blueprint-communication-icons-svg/ticket-inbox.svg',
+  '/icons/getillustrations/blueprint-communication-icons-svg/quality-reporting.svg',
+];
 
 export default function Home() {
   const schema = {
@@ -15,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="cco-home">
+      <main className="cco-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
         <section className="cco-hero">
           <div className="cco-orbit" aria-hidden="true" />
@@ -37,7 +42,7 @@ export default function Home() {
 
             <div className="cco-visual">
               <div className="cco-photo-frame">
-                <img src="/call-center-team.jpg" alt="Professional customer support agents working with headsets in a call center" />
+                <img src="/illustrations/getillustrations/communication-illustrations-pack-svg/call-coverage-team.webp" alt="Illustration of a customer support professional providing clear call coverage" />
               </div>
               <aside className="cco-queue-card" aria-label="Example coverage brief">
                 <div className="cco-card-head"><span>Coverage brief</span><i>Example</i></div>
@@ -62,7 +67,7 @@ export default function Home() {
           <div className="cco-service-grid">
             {services.map((service, index) => (
               <a href={`/services/${service.slug}`} className="cco-service-card" key={service.slug}>
-                <div><span className="cco-service-icon">{serviceIcon[index]}</span><span className="cco-service-num">0{index + 1}</span></div>
+                <div><span className="cco-service-icon"><img src={serviceIcons[index]} alt="" width="36" height="36" /></span><span className="cco-service-num">0{index + 1}</span></div>
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
                 <b>View scope <span>↗</span></b>
@@ -77,6 +82,7 @@ export default function Home() {
               <p className="eyebrow cco-eyebrow-light">The operating brief</p>
               <h2>A calmer queue starts with written rules.</h2>
               <p>Good outsourced support runs on a written brief. Your team should be able to inspect the work, coach the agent, and fix unclear rules.</p>
+              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/quality-operations-review.svg" alt="" style={{ width: '100%', maxWidth: 360, marginTop: '1.5rem' }} loading="lazy" />
               <a className="cco-text-link light" href="/services/reporting-and-qa">See the QA scope <span>↗</span></a>
             </div>
             <div className="cco-desk">
