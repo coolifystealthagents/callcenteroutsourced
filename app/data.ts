@@ -132,6 +132,127 @@ export type BlogPost = {
 
 export const blogPosts: readonly BlogPost[] = [
   {
+    slug: 'philippines-call-center-phishing-escalation-playbook',
+    title: 'Philippines call center phishing escalation playbook',
+    excerpt: 'Give Philippines-based call center agents a clear stop, record, and manager handoff process for suspicious calls, messages, links, and account requests.',
+    minutes: 13,
+    keyword: 'Philippines call center phishing escalation playbook',
+    published: '2026-07-28',
+    updated: '2026-07-28',
+    intro: 'A phishing escalation playbook should help an agent act during the uncertain first minutes of a suspicious contact. It needs a safe way to pause, a named manager path, and a short incident record. This guide is written for Philippines-based call center teams, but the evidence below does not measure Filipino agent behavior.',
+    stats: [
+      { value: '30%', label: 'of breaches involved a third party', note: 'Verizon 2025 DBIR release, April 23, 2025; global finding, not a Philippines measure.', source: 1 },
+      { value: '22%', label: 'began with credential abuse', note: 'Verizon 2025 DBIR release, April 23, 2025; global initial-access finding.', source: 1 },
+      { value: '44%', label: 'included ransomware', note: 'Verizon 2025 DBIR release, April 23, 2025; global confirmed-breach finding.', source: 1 },
+      { value: '193,407', label: 'phishing or spoofing complaints', note: 'FBI 2024 IC3 Annual Report, released April 23, 2025; US complaints, not confirmed incidents.', source: 2 },
+    ],
+    sections: [
+      {
+        title: 'Make the first response easy to remember',
+        paragraphs: [
+          'Use three verbs: stop, record, and hand off. The agent stops the requested action without opening a link, downloading a file, sharing a code, or changing an account. The agent then records a small set of facts and sends the case to the on-duty manager.',
+          'This rule applies to calls, email, chat, text messages, and internal-looking requests. A caller may claim to be a customer, client executive, tool administrator, courier, or coworker. The claimed identity does not replace the approved verification path.',
+        ],
+        items: ['Stop the action and keep the customer record unchanged', 'Do not open, reply to, forward, or copy a suspicious link', 'Record the channel, time, case number, and requested action', 'Alert the named manager through the approved incident channel', 'Return to the queue only after the case and any exposed account are contained'],
+      },
+      {
+        title: 'Recognize pressure without trying to prove intent',
+        paragraphs: [
+          'Agents do not need to decide whether a person is a criminal. They need to notice when a request conflicts with the normal process. Useful triggers include urgency, secrecy, a new destination for data, a request for a sign-in code, or instructions to move the conversation to a personal account.',
+          'CISA advises people to recognize and report phishing, and it highlights urgent or emotional language, requests for personal or financial information, shortened links, and incorrect addresses as common signs.[4] NIST also tells users to be wary of unexpected messages and to verify requests through known contact details rather than the message itself.[5] These signs start a check; one sign alone does not prove an attack.',
+        ],
+      },
+      {
+        title: 'Use the evidence without blaming a location',
+        paragraphs: [
+          'Verizon released its 2025 Data Breach Investigations Report findings on April 23, 2025. It reported that 30% of breaches involved a third party, 22% began with credential abuse, and 44% included ransomware.[1] These are global findings from Verizon\'s incident and breach analysis, not a score for outsourced teams or workers in the Philippines.',
+          'The FBI released its 2024 IC3 Annual Report on the same date. The report lists 859,532 total US complaints, including 193,407 phishing or spoofing complaints, 64,882 personal-data-breach complaints, and 36,002 tech-support complaints.[2] These are complaints submitted in the United States, not confirmed incidents and not observations of Filipino agents.',
+          'The figures justify rehearsing common control failures. They do not estimate the chance that one agent, vendor, or center will face an attack. A local playbook should be shaped by the actual queue, systems, customer checks, and manager coverage.',
+        ],
+      },
+      {
+        title: 'Give the manager a bounded handoff',
+        paragraphs: [
+          'The first manager should confirm that the agent stopped and should move the conversation away from the suspicious contact. The manager checks the message or call through a trusted channel, alerts the client security contact, and follows the client incident plan. The agent should not investigate with personal tools.',
+          'Use a named account and the smallest role needed for the queue. NIST\'s zero-trust guidance says that network location or ownership alone does not create trust.[3] An internal-looking message, office network, or company device therefore cannot be the only reason to approve a sensitive action.',
+        ],
+      },
+      {
+        title: 'Record enough facts for the next decision',
+        paragraphs: [
+          'Keep the incident card short enough to finish while details are fresh. Record the local time and time zone, channel, case number, displayed sender or caller details, requested action, verification result, and what the agent actually did. Mark unknown facts as unknown rather than filling gaps.',
+          'Do not paste passwords, one-time codes, full payment details, identity documents, or unnecessary customer data into the handoff. Preserve the original item in the approved system when policy allows, and point the manager to its record. The client incident owner decides whether a separate evidence-preservation step is needed.',
+        ],
+        items: ['Write the time, time zone, channel, and case number', 'Describe the request and the exact step that raised concern', 'State whether anything was opened, entered, changed, or disclosed', 'Name the manager and client contact who received the handoff', 'Track containment instructions and the case owner without editing the original facts'],
+      },
+      {
+        title: 'Use words that let the agent pause safely',
+        paragraphs: [
+          'A pause line protects the process without accusing a legitimate caller. It should say what the agent cannot do, what happens next, and where the request will go. Avoid explaining the hidden details of customer checks, because that can teach a caller how to answer them.',
+          'For a suspicious message, the agent should avoid replying to the sender for confirmation. Verification should use a known directory entry, client portal, or established manager channel. If a manager sends an unusual request, the agent can still verify it outside the original thread.',
+        ],
+      },
+      {
+        title: 'Drill the playbook and fix the handoff gaps',
+        paragraphs: [
+          'Run short drills with redacted examples from the channels agents actually use. Include an urgent caller seeking an account change, an unexpected file in chat, and a manager-looking message asking for customer records. Tell participants which exercises are simulations so no one mistakes them for live incidents.',
+          'Score observable actions: the agent stopped, avoided the link or disclosure, created an accurate record, used the right channel, and reached the correct manager. Also time the manager acknowledgment. A weak result may point to an unclear contact path or missing overnight coverage rather than an agent knowledge problem.',
+        ],
+        items: ['Run one voice scenario and one message scenario', 'Include the Philippine shift\'s primary and backup managers', 'Check the incident record for facts, unknowns, and unnecessary data', 'Confirm the client security path works during the actual shift', 'Retest the revised step in the next scheduled drill'],
+      },
+    ],
+    controlTable: [
+      { data: 'Unexpected link or file', agent: 'Leave it unopened, record its location, and alert the manager', manager: 'Verify through a trusted channel and follow the client incident plan' },
+      { data: 'Request for a sign-in code', agent: 'Do not share the code or approve the prompt', manager: 'Check the account and contact the client security owner' },
+      { data: 'Failed customer check', agent: 'Make no sensitive change and create a case handoff', manager: 'Review the request without revealing verification answers' },
+      { data: 'Claimed executive request', agent: 'Pause and verify outside the original call or thread', manager: 'Confirm with a known contact and document the decision' },
+      { data: 'Possible agent click or reply', agent: 'Disconnect from the suspicious contact and report exactly what happened', manager: 'Start the client\'s containment and evidence process' },
+      { data: 'Customer data disclosure', agent: 'Stop further disclosure and identify the affected case', manager: 'Escalate to the client privacy and security contacts' },
+    ],
+    chart: [
+      { label: 'Phishing or spoofing', value: 193407, display: '193,407' },
+      { label: 'Personal data breach', value: 64882, display: '64,882' },
+      { label: 'Tech support', value: 36002, display: '36,002' },
+    ],
+    scripts: [
+      { situation: 'Caller asks to bypass a check', text: '\"I cannot complete that change through this call. I will record the request and send it to the on-duty manager for review.\"' },
+      { situation: 'Unexpected link or attachment arrives', text: '\"I have not opened the item. I recorded the time, channel, and case number and sent them through the approved incident channel.\"' },
+      { situation: 'Agent already clicked or replied', text: '\"I opened or replied to the item at [time] and stopped at [step]. I have made no further change and need the client incident owner to review case [number].\"' },
+    ],
+    expertQuote: {
+      text: 'Zero trust assumes there is no implicit trust granted to assets or user accounts based solely on their physical or network location (i.e., local area networks versus the internet) or based on asset ownership (enterprise or personally owned).',
+      attribution: 'NIST Special Publication 800-207, published August 2020',
+      source: 3,
+    },
+    faqs: [
+      { question: 'What should a Philippines call center agent do first after spotting a suspicious message?', answer: 'The agent should stop before opening, replying, forwarding, sharing a code, or changing a customer record. Next, the agent records the time, channel, case number, and requested action, then alerts the named manager through the approved incident channel.' },
+      { question: 'Should an agent challenge a suspicious caller?', answer: 'No accusation is needed. The agent can say the action cannot be completed through that contact and route the case for review. Verification should happen through the approved customer process or a separate known channel.' },
+      { question: 'What if the agent already clicked a link?', answer: 'The agent should stop further action and report the click immediately, including the time and anything entered or disclosed. The manager should start the client\'s containment process. Honest details are more useful than an attempt to investigate or hide the click.' },
+      { question: 'What belongs in the manager handoff?', answer: 'Include the time and time zone, channel, case number, displayed contact details, requested action, verification result, and steps taken. Avoid copying secrets or extra customer data into chat. Point to the protected source record instead.' },
+      { question: 'Do the cited figures show that Philippines call centers cause phishing incidents?', answer: 'No. Verizon\'s findings are global, while the FBI figures are US complaint counts. Neither source measures Filipino agent conduct. They support practicing controls for common attack paths, not claims about a country or workforce.' },
+      { question: 'How should managers test the playbook?', answer: 'Use announced simulations with redacted voice and message examples. Check whether the agent stopped, recorded facts, avoided unnecessary data, and reached the correct manager. Then repair the contact path or instruction that failed and test it again.' },
+    ],
+    sources: [
+      { name: '2025 Data Breach Investigations Report release', organization: 'Verizon Business', date: 'April 23, 2025', url: 'https://www.verizon.com/about/news/2025-data-breach-investigations-report', note: 'Global third-party involvement, credential abuse, and ransomware findings.' },
+      { name: '2024 IC3 Annual Report', organization: 'Federal Bureau of Investigation', date: 'April 23, 2025', url: 'https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf', note: 'US complaint totals and complaint categories; complaints are not confirmed incidents.' },
+      { name: 'Zero Trust Architecture, SP 800-207', organization: 'National Institute of Standards and Technology', date: 'August 2020', url: 'https://csrc.nist.gov/pubs/sp/800/207/final', note: 'Exact zero-trust statement and access-control framework.' },
+      { name: 'Recognize and Report Phishing', organization: 'Cybersecurity and Infrastructure Security Agency', date: 'May 21, 2024', url: 'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing', note: 'Signs of phishing and reporting guidance.' },
+      { name: 'Phishing guidance', organization: 'National Institute of Standards and Technology', date: 'accessed July 28, 2026', url: 'https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing', note: 'Recognition and independent verification guidance.' },
+      { name: 'Republic Act No. 10173', organization: 'The Lawphil Project', date: 'August 15, 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html', note: 'Text of the Philippine Data Privacy Act of 2012.' },
+    ],
+    related: [
+      { label: 'Use the Philippines call center data security checklist', href: '/blog/philippines-call-center-data-security-checklist' },
+      { label: 'Define the customer support lane', href: '/services/omnichannel-customer-support' },
+      { label: 'Build a reporting and QA review', href: '/services/workforce-reporting-support' },
+      { label: 'Prepare the live call workflow', href: '/services/inbound-call-handling' },
+    ],
+    banners: [
+      { label: 'Call guide', title: 'Put the stop rule beside the live script', body: 'Give agents one pause line, one incident card, and one manager channel.', href: '/services/inbound-call-handling', cta: 'Review inbound call handling' },
+      { label: 'Manager review', title: 'Check calls and incident records together', body: 'A clean handoff needs facts from the contact and the account history.', href: '/services/workforce-reporting-support', cta: 'Review reporting support' },
+      { label: 'Shift handoff', title: 'Keep the escalation path open overnight', body: 'Name primary and backup contacts for the hours the Philippines team works.', href: '/services/omnichannel-customer-support', cta: 'Review customer support' },
+    ],
+  },
+  {
     slug: 'philippines-call-center-data-security-checklist',
     title: 'Philippines call center data security checklist for outsourced teams',
     excerpt: 'Set safe access, customer verification, call notes, recordings, and manager handoffs for a Philippines-based support team.',
