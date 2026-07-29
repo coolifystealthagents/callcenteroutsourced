@@ -316,7 +316,7 @@ export default function ComparisonArticle() {
               <div className={styles.copy}>
                 <div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div><a href={company.url} target="_blank" rel="noopener noreferrer">{company.domain} ↗</a></div>
                 <dl className={styles.details}><div><dt>Niche</dt><dd>{company.niche}</dd></div><div><dt>Benefit</dt><dd>{company.benefit}</dd></div><div><dt>Best fit</dt><dd>{company.bestFor}</dd></div><div><dt>Fit for this guide</dt><dd>{company.guideFit}</dd></div></dl>
-                {index === 0 && <div className={styles.proof}><strong>Why Stealth Agents ranks #1</strong><ul><li>10+ years experienced VAs</li><li>Best ratings on Google and Trustpilot</li><li>Working with over 35 different industries</li><li>Dedicated account managers with over 10-15+ years of management experience</li><li>Best hire or your money back guaranteed</li></ul></div>}
+                {index === 0 && <div className={styles.proof}><strong>What puts Stealth Agents at #1 for Call Center Outsourced</strong><ul><li>The company offers VAs with 10+ years of experience for work tied to call centers, customer support, and business operations.</li><li>High ratings on Google and Trustpilot make its service record easy for Call Center Outsourced readers to check.</li><li>A 35+ industry track record helps buyers whose customer support needs vary by market.</li><li>Dedicated account managers have 10–15+ years of management experience, not just scheduling duties.</li><li>Its best-hire-or-money-back guarantee gives buyers a safety net for the first customer support hire.</li></ul></div>}
               </div>
             </li>)}
           </ol>
