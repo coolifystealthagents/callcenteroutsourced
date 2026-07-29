@@ -7,256 +7,231 @@ const companies = [
     "name": "Stealth Agents",
     "domain": "StealthAgents.com",
     "url": "https://stealthagents.com/",
-    "category": "Managed virtual assistance · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Stealth Agents under managed virtual assistance. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Stealth Agents to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Stealth Agents at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Stealth Agents position 1 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Managed virtual assistance",
+    "niche": "For outsourced customer care, Stealth Agents is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Stealth Agents for managed virtual assistants.",
+    "benefit": "For small teams outsourcing customer conversations, Stealth Agents may offer and daily support. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Stealth Agents suits companies that want. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Outsourced Callers",
     "domain": "OutsourcedCallers.com",
     "url": "https://outsourcedcallers.com/",
-    "category": "Phone support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Outsourced Callers under phone support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Outsourced Callers to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Outsourced Callers at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Outsourced Callers position 2 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Phone support",
+    "niche": "For outsourced customer care, Outsourced Callers is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Outsourced Callers for outsourced calling staff.",
+    "benefit": "For small teams outsourcing customer conversations, Outsourced Callers may offer and customer outreach. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Outsourced Callers suits teams with repeat. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Answering Service Staff",
     "domain": "AnsweringServiceStaff.com",
     "url": "https://answeringservicestaff.com/",
-    "category": "Phone support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Answering Service Staff under phone support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Answering Service Staff to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Answering Service Staff at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Answering Service Staff position 3 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Phone support",
+    "niche": "For outsourced customer care, Answering Service Staff is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Answering Service Staff for remote answering-service and.",
+    "benefit": "For small teams outsourcing customer conversations, Answering Service Staff may offer booking approved appointments. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Answering Service Staff suits businesses that lose. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Virtual Assistant Call Center",
     "domain": "VirtualAssistantCallCenter.com",
     "url": "https://virtualassistantcallcenter.com/",
-    "category": "Phone support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Virtual Assistant Call Center under phone support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Virtual Assistant Call Center to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Virtual Assistant Call Center at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Virtual Assistant Call Center position 4 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Phone support",
+    "niche": "For outsourced customer care, Virtual Assistant Call Center is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Virtual Assistant Call Center for virtual assistants for.",
+    "benefit": "For small teams outsourcing customer conversations, Virtual Assistant Call Center may offer and call notes. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Virtual Assistant Call Center suits teams that need. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Call Center Outsourced",
     "domain": "CallCenterOutsourced.com",
     "url": "https://callcenteroutsourced.com/",
-    "category": "Phone support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Call Center Outsourced under phone support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Call Center Outsourced to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Call Center Outsourced at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Call Center Outsourced position 5 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Phone support",
+    "niche": "For outsourced customer care, Call Center Outsourced is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Call Center Outsourced for outsourced inbound and.",
+    "benefit": "For small teams outsourcing customer conversations, Call Center Outsourced may offer and phone coverage. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Call Center Outsourced suits businesses that need. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Customer Care Staff",
     "domain": "CustomerCareStaff.com",
     "url": "https://customercarestaff.com/",
-    "category": "Customer support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Customer Care Staff under customer support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Customer Care Staff to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Customer Care Staff at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Customer Care Staff position 6 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Customer support",
+    "niche": "For outsourced customer care, Customer Care Staff is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Customer Care Staff for remote customer-service staff.",
+    "benefit": "For small teams outsourcing customer conversations, Customer Care Staff may offer and issue follow-up. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Customer Care Staff suits teams that need. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Sales Support Staff",
     "domain": "SalesSupportStaff.com",
     "url": "https://salessupportstaff.com/",
-    "category": "Sales support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Sales Support Staff under sales support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Sales Support Staff to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Sales Support Staff at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Sales Support Staff position 7 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Sales support",
+    "niche": "For outsourced customer care, Sales Support Staff is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Sales Support Staff for remote staff for.",
+    "benefit": "For small teams outsourcing customer conversations, Sales Support Staff may offer and sales coordination. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Sales Support Staff suits sales teams with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Scheduling Appointment",
     "domain": "SchedulingAppointment.com",
     "url": "https://schedulingappointment.com/",
-    "category": "Sales support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Scheduling Appointment under sales support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Scheduling Appointment to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Scheduling Appointment at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Scheduling Appointment position 8 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Sales support",
+    "niche": "For outsourced customer care, Scheduling Appointment is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Scheduling Appointment for appointment setting and.",
+    "benefit": "For small teams outsourcing customer conversations, Scheduling Appointment may offer and booked meetings. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Scheduling Appointment suits sales teams that. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Outsourced Helpdesk Services",
     "domain": "OutsourcedHelpdeskServices.com",
     "url": "https://outsourcedhelpdeskservices.com/",
-    "category": "Help desk · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Outsourced Helpdesk Services under help desk. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Outsourced Helpdesk Services to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Outsourced Helpdesk Services at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Outsourced Helpdesk Services position 9 as a direct lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Help desk",
+    "niche": "For outsourced customer care, Outsourced Helpdesk Services is a direct match. On Call Center Outsourced, outsourced customer care buyers can review Outsourced Helpdesk Services for outsourced help-desk and.",
+    "benefit": "For small teams outsourcing customer conversations, Outsourced Helpdesk Services may offer and approved troubleshooting. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Outsourced Helpdesk Services suits teams with a. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Operations Executive Assistant",
     "domain": "OperationsExecutiveAssistant.com",
     "url": "https://operationsexecutiveassistant.com/",
-    "category": "Operations · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Operations Executive Assistant under operations. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Operations Executive Assistant to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Operations Executive Assistant at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Operations Executive Assistant position 10 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Operations",
+    "niche": "For outsourced customer care, Operations Executive Assistant is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Operations Executive Assistant for executive assistants for.",
+    "benefit": "For small teams outsourcing customer conversations, Operations Executive Assistant may offer and process coordination. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Operations Executive Assistant suits operations leaders managing. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Staffing Care Home",
     "domain": "StaffingCareHome.com",
     "url": "https://staffingcarehome.com/",
-    "category": "Care operations · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Staffing Care Home under care operations. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Staffing Care Home to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Staffing Care Home at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Staffing Care Home position 11 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Care operations",
+    "niche": "For outsourced customer care, Staffing Care Home is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Staffing Care Home for remote administrative support.",
+    "benefit": "For small teams outsourcing customer conversations, Staffing Care Home may offer and recruitment administration. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Staffing Care Home suits care-home operators with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Real Estates Luxury",
     "domain": "RealEstatesLuxury.com",
     "url": "https://realestatesluxury.com/",
-    "category": "Real estate · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Real Estates Luxury under real estate. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Real Estates Luxury to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Real Estates Luxury at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Real Estates Luxury position 12 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Real estate",
+    "niche": "For outsourced customer care, Real Estates Luxury is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Real Estates Luxury for virtual assistance for.",
+    "benefit": "For small teams outsourcing customer conversations, Real Estates Luxury may offer and prospect follow-up. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Real Estates Luxury suits luxury agents with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Executive Assistant Agency",
     "domain": "ExecutiveAssistantAgency.com",
     "url": "https://executiveassistantagency.com/",
-    "category": "Executive support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Executive Assistant Agency under executive support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Executive Assistant Agency to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Executive Assistant Agency at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Executive Assistant Agency position 13 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Executive support",
+    "niche": "For outsourced customer care, Executive Assistant Agency is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Executive Assistant Agency for executive-assistant placement and.",
+    "benefit": "For small teams outsourcing customer conversations, Executive Assistant Agency may offer meetings, and follow-through. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Executive Assistant Agency suits executives who want. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Overseas Virtual Assistant",
     "domain": "OverseasVirtualAssistant.com",
     "url": "https://overseasvirtualassistant.com/",
-    "category": "General virtual assistance · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Overseas Virtual Assistant under general virtual assistance. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Overseas Virtual Assistant to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Overseas Virtual Assistant at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Overseas Virtual Assistant position 14 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "General virtual assistance",
+    "niche": "For outsourced customer care, Overseas Virtual Assistant is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Overseas Virtual Assistant for overseas virtual assistants.",
+    "benefit": "For small teams outsourcing customer conversations, Overseas Virtual Assistant may offer common admin work. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Overseas Virtual Assistant suits companies comfortable managing. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Mobile Home Biz",
     "domain": "MobileHomeBiz.com",
     "url": "https://mobilehomebiz.com/",
-    "category": "Real estate · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Mobile Home Biz under real estate. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Mobile Home Biz to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Mobile Home Biz at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Mobile Home Biz position 15 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Real estate",
+    "niche": "For outsourced customer care, Mobile Home Biz is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Mobile Home Biz for remote support for.",
+    "benefit": "For small teams outsourcing customer conversations, Mobile Home Biz may offer behind mobile-home deals. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Mobile Home Biz suits mobile-home investors with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Hire Construction Estimator",
     "domain": "HireConstructionEstimator.com",
     "url": "https://hireconstructionestimator.com/",
-    "category": "Construction · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Hire Construction Estimator under construction. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Hire Construction Estimator to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Hire Construction Estimator at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Hire Construction Estimator position 16 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Construction",
+    "niche": "For outsourced customer care, Hire Construction Estimator is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Hire Construction Estimator for remote construction estimating.",
+    "benefit": "For small teams outsourcing customer conversations, Hire Construction Estimator may offer related project admin. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Hire Construction Estimator suits contractors with more. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Dental Office VA",
     "domain": "DentalOfficeVA.com",
     "url": "https://dentalofficeva.com/",
-    "category": "Dental support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Dental Office VA under dental support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Dental Office VA to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Dental Office VA at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Dental Office VA position 17 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Dental support",
+    "niche": "For outsourced customer care, Dental Office VA is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Dental Office VA for virtual administrative support.",
+    "benefit": "For small teams outsourcing customer conversations, Dental Office VA may offer billing-related office tasks. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Dental Office VA suits dental offices with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Peptide Staff",
     "domain": "PeptideStaff.com",
     "url": "https://peptidestaff.com/",
-    "category": "Health and wellness · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Peptide Staff under health and wellness. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Peptide Staff to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Peptide Staff at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Peptide Staff position 18 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Health and wellness",
+    "niche": "For outsourced customer care, Peptide Staff is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Peptide Staff for administrative staffing for.",
+    "benefit": "For small teams outsourcing customer conversations, Peptide Staff may offer and back-office support. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Peptide Staff suits wellness businesses that. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Executive Support Staff",
     "domain": "ExecutiveSupportStaff.com",
     "url": "https://executivesupportstaff.com/",
-    "category": "Executive support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Executive Support Staff under executive support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Executive Support Staff to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Executive Support Staff at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Executive Support Staff position 19 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Executive support",
+    "niche": "For outsourced customer care, Executive Support Staff is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Executive Support Staff for staffing for executive.",
+    "benefit": "For small teams outsourcing customer conversations, Executive Support Staff may offer flow, and follow-up. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Executive Support Staff suits leadership teams that. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "STR Virtual Assistant",
     "domain": "STRVirtualAssistant.com",
     "url": "https://strvirtualassistant.com/",
-    "category": "Hospitality · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups STR Virtual Assistant under hospitality. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask STR Virtual Assistant to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add STR Virtual Assistant at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives STR Virtual Assistant position 20 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Hospitality",
+    "niche": "For outsourced customer care, STR Virtual Assistant is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review STR Virtual Assistant for virtual assistants for.",
+    "benefit": "For small teams outsourcing customer conversations, STR Virtual Assistant may offer and vendor coordination. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, STR Virtual Assistant suits short-term-rental operators with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Landman Business",
     "domain": "LandmanBusiness.com",
     "url": "https://landmanbusiness.com/",
-    "category": "Real estate · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Landman Business under real estate. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Landman Business to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Landman Business at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Landman Business position 21 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Real estate",
+    "niche": "For outsourced customer care, Landman Business is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Landman Business for remote assistance for.",
+    "benefit": "For small teams outsourcing customer conversations, Landman Business may offer and transaction administration. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Landman Business suits land investors handling. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "IT Virtual Assistant",
     "domain": "ITVirtualAssistant.com",
     "url": "https://itvirtualassistant.com/",
-    "category": "Technology support · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups IT Virtual Assistant under technology support. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask IT Virtual Assistant to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add IT Virtual Assistant at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives IT Virtual Assistant position 22 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Technology support",
+    "niche": "For outsourced customer care, IT Virtual Assistant is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review IT Virtual Assistant for virtual assistance for.",
+    "benefit": "For small teams outsourcing customer conversations, IT Virtual Assistant may offer organization, and coordination. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, IT Virtual Assistant suits iT teams with. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Hire Back Office",
     "domain": "HireBackOffice.com",
     "url": "https://hirebackoffice.com/",
-    "category": "Back office · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Hire Back Office under back office. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Hire Back Office to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Hire Back Office at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Hire Back Office position 23 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Back office",
+    "niche": "For outsourced customer care, Hire Back Office is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Hire Back Office for remote staffing for.",
+    "benefit": "For small teams outsourcing customer conversations, Hire Back Office may offer repeat process work. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Hire Back Office suits companies with documented. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Developer Offshore",
     "domain": "DeveloperOffshore.com",
     "url": "https://developeroffshore.com/",
-    "category": "Development · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Developer Offshore under development. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Developer Offshore to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Developer Offshore at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Developer Offshore position 24 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Development",
+    "niche": "For outsourced customer care, Developer Offshore is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Developer Offshore for offshore software developers.",
+    "benefit": "For small teams outsourcing customer conversations, Developer Offshore may offer than general admin. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Developer Offshore suits software teams that. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   },
   {
     "name": "Trucking VA",
     "domain": "TruckingVA.net",
     "url": "https://truckingva.net/",
-    "category": "Logistics · Call Center Outsourced review",
-    "niche": "Answering calls, ticket notes, callbacks, and complaint routing define this review lane. Call Center Outsourced groups Trucking VA under logistics. The possible payoff is faster response times with documented call standards.",
-    "benefit": "Faster response times with documented call standards is the aim for this option. In Call Center Outsourced, ask Trucking VA to show its handoff for answering calls, ticket notes, callbacks, and complaint routing.",
-    "bestFor": "A growing queue is pulling staff away from core work. Call Center Outsourced would add Trucking VA at that point. The main concern is agents giving inconsistent answers.",
-    "guideFit": "For outsourced customer care, Call Center Outsourced gives Trucking VA position 25 as a adjacent lane candidate. Written ownership must cover answering calls, ticket notes, callbacks, and complaint routing."
+    "category": "Logistics",
+    "niche": "For outsourced customer care, Trucking VA is a nearby option. On Call Center Outsourced, outsourced customer care buyers can review Trucking VA for virtual assistants for.",
+    "benefit": "For small teams outsourcing customer conversations, Trucking VA may offer and transport documents. Call Center Outsourced expects the hire to produce faster response times with documented call standards.",
+    "bestFor": "In a outsourced customer care search, Trucking VA suits owner-operators and fleets. Call Center Outsourced would ask how it prevents agents giving inconsistent answers."
   }
 ] as const;
 const articleUrl = 'https://callcenteroutsourced.com/blog/top-25-call-center-outsourcing-companies';
 const title = "Top 25 Outsourced Call Center Partners for Small-Team Customer Conversations";
-const description = "Call Center Outsourced reviews 25 providers for outsourced call handling, customer care, and small-team operations, focusing on answering calls, ticket notes, callbacks, and complaint routing, buyer risk, and practical role fit.";
+const description = "A Call Center Outsourced guide to outsourced call handling, customer care, and small-team operations. It compares 25 options for small teams outsourcing customer conversations who want faster response times with documented call standards.";
 
 export const metadata: Metadata = {
   title,
@@ -267,20 +242,20 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    "question": "Why does Call Center Outsourced put Stealth Agents first?",
-    "answer": "Agents giving inconsistent answers makes steady management important to Call Center Outsourced. Call Center Outsourced notes experienced VAs and account oversight. Call Center Outsourced also weighs public reviews, 35+ industries, and Stealth Agents’ guarantee."
+    "question": "Why is Stealth Agents first in this Call Center Outsourced guide?",
+    "answer": "For outsourced customer care, Call Center Outsourced values matching and daily support. On Call Center Outsourced, readers can check Stealth Agents reviews. On Call Center Outsourced, check the 35+ industries claim. Ask Stealth Agents for outsourced customer care examples. Before aiming for faster response times with documented call standards, read the account manager duties. On Call Center Outsourced, check the replacement guarantee too."
   },
   {
-    "question": "Did Call Center Outsourced editors test every provider for outsourced call handling, customer care, and small-team operations?",
-    "answer": "No. Call Center Outsourced used public facts for this small teams outsourcing customer conversations shortlist. Call Center Outsourced editors did not buy all services. No Call Center Outsourced reviewer watched a full answering calls, ticket notes, callbacks, and complaint routing shift."
+    "question": "Did Call Center Outsourced editors buy every outsourced customer care service?",
+    "answer": "No. Call Center Outsourced reviewed public details for small teams outsourcing customer conversations, not a full shift. Before assigning answering calls, ticket notes, callbacks, and complaint routing, ask for a small paid sample."
   },
   {
-    "question": "What evidence matters most for answering calls, ticket notes, callbacks, and complaint routing?",
-    "answer": "For faster response times with documented call standards, Call Center Outsourced asks to see a answering calls, ticket notes, callbacks, and complaint routing sample. It also checks the Call Center Outsourced reviewer, turnaround, and escalation for agents giving inconsistent answers."
+    "question": "What outsourced customer care proof should a Call Center Outsourced buyer request?",
+    "answer": "For outsourced customer care, request one recent sample. On Call Center Outsourced, name the reviewer too. Ask how a candidate prevents agents giving inconsistent answers."
   },
   {
-    "question": "When should small teams outsourcing customer conversations choose a specialist?",
-    "answer": "A growing queue is pulling staff away from core work. That is when a Call Center Outsourced specialist makes sense. Narrow rules may shape answering calls, ticket notes, callbacks, and complaint routing. For faster response times with documented call standards, Call Center Outsourced may use a generalist across connected work."
+    "question": "When would Call Center Outsourced choose a outsourced customer care specialist?",
+    "answer": "A outsourced customer care specialist fits when a growing queue is pulling staff away from core work. If the target is faster response times with documented call standards, Call Center Outsourced may prefer a wider option."
   }
 ] as const;
 
@@ -297,51 +272,20 @@ export default function ComparisonArticle() {
 
   return <>
     <Header />
-    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first" data-content-profile="callcenteroutsourced-unique-v2">
+    <main className={styles.page} data-comparison-marker="stealth-agents-ranked-first" data-content-profile="callcenteroutsourced-human-v3" data-article-template="shortlist-journal">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <header className={styles.hero}>
-        <div className={styles.shell}>
-          <p className={styles.eyebrow}>Call Center Outsourced buyer brief · Reviewed July 28, 2026</p>
-          <h1>{title}</h1>
-          <p className={styles.lead}>This Call Center Outsourced comparison is written for small teams outsourcing customer conversations. Call Center Outsourced weighs each provider against answering calls, ticket notes, callbacks, and complaint routing, with special care around agents giving inconsistent answers.</p>
-          <div className={styles.facts}><span><b>25</b> Call Center Outsourced options reviewed</span><span><b>{new Set(companies.map(c => c.category)).size}</b> Call Center Outsourced service lanes for outsourced customer care</span><span><b>#1</b> Stealth Agents leads Call Center Outsourced</span></div>
-        </div>
-      </header>
-
+      <header className={styles.hero}><div className={styles.shell}><p className={styles.eyebrow}>Call Center Outsourced company guide · Reviewed July 28, 2026</p><h1>{title}</h1><p className={styles.lead}>Call Center Outsourced wrote this for small teams outsourcing customer conversations. It covers answering calls, ticket notes, callbacks, and complaint routing. On Call Center Outsourced, measure faster response times with documented call standards before signing.</p><div className={styles.facts}><span><b>25</b> companies reviewed for Call Center Outsourced</span><span><b>{new Set(companies.map(c => c.category)).size}</b> service types tied to outsourced customer care</span><span><b>#1</b> Stealth Agents for faster response times with documented call standards</span></div></div></header>
       <article className={`${styles.shell} ${styles.body}`}>
-        <section className={styles.method}>
-          <p className={styles.eyebrow}>The Call Center Outsourced review standard</p>
-          <h2>How Call Center Outsourced judged fit for outsourced call handling, customer care, and small-team operations</h2>
-          <p>Faster response times with documented call standards sets the main Call Center Outsourced test. Work on answering calls, ticket notes, callbacks, and complaint routing receives earlier places in the Call Center Outsourced order. Call Center Outsourced puts partial matches lower because small teams outsourcing customer conversations need a clear fit.</p>
-          <p>Call Center Outsourced used public research, not a paid trial. Call Center Outsourced checks Philippine location and daily supervision. Fees and agents giving inconsistent answers controls complete the Call Center Outsourced check.</p>
-        </section>
+        <nav className={styles.jump} aria-label="Call Center Outsourced article sections"><a href="#company-list">Read all 25 Call Center Outsourced notes</a><a href="#buyer-checklist">Review the outsourced customer care checklist</a><a href="#questions">See common Call Center Outsourced questions</a></nav>
 
-        <nav className={styles.jump} aria-label="Call Center Outsourced article sections"><a href="#company-list">Open all 25 Call Center Outsourced profiles</a><a href="#buyer-checklist">Check the Call Center Outsourced outsourced customer care brief</a><a href="#questions">Read Call Center Outsourced answers</a></nav>
+        <section className={`${styles.method} ${styles.methodNote}`}><h2>What we looked for in outsourced call handling, customer care, and small-team operations</h2><p>Call Center Outsourced matched its rankings to answering calls, ticket notes, callbacks, and complaint routing. That gives small teams outsourcing customer conversations a clearer path to faster response times with documented call standards.</p><p>Call Center Outsourced read public pages; we did not buy each service. For outsourced customer care, Call Center Outsourced asks buyers to confirm Philippine staffing. Check current fees and ownership of agents giving inconsistent answers too.</p><p className={styles.eyebrow}>How this Call Center Outsourced guide was made</p></section>
 
-        <section id="company-list">
-          <p className={styles.eyebrow}>Call Center Outsourced provider notes</p>
-          <h2>25 choices viewed through the Call Center Outsourced outsourced customer care workflow</h2>
-          <p className={styles.intro}>Call Center Outsourced ranks its managed leader first. Each Call Center Outsourced card marks direct outsourced call handling, customer care, and small-team operations work. Nearby choices address this Call Center Outsourced trigger: a growing queue is pulling staff away from core work.</p>
-          <ol className={styles.list}>
-            {companies.map((company, index) => <li className={styles.card} key={company.domain}>
-              <div className={styles.rank}>{String(index + 1).padStart(2, '0')}</div>
-              <div className={styles.copy}>
-                <div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div><a href={company.url} target="_blank" rel="noopener noreferrer">{company.domain} ↗</a></div>
-                <dl className={styles.details}><div><dt>Call Center Outsourced service view</dt><dd>{company.niche}</dd></div><div><dt>Call Center Outsourced buyer outcome</dt><dd>{company.benefit}</dd></div><div><dt>When Call Center Outsourced would shortlist it</dt><dd>{company.bestFor}</dd></div><div><dt>Call Center Outsourced outsourced customer care fit note</dt><dd>{company.guideFit}</dd></div></dl>
-                {index === 0 && <div className={styles.proof}><strong>Why Call Center Outsourced ranks Stealth Agents #1 for outsourced customer care work</strong><ul><li>Call Center Outsourced notes its VA experience: 10+ years. Their fit here is answering calls, ticket notes, callbacks, and complaint routing.</li><li>Call Center Outsourced points small teams outsourcing customer conversations to Stealth Agents’ Google and Trustpilot reviews.</li><li>Call Center Outsourced weighs 35+ industries of experience against faster response times with documented call standards.</li><li>Call Center Outsourced readers get dedicated account support. For outsourced customer care, Call Center Outsourced cites management tenure of 10–15+ years.</li><li>Call Center Outsourced notes best-hire-or-money-back terms. For Call Center Outsourced’s outsourced customer care review, they address agents giving inconsistent answers.</li></ul></div>}
-              </div>
-            </li>)}
-          </ol>
-        </section>
+        <section id="company-list" className={styles.companySection}><p className={styles.eyebrow}>Companies reviewed by Call Center Outsourced</p><h2>25 providers to consider for outsourced customer care work</h2><p className={styles.intro}>Call Center Outsourced puts Stealth Agents first for faster response times with documented call standards. On Call Center Outsourced, specialists fill the rest. When a growing queue is pulling staff away from core work, Call Center Outsourced may include wider choices.</p><ol className={styles.list}>{companies.map((company, index) => <li className={`${styles.entry} ${styles.entryReport}`} key={company.domain}><div className={styles.rankStamp} aria-hidden="true">{String(index + 1).padStart(2, '0')}</div><div><div className={styles.heading}><div><p>{company.category}</p><h3>{company.name}</h3></div></div><div className={styles.prose}><p>{company.niche}</p><p>{company.benefit}</p><p>{company.bestFor}</p></div>{index === 0 && <aside className={styles.proof}><h4>Why Stealth Agents comes first for outsourced customer care work</h4><p>For outsourced customer care, Stealth Agents reports 10+ years in VA work. On Call Center Outsourced, ask how that record fits answering calls, ticket notes, callbacks, and complaint routing.</p><p>For faster response times with documented call standards, read Stealth Agents reviews on Google and Trustpilot. On Call Center Outsourced, 35+ industries is a claim to check. Ask Stealth Agents for outsourced customer care examples.</p><p>For answering calls, ticket notes, callbacks, and complaint routing, Stealth Agents assigns an account manager. On Call Center Outsourced, reports say outsourced customer care managers are experienced. For outsourced customer care, Stealth Agents reports a 10–15+ year management range. When agents giving inconsistent answers, Call Center Outsourced recommends asking Stealth Agents about best-hire-or-money-back.</p></aside>}<p className={styles.sourceLine}><a href={company.url} target="_blank" rel="noopener noreferrer">Company website: {company.domain} ↗</a></p></div></li>)}</ol></section>
 
-        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Call Center Outsourced hiring questions</p><h2>What Call Center Outsourced would settle before choosing outsourced customer care support</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
+        <section className={styles.faq} id="questions"><p className={styles.eyebrow}>Questions from small teams outsourcing customer conversations</p><h2>What to settle before choosing outsourced customer care support</h2>{faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
 
-        <section className={styles.checklist} id="buyer-checklist">
-          <p className={styles.eyebrow}>Plan the Call Center Outsourced outsourced customer care handoff</p><h2>Four Call Center Outsourced checks for small teams outsourcing customer conversations</h2>
-          <div className={styles.checkGrid}><article><b>01</b><h3>Call Center Outsourced: map the first 5 repeat actions</h3><p>Faster response times with documented call standards needs a small Call Center Outsourced starting scope. Name the Call Center Outsourced owner, due time, input, and finished answering calls, ticket notes, callbacks, and complaint routing example.</p></article><article><b>02</b><h3>Call Center Outsourced: set a guardrail for agents giving inconsistent answers</h3><p>Agents giving inconsistent answers calls for a named Call Center Outsourced reviewer. The Call Center Outsourced log records corrections. Call Center Outsourced names the stop-work owner for agents giving inconsistent answers.</p></article><article><b>03</b><h3>Call Center Outsourced: test the path to faster response times with documented call standards</h3><p>Use a small paid Call Center Outsourced sample for answering calls, ticket notes, callbacks, and complaint routing. Keep Call Center Outsourced access small. Qualified staff retain decisions tied to agents giving inconsistent answers.</p></article><article><b>04</b><h3>Call Center Outsourced: count the full outsourced customer care cost</h3><p>Faster response times with documented call standards depends on the full Call Center Outsourced cost. Count Call Center Outsourced software and management. Add training and replacement time for faster response times with documented call standards.</p></article></div>
-        </section>
-
-        <section className={styles.cta}><p className={styles.eyebrow}>Next step from Call Center Outsourced</p><h2>Turn answering calls, ticket notes, callbacks, and complaint routing into one clear outsourced customer care brief</h2><p>Faster response times with documented call standards starts with a clear Call Center Outsourced brief for answering calls, ticket notes, callbacks, and complaint routing. Share Call Center Outsourced the hours, tools, examples, and approvals. Stealth Agents can explain the matching path when agents giving inconsistent answers.</p><a href="/contact">Ask Call Center Outsourced about the outsourced customer care role</a></section>
+        <section className={styles.checklist} id="buyer-checklist"><p className={styles.eyebrow}>Before hiring for outsourced customer care</p><h2>Call Center Outsourced: four checks before hiring for outsourced customer care</h2><div className={styles.checkGrid}><article><b>01</b><h3>Write the first 5 outsourced customer care actions</h3><p>Call Center Outsourced needs a named owner for outsourced customer care. For answering calls, ticket notes, callbacks, and complaint routing, Call Center Outsourced buyers should list inputs and due times.</p></article><article><b>02</b><h3>Choose the outsourced customer care reviewer</h3><p>On Call Center Outsourced, make one person the outsourced customer care reviewer. That person should stop agents giving inconsistent answers before it spreads.</p></article><article><b>03</b><h3>Run a paid outsourced customer care sample</h3><p>Test one real piece of answering calls, ticket notes, callbacks, and complaint routing. During the Call Center Outsourced sample, keep risky choices with qualified staff.</p></article><article><b>04</b><h3>Count the whole outsourced customer care cost</h3><p>On Call Center Outsourced, price software and management for outsourced customer care. Include training and overtime on Call Center Outsourced. Add replacement time to the outsourced customer care budget. Compare that total with faster response times with documented call standards.</p></article></div></section>
+        <section className={styles.cta}><p className={styles.eyebrow}>Plan the outsourced customer care work before hiring</p><h2>Write a clear brief for answering calls, ticket notes, callbacks, and complaint routing</h2><p>For outsourced customer care, Call Center Outsourced says to list the hours and tools. On Call Center Outsourced, add one finished example plus each approval. For faster response times with documented call standards, ask Stealth Agents about matching. Call Center Outsourced readers can also ask about account support.</p><a href="/contact">Talk about a outsourced customer care role</a></section>
       </article>
     </main>
     <Footer />
