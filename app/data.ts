@@ -372,7 +372,7 @@ export const blogPosts: readonly BlogPost[] = [
     banners: [
       { label: 'Access plan', title: 'Map each tool before the first shift', body: 'List the fields an agent needs and the changes a manager must approve.', href: '/services/inbound-call-handling', cta: 'Review inbound call support' },
       { label: 'Launch plan', title: 'Test one queue with real review', body: 'Use practice calls, narrow access, and a named manager before adding volume.', href: '/blog', cta: 'Open the first-week checklist' },
-      { label: 'Staffing handoff', title: 'Turn the security rules into a role brief', body: 'Share the queue, systems, hours, and approval points with the coverage team.', href: '/contact', cta: 'Discuss the role' },
+      { label: 'Staffing handoff', title: 'Turn the security rules into a role brief', body: 'Share the queue, systems, hours, and approval points with the coverage team.', href: '/contact-us', cta: 'Discuss the role' },
     ],
   },] as const;
 

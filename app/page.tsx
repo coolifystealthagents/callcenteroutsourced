@@ -30,7 +30,7 @@ export default function Home() {
               <h1>Every call gets a clear next step.</h1>
               <p className="cco-hero-lead">Build dependable phone, chat, and ticket coverage around your hours, scripts, escalation rules, and quality standards.</p>
               <div className="actions">
-                <a className="btn cco-btn-lime" href="/contact">Request a coverage plan</a>
+                <a className="btn cco-btn-lime" href="/contact-us">Request a coverage plan</a>
                 <a className="cco-text-link" href="#services">Explore service lanes <span>↘</span></a>
               </div>
               <div className="cco-hero-notes" aria-label="Planning priorities">
@@ -126,7 +126,7 @@ export default function Home() {
 
         <section className="container cco-final">
           <div><p className="eyebrow cco-eyebrow-light">Ready to map the queue?</p><h2>Make the next handoff clear.</h2></div>
-          <a className="btn cco-btn-lime" href="/contact">Map my coverage</a>
+          <a className="btn cco-btn-lime" href="/contact-us">Map my coverage</a>
         </section>
       </main>
       <Footer />
