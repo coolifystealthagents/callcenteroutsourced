@@ -45,7 +45,7 @@ export const services = [
     "fit": "Use this lane for repeat questions, status checks, basic troubleshooting, appointment support, and ticket follow-up. Keep sensitive decisions with your manager until the support worker has proven accuracy.",
     "bestTasks": ["Answer common call, chat, email, and ticket questions", "Confirm order, booking, appointment, or case status", "Tag tickets and route urgent issues", "Send approved follow-up messages"],
     "qualityChecks": ["Score call notes and chat replies against the script", "Review escalations during the first two weeks", "Track first response time, reopen rate, and unresolved tickets"],
-    "guardrails": ["Refund approvals and goodwill credits", "Legal, medical, financial, or safety advice", "Changes to policy, pricing, or account ownership"],
+    "guardrails": ["Refund approvals and goodwill credits", "Legal, medical, financial, or safety advice", "Changes to policy, scope, or account ownership"],
     "report": "The first report should show volume handled, response time, common questions, escalations, and script gaps that need a manager answer.",
     "launchPlan": [
       { "day": "1", "title": "Pick the safest queue", "body": "Start with one channel or one ticket type, not every customer contact at once." },
@@ -67,7 +67,7 @@ export const services = [
     "fit": "Use this lane when the phone team needs help with inbox cleanup, scheduling updates, forms, notes, and daily prep. The offshore assistant should make the next shift easier without making customer or employee decisions alone.",
     "bestTasks": ["Sort shared inboxes and tag action items", "Update appointments, calendars, and follow-up lists", "Prepare simple daily reports for managers", "Clean files, forms, and customer records"],
     "qualityChecks": ["Review a sample of updated records each day", "Check calendar changes against source requests", "Keep a written list of items waiting for manager approval"],
-    "guardrails": ["Hiring, discipline, payroll, and HR decisions", "Customer promises that change price or policy", "Password resets or access changes without approval"],
+    "guardrails": ["Hiring, discipline, payroll, and HR decisions", "Customer promises that change policy or commercial terms", "Password resets or access changes without approval"],
     "report": "A good admin report lists closed items, pending manager decisions, calendar changes, and any record that looks incomplete.",
     "launchPlan": [
       { "day": "1", "title": "Make the inbox rules clear", "body": "Show what to archive, what to tag, what to answer, and what to leave for a manager." },
