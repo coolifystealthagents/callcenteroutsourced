@@ -130,7 +130,7 @@ export type BlogPost = {
   banners?: readonly { label: string; title: string; body: string; href: string; cta: string }[];
 };
 
-export const blogPosts: readonly BlogPost[] = [
+const baseBlogPosts: readonly BlogPost[] = [
   {
     slug: 'philippines-call-center-phishing-escalation-playbook',
     title: 'Philippines call center phishing escalation playbook',
@@ -375,6 +375,91 @@ export const blogPosts: readonly BlogPost[] = [
       { label: 'Staffing handoff', title: 'Turn the security rules into a role brief', body: 'Share the queue, systems, hours, and approval points with the coverage team.', href: '/contact-us', cta: 'Discuss the role' },
     ],
   },] as const;
+
+const dailyBlogTopics = [
+  ['after-hours-call-center-coverage', 'How to Plan After-Hours Call Center Coverage', 'Build an after-hours coverage lane with clear hours, scripts, escalation rules, and manager handoffs.'],
+  ['call-center-qa-scorecard-template', 'Call Center QA Scorecard Template: What to Measure', 'Create a practical quality scorecard for calls, tickets, notes, and follow-up work.'],
+  ['outsourced-call-center-onboarding-checklist', 'Outsourced Call Center Onboarding Checklist', 'Use a staged onboarding checklist to prepare people, tools, scripts, access, and review routines.'],
+  ['call-center-service-level-agreement-basics', 'Call Center Service Level Agreement Basics', 'Define response targets, coverage expectations, ownership, exceptions, and reporting before launch.'],
+  ['inbound-call-routing-workflow', 'Inbound Call Routing Workflow: A Manager Guide', 'Map an inbound call routing workflow that gets customers to the right queue without unnecessary transfers.'],
+  ['call-center-callback-process', 'How to Build a Reliable Call Center Callback Process', 'Turn missed calls and promised follow-ups into a tracked callback process with visible ownership.'],
+  ['call-center-script-review-guide', 'Call Center Script Review Guide', 'Review scripts for clarity, safe authority limits, useful discovery questions, and natural conversation.'],
+  ['outsourced-call-center-data-access', 'Outsourced Call Center Data Access: A Practical Plan', 'Grant the smallest useful access while keeping customer records, credentials, and approvals controlled.'],
+  ['call-center-workforce-coverage-plan', 'Call Center Workforce Coverage Plan', 'Match staffing coverage to demand patterns, service goals, breaks, absences, and escalation capacity.'],
+  ['customer-service-ticket-triage', 'Customer Service Ticket Triage Rules That Scale', 'Create triage rules that separate urgency, customer impact, ownership, and the next safe action.'],
+  ['call-center-handoff-notes', 'Call Center Handoff Notes: A Better Shift Change', 'Make shift handoffs useful with consistent notes, open actions, risks, and named owners.'],
+  ['call-center-appointment-scheduling', 'Call Center Appointment Scheduling Workflow', 'Design a scheduling workflow that checks details, protects calendars, and confirms the next step.'],
+  ['call-center-escalation-matrix', 'Call Center Escalation Matrix Template', 'Set practical escalation triggers so agents know when to continue, pause, or involve a manager.'],
+  ['call-center-complaint-handling', 'Call Center Complaint Handling Process', 'Give agents a calm complaint process that records facts and preserves manager authority.'],
+  ['call-center-knowledge-base-maintenance', 'Call Center Knowledge Base Maintenance', 'Keep internal answers accurate by assigning owners, review dates, examples, and change notes.'],
+  ['call-center-email-support-workflow', 'Call Center Email Support Workflow', 'Organize email support around queues, response standards, templates, reviews, and follow-up ownership.'],
+  ['call-center-chat-support-playbook', 'Call Center Chat Support Playbook', 'Prepare chat agents for fast, consistent conversations without sacrificing verification or quality.'],
+  ['call-center-absenteeism-contingency-plan', 'Call Center Absenteeism Contingency Plan', 'Protect coverage when attendance changes with backup queues, manager decisions, and customer communication.'],
+  ['call-center-training-needs-analysis', 'Call Center Training Needs Analysis', 'Use queue evidence and QA patterns to decide which training will improve customer outcomes.'],
+  ['call-center-performance-reporting', 'Call Center Performance Reporting Guide', 'Build manager-ready reporting that connects volume, quality, response time, and open risks.'],
+  ['call-center-vendor-transition-plan', 'Call Center Vendor Transition Plan', 'Move support work between teams with documented processes, controlled access, and measurable handoffs.'],
+  ['call-center-customer-verification', 'Customer Verification in Call Center Workflows', 'Design verification steps that protect accounts without making agents guess or reveal the rules.'],
+  ['call-center-refund-escalation', 'Call Center Refund Escalation Rules', 'Separate information gathering from refund authority with clear evidence and approval paths.'],
+  ['call-center-weekly-operations-review', 'Call Center Weekly Operations Review Agenda', 'Run a focused weekly review covering queue health, quality, staffing, risks, and decisions.'],
+  ['call-center-outsourcing-readiness', 'Call Center Outsourcing Readiness Assessment', 'Check whether the work, tools, ownership, and quality controls are ready for outside coverage.'],
+] as const;
+
+const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], index) => ({
+  slug,
+  title,
+  excerpt,
+  minutes: 9 + (index % 5),
+  keyword: title,
+  published: '2026-08-07',
+  updated: '2026-08-07',
+  intro: `${excerpt} The safest launch starts with one defined workflow, a named reviewer, and an authority boundary that agents can apply during a busy shift.`,
+  stats: [
+    { value: '1', label: 'written workflow', note: 'Start with one queue or repeatable task before adding volume.', source: 1 },
+    { value: '2', label: 'review checkpoints', note: 'Use an early sample review and a recurring manager review.', source: 1 },
+    { value: '3', label: 'handoff facts', note: 'Record the case, action taken, and owner for the next decision.', source: 1 },
+  ],
+  sections: [
+    { title: 'Define the work before assigning it', paragraphs: [`${title} works best when the team can see the starting signal, the required action, and the finished result. Write those three points in plain language and include one representative example.`, 'Separate repeatable handling from judgment calls. A remote coverage role can follow an approved process, but a manager should retain policy exceptions, sensitive account decisions, and changes to commercial terms.'], items: ['Name the queue or task', 'Show a good completed example', 'List the required fields and response window', 'Name the reviewer and escalation owner'] },
+    { title: 'Set a safe first version', paragraphs: ['Start with the smallest useful scope. One channel, one customer reason, or one shift makes early errors visible and lets the reviewer improve the instructions before more work is added.', 'Use a short checklist rather than relying on memory. If a step is unclear, the right response is to pause and ask the named owner, not invent a new policy.'] },
+    { title: 'Keep the decision boundary visible', paragraphs: ['A clear authority line protects customers and the business. Agents can collect facts, use approved language, update permitted fields, and route work. Managers keep final approvals, exceptions, access changes, and sensitive investigations.', 'The National Institute of Standards and Technology describes least privilege as limiting access to the minimum needed for assigned tasks.[1] Apply that principle to both tools and decisions.'], items: ['Agent follows the approved workflow', 'Agent records the evidence needed for review', 'Manager approves exceptions and policy changes', 'Owner reviews repeated uncertainty and updates the SOP'] },
+    { title: 'Measure work that a manager can act on', paragraphs: ['Choose a small scorecard. Volume alone can hide rework, unresolved cases, or unsafe shortcuts. Pair throughput with one quality measure, one timeliness measure, and one escalation measure.', 'Review examples alongside numbers. A five-minute sample of records often explains a trend faster than a large dashboard with no owner.'], items: ['Completed items and reopened items', 'First response or callback timeliness', 'Quality sample pass rate', 'Escalations waiting for a decision'] },
+    { title: 'Make access and handoffs deliberate', paragraphs: ['Use named accounts and grant only the systems and fields required for the first scope. Keep credentials out of notes and do not use personal tools for customer information.', 'Every handoff should state what happened, what remains, and who owns the next action. Mark unknown facts as unknown so the next reviewer can investigate safely.'] },
+    { title: 'Use a short launch script', paragraphs: ['A launch script gives the team shared words for normal work and uncertainty. It should tell the agent how to acknowledge the request, what can be done now, and when a manager must take over.'], items: ['Confirm the request and relevant record', 'State the approved next step', 'Pause when the request exceeds authority', 'Send the case to the named owner with a concise note'] },
+    { title: 'Review, improve, and then scale', paragraphs: ['Review the first batch on a fixed schedule. Look for missing inputs, repeated questions, avoidable transfers, and cases where the written process conflicts with the tool. Fix the workflow before adding another queue.', 'A stable routine is easier to scale than an impressive but unclear launch. Document each approved change with its date, owner, and reason.'], items: ['Sample early work daily', 'Discuss exceptions in the weekly review', 'Update the checklist and examples', 'Expand scope only after quality is stable'] },
+  ],
+  controlTable: [
+    { data: 'Routine request', agent: 'Follow the approved script and record the result', manager: 'Review samples and revise instructions' },
+    { data: 'Missing information', agent: 'Ask the approved question or pause the case', manager: 'Decide the fallback process' },
+    { data: 'Sensitive change', agent: 'Do not complete it without approval', manager: 'Verify evidence and approve or decline' },
+    { data: 'Tool or policy conflict', agent: 'Keep the record unchanged and escalate', manager: 'Resolve the conflict and document the rule' },
+  ],
+  scripts: [
+    { situation: 'Routine request', text: '"I have recorded the request and will complete the approved next step now."' },
+    { situation: 'Needs manager review', text: '"I have the details I need. This part requires manager review, so I will send it to the named owner."' },
+    { situation: 'Missing information', text: '"I do not want to guess. I will record what is known and confirm the next step with the team."' },
+  ],
+  faqs: [
+    { question: 'How much work should an outsourced team start with?', answer: 'Start with one queue or repeatable task, a small sample, and a named reviewer. Expand after the first quality review is consistent.' },
+    { question: 'What should remain with a manager?', answer: 'Keep policy exceptions, refunds, sensitive account changes, staffing decisions, and unclear cases with a named manager.' },
+    { question: 'What is the first useful report?', answer: 'Report completed work, open items, quality misses, response timing, and escalations waiting for a decision.' },
+  ],
+  sources: [
+    { name: 'Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations', organization: 'NIST', date: '2024', url: 'https://csrc.nist.gov/pubs/sp/800/171/r3/final', note: 'Use least privilege and documented protections as a baseline for access decisions.' },
+    { name: 'Remote Work Guidance', organization: 'International Labour Organization', date: '2020', url: 'https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm', note: 'Clear expectations, communication, and accountable work arrangements support consistent remote operations.' },
+  ],
+  related: [
+    { label: 'Review operations support', href: '/services/operations-support' },
+    { label: 'Plan customer support coverage', href: '/services/customer-support' },
+    { label: 'Build a reporting and QA lane', href: '/services/reporting-and-qa' },
+  ],
+  banners: [
+    { label: 'Scope', title: 'Turn the workflow into a role brief', body: 'List tasks, tools, hours, quality checks, and approval limits before matching coverage.', href: '/services/operations-support', cta: 'Review operations support' },
+    { label: 'Launch', title: 'Start with a controlled queue', body: 'Use sample work, narrow access, and a named reviewer during the first shift.', href: '/blog', cta: 'Explore more guides' },
+    { label: 'Handoff', title: 'Keep decisions with the owner', body: 'Document every escalation so the next manager can act without reconstructing the case.', href: '/contact-us', cta: 'Discuss your workflow' },
+  ],
+}));
+
+export const blogPosts: readonly BlogPost[] = [...baseBlogPosts, ...dailyBlogBatch];
 
 export const staffingOffer = {
   partner: 'the coverage team',
