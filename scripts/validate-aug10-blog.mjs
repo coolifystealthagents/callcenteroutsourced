@@ -12,6 +12,7 @@ const fail = (message) => { throw new Error(message); };
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8' });
 const sourceAt = (commit) => git('show', `${commit}:app/data.ts`);
 const topicBlock = (text) => text.match(/const dailyBlogTopics = \[[\s\S]*?\] as const;/)?.[0] ?? '';
+const topicSlugs = (text) => [...topicBlock(text).matchAll(/\['([^']+)'/g)].map((match) => match[1]);
 const hasSlug = (text, slug) => topicBlock(text).includes(`['${slug}'`);
 
 if (manifest.schemaVersion !== 1 || manifest.contract !== 'sites3-aug10-public-date-v6') fail('manifest contract mismatch');
@@ -27,6 +28,8 @@ for (const entry of manifest.entries) {
   if (entry.sourcePath !== 'app/data.ts' || entry.sourceDateField !== 'published' || entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10') fail(`bad date record: ${entry.slug}`);
   if (!['datePublished', 'article:published_time', 'time[datetime]'].includes(entry.renderedDateFields[0]) || entry.renderedDateFields.some((field) => !['datePublished', 'article:published_time', 'time[datetime]'].includes(field))) fail(`unsupported rendered field: ${entry.slug}`);
   if (!hasSlug(source, entry.slug)) fail(`source record missing: ${entry.slug}`);
+  const topicIndex = topicSlugs(source).indexOf(entry.slug);
+  if (topicIndex < 25) fail(`source date expression is not August 10: ${entry.slug}`);
   const parent = sourceAt(`${entry.introducedByCommit}^`);
   const introduced = sourceAt(entry.introducedByCommit);
   if (hasSlug(parent, entry.slug) || !hasSlug(introduced, entry.slug)) fail(`provenance diff failure: ${entry.slug}`);
