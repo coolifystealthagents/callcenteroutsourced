@@ -14,10 +14,12 @@ const sourceAt = (commit) => git('show', `${commit}:app/data.ts`);
 const topicBlock = (text) => text.match(/const dailyBlogTopics = \[[\s\S]*?\] as const;/)?.[0] ?? '';
 const topicSlugs = (text) => [...topicBlock(text).matchAll(/\['([^']+)'/g)].map((match) => match[1]);
 const hasSlug = (text, slug) => topicBlock(text).includes(`['${slug}'`);
+const publicationDate = (text, slug) => text.match(new RegExp(`'${slug}': '([^']+)'`))?.[1];
 
 if (manifest.schemaVersion !== 1 || manifest.contract !== 'sites3-aug10-public-date-v6') fail('manifest contract mismatch');
 if (manifest.family !== 'blog' || manifest.targetDate !== '2026-08-10') fail('manifest scope/date mismatch');
 if (manifest.entries.length < 22 || new Set(manifest.entries.map((e) => e.slug)).size !== manifest.entries.length) fail('count or uniqueness failure');
+if (!source.includes('const dailyBlogPublicationDates') || source.includes('index < 25')) fail('blog dates are not explicit per-slug source data');
 if (!source.includes('.sort((a, b) =>')) fail('blog data is not sorted newest-first');
 if (!index.includes('posts.map')) fail('blog index is not routed');
 if (!route.includes('datePublished:post.published') || !route.includes('article:published_time') || !route.includes('<time dateTime={post.published}')) fail('rendered date fields missing');
@@ -28,8 +30,7 @@ for (const entry of manifest.entries) {
   if (entry.sourcePath !== 'app/data.ts' || entry.sourceDateField !== 'published' || entry.sourceDate !== '2026-08-10' || entry.renderedDate !== '2026-08-10') fail(`bad date record: ${entry.slug}`);
   if (!['datePublished', 'article:published_time', 'time[datetime]'].includes(entry.renderedDateFields[0]) || entry.renderedDateFields.some((field) => !['datePublished', 'article:published_time', 'time[datetime]'].includes(field))) fail(`unsupported rendered field: ${entry.slug}`);
   if (!hasSlug(source, entry.slug)) fail(`source record missing: ${entry.slug}`);
-  const topicIndex = topicSlugs(source).indexOf(entry.slug);
-  if (topicIndex < 25) fail(`source date expression is not August 10: ${entry.slug}`);
+  if (publicationDate(source, entry.slug) !== '2026-08-10') fail(`explicit source date missing: ${entry.slug}`);
   const parent = sourceAt(`${entry.introducedByCommit}^`);
   const introduced = sourceAt(entry.introducedByCommit);
   if (hasSlug(parent, entry.slug) || !hasSlug(introduced, entry.slug)) fail(`provenance diff failure: ${entry.slug}`);

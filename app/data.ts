@@ -453,14 +453,39 @@ const dailyBlogTopics = [
   ['call-center-support-knowledge-audit', 'Call Center Support Knowledge Audit', 'Audit support knowledge for accuracy, ownership, searchability, stale answers, and clear escalation guidance.'],
 ] as const;
 
+const dailyBlogPublicationDates: Readonly<Record<string, string>> = {
+  'call-center-after-hours-answering': '2026-08-10',
+  'call-center-bilingual-support-coverage': '2026-08-10',
+  'call-center-callback-queue-management': '2026-08-10',
+  'call-center-call-transfer-rules': '2026-08-10',
+  'call-center-chat-support-sop': '2026-08-10',
+  'call-center-crm-data-quality': '2026-08-10',
+  'call-center-disaster-continuity-plan': '2026-08-10',
+  'call-center-first-call-resolution': '2026-08-10',
+  'call-center-holiday-coverage': '2026-08-10',
+  'call-center-inbound-call-script': '2026-08-10',
+  'call-center-language-quality-review': '2026-08-10',
+  'call-center-live-chat-escalation': '2026-08-10',
+  'call-center-omnichannel-routing': '2026-08-10',
+  'call-center-outbound-calling-checklist': '2026-08-10',
+  'call-center-performance-scorecard': '2026-08-10',
+  'call-center-phone-system-migration': '2026-08-10',
+  'call-center-retention-calls': '2026-08-10',
+  'call-center-shift-handoff': '2026-08-10',
+  'call-center-support-capacity-planning': '2026-08-10',
+  'call-center-agent-coaching-plan': '2026-08-10',
+  'call-center-customer-call-backlog-review': '2026-08-10',
+  'call-center-support-knowledge-audit': '2026-08-10',
+};
+
 const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], index) => ({
   slug,
   title,
   excerpt,
   minutes: 9 + (index % 5),
   keyword: title,
-  published: index < 25 ? '2026-08-07' : '2026-08-10',
-  updated: index < 25 ? '2026-08-07' : '2026-08-10',
+  published: dailyBlogPublicationDates[slug] ?? '2026-08-07',
+  updated: dailyBlogPublicationDates[slug] ?? '2026-08-07',
   intro: `${excerpt} The safest launch starts with one defined workflow, a named reviewer, and an authority boundary that agents can apply during a busy shift.`,
   stats: [
     { value: '1', label: 'written workflow', note: 'Start with one queue or repeatable task before adding volume.', source: 1 },
