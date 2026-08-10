@@ -425,18 +425,17 @@ const dailyBlogTopics = [
   ['call-center-queue-backlog-plan', 'Call Center Queue Backlog Management Plan', 'Reduce backlog with age bands, customer impact, capacity decisions, and a manager-owned pause rule.'],
   ['call-center-call-monitoring-checklist', 'Call Center Call Monitoring Checklist', 'Use a focused monitoring checklist for identity, accuracy, empathy, documentation, and safe escalation.'],
   ['call-center-service-recovery-workflow', 'Call Center Service Recovery Workflow', 'Give agents a safe recovery path that acknowledges impact while keeping compensation and policy exceptions with managers.'],
-  ['call-center-quality-calibration', 'Call Center Quality Calibration Session', 'Calibrate quality reviews with shared examples, scoring rationale, documented disagreements, and an accountable follow-up.'],
   ['call-center-after-hours-answering', 'After-Hours Call Center Answering Plan', 'Plan after-hours answering with queue ownership, urgent-call rules, callback capture, and a reliable morning handoff.'],
-  ['call-center-call-abandonment-recovery', 'Call Abandonment Recovery Workflow', 'Recover abandoned calls with a prioritized callback queue, customer context, approved outreach, and clear ownership.'],
+  ['call-center-appointment-scheduling', 'Call Center Appointment Scheduling Workflow', 'Coordinate appointment calls with approved availability, confirmation steps, reschedule rules, and manager escalation.'],
   ['call-center-bilingual-support-coverage', 'Bilingual Call Center Support Coverage', 'Design bilingual coverage with language routing, approved terminology, quality sampling, and clear fallback ownership.'],
   ['call-center-callback-queue-management', 'Call Center Callback Queue Management', 'Manage callback work with due times, customer impact, priority rules, and visible ownership from request to completion.'],
   ['call-center-call-transfer-rules', 'Call Center Call Transfer Rules', 'Create transfer rules that protect customer context, reduce repeat explanations, and keep specialist decisions with the right owner.'],
   ['call-center-chat-support-sop', 'Call Center Chat Support SOP', 'Write a practical chat support SOP for greetings, parallel conversations, records, escalation, and safe closing.'],
-  ['call-center-agent-coaching-plan', 'Call Center Agent Coaching Plan', 'Turn quality observations into focused coaching goals, practice steps, manager follow-up, and measurable improvement.'],
+  ['call-center-complaint-handling', 'Call Center Complaint Handling Process', 'Handle complaints with listening, fact capture, approved remedies, manager boundaries, and a documented follow-up path.'],
   ['call-center-crm-data-quality', 'Call Center CRM Data Quality Checklist', 'Keep call center CRM records useful with required fields, disposition rules, duplicate checks, and routine review.'],
   ['call-center-disaster-continuity-plan', 'Call Center Disaster Continuity Plan', 'Prepare continuity for outages and disruptions with alternate channels, contact trees, queue priorities, and recovery ownership.'],
-  ['call-center-ticket-triage-process', 'Call Center Ticket Triage Process', 'Triage incoming tickets by customer impact, urgency, evidence, ownership, and the next promised action.'],
-  ['call-center-call-forecasting-basics', 'Call Center Call Forecasting Basics', 'Improve call forecasts with consistent demand inputs, documented assumptions, review checkpoints, and clear ownership.'],
+  ['call-center-email-support-workflow', 'Call Center Email Support Workflow', 'Organize email support around intake, categorization, response standards, approvals, and aging-case review.'],
+  ['call-center-escalation-matrix', 'Call Center Escalation Matrix', 'Build an escalation matrix that maps issue type, urgency, evidence, decision owner, and expected handoff time.'],
   ['call-center-first-call-resolution', 'First Call Resolution Improvement Plan', 'Improve first call resolution by separating solvable repeat work from cases that need specialist or manager action.'],
   ['call-center-holiday-coverage', 'Holiday Call Center Coverage Plan', 'Prepare holiday coverage with demand assumptions, staffing backups, customer notices, and exception handling.'],
   ['call-center-inbound-call-script', 'Inbound Call Script Writing Guide', 'Write an inbound call script that supports natural conversations while preserving verification, documentation, and escalation steps.'],
@@ -506,7 +505,16 @@ const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], 
   ],
 }));
 
-export const blogPosts: readonly BlogPost[] = [...baseBlogPosts, ...dailyBlogBatch];
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch].reduce((posts, post) => {
+  const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
+  withoutDuplicate.push(post);
+  return withoutDuplicate;
+}, [] as BlogPost[]);
+
+export const blogPosts: readonly BlogPost[] = routedBlogPosts.sort((a, b) => {
+  const dateOrder = (b.published ?? '').localeCompare(a.published ?? '');
+  return dateOrder || a.slug.localeCompare(b.slug);
+});
 
 export const staffingOffer = {
   partner: 'the coverage team',
