@@ -425,6 +425,7 @@ const dailyBlogTopics = [
   ['call-center-queue-backlog-plan', 'Call Center Queue Backlog Management Plan', 'Reduce backlog with age bands, customer impact, capacity decisions, and a manager-owned pause rule.'],
   ['call-center-call-monitoring-checklist', 'Call Center Call Monitoring Checklist', 'Use a focused monitoring checklist for identity, accuracy, empathy, documentation, and safe escalation.'],
   ['call-center-service-recovery-workflow', 'Call Center Service Recovery Workflow', 'Give agents a safe recovery path that acknowledges impact while keeping compensation and policy exceptions with managers.'],
+  ['call-center-quality-calibration', 'Call Center Quality Calibration Session', 'Calibrate quality reviews with shared examples, scoring rationale, documented disagreements, and an accountable follow-up.'],
   ['call-center-after-hours-answering', 'After-Hours Call Center Answering Plan', 'Plan after-hours answering with queue ownership, urgent-call rules, callback capture, and a reliable morning handoff.'],
   ['call-center-call-abandonment-recovery', 'Call Abandonment Recovery Workflow', 'Recover abandoned calls with a prioritized callback queue, customer context, approved outreach, and clear ownership.'],
   ['call-center-bilingual-support-coverage', 'Bilingual Call Center Support Coverage', 'Design bilingual coverage with language routing, approved terminology, quality sampling, and clear fallback ownership.'],
