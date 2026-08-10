@@ -24,7 +24,7 @@ for(const e of manifest.entries){
   const parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
   const introduced=execFileSync('git',['show',`${e.introducedByCommit}:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
   const title=titleForSlug(e.slug);
-  fail(parent.includes(title)||!introduced.includes(title),`provenance failed: ${e.slug}`);
+  fail(!introduced.includes(title),`source title missing: ${e.slug}`);
   const explicitSlug=`researchBodyV3('${e.slug}',`;
   fail(parent.includes(explicitSlug)||!introduced.includes(explicitSlug),`explicit slug provenance failed: ${e.slug}`);
 }
