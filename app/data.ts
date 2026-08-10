@@ -448,6 +448,9 @@ const dailyBlogTopics = [
   ['call-center-retention-calls', 'Customer Retention Call Workflow', 'Support retention calls with approved discovery questions, offer limits, documentation, and manager ownership of exceptions.'],
   ['call-center-shift-handoff', 'Call Center Shift Handoff Process', 'Make shift handoffs reliable with open-case facts, queue status, risks, deadlines, and named next owners.'],
   ['call-center-support-capacity-planning', 'Call Center Support Capacity Planning', 'Plan support capacity from demand patterns, handling time, occupancy assumptions, schedule coverage, and service risks.'],
+  ['call-center-agent-coaching-plan', 'Call Center Agent Coaching Plan', 'Build a practical coaching plan from quality samples, observable behaviors, agreed actions, and scheduled follow-up.'],
+  ['call-center-customer-call-backlog-review', 'Call Center Customer Callback Backlog Review', 'Review callback backlog by age, customer impact, owner, and next action so overdue requests receive controlled follow-up.'],
+  ['call-center-support-knowledge-audit', 'Call Center Support Knowledge Audit', 'Audit support knowledge for accuracy, ownership, searchability, stale answers, and clear escalation guidance.'],
 ] as const;
 
 const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], index) => ({
