@@ -10,7 +10,8 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   const post=researchPosts.find(p=>p.slug===slug);
   if(!post)return {};
   const url=`${base}/research/${post.slug}`;
-  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:post.published}};
+  const publishedDate=post.sourceDate ?? post.published;
+  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate}};
 }
 export default async function ResearchArticle({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
@@ -18,11 +19,12 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
   if(!post)notFound();
   const related=(post.related||[]).map(s=>researchPosts.find(p=>p.slug===s)).filter(Boolean) as ResearchPost[];
   const url=`${base}/research/${post.slug}`;
+  const publishedDate=post.sourceDate ?? post.published;
   const schema={'@context':'https://schema.org','@type':'ResearchProject',name:post.title,description:post.excerpt,datePublished:post.published,url,author:{'@type':'Organization',name:site.brand},citation:post.sources?.map(s=>s.url)};
   return <><Header/><main><article className="section"><div className="container article-shell">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
-    <meta property="article:published_time" content={post.published}/>
-    <p className="eyebrow">{site.brand} research · Published <time dateTime={post.published}>{post.published}</time></p>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({...schema,datePublished:publishedDate})}}/>
+    <meta property="article:published_time" content={publishedDate}/>
+    <p className="eyebrow">{site.brand} research · Published <time dateTime={publishedDate}>{publishedDate}</time></p>
     <h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
     {post.keyStats?.length?<section className="card"><h2>Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
     {post.takeaways?.length?<section className="card"><h2>Key takeaways</h2><ul>{post.takeaways.map(x=><li key={x}>{x}</li>)}</ul></section>:null}

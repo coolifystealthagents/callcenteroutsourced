@@ -14,7 +14,7 @@ fail(manifest.entries.length!==10||manifest.minimum!==10,'frozen batch must cont
 const slugs=manifest.entries.map(e=>e.slug); fail(new Set(slugs).size!==10,'duplicate or missing slugs');
 for(const e of manifest.entries){
   fail(e.route!==`/research/${e.slug}`,'bad family route');
-  fail(e.sourcePath!=='app/fleet-data.ts'||!fs.existsSync(path.join(root,e.sourcePath)),'missing source record');
+  fail(e.sourcePath!=='app/fleet-data.ts'||!fs.existsSync(path.join(root,e.sourcePath))||!source.includes(`'${e.slug}'`),'missing source record');
   fail(e.sourceDateField!=='sourceDate'||e.sourceDate!=='2026-08-10'||e.renderedDate!=='2026-08-10','bad date');
   fail(e.provenance!=='original-aug10-batch','unexpected provenance');
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length!==3||!e.renderedDateFields.includes('datePublished')||!e.renderedDateFields.includes('article:published_time')||!e.renderedDateFields.includes('time[datetime]'),'bad rendered date fields');
@@ -22,10 +22,10 @@ for(const e of manifest.entries){
   const patch=execFileSync('git',['diff','--unified=0',`${e.introducedByCommit}^`,e.introducedByCommit,'--','app/fleet-data.ts'],{cwd:root,encoding:'utf8'});
   const title=e.slug.replace(/^call-center-/, 'Call Center ').replace(/-a-research-brief$/, ': A Research Brief').replace(/-/g, ' ').replace(/\b\w/g, (c)=>c.toUpperCase());
   fail(parent.includes(title)||!patch.includes(title),`frozen source record provenance missing: ${e.slug}`);
-  fail(!source.includes(`researchBodyV3('${e.slug}',`)||!source.includes('sourceDate: sourceDate ?? published'),`explicit source date record missing: ${e.slug}`);
+  fail(!source.split('\n').some(line=>line.includes(`'${e.slug}'`)&&line.includes("'2026-08-10', '2026-08-10'")),`explicit source date record missing: ${e.slug}`);
 }
-fail(!article.includes('datePublished:post.published')||!article.includes('article:published_time')||!article.includes('<time dateTime={post.published}>'),'render template missing date fields');
-fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:post.published'),'canonical metadata missing');
+fail(!article.includes('publishedDate=post.sourceDate ?? post.published')||!article.includes('datePublished:publishedDate')||!article.includes('article:published_time')||!article.includes('<time dateTime={publishedDate}>'),'render template missing date fields');
+fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:publishedDate'),'canonical metadata missing');
 fail(!source.includes('.slice().sort((a, b) => b.published.localeCompare(a.published))'),'index sort missing');
 fail(!sitemap.includes('researchPosts.map(r=>`/research/${r.slug}`'),'sitemap route missing');
 const builtRoot=path.join(root,'.next/server/app/research');
