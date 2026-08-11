@@ -1,4 +1,4 @@
-import {aug10ResearchRepair} from './research-aug10-repair';
+import {aug10ResearchV6Repair} from './research-aug10-v6-repair';
 
 export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
 export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[] };
@@ -153,7 +153,7 @@ export const researchPosts: readonly ResearchPost[] = [
   researchBodyV3('call-center-contact-disposition-audit-a-research-brief', 'Call Center Contact Disposition Audit: A Research Brief', 'Disposition accuracy affects reporting, follow-up, and customer history. ISO 18295 supports defined processes and results, while NIST governance supports evidence-based review and accountable correction.', 'Sample dispositions against the source interaction, define critical mismatches, and route corrections through a versioned code owner. Track uncoded and overwritten work, distinguish agent error from ambiguous taxonomy, and protect sensitive notes during review.', ['call-center-disposition-code-design-a-research-brief', 'call-center-after-call-work-controls-a-research-brief', 'call-center-qa-critical-error-taxonomy-a-research-brief'], '2026-08-10'),
   researchBodyV3('call-center-queue-overflow-routing-a-research-brief', 'Call Center Queue Overflow Routing: A Research Brief', 'Overflow routing protects customers when the primary queue cannot safely absorb demand. ISO 18295 supports defined service processes, while NIST governance supports explicit ownership and controlled exceptions.', 'Define the volume, wait, outage, or risk trigger for overflow; name the alternate queue and owner; and specify what data and promises transfer. Audit routed cases for duplicate work, lost context, and unauthorized scope before keeping the fallback active.', ['call-center-queue-coverage-a-research-brief', 'call-center-backlog-triage-a-research-brief', 'call-center-queue-ownership-a-research-brief'], '2026-08-10'),
 ].map(post => {
-  const repair = aug10ResearchRepair[post.slug as keyof typeof aug10ResearchRepair];
+  const repair = aug10ResearchV6Repair[post.slug as keyof typeof aug10ResearchV6Repair];
   return repair ? {...post, slug: repair.slug, published: repair.published} : post;
 }).slice().sort((a, b) => b.published.localeCompare(a.published));
 export const postsPerPage = 20;
