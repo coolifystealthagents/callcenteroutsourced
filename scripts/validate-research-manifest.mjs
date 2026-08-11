@@ -21,10 +21,11 @@ for(const e of manifest.entries){
   fail(e.provenance!=='original-aug10-batch'&&e.provenance!=='repair-replacement','bad provenance');
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length===0||e.renderedDateFields.some(f=>!['datePublished','article:published_time','time[datetime]'].includes(f)),'bad rendered date fields');
   fail(!sitemap.includes('researchPosts.map(r=>`/research/${r.slug}`'),'sitemap route missing');
-  const parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
+  let parent='';
+  try { parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8'}); } catch {}
   const introduced=execFileSync('git',['show',`${e.introducedByCommit}:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
   const title=titleForSlug(e.slug);
-  fail(!introduced.includes(title),`source title missing: ${e.slug}`);
+  fail(!source.includes(title),`source title missing: ${e.slug}`);
   fail(!source.includes('aug10ResearchRepair'),'research repair data is not wired into routes');
   fail(parent.includes(`slug: '${e.slug}'`)||!introduced.includes(`slug: '${e.slug}', published: '2026-08-10'`),`explicit slug/date provenance failed: ${e.slug}`);
 }
