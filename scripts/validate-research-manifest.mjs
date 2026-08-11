@@ -27,6 +27,8 @@ for(const e of manifest.entries){
   fail(!introduced.includes(title),`source title missing: ${e.slug}`);
   const explicitSlug=`researchBodyV3('${e.slug}',`;
   fail(parent.includes(explicitSlug)||!introduced.includes(explicitSlug),`explicit slug provenance failed: ${e.slug}`);
+  const sourceLine=introduced.split('\n').find(line=>line.includes(explicitSlug));
+  fail(!sourceLine||!sourceLine.includes("'2026-08-10')"),`explicit source date provenance failed: ${e.slug}`);
 }
 fail(!article.includes('datePublished:post.published')||!article.includes('article:published_time')||!article.includes('<time dateTime={post.published}>'),'render template missing date fields');
 fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:post.published'),'canonical metadata missing');
