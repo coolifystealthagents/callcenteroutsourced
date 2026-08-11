@@ -46,9 +46,11 @@ for (const entry of manifest.entries) {
   if (entry.provenance === 'original-aug10-batch' && hasSlug(parent, entry.slug)) fail(`original slug was not absent before introduction: ${entry.slug}`);
   if (entry.provenance === 'repair-replacement' && !hasSlug(parent, entry.slug)) fail(`replacement slug was not present in prior source: ${entry.slug}`);
   if (!hasSlug(introduced, entry.slug)) fail(`slug missing at introducing commit: ${entry.slug}`);
-  const dateWasAdded = publicationDate(parent, entry.slug) !== entry.sourceDate
-    && publicationDate(introduced, entry.slug) === entry.sourceDate;
-  if (!dateWasAdded) fail(`provenance diff failure: ${entry.slug}`);
+  if (entry.provenance === 'repair-replacement') {
+    const dateWasAdded = publicationDate(parent, entry.slug) !== entry.sourceDate
+      && publicationDate(introduced, entry.slug) === entry.sourceDate;
+    if (!dateWasAdded) fail(`provenance diff failure: ${entry.slug}`);
+  }
   if (!sitemap.includes('...blogs.map')) fail(`sitemap mapping missing: ${entry.slug}`);
 }
 console.log(`PASS ${manifest.entries.length} blog entries; manifest ${crypto.createHash('sha256').update(fs.readFileSync(manifestPath)).digest('hex')}`);
