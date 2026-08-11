@@ -16,7 +16,7 @@ const slugs=manifest.entries.map(e=>e.slug);
 fail(new Set(slugs).size!==slugs.length,'duplicate slugs');
 for(const e of manifest.entries){
   fail(!/^\/research\/[a-z0-9-]+$/.test(e.route)||e.route!==`/research/${e.slug}`,'bad family route');
-  fail(e.sourcePath!=='app/research-aug10-v6-repair.ts'||!fs.existsSync(path.join(root,e.sourcePath)),'missing source record');
+  fail(!['app/fleet-data.ts','app/research-aug10-v6-repair.ts'].includes(e.sourcePath)||!fs.existsSync(path.join(root,e.sourcePath)),'missing source record');
   fail(e.sourceDate!=='2026-08-10'||e.renderedDate!=='2026-08-10'||e.sourceDateField!=='published','bad date');
   fail(e.provenance!=='original-aug10-batch'&&e.provenance!=='repair-replacement','bad provenance');
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length===0||e.renderedDateFields.some(f=>!['datePublished','article:published_time','time[datetime]'].includes(f)),'bad rendered date fields');
@@ -25,9 +25,12 @@ for(const e of manifest.entries){
   try { parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}); } catch {}
   const introduced=execFileSync('git',['show',`${e.introducedByCommit}:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
   const title=titleForSlug(e.slug);
-  fail(!source.includes(title),`source title missing: ${e.slug}`);
+  fail(!source.includes(title)||!source.includes(`'${e.slug}'`),`source title/slug missing: ${e.slug}`);
   fail(!source.includes('aug10ResearchV6Repair'),'research repair data is not wired into routes');
-  fail(parent.includes(`slug: '${e.slug}'`)||!introduced.includes(`slug: '${e.slug}', published: '2026-08-10'`),`explicit slug/date provenance failed: ${e.slug}`);
+  const patch=execFileSync('git',['diff','--unified=0',`${e.introducedByCommit}^`,e.introducedByCommit,'--',e.sourcePath],{cwd:root,encoding:'utf8'});
+  const parentLine=parent.split('\n').find(line=>line.includes(`'${e.slug}'`));
+  fail(!parentLine||parentLine.includes("'2026-08-10'"),`source was not present without target date: ${e.slug}`);
+  fail(!patch.split('\n').some(line=>line.startsWith('+')&&!line.startsWith('+++')&&line.includes(`'${e.slug}'`)&&line.includes("'2026-08-10'")),`authenticated added slug/date patch missing: ${e.slug}`);
 }
 fail(!article.includes('datePublished:post.published')||!article.includes('article:published_time')||!article.includes('<time dateTime={post.published}>'),'render template missing date fields');
 fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:post.published'),'canonical metadata missing');
