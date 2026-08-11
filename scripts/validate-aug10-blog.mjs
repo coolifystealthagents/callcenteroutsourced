@@ -42,6 +42,10 @@ for (const entry of manifest.entries) {
   if (publicationDate(source, entry.slug) !== '2026-08-10') fail(`explicit source date missing: ${entry.slug}`);
   const parent = sourceAt(`${entry.introducedByCommit}^`);
   const introduced = sourceAt(entry.introducedByCommit);
+  execFileSync('git', ['merge-base', '--is-ancestor', entry.introducedByCommit, 'HEAD'], { stdio: 'ignore' });
+  if (entry.provenance === 'original-aug10-batch' && hasSlug(parent, entry.slug)) fail(`original slug was not absent before introduction: ${entry.slug}`);
+  if (entry.provenance === 'repair-replacement' && !hasSlug(parent, entry.slug)) fail(`replacement slug was not present in prior source: ${entry.slug}`);
+  if (!hasSlug(introduced, entry.slug)) fail(`slug missing at introducing commit: ${entry.slug}`);
   const dateWasAdded = publicationDate(parent, entry.slug) !== entry.sourceDate
     && publicationDate(introduced, entry.slug) === entry.sourceDate;
   if (!dateWasAdded) fail(`provenance diff failure: ${entry.slug}`);
