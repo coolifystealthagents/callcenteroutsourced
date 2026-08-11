@@ -455,12 +455,16 @@ const dailyBlogTopics = [
 
 const dailyBlogPublicationDates: Readonly<Record<string, string>> = {
   'call-center-after-hours-answering': '2026-08-10',
+  'call-center-appointment-scheduling': '2026-08-10',
   'call-center-bilingual-support-coverage': '2026-08-10',
   'call-center-callback-queue-management': '2026-08-10',
   'call-center-call-transfer-rules': '2026-08-10',
   'call-center-chat-support-sop': '2026-08-10',
+  'call-center-complaint-handling': '2026-08-10',
   'call-center-crm-data-quality': '2026-08-10',
   'call-center-disaster-continuity-plan': '2026-08-10',
+  'call-center-email-support-workflow': '2026-08-10',
+  'call-center-escalation-matrix': '2026-08-10',
   'call-center-first-call-resolution': '2026-08-10',
   'call-center-holiday-coverage': '2026-08-10',
   'call-center-inbound-call-script': '2026-08-10',
@@ -473,9 +477,7 @@ const dailyBlogPublicationDates: Readonly<Record<string, string>> = {
   'call-center-retention-calls': '2026-08-10',
   'call-center-shift-handoff': '2026-08-10',
   'call-center-support-capacity-planning': '2026-08-10',
-  'call-center-agent-coaching-plan': '2026-08-10',
-  'call-center-customer-call-backlog-review': '2026-08-10',
-  'call-center-support-knowledge-audit': '2026-08-10',
+  'call-center-service-recovery-workflow': '2026-08-10',
 };
 
 const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], index) => ({
