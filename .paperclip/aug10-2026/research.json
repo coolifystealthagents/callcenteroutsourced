@@ -9,7 +9,7 @@
   "minimum": 10,
   "priorRunId": "aa4f62da-7c25-489f-bd81-f4461647e403",
   "priorIssueId": "dc5e6616-8111-4ade-a318-a28da4a20316",
-  "validationCommands": ["node scripts/validate-research-manifest.mjs", "npm run build", "node scripts/validate-research-manifest.mjs", "node scripts/validate-aug10-blog.mjs"],
+  "validationCommands": ["node scripts/validate-research-manifest.mjs", "npm run build", "node scripts/validate-research-manifest.mjs", "npm run start", "node scripts/validate-aug10-built-routes.mjs", "node scripts/validate-aug10-blog.mjs"],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,

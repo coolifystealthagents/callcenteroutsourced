@@ -22,7 +22,7 @@ for(const e of manifest.entries){
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length===0||e.renderedDateFields.some(f=>!['datePublished','article:published_time','time[datetime]'].includes(f)),'bad rendered date fields');
   fail(!sitemap.includes('researchPosts.map(r=>`/research/${r.slug}`'),'sitemap route missing');
   let parent='';
-  try { parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8'}); } catch {}
+  try { parent=execFileSync('git',['show',`${e.introducedByCommit}^:${e.sourcePath}`],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','ignore']}); } catch {}
   const introduced=execFileSync('git',['show',`${e.introducedByCommit}:${e.sourcePath}`],{cwd:root,encoding:'utf8'});
   const title=titleForSlug(e.slug);
   fail(!source.includes(title),`source title missing: ${e.slug}`);
