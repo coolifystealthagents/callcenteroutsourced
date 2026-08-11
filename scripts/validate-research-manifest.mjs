@@ -22,7 +22,7 @@ for(const e of manifest.entries){
   const parent=execFileSync('git',['show',`${e.introducedByCommit}^:app/fleet-data.ts`],{cwd:root,encoding:'utf8'});
   const patch=execFileSync('git',['diff','--unified=0',`${e.introducedByCommit}^`,e.introducedByCommit,'--','app/fleet-data.ts'],{cwd:root,encoding:'utf8'});
   fail(parent.includes(`'${e.slug}': '2026-08-10'`),'source date was present before repair');
-  fail(!patch.includes(`+'${e.slug}': '2026-08-10'`),`authenticated added slug/date patch missing: ${e.slug}`);
+  fail(!patch.includes(`+  '${e.slug}': '2026-08-10'`),`authenticated added slug/date patch missing: ${e.slug}`);
 }
 fail(!article.includes('datePublished:post.published')||!article.includes('article:published_time')||!article.includes('<time dateTime={post.published}>'),'render template missing date fields');
 fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:post.published'),'canonical metadata missing');
