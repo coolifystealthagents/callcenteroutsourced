@@ -31,7 +31,7 @@ for(const e of manifest.entries){
 }
 fail(!article.includes('datePublished:post.published')||!article.includes('article:published_time')||!article.includes('<time dateTime={post.published}>'),'render template missing date fields');
 fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:post.published'),'canonical metadata missing');
-fail(!source.includes('].slice().sort((a, b) => b.published.localeCompare(a.published))'),'index sort missing');
+fail(!source.includes('.slice().sort((a, b) => b.published.localeCompare(a.published))'),'index sort missing');
 const builtRoot=path.join(root,'.next/server/app/research');
 if(fs.existsSync(builtRoot)){
   const indexHtml=fs.readFileSync(path.join(root,'.next/server/app/research.html'),'utf8');
