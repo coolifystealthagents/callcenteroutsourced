@@ -19,9 +19,9 @@ for(const e of manifest.entries){
   fail(e.provenance!=='original-aug10-batch','unexpected provenance');
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length!==3||!e.renderedDateFields.includes('datePublished')||!e.renderedDateFields.includes('article:published_time')||!e.renderedDateFields.includes('time[datetime]'),'bad rendered date fields');
   const parent=execFileSync('git',['show',`${e.introducedByCommit}^:app/fleet-data.ts`],{cwd:root,encoding:'utf8'});
-  const patch=execFileSync('git',['diff','--unified=0',`${e.introducedByCommit}^`,e.introducedByCommit,'--','app/fleet-data.ts'],{cwd:root,encoding:'utf8'});
-  const title=e.slug.replace(/^call-center-/, 'Call Center ').replace(/-a-research-brief$/, ': A Research Brief').replace(/-/g, ' ').replace(/\b\w/g, (c)=>c.toUpperCase());
-  fail(parent.includes(title)||!patch.includes(title),`frozen source record provenance missing: ${e.slug}`);
+  const exactSlug = `researchBodyV3('${e.slug}'`;
+  const introducedSource = execFileSync('git',['show',`${e.introducedByCommit}:app/fleet-data.ts`],{cwd:root,encoding:'utf8'});
+  fail(parent.includes(exactSlug)||!introducedSource.includes(exactSlug),`frozen exact-slug provenance missing: ${e.slug}`);
   fail(!source.split('\n').some(line=>line.includes(`'${e.slug}'`)&&line.includes("'2026-08-10', '2026-08-10'")),`explicit source date record missing: ${e.slug}`);
 }
 fail(!article.includes('publishedDate=post.sourceDate ?? post.published')||!article.includes('datePublished:publishedDate')||!article.includes('article:published_time')||!article.includes('<time dateTime={publishedDate}>'),'render template missing date fields');
