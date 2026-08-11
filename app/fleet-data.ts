@@ -90,6 +90,21 @@ const researchBodyV3 = (first: string, second: string, third: string, fourth: st
   };
 };
 
+// Frozen August 10 batch source-date records. Keep these keyed to the exact
+// public slugs so provenance and route dates cannot depend on title generation.
+export const frozenAug10ResearchSourceDates = {
+  'call-center-voicemail-handling-controls-a-research-brief': '2026-08-10',
+  'call-center-translation-handoff-a-research-brief': '2026-08-10',
+  'call-center-holiday-coverage-planning-a-research-brief': '2026-08-10',
+  'call-center-disconnected-call-recovery-a-research-brief': '2026-08-10',
+  'call-center-shared-inbox-ownership-a-research-brief': '2026-08-10',
+  'call-center-customer-callback-windows-a-research-brief': '2026-08-10',
+  'call-center-customer-record-merge-controls-a-research-brief': '2026-08-10',
+  'call-center-escalation-backlog-review-a-research-brief': '2026-08-10',
+  'call-center-contact-disposition-audit-a-research-brief': '2026-08-10',
+  'call-center-queue-overflow-routing-a-research-brief': '2026-08-10',
+} as const;
+
 export const researchPosts: readonly ResearchPost[] = [
   researchBody('Call Center Queue Coverage: A Research Brief', 'Coverage is a control problem as well as a staffing problem. ISO 18295 frames contact-center service around customer experience, workforce, processes, and results, while NIST guidance emphasizes explicit risk ownership and access decisions.', 'Map demand by channel and hour, define the minimum safe coverage for each queue, and keep a named manager available for exceptions. Start with a limited queue, then compare offered contacts, response time, abandoned contacts, backlog age, and escalation volume before extending hours.'),
   researchBody('Call Center Handoff Quality: A Research Brief', 'A handoff is reliable when the next owner can act without reconstructing the conversation. NIST privacy and cybersecurity frameworks both favor documented responsibilities, outcomes, and repeatable response processes.', 'Use a required handoff record containing customer or case identifier, request, action already taken, promise made, risk flag, next owner, due time, and source record. Audit a small daily sample for missing context and send recurring gaps to the process owner.'),
