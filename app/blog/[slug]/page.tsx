@@ -45,7 +45,7 @@ function Chart({items}:{items:NonNullable<BlogPost['chart']>}){
 function AccessGraphic(){
   return <figure className="article-figure access-graphic" data-visual="access-path-graphic">
     <svg viewBox="0 0 760 300" role="img" aria-labelledby="access-graphic-title access-graphic-desc">
-      <title id="access-graphic-title">Safe access path for a Philippines call center agent</title>
+      <title id="access-graphic-title">Safe access path for a Philippines call center team member</title>
       <desc id="access-graphic-desc">A four-step path moves from a named account to a narrow role, an approved action, and a manager handoff.</desc>
       {[
         ['1','Named account','One person, one sign-in'],
@@ -64,7 +64,7 @@ function AccessGraphic(){
         </g>;
       })}
     </svg>
-    <figcaption>Every request follows the same path. The agent does not gain extra authority because a caller is urgent.</figcaption>
+    <figcaption>Every request follows the same path. A team member does not gain extra authority because a caller is urgent.</figcaption>
   </figure>;
 }
 
@@ -102,7 +102,7 @@ function RichPost({post}:{post:BlogPost}){
           <section className="article-copy"><h2>{post.sections[0].title}</h2>{post.sections[0].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[0].items&&<ul className="check-list">{post.sections[0].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
           <section className="article-copy"><h2>{post.sections[1].title}</h2>{post.sections[1].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
 
-          <section className="article-table-section"><h2>Data and decision boundary</h2><p className="module-intro">Use this table as a starting point, then match each row to the client's tools and call guide. The manager column stays outside the agent's normal authority.</p><div className="table-scroll-cue">Swipe the table sideways to see the manager column →</div><div className="article-table-wrap" tabIndex={0} aria-label="Scrollable data and decision boundary table"><table><thead><tr><th>Data or request</th><th>Filipino agent can</th><th>Manager keeps</th></tr></thead><tbody>{table.map(row=><tr key={row.data}><th scope="row">{row.data}</th><td>{row.agent}</td><td>{row.manager}</td></tr>)}</tbody></table></div></section>
+          <section className="article-table-section"><h2>Data and decision boundary</h2><p className="module-intro">Use this table as a starting point, then match each row to the client's tools and call guide. The manager column stays outside the team member's normal authority.</p><div className="table-scroll-cue">Swipe the table sideways to see the manager column →</div><div className="article-table-wrap" tabIndex={0} aria-label="Scrollable data and decision boundary table"><table><thead><tr><th>Data or request</th><th>Team member can</th><th>Manager keeps</th></tr></thead><tbody>{table.map(row=><tr key={row.data}><th scope="row">{row.data}</th><td>{row.agent}</td><td>{row.manager}</td></tr>)}</tbody></table></div></section>
 
           <section className="article-copy"><h2>{post.sections[2].title}</h2>{post.sections[2].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
           {post.chart&&<Chart items={post.chart}/>}
@@ -132,12 +132,13 @@ export default async function Post({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
   const post=blogPosts.find(item=>item.slug===slug);
   if(!post)notFound();
-  const rich=(post.sources?.length??0)>0;
+  const rich=(post.sources?.length??0)>0 || post.published==='2026-08-11';
   const url=`${base}/blog/${post.slug}`;
-  const schemas=rich?[
+  const schemas=[
     {'@context':'https://schema.org','@type':'BlogPosting',headline:post.title,description:post.excerpt,datePublished:post.published,dateModified:post.updated,mainEntityOfPage:url,author:{'@type':'Organization',name:site.brand},publisher:{'@type':'Organization',name:site.brand,url:base},citation:post.sources?.map(source=>source.url)},
+    ...(rich?[
     {'@context':'https://schema.org','@type':'FAQPage',mainEntity:post.faqs?.map(faq=>({'@type':'Question',name:faq.question,acceptedAnswer:{'@type':'Answer',text:faq.answer}}))},
     {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:base},{'@type':'ListItem',position:2,name:'Blog',item:`${base}/blog`},{'@type':'ListItem',position:3,name:post.title,item:url}]},
-  ]:[];
+    ]:[])];
   return <><Header hideCommercial={rich}/><main>{schemas.map((schema,index)=><JsonLd data={schema} key={index}/>)}{rich?<><meta property="article:published_time" content={post.published}/><RichPost post={post}/></>:<><meta property="article:published_time" content={post.published}/><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><aside className='article-rotation-banner' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p><aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Midpoint planning check</p><h2>Compare providers against one written workflow</h2><p>Use one task lane, one reviewer, and one quality check so each provider conversation is easier to judge.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><h2>Prepare representative examples</h2><p>Use real, appropriately redacted examples to explain quality. Review early work together and update the written process when an exception appears.</p><h2>Plan access and handoffs</h2><p>Provide only the access needed for the position and use named accounts where possible. Write down which questions must be escalated and who receives them.</p></section></div><aside className='article-rotation-banner article-rotation-banner-bottom' data-article-banner='true'><p className='eyebrow'>Ready to scope the role?</p><h2>Build the first support lane before hiring</h2><p>We can help turn the article into a practical staffing brief with tasks, access rules, and review checkpoints.</p><a className='btn' href='/contact-us'>Contact Us</a></aside></article></>}</main><Footer hideCommercial={rich}/></>;
 }
