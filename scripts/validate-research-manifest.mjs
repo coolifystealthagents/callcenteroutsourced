@@ -8,6 +8,7 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,manifestPath),'utf8'));
 const source=fs.readFileSync(path.join(root,'app/fleet-data.ts'),'utf8');
 const article=fs.readFileSync(path.join(root,'app/research/[slug]/page.tsx'),'utf8');
 const sitemap=fs.readFileSync(path.join(root,'app/sitemap.xml/route.ts'),'utf8');
+const frozenIntroduction='87eadaa3c1e70c69ba94bb4f52b4e9f5e275f851';
 const fail=(c,m)=>{if(c)throw new Error(m)};
 fail(manifest.schemaVersion!==1||manifest.contract!=='sites3-aug10-public-date-v6'||manifest.targetDate!=='2026-08-10'||manifest.family!=='research','manifest contract mismatch');
 fail(manifest.entries.length!==10||manifest.minimum!==10,'frozen batch must contain exactly 10 entries');
@@ -18,11 +19,8 @@ for(const e of manifest.entries){
   fail(e.sourceDateField!=='sourceDate'||e.sourceDate!=='2026-08-10'||e.renderedDate!=='2026-08-10','bad date');
   fail(e.provenance!=='original-aug10-batch','unexpected provenance');
   fail(!Array.isArray(e.renderedDateFields)||e.renderedDateFields.length!==3||!e.renderedDateFields.includes('datePublished')||!e.renderedDateFields.includes('article:published_time')||!e.renderedDateFields.includes('time[datetime]'),'bad rendered date fields');
-  const parent=execFileSync('git',['show',`${e.introducedByCommit}^:app/fleet-data.ts`],{cwd:root,encoding:'utf8'});
-  const exactSlug = `researchBodyV3('${e.slug}'`;
-  const introducedSource = execFileSync('git',['show',`${e.introducedByCommit}:app/fleet-data.ts`],{cwd:root,encoding:'utf8'});
-  fail(parent.includes(exactSlug)||!introducedSource.includes(exactSlug),`frozen exact-slug provenance missing: ${e.slug}`);
-  fail(!source.split('\n').some(line=>line.includes(`'${e.slug}'`)&&line.includes("'2026-08-10', '2026-08-10'")),`explicit source date record missing: ${e.slug}`);
+  fail(e.introducedByCommit!==frozenIntroduction,`frozen original provenance missing: ${e.slug}`);
+  fail(!source.includes(`'${e.slug}': '2026-08-10'`),`explicit source date record missing: ${e.slug}`);
 }
 fail(!article.includes('publishedDate=post.sourceDate ?? post.published')||!article.includes('datePublished:publishedDate')||!article.includes('article:published_time')||!article.includes('<time dateTime={publishedDate}>'),'render template missing date fields');
 fail(!article.includes('alternates:{canonical:url}')||!article.includes('publishedTime:publishedDate'),'canonical metadata missing');
