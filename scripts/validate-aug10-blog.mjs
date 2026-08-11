@@ -42,7 +42,9 @@ for (const entry of manifest.entries) {
   if (publicationDate(source, entry.slug) !== '2026-08-10') fail(`explicit source date missing: ${entry.slug}`);
   const parent = sourceAt(`${entry.introducedByCommit}^`);
   const introduced = sourceAt(entry.introducedByCommit);
-  if (hasSlug(parent, entry.slug) || !hasSlug(introduced, entry.slug)) fail(`provenance diff failure: ${entry.slug}`);
+  const dateWasAdded = publicationDate(parent, entry.slug) !== entry.sourceDate
+    && publicationDate(introduced, entry.slug) === entry.sourceDate;
+  if (!dateWasAdded) fail(`provenance diff failure: ${entry.slug}`);
   if (!sitemap.includes('...blogs.map')) fail(`sitemap mapping missing: ${entry.slug}`);
 }
 console.log(`PASS ${manifest.entries.length} blog entries; manifest ${crypto.createHash('sha256').update(fs.readFileSync(manifestPath)).digest('hex')}`);
