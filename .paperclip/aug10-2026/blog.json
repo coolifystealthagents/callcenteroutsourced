@@ -9,7 +9,7 @@
   "minimum": 22,
   "priorRunId": "6c3e1ffc-2819-4951-80be-2046f4165cd7",
   "priorIssueId": "819a10ab-a907-4e72-8fe9-3efe3075eb9d",
-  "validationCommands": ["node scripts/validate-aug10-blog.mjs", "npm run build", "git diff --check", "npm start", "node scripts/validate-aug10-built-routes.mjs"],
+  "validationCommands": ["git fetch origin main", "git rev-parse HEAD origin/main", "node scripts/validate-aug10-blog.mjs", "npm run build", "git diff --check", "npm start", "node scripts/validate-aug10-built-routes.mjs"],
   "cleanBuildPassed": true,
   "existingCompliancePassed": true,
   "indexNewestFirstPassed": true,
