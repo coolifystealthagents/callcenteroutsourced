@@ -11,7 +11,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   const post=researchPosts.find(p=>p.slug===slug);
   if(!post)return {};
   const url=`${base}/research/${post.slug}`;
-  const publishedDate=post.published;
+  const publishedDate=post.sourceDate ?? post.published;
   return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate}};
 }
 export default async function ResearchArticle({params}:{params:Promise<{slug:string}>}){
@@ -20,7 +20,7 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
   if(!post)notFound();
   const related=(post.related||[]).map(s=>researchPosts.find(p=>p.slug===s)).filter(Boolean) as ResearchPost[];
   const url=`${base}/research/${post.slug}`;
-  const publishedDate=post.published;
+  const publishedDate=post.sourceDate ?? post.published;
   const schema={'@context':'https://schema.org','@type':'ResearchProject',name:post.title,description:post.excerpt,datePublished:post.published,url,author:{'@type':'Organization',name:site.brand},citation:post.sources?.map(s=>s.url)};
   return <><Header/><main><article className="section"><div className="container article-shell">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({...schema,datePublished:publishedDate})}}/>
