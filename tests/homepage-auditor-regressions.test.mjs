@@ -4,6 +4,7 @@ import path from 'node:path'
 import test from 'node:test'
 import { fleetServices } from '../app/fleet-data.ts'
 import { homepageServiceCards } from '../app/homepage-service-cards.ts'
+import { august13BlogBatch } from '../app/blog-aug13.ts'
 
 const root = process.cwd()
 const homepage = fs.readFileSync(path.join(root, 'app/page.tsx'), 'utf8')
@@ -31,4 +32,14 @@ test('all homepage image definitions consumed by rendered images have non-empty 
   assert.match(homepage, /alt="Illustration of a customer support professional providing clear call coverage"/)
   assert.match(homepage, /alt="Customer support team reviewing quality operations"/)
   assert.match(components, /alt=\{`\$\{site\.brand\} logo`\}/)
+})
+
+test('August 13 blog internal service links target generated service routes', () => {
+  for (const post of august13BlogBatch) {
+    for (const link of [...post.related, ...post.banners]) {
+      const match = link.href.match(/^\/services\/([^/?#]+)$/)
+      assert.ok(match, `${post.slug}: invalid service link ${link.href}`)
+      assert.ok(routedSlugs.has(match[1]), `${post.slug}: missing generated service route ${link.href}`)
+    }
+  }
 })
