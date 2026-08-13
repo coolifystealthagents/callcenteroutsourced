@@ -1,12 +1,6 @@
 import { Footer, Header, JsonLd } from './components';
-import { blogPosts, services, site } from './data';
-
-const serviceIcons = [
-  '/icons/getillustrations/blueprint-communication-icons-svg/inbound-calls.svg',
-  '/icons/getillustrations/blueprint-communication-icons-svg/chat-support.svg',
-  '/icons/getillustrations/blueprint-communication-icons-svg/ticket-inbox.svg',
-  '/icons/getillustrations/blueprint-communication-icons-svg/quality-reporting.svg',
-];
+import { blogPosts, site } from './data';
+import { homepageServiceCards } from './homepage-service-cards';
 
 export default function Home() {
   const schema = {
@@ -65,9 +59,9 @@ export default function Home() {
             <p>Start with a focused queue that has clear examples and manager-owned decisions. Expand only after the handoff works.</p>
           </div>
           <div className="cco-service-grid">
-            {services.map((service, index) => (
+            {homepageServiceCards.map((service, index) => (
               <a href={`/services/${service.slug}`} className="cco-service-card" key={service.slug}>
-                <div><span className="cco-service-icon"><img src={serviceIcons[index]} alt="" width="36" height="36" /></span><span className="cco-service-num">0{index + 1}</span></div>
+                <div><span className="cco-service-icon"><img src={service.icon} alt={service.imageAlt} width="36" height="36" /></span><span className="cco-service-num">0{index + 1}</span></div>
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
                 <b>View scope <span>↗</span></b>
@@ -82,8 +76,8 @@ export default function Home() {
               <p className="eyebrow cco-eyebrow-light">The operating brief</p>
               <h2>A calmer queue starts with written rules.</h2>
               <p>Good outsourced support runs on a written brief. Your team should be able to inspect the work, coach the agent, and fix unclear rules.</p>
-              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/quality-operations-review.svg" alt="" style={{ width: '100%', maxWidth: 360, marginTop: '1.5rem' }} loading="lazy" />
-              <a className="cco-text-link light" href="/services/reporting-and-qa">See the QA scope <span>↗</span></a>
+              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/quality-operations-review.svg" alt="Customer support team reviewing quality operations" style={{ width: '100%', maxWidth: 360, marginTop: '1.5rem' }} loading="lazy" />
+              <a className="cco-text-link light" href="/services/workforce-reporting-support">See the QA scope <span>↗</span></a>
             </div>
             <div className="cco-desk">
               <div className="cco-desk-top"><b>Shift handoff / Monday</b><span>Manager view</span></div>
