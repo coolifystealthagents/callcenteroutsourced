@@ -7,6 +7,11 @@ const base=`https://${site.domain.toLowerCase()}`;
 
 export function generateStaticParams(){return blogPosts.map(p=>({slug:p.slug}))}
 
+function displayDate(value:string|undefined){
+  if(!value)return '';
+  return new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(`${value}T00:00:00Z`));
+}
+
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{
   const {slug}=await params;
   const post=blogPosts.find(item=>item.slug===slug);
@@ -90,7 +95,7 @@ function RichPost({post}:{post:BlogPost}){
         <p className="eyebrow">Philippines call center guide</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div>
-        <div className="article-meta"><span>Published <time dateTime={post.published}>{post.published}</time></span><span>{post.minutes} minute read</span><span>Evidence checked</span></div>
+        <div className="article-meta"><span>Published <time dateTime={post.published}>{displayDate(post.published)}</time></span><span>{post.minutes} minute read</span><span>Evidence checked</span></div>
       </div>
     </section>
     <article className="article-page" data-article-marker={post.slug}>
