@@ -458,7 +458,7 @@ const dailyBlogTopics = [
 const august11BlogBatch: BlogPost[] = [
   {
     slug: 'call-center-call-volume-forecasting', title: 'Call Center Call Volume Forecasting for Practical Coverage',
-    excerpt: 'Turn recent contact patterns into a coverage plan that names assumptions, review points, and safe responses when demand moves.', minutes: 10, keyword: 'call center call volume forecasting', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Turn recent contact patterns into a coverage plan that names assumptions, review points, and safe responses when demand moves.', minutes: 10, keyword: 'call center call volume forecasting', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A forecast is useful when a supervisor can explain what it assumes and what decision it supports. Start with the contact history you actually have, separate normal demand from unusual events, and write down what happens when the estimate is wrong.',
     sections: [
       { title: 'Choose a usable planning window', paragraphs: ['Use a consistent slice of recent calls, chats, or tickets. Label holidays, outages, campaigns, and other unusual periods instead of treating them as ordinary demand.', 'The forecast does not need false precision. It needs a review date, an owner, and a visible reason for changing coverage.'], items: ['Name the channel and queue', 'Mark unusual demand periods', 'Record the source and review date', 'State the decision the forecast will inform'] },
@@ -473,7 +473,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-ivr-menu-design', title: 'Call Center IVR Menu Design That Reduces Wrong Turns',
-    excerpt: 'Design an IVR menu around customer language, queue ownership, fallback handling, and a clear path to a person when the menu does not fit.', minutes: 9, keyword: 'call center IVR menu design', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Design an IVR menu around customer language, queue ownership, fallback handling, and a clear path to a person when the menu does not fit.', minutes: 9, keyword: 'call center IVR menu design', published: '2026-08-12', updated: '2026-08-12',
     intro: 'An IVR menu should help a caller reach the right work without forcing them to learn the company structure. Build it from real call reasons, test the words aloud, and give callers a safe escape when their situation does not match an option.',
     sections: [
       { title: 'Start with caller reasons', paragraphs: ['Group calls by the reason customers use, not by the internal department name. A caller may understand “change an appointment” faster than an internal queue label.', 'Use a short list of high-volume reasons and review the uncategorized calls separately. Those calls often expose missing options or confusing wording.'], items: ['Use customer wording', 'Keep options distinct', 'Identify the owner for each option', 'Track calls that reach the wrong queue'] },
@@ -488,7 +488,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-queue-monitoring', title: 'Call Center Queue Monitoring: A Manager’s Working View',
-    excerpt: 'Build a queue view that helps managers act on wait time, open work, staffing gaps, and escalations without rewarding unsafe shortcuts.', minutes: 10, keyword: 'call center queue monitoring', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Build a queue view that helps managers act on wait time, open work, staffing gaps, and escalations without rewarding unsafe shortcuts.', minutes: 10, keyword: 'call center queue monitoring', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Queue monitoring is a decision aid, not a scoreboard. A manager needs enough context to see whether a delay comes from demand, coverage, complexity, a tool problem, or an unresolved policy question.',
     sections: [
       { title: 'Name the signals that matter', paragraphs: ['Start with contacts offered, work waiting, oldest item, response timing, and escalations without an owner. Keep each signal tied to a decision the manager can make.', 'Avoid a wall of metrics with no response rule. If a number changes, the view should tell the owner what to inspect next.'], items: ['Current queue state', 'Age of oldest open work', 'Coverage and absences', 'Unowned escalations'] },
@@ -503,7 +503,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-schedule-adherence', title: 'Call Center Schedule Adherence Without Losing the Human Context',
-    excerpt: 'Use schedule adherence as a coverage signal, with clear definitions, exception handling, and a manager review that does not confuse a missed interval with poor work.', minutes: 9, keyword: 'call center schedule adherence', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Use schedule adherence as a coverage signal, with clear definitions, exception handling, and a manager review that does not confuse a missed interval with poor work.', minutes: 9, keyword: 'call center schedule adherence', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Schedule adherence helps a team see whether planned coverage was available when customers needed it. It becomes unfair and less useful when the report hides approved exceptions, technical problems, or work that kept customers safe.',
     sections: [
       { title: 'Define the interval plainly', paragraphs: ['Write what the schedule measures, which activities count as available, and how approved meetings, coaching, breaks, and incidents are recorded. Different tools often use the same label for different events.', 'Give the agent a way to report a mismatch while the context is fresh. The manager decides whether an interval is corrected, approved, or investigated.'], items: ['Publish the schedule source', 'Define counted activities', 'Record approved exceptions', 'Name the review owner'] },
@@ -518,7 +518,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-qa-calibration', title: 'Call Center QA Calibration Meetings That Improve Scoring',
-    excerpt: 'Run short calibration meetings that make a quality rubric easier to apply and separate critical errors from personal style preferences.', minutes: 10, keyword: 'call center QA calibration', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Run short calibration meetings that make a quality rubric easier to apply and separate critical errors from personal style preferences.', minutes: 10, keyword: 'call center QA calibration', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Calibration is where reviewers compare how they apply a quality rubric to the same interaction. The goal is a shared decision rule, not agreement on every personal preference.',
     sections: [
       { title: 'Choose a small shared sample', paragraphs: ['Use a few representative calls, chats, or tickets that include routine work and at least one boundary case. Redact or limit customer data to what reviewers need.', 'Share the rubric and the sample before the meeting. Reviewers should score independently before discussing the result.'], items: ['Pick representative records', 'Use the current rubric', 'Score before discussion', 'Remove unnecessary customer data'] },
@@ -533,7 +533,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-contact-reason-codes', title: 'Call Center Contact Reason Codes That Help the Next Action',
-    excerpt: 'Build a small disposition and contact-reason set that makes routing, reporting, and follow-up clearer without forcing agents into inaccurate categories.', minutes: 9, keyword: 'call center contact reason codes', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Build a small disposition and contact-reason set that makes routing, reporting, and follow-up clearer without forcing agents into inaccurate categories.', minutes: 9, keyword: 'call center contact reason codes', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A contact reason code should describe why the customer reached out and help the next owner act. If codes are vague, overlapping, or too numerous, the record becomes harder to use than a plain note.',
     sections: [
       { title: 'Start with the next decision', paragraphs: ['Before adding a code, ask what decision or follow-up it supports. A report label that never changes routing or review is probably not worth the extra choice.', 'Use customer intent where possible. Internal team names belong in ownership fields, not in a caller-facing reason.'], items: ['Name the next decision', 'Use plain customer language', 'Keep meanings distinct', 'Define an unknown path'] },
@@ -548,7 +548,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-supervisor-coverage', title: 'Call Center Supervisor Coverage: Build the Escalation Backstop',
-    excerpt: 'Map the supervisor work that must be covered each shift, including live escalations, quality review, access questions, and customer-impact decisions.', minutes: 10, keyword: 'call center supervisor coverage', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Map the supervisor work that must be covered each shift, including live escalations, quality review, access questions, and customer-impact decisions.', minutes: 10, keyword: 'call center supervisor coverage', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A queue can have enough agents and still lack safe coverage if no supervisor can answer policy questions or accept an escalation. Define the backstop before assigning more work.',
     sections: [
       { title: 'List the decisions that need a supervisor', paragraphs: ['Start with actual escalations: policy exceptions, sensitive account changes, urgent complaints, tool failures, safety concerns, and unclear customer promises.', 'Separate decisions from routine review. A supervisor who owns everything will become the bottleneck; a supervisor who owns nothing leaves agents guessing.'], items: ['Name the decision', 'Set the response window', 'Identify the primary owner', 'Name the backup owner'] },
@@ -563,7 +563,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-knowledge-base-article-review', title: 'Call Center Knowledge Base Article Review',
-    excerpt: 'Keep support answers usable by reviewing ownership, customer language, examples, stale instructions, and the escalation path for uncertain cases.', minutes: 9, keyword: 'call center knowledge base article review', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Keep support answers usable by reviewing ownership, customer language, examples, stale instructions, and the escalation path for uncertain cases.', minutes: 9, keyword: 'call center knowledge base article review', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A knowledge article is part of the queue process. It should answer the question agents actually receive, show the safe next step, and make uncertainty visible when the article does not cover the case.',
     sections: [
       { title: 'Review the question first', paragraphs: ['Use recent customer questions, escalations, and QA findings to decide which articles need review. Internal labels may hide the wording customers use.', 'Record the source examples without copying unnecessary personal information.'], items: ['Question customers ask', 'Queue and owner', 'Current answer and version', 'Reason for the review'] },
@@ -578,7 +578,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-customer-consent-records', title: 'Call Center Customer Consent Records: A Practical Workflow',
-    excerpt: 'Capture consent or contact preferences in the approved system with clear ownership, channel context, and a safe path for questions about the rule.', minutes: 10, keyword: 'call center customer consent records', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Capture consent or contact preferences in the approved system with clear ownership, channel context, and a safe path for questions about the rule.', minutes: 10, keyword: 'call center customer consent records', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Consent and contact preferences affect future communication, so a vague note is not enough. Record the customer choice, channel, time, scope, source, and next owner according to the client’s approved process.',
     sections: [
       { title: 'Define the choice before collecting it', paragraphs: ['Write what the customer is agreeing to or declining, which channel it covers, and how the system represents the choice. Separate service communication from marketing or other contact purposes where the client process requires it.', 'Agents should use approved wording and record uncertainty instead of interpreting a legal rule.'], items: ['Purpose and channel', 'Approved wording', 'System field', 'Owner for questions'] },
@@ -593,7 +593,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-sensitive-note-minimization', title: 'Call Center Sensitive Note Minimization',
-    excerpt: 'Make support notes useful without turning them into a second store of passwords, payment details, or unrelated personal information.', minutes: 9, keyword: 'call center sensitive note minimization', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Make support notes useful without turning them into a second store of passwords, payment details, or unrelated personal information.', minutes: 9, keyword: 'call center sensitive note minimization', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A support note should help the next owner act. It does not need every detail from the conversation. Set field-level rules for what belongs in the record, what must be masked, and what must be escalated.',
     sections: [
       { title: 'Name the minimum useful facts', paragraphs: ['Start with the next action. Usually the note needs the request, verified status under the approved process, action taken, customer promise, risk flag, and next owner.', 'Use a required structure so agents do not solve uncertainty by copying the whole conversation.'], items: ['Request and case', 'Action already taken', 'Promise or deadline', 'Next owner and risk flag'] },
@@ -608,7 +608,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-backlog-triage', title: 'Call Center Backlog Triage by Age and Customer Impact',
-    excerpt: 'Turn an aging queue into an ordered worklist using customer impact, promised times, blocked dependencies, and named ownership.', minutes: 10, keyword: 'call center backlog triage', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Turn an aging queue into an ordered worklist using customer impact, promised times, blocked dependencies, and named ownership.', minutes: 10, keyword: 'call center backlog triage', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Backlog triage is a decision about what needs attention next. Age matters, but an old low-impact request and a newer safety or promised-callback issue may need different treatment.',
     sections: [
       { title: 'Create useful age bands', paragraphs: ['Choose age bands that match the queue’s response promise and review cadence. Record the oldest item and the number of cases in each band.', 'Do not hide blocked work inside the same count as ready work. A manager needs to see what can move and what needs a decision.'], items: ['Age bands', 'Promised time', 'Customer impact', 'Blocked dependency'] },
@@ -623,7 +623,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-vendor-onboarding', title: 'Call Center Vendor Onboarding With a Controlled First Queue',
-    excerpt: 'Prepare an outside coverage team with one queue, representative examples, narrow access, clear escalation rules, and a manager-owned readiness check.', minutes: 11, keyword: 'call center vendor onboarding', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Prepare an outside coverage team with one queue, representative examples, narrow access, clear escalation rules, and a manager-owned readiness check.', minutes: 11, keyword: 'call center vendor onboarding', published: '2026-08-12', updated: '2026-08-12',
     intro: 'Onboarding works better when the first assignment is small enough to review. Document the work, tools, schedule, decision limits, and evidence required before adding a second queue.',
     sections: [
       { title: 'Choose the first queue', paragraphs: ['Pick repeatable work with clear inputs, approved answers, and a reachable owner. Leave policy exceptions, refunds, sensitive changes, and unclear cases with the manager.', 'Write why this queue is suitable and what would make the team pause.'], items: ['Queue purpose', 'Inputs and outputs', 'Allowed actions', 'Pause and escalation triggers'] },
@@ -638,7 +638,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-new-queue-readiness', title: 'New Call Center Queue Readiness: A Manager Checklist',
-    excerpt: 'Check the purpose, customer scope, systems, access, quality rubric, escalation path, and manager coverage before a new queue accepts live work.', minutes: 10, keyword: 'call center new queue readiness', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Check the purpose, customer scope, systems, access, quality rubric, escalation path, and manager coverage before a new queue accepts live work.', minutes: 10, keyword: 'call center new queue readiness', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A new queue changes scripts, permissions, staffing, and escalation load at the same time. A readiness check makes those dependencies visible before customers discover the gaps.',
     sections: [
       { title: 'Write the queue boundary', paragraphs: ['Name who contacts the queue, what requests it handles, which channels are included, and which cases belong elsewhere. Keep the scope small enough to explain in one page.', 'State the customer promise and the situations that require a manager.'], items: ['Customer and request scope', 'Included channel', 'Excluded work', 'Owner and backup'] },
@@ -653,7 +653,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-call-disposition-audit', title: 'Call Center Call Disposition Audit: Check the Next Action',
-    excerpt: 'Audit disposition codes against the original interaction so reports, follow-ups, and customer history reflect what actually happened.', minutes: 9, keyword: 'call center call disposition audit', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Audit disposition codes against the original interaction so reports, follow-ups, and customer history reflect what actually happened.', minutes: 9, keyword: 'call center call disposition audit', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A disposition is useful only when it describes the interaction and supports the next action. An audit compares the code with the source call, note, promise, and owner.',
     sections: [
       { title: 'Define what a correct code means', paragraphs: ['Write the evidence required for each code and the next action it should create. If two codes lead to the same action, reconsider whether both are needed.', 'Give reviewers examples and exclusions before they start sampling.'], items: ['Code definition', 'Required evidence', 'Next action', 'Owner for corrections'] },
@@ -668,7 +668,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-customer-identity-mismatch', title: 'Call Center Customer Identity Mismatch: Pause Before Changing the Account',
-    excerpt: 'Give agents a safe response when caller details do not match the record, including bounded verification, limited disclosure, and a clear escalation path.', minutes: 10, keyword: 'call center customer identity mismatch', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Give agents a safe response when caller details do not match the record, including bounded verification, limited disclosure, and a clear escalation path.', minutes: 10, keyword: 'call center customer identity mismatch', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A mismatch between a caller and an account is a signal to pause, not a reason to guess. The agent should protect the record, use the approved verification path, and route high-impact requests to the responsible owner.',
     sections: [
       { title: 'Define what counts as a mismatch', paragraphs: ['List the fields and situations that start the check without teaching callers the full rule. A changed number, conflicting account detail, or unusual request may need different handling.', 'Write what the agent may discuss before verification and what must wait.'], items: ['Approved signals', 'Allowed pre-verification information', 'Retry limit', 'Escalation owner'] },
@@ -683,7 +683,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-incident-response', title: 'Call Center Incident Response: Give the First Shift a Safe Path',
-    excerpt: 'Prepare a first-response path for tool outages, data exposure, suspicious requests, and customer-impacting failures without asking agents to investigate alone.', minutes: 10, keyword: 'call center incident response', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Prepare a first-response path for tool outages, data exposure, suspicious requests, and customer-impacting failures without asking agents to investigate alone.', minutes: 10, keyword: 'call center incident response', published: '2026-08-12', updated: '2026-08-12',
     intro: 'The first response should contain the problem and get it to the right owner. Agents need a short stop, record, and handoff rule, while managers own investigation, customer decisions, and recovery.',
     sections: [
       { title: 'List the events that start response', paragraphs: ['Use observable triggers such as a tool outage, accidental disclosure, suspicious request, unsafe script, repeated critical error, or missing escalation owner. Avoid requiring an agent to prove the cause.', 'For each trigger, name the immediate safe action and the receiving owner.'], items: ['Observable trigger', 'Immediate containment step', 'Required record', 'Primary and backup owner'] },
@@ -698,7 +698,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-service-recovery-script', title: 'Call Center Service Recovery Script With Clear Approval Limits',
-    excerpt: 'Help agents acknowledge a service failure, capture the facts, and set the next step without promising refunds or exceptions they cannot approve.', minutes: 9, keyword: 'call center service recovery script', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Help agents acknowledge a service failure, capture the facts, and set the next step without promising refunds or exceptions they cannot approve.', minutes: 9, keyword: 'call center service recovery script', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A service recovery script should help an agent respond to impact without making an unauthorized promise. It needs an acknowledgment, a factual record, a safe next step, and a manager route for remedies.',
     sections: [
       { title: 'Write the recovery boundary', paragraphs: ['Define which acknowledgments, replacements, callbacks, or approved credits the agent may offer and which decisions require a manager. Keep the rule visible beside the script.', 'Do not use empathy language to imply a remedy that has not been approved.'], items: ['Approved acknowledgment', 'Allowed immediate action', 'Prohibited promise', 'Manager route'] },
@@ -713,7 +713,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-schedule-exception-handling', title: 'Call Center Schedule Exception Handling',
-    excerpt: 'Handle absences, shift swaps, outages, and emergency extensions with an approval path that protects coverage and keeps employment decisions with the right owner.', minutes: 9, keyword: 'call center schedule exception handling', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Handle absences, shift swaps, outages, and emergency extensions with an approval path that protects coverage and keeps employment decisions with the right owner.', minutes: 9, keyword: 'call center schedule exception handling', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A schedule exception changes customer coverage and worker expectations at the same time. Use one record for the request, approval, coverage impact, and next review, while routing employment or payroll questions to the responsible owner.',
     sections: [
       { title: 'Define the exception types', paragraphs: ['List absence, shift swap, late start, emergency extension, tool outage, and manager-directed reassignment separately. Each may have a different approver and coverage effect.', 'Do not ask agents to improvise a schedule change because the queue is busy.'], items: ['Exception type', 'Request channel', 'Approver', 'Coverage impact'] },
@@ -728,7 +728,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-customer-survey-calls', title: 'Call Center Customer Survey Calls With Clean Consent and Notes',
-    excerpt: 'Plan survey calls around a defined purpose, approved contact rules, neutral questions, opt-out handling, and a record that separates feedback from customer data.', minutes: 9, keyword: 'call center customer survey calls', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Plan survey calls around a defined purpose, approved contact rules, neutral questions, opt-out handling, and a record that separates feedback from customer data.', minutes: 9, keyword: 'call center customer survey calls', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A survey call is still a customer contact. Set the approved audience, purpose, contact rule, script, opt-out path, and record fields before anyone dials.',
     sections: [
       { title: 'Define what the survey is for', paragraphs: ['Name the decision the feedback will inform and the audience in scope. A narrow purpose keeps the call short and makes the results easier to interpret.', 'Separate service follow-up from research or marketing contact when the approved process treats them differently.'], items: ['Purpose', 'Audience', 'Contact channel', 'Decision owner'] },
@@ -743,7 +743,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-queue-pause-criteria', title: 'Call Center Queue Pause Criteria for Unsafe Conditions',
-    excerpt: 'Write observable conditions that let a manager pause a queue when access, quality, outages, data exposure, or escalation capacity make continuation unsafe.', minutes: 10, keyword: 'call center queue pause criteria', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Write observable conditions that let a manager pause a queue when access, quality, outages, data exposure, or escalation capacity make continuation unsafe.', minutes: 10, keyword: 'call center queue pause criteria', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A pause rule protects customers when the evidence for safe continuation is missing. The rule should name the trigger, the person who can pause, the immediate customer protection, and the conditions for resumption.',
     sections: [
       { title: 'Use observable triggers', paragraphs: ['Write conditions such as repeated critical errors, unsafe script wording, broken verification, data exposure, outage, missing manager coverage, or an escalation backlog without ownership.', 'Avoid requiring an agent to diagnose the root cause before raising the concern.'], items: ['Trigger', 'Immediate containment', 'Pause authority', 'Resume owner'] },
@@ -758,7 +758,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-pilot-exit-criteria', title: 'Call Center Pilot Exit Criteria: Expand, Revise, Pause, or Stop',
-    excerpt: 'End a support pilot with an evidence-based decision covering quality, customer impact, access, unresolved exceptions, and manager capacity.', minutes: 10, keyword: 'call center pilot exit criteria', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'End a support pilot with an evidence-based decision covering quality, customer impact, access, unresolved exceptions, and manager capacity.', minutes: 10, keyword: 'call center pilot exit criteria', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A pilot should end with a decision, not simply a date. Set the evidence for expansion, revision, pause, or stop before the first live case so schedule pressure cannot replace review.',
     sections: [
       { title: 'Choose the evidence before launch', paragraphs: ['Define the queue scope, sample size, quality checks, response measure, escalation review, access check, and customer-impact signals. Name the owner for each one.', 'Use a limited pilot so failures are visible and recoverable.'], items: ['Scope and period', 'Evidence owner', 'Decision thresholds', 'Pause and stop triggers'] },
@@ -773,7 +773,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-transfer-queue-ownership', title: 'Call Center Transfer Queue Ownership: Keep Context With the Case',
-    excerpt: 'Set transfer rules that preserve the customer request, prior action, promise, and next owner when work moves between call center queues.', minutes: 9, keyword: 'call center transfer queue ownership', published: '2026-08-11', updated: '2026-08-11',
+    excerpt: 'Set transfer rules that preserve the customer request, prior action, promise, and next owner when work moves between call center queues.', minutes: 9, keyword: 'call center transfer queue ownership', published: '2026-08-12', updated: '2026-08-12',
     intro: 'A transfer is a change of ownership, not a reset. The receiving queue needs enough context to act, while the sending agent should avoid promising an outcome the next owner has not accepted.',
     sections: [
       { title: 'Define when a transfer is needed', paragraphs: ['List the reasons a case should move, the destination queue, and the cases that should remain with the original owner. Transfer rules should follow customer need rather than internal convenience.', 'If no destination fits, the agent should use the escalation path instead of sending the customer through several queues.'], items: ['Transfer trigger', 'Destination owner', 'Context required', 'Fallback when no route fits'] },
