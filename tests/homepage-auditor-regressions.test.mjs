@@ -4,7 +4,7 @@ import path from 'node:path'
 import test from 'node:test'
 import { fleetServices } from '../app/fleet-data.ts'
 import { homepageServiceCards } from '../app/homepage-service-cards.ts'
-import { august13BlogBatch } from '../app/blog-aug13.ts'
+import { august13ReplacementBlogBatch } from '../app/blog-aug13-replacements.ts'
 
 const root = process.cwd()
 const homepage = fs.readFileSync(path.join(root, 'app/page.tsx'), 'utf8')
@@ -35,7 +35,7 @@ test('all homepage image definitions consumed by rendered images have non-empty 
 })
 
 test('August 13 blog internal service links target generated service routes', () => {
-  for (const post of august13BlogBatch) {
+  for (const post of august13ReplacementBlogBatch) {
     for (const link of [...post.related, ...post.banners]) {
       const match = link.href.match(/^\/services\/([^/?#]+)$/)
       assert.ok(match, `${post.slug}: invalid service link ${link.href}`)
