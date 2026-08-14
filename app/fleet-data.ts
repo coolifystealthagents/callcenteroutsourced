@@ -1,6 +1,7 @@
 export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
 export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[] };
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
+import { august14ResearchBatch } from './research-aug14.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
 // loader source so publication proof can bind each route and date directly.
@@ -157,6 +158,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...august14ResearchBatch,
   ...august13FreshResearchBatch,
   researchBodyV3('call-center-queue-capacity-review-a-research-brief', 'Call Center Queue Capacity Review: A Research Brief', 'Queue capacity is not just a headcount estimate: it is the amount of demand a defined team can handle while preserving customer access, safe decisions, and review ownership. ISO 18295 emphasizes customer-contact processes and results, while NIST governance guidance supports explicit risk ownership.', 'Define the interval, channel, offered contacts, backlog age, service objective, exception load, and manager coverage before comparing capacity. Review both ordinary demand and escalation work, then pause expansion when the review owner cannot absorb the additional control load.', ['call-center-queue-coverage-a-research-brief', 'call-center-workforce-forecast-inputs-a-research-brief', 'call-center-supervisor-span-of-control-a-research-brief'], '2026-08-12', '2026-08-11'),
   researchBodyV3('call-center-call-transfer-controls-a-research-brief', 'Call Center Call Transfer Controls: A Research Brief', 'A transfer can protect a customer or simply move an unresolved problem between queues. ISO 18295 supports defined contact processes and outcomes; NIST guidance supports clear ownership and minimum necessary access during the handoff.', 'Define transfer triggers, receiving queue, required context, customer promise, timeout, and fallback owner. Keep the original record linked to the receiving case, prohibit blind transfers for high-impact matters, and sample failed or repeated transfers for root causes.', ['call-center-handoff-quality-a-research-brief', 'call-center-escalation-matrix-design-a-research-brief', 'call-center-queue-ownership-a-research-brief'], '2026-08-12', '2026-08-11'),
