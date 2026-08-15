@@ -368,8 +368,8 @@ const baseBlogPosts: readonly BlogPost[] = [
     ],
     related: [
       { label: 'Plan an inbound call handling role', href: '/services/inbound-call-handling' },
-      { label: 'Prepare your first-week call center checklist', href: '/blog' },
-      { label: 'Ask a provider about tools and customer data', href: '/blog' },
+      { label: 'Set up omnichannel customer support', href: '/services/omnichannel-customer-support' },
+      { label: 'Discuss tools and customer-data boundaries', href: '/contact-us' },
       { label: 'Build a reporting and QA support lane', href: '/services/workforce-reporting-support' },
     ],
     banners: [
