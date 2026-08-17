@@ -35,7 +35,7 @@
         "id": "handoff-check",
         "eyebrow": "Handoff check",
         "title": "Set the review line for call handling, ticket updates, and escalation notes",
-        "body": "For a Philippines-based team, a Filipino call center support can follow the written lane. Your named manager still owns refunds, policy exceptions, and final resolutions.",
+        "body": "A Philippines call support team can use the written playbook for call handling, ticket updates, and escalation notes. Your manager should still approve refunds, policy exceptions, and final resolutions.",
         "cta": "Check my handoff",
         "href": "/contact",
         "weight": 3
