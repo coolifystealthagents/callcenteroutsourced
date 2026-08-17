@@ -72,8 +72,20 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
     { name: 'Zero Trust Architecture, SP 800-207', organization: 'National Institute of Standards and Technology', date: 'August 2020', url: 'https://csrc.nist.gov/pubs/sp/800/207/final', note: 'Supports explicit access and decision boundaries.' },
     { name: 'ISO 18295-1 overview', organization: 'International Organization for Standardization', date: '2017', url: 'https://www.iso.org/standard/65137.html', note: 'Supports defined contact-centre processes and service outcomes.' },
   ],
-  related: [{ label: 'Review customer support', href: '/services/customer-support' }, { label: 'Review operations support', href: '/services/operations-support' }, { label: 'Review reporting support', href: '/services/reporting-and-qa' }],
-  banners: [{ label: 'Scope', title: 'Define the first queue', body: 'List the work, review points, and approval limits before adding coverage.', href: '/services/operations-support', cta: 'Review operations support' }, { label: 'Review', title: 'Use representative examples', body: 'Sample early work with a named owner and fix unclear rules quickly.', href: '/services/reporting-and-qa', cta: 'Review reporting support' }, { label: 'Handoff', title: 'Keep decisions with the owner', body: 'Document each escalation so the next manager can act without reconstructing the case.', href: '/services/customer-support', cta: 'Review customer support' }],
+  related: draft.slug === 'call-center-appointment-reschedule-handoff'
+    ? [
+        { label: 'Plan outbound appointment setting', href: '/services/outbound-appointment-setting' },
+        { label: 'Set up inbound call handling', href: '/services/inbound-call-handling' },
+        { label: 'Build omnichannel customer support', href: '/services/omnichannel-customer-support' },
+      ]
+    : [{ label: 'Review customer support', href: '/services/customer-support' }, { label: 'Review operations support', href: '/services/operations-support' }, { label: 'Review reporting support', href: '/services/reporting-and-qa' }],
+  banners: draft.slug === 'call-center-appointment-reschedule-handoff'
+    ? [
+        { label: 'Appointment scope', title: 'Set the booking and reschedule boundary', body: 'Define which appointment changes the team may confirm and which ones need the service owner.', href: '/services/outbound-appointment-setting', cta: 'Plan outbound appointment setting' },
+        { label: 'Call handoff', title: 'Keep the request with the next call owner', body: 'Record the requested time, confirmed availability, and next owner before the customer leaves the queue.', href: '/services/inbound-call-handling', cta: 'Set up inbound call handling' },
+        { label: 'Customer update', title: 'Give the customer one clear update path', body: 'Use the approved channel and route uncertain changes to the owner who can confirm them.', href: '/services/omnichannel-customer-support', cta: 'Build customer support coverage' },
+      ]
+    : [{ label: 'Scope', title: 'Define the first queue', body: 'List the work, review points, and approval limits before adding coverage.', href: '/services/operations-support', cta: 'Review operations support' }, { label: 'Review', title: 'Use representative examples', body: 'Sample early work with a named owner and fix unclear rules quickly.', href: '/services/reporting-and-qa', cta: 'Review reporting support' }, { label: 'Handoff', title: 'Keep decisions with the owner', body: 'Document each escalation so the next manager can act without reconstructing the case.', href: '/services/customer-support', cta: 'Review customer support' }],
 });
 
 export const august14BlogBatch: readonly BlogPost[] = drafts.map(makePost);
