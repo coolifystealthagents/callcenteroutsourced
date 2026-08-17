@@ -94,7 +94,7 @@ function RichPost({post}:{post:BlogPost}){
       <div className="container article-hero-inner">
         <p className="eyebrow">Philippines call center guide</p>
         <h1>{post.title}</h1>
-        <p className="lead">{post.excerpt}</p><div className='blog-standards-strip' aria-label='Article standards'><span>Source-backed guidance</span><span>Contextual internal links</span><span>Top, middle, and bottom CTAs</span></div>
+        <p className="lead">{post.excerpt}</p>
         <div className="article-meta"><span>Published <time dateTime={post.published}>{displayDate(post.published)}</time></span><span>{post.minutes} minute read</span><span>Evidence checked</span></div>
       </div>
     </section>
@@ -133,6 +133,16 @@ function RichPost({post}:{post:BlogPost}){
   </>;
 }
 
+function PlainPost({post}:{post:BlogPost}){
+  return <article className="section"><div className="container article-shell">
+    <p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
+    <p className="article-meta">Published <time dateTime={post.published}>{displayDate(post.published)}</time></p>
+    <p className="article-intro">{post.intro}</p>
+    <div className="article-copy">{post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0).map(section=><section key={section.title}><h2>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>)}</div>
+    {post.faqs&&<section className="faq-section"><h2>Questions managers ask</h2>{post.faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>}
+  </div></article>;
+}
+
 export default async function Post({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
   const post=blogPosts.find(item=>item.slug===slug);
@@ -145,5 +155,6 @@ export default async function Post({params}:{params:Promise<{slug:string}>}){
     {'@context':'https://schema.org','@type':'FAQPage',mainEntity:post.faqs?.map(faq=>({'@type':'Question',name:faq.question,acceptedAnswer:{'@type':'Answer',text:faq.answer}}))},
     {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:base},{'@type':'ListItem',position:2,name:'Blog',item:`${base}/blog`},{'@type':'ListItem',position:3,name:post.title,item:url}]},
     ]:[])];
-  return <><Header hideCommercial={rich}/><main>{schemas.map((schema,index)=><JsonLd data={schema} key={index}/>)}{rich?<><meta property="article:published_time" content={post.published}/><RichPost post={post}/></>:<><meta property="article:published_time" content={post.published}/><article className="section"><div className="container article-shell"><p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><p className="article-meta">Published <time dateTime={post.published}>{displayDate(post.published)}</time></p><aside className='article-rotation-banner' data-article-banner='true'><p className='eyebrow'>Role planning checkpoint</p><h2>Turn this guide into a clear role brief</h2><p>Share the work queue, tools, review owner, and approval limits before adding outside support.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><section className="card"><h2>Start with a defined workflow</h2><p>For Philippines-based staffing, document the work, tools, schedule, and desired outcome before candidate matching. Keep business judgment and final approvals with a named manager. <a href="https://www.ilo.org/global/topics/non-standard-employment/WCMS_534825/lang--en/index.htm" target="_blank" rel="noopener noreferrer">International Labour Organization guidance on remote work arrangements</a> reinforces the need for clear expectations, communication rhythms, and accountable handoffs.</p><aside className='article-rotation-banner article-rotation-banner-middle' data-article-banner='true'><p className='eyebrow'>Midpoint planning check</p><h2>Compare providers against one written workflow</h2><p>Use one task lane, one reviewer, and one quality check so each provider conversation is easier to judge.</p><a className='btn' href='/contact-us'>Contact Us</a></aside><h2>Prepare representative examples</h2><p>Use real, appropriately redacted examples to explain quality. Review early work together and update the written process when an exception appears.</p><h2>Plan access and handoffs</h2><p>Provide only the access needed for the position and use named accounts where possible. Write down which questions must be escalated and who receives them.</p></section></div><aside className='article-rotation-banner article-rotation-banner-bottom' data-article-banner='true'><p className='eyebrow'>Ready to scope the role?</p><h2>Build the first support lane before hiring</h2><p>We can help turn the article into a practical staffing brief with tasks, access rules, and review checkpoints.</p><a className='btn' href='/contact-us'>Contact Us</a></aside></article></>}</main><Footer hideCommercial={rich}/></>;
+  if(!rich)return <><Header/><main>{schemas.map((schema,index)=><JsonLd data={schema} key={index}/>)}<meta property="article:published_time" content={post.published}/><PlainPost post={post}/></main><Footer/></>;
+  return <><Header hideCommercial={rich}/><main>{schemas.map((schema,index)=><JsonLd data={schema} key={index}/>)}<meta property="article:published_time" content={post.published}/><RichPost post={post}/></main><Footer hideCommercial={rich}/></>;
 }
