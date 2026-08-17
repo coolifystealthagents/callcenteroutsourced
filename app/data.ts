@@ -1,5 +1,6 @@
 import { august13ReplacementBlogBatch } from './blog-aug13-replacements';
 import { august14BlogBatch } from './blog-aug14';
+import { august17BlogBatch } from './blog-aug17';
 
 export const site = {
   "domain": "CallCenterOutsourced.com",
@@ -880,7 +881,7 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
   return value;
 };
 
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch].reduce((posts, post) => {
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;
