@@ -21,26 +21,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"FTC Mail, Internet, or Telephone Order Merchandise Rule","url":"https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435"},
+      {"name":"U.S. Postal Service Tracking Standards","url":"https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -78,6 +62,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Replication notes",
         "body": "A repeat study should draw a fresh sample after the decision table has been in use long enough to produce ordinary and unusual cases. Keep a separate file of definitions, exclusions, and coding disagreements. Have a second reviewer inspect a subset without seeing the first reviewer’s conclusion. Report the rate of unknown linkage and the reasons for it. If the unknown group is large, the next intervention may be source integration or owner coverage rather than agent coaching. This design keeps the research useful without claiming that a single batch represents all order support."
+      },
+      {
+        "heading": "Source synthesis for order exceptions",
+        "body": "The source material supports a narrow finding: a contact centre can make an exception more observable, but it cannot manufacture fulfillment evidence. ISO 18295-1 is useful for separating contact activity from an outcome; the NIST Privacy Framework keeps the review tied to purpose and minimum necessary information; Zero Trust guidance makes the authority to act contextual rather than automatic. These are distinct lenses, not three measurements of delivery performance. For this route, the evidence unit is one linked exception with a source timestamp, a customer-facing statement, an accountable owner, and a disposition or explicit unknown. A case should be counted as resolved only when the authorized owner’s decision is recorded, not when the queue forwards a note. This distinction matters to CallCenterOutsourced.com because outsourced support operates at the boundary between a customer conversation and a client-controlled remedy. The queue may classify, clarify, and preserve; the owner decides policy. A useful follow-up would compare exception classes after a source-of-truth rule is documented, while keeping carrier and warehouse outcomes separate from contact-centre handling."
       }
     ]
   },
@@ -88,26 +76,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"ISO 10002 Quality Management—Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
+      {"name":"NIST Digital Identity Guidelines, SP 800-63B","url":"https://pages.nist.gov/800-63-3/sp800-63b.html"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -149,6 +121,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "A useful decision rule",
         "body": "When evidence is incomplete, the safe update is not silence and not an optimistic estimate. It is a bounded statement of the confirmed state, the missing dependency, the responsible owner, and the next review point. That rule gives the queue language it can use without inventing certainty. It also gives quality reviewers something observable: they can inspect the source, timestamp, channel, and owner rather than scoring style. If a customer-impact class needs a shorter interval, the client should approve that distinction explicitly. If the source cannot support any credible update, the case should move to an owner who can decide what information is available. This turns cadence from a calendar habit into a controlled promise."
+      },
+      {
+        "heading": "Cadence evidence in context",
+        "body": "The relevant evidence is the alignment of four clocks: the event clock in the source system, the promise clock stated to the customer, the sending clock in the contact record, and the owner clock for the unresolved decision. ISO 18295-1 supports examining process and result together, while the NIST Privacy Framework and Digital Identity Guidelines caution that a timely message can still be inappropriate if its purpose, recipient, or disclosure is wrong. This study therefore treats frequency as a descriptive variable, not a success criterion. For CallCenterOutsourced.com, the operational question is whether an agent can state what is confirmed, what remains dependent, and when the next accountable review occurs. The evidence should retain the source version used at send time because later updates can make an earlier message appear careless even when it was accurate then. A useful sample pairs on-time and late messages with corrections and repeat contacts, then reports unknown delivery or reading status separately. That method supports a client decision about cadence without claiming that more messages always improve service."
       }
     ]
   },
@@ -159,26 +135,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"NIST Guide to Computer Security Log Management, SP 800-92","url":"https://csrc.nist.gov/pubs/sp/800/92/final"},
+      {"name":"OWASP Logging Cheat Sheet","url":"https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -220,6 +180,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "What should not be added",
         "body": "A common response to a weak case chain is to require longer notes or full transcripts. That may increase exposure without improving the decision. The better question is which missing relationship prevented continuity. If the request is unclear, preserve the customer’s words and a clarification status. If the source is missing, record the system and owner rather than copying unrelated history. If authority is unclear, route the decision and preserve the rule in question. This makes the repair proportional and keeps the evidence chain useful to a second reviewer."
+      },
+      {
+        "heading": "Evidence-chain finding",
+        "body": "The strongest evidence in a support case is relational: a reviewer can tell which customer request led to which source check, authorized action, owner, and outcome. ISO 18295-1 supplies a service-process frame, while NIST Privacy and Zero Trust guidance explain why traceability should not be achieved by copying every available field. For outsourced customer contact, the minimum chain is therefore more valuable than a maximal transcript. A case identifier should connect the request to the source consulted; the record should say what the worker was allowed to do and what decision remained outside the role. This lets a later reviewer distinguish a knowledge mistake from a missing permission or unavailable system. The research question is not whether longer notes are better. It is whether an independent reviewer can reconstruct the decision without asking the customer to repeat sensitive context. The proposed blind reconstruction test makes that distinction measurable. Its evidence boundary excludes legal conclusions about retention and does not judge a client’s CRM design without the client’s policy."
       }
     ]
   },
@@ -230,26 +194,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"NIST Cybersecurity Framework 2.0","url":"https://www.nist.gov/cyberframework"},
+      {"name":"ISO 9001 Quality Management Systems","url":"https://www.iso.org/standard/62085.html"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -291,6 +239,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "A scope review is also a customer-protection review",
         "body": "Scope decisions should be connected to customer impact, not treated as an internal permissions exercise. A new field may expose a person; a new promise may create an expectation; a new decision may change remedy or eligibility. Reviewers should therefore identify the customer-facing consequence of each observed expansion and the correction path if the work is wrong. The safest expansion is one with a named owner, bounded access, training evidence, and a rollback condition. Work outside those conditions should remain an escalation, even when customers would prefer an immediate answer."
+      },
+      {
+        "heading": "What scope-drift evidence can establish",
+        "body": "A scope review should compare three artifacts that are often separated: the approved queue description, the permissions actually available, and the work customers actually received. ISO 18295-1 contributes process and outcome discipline; the NIST Privacy Framework adds purpose and data-handling questions; Zero Trust adds a check that access matches a current request and role. Together they support an evidence-led boundary, but they do not decide a contract. A new contact reason is not automatically drift, and a low transfer rate is not automatically good resolution. The finding becomes credible when a repeated action lacks an owner, permission, evidence rule, or exit path. For CallCenterOutsourced.com, this is especially important because customer-facing helpfulness can make an unauthorized expansion look efficient. The sample should preserve the queue definition in force when each contact occurred, record whether an exception was approved, and distinguish temporary coverage from a permanent scope change. The conclusion is a governance test: reconcile observed work to an owned decision before changing training, access, or reporting."
       }
     ]
   },
@@ -301,26 +253,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"AHRQ TeamSTEPPS Teamwork System","url":"https://www.ahrq.gov/teamstepps/index.html"},
+      {"name":"CMS Appointment No-Show Reduction Toolkit","url":"https://www.cms.gov/medicare/health-safety-standards/quality-safety-oversight-general-information/national-quality-strategy"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -366,6 +302,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "A fair review separates event from remedy",
         "body": "The review should first answer what happened and only then ask what policy follows. A customer may deserve a reschedule even when attendance is uncertain, while a provider review may be needed before a final classification. Keeping those decisions separate lets the queue offer a safe recovery without claiming facts it cannot verify. It also gives the client a cleaner evidence trail for later policy review."
+      },
+      {
+        "heading": "No-show evidence is an attribution problem",
+        "body": "The appointment record answers when a slot was scheduled; it does not by itself answer why service did not occur. ISO 18295-1 supports connecting contact process to outcome, while identity and privacy guidance limit what a support worker should disclose while investigating. The evidence should therefore be assembled in time order: the local appointment promise, the confirmation channel, any change or cancellation, delivery or contact attempt, service-side attendance record, and the recovery offered. Each item has a different evidentiary role. A reminder log can show sending, not understanding. A customer statement can show experience, not provider attendance. A provider status can show an event, not intent. Keeping those distinctions protects customers from an unsupported blame label and gives the client a clearer decision about rescheduling or policy. The outsourced role is to reconcile available facts, preserve uncertainty, and route disputed remedies. Research should report the unknown category because missing timestamps and mismatched time zones are findings about observability, not evidence of customer behavior."
       }
     ]
   },
@@ -376,26 +316,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"NIST Digital Identity Guidelines, SP 800-63B","url":"https://pages.nist.gov/800-63-3/sp800-63b.html"},
+      {"name":"NIST Zero Trust Architecture, SP 800-207","url":"https://csrc.nist.gov/pubs/sp/800/207/final"},
+      {"name":"FTC Identity Theft Guidance","url":"https://www.ftc.gov/business-guidance/privacy-security/identity-theft"},
+      {"name":"CISA Phishing Guidance","url":"https://www.cisa.gov/topics/cyber-threats-and-advisories/phishing"}
     ],
     "sections": [
       {
@@ -441,6 +365,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Review accessibility as part of assurance",
         "body": "A recovery path that is technically strict but unusable can produce repeated failure without improving confidence. The owner should test whether the approved alternative can be completed through the permitted channel and whether the queue knows how to route a request for assistance. The agent should record the need for an alternative without storing unnecessary medical or identity detail. This is an operating design question, not a reason to weaken assurance."
+      },
+      {
+        "heading": "Recovery evidence and safe alternatives",
+        "body": "Identity recovery is best evaluated by the separation between low-risk assistance and high-impact change. Digital Identity Guidelines distinguish assurance from convenience; Zero Trust guidance asks whether access is authorized for the present request; the Privacy Framework limits collection to a defined purpose. That evidence supports a tiered analysis rather than a single pass-or-fail score. A worker might provide general process information while declining account-specific disclosure, or record a customer’s explanation and route an alternate check without seeing a secret. The record should show which signal failed, which approved alternative was offered, who owned the decision, and whether the customer received a usable next step. It should not preserve answers, full identifiers, or speculative matches merely to make the case look complete. CallCenterOutsourced.com can make a refusal actionable by explaining the permitted path and escalation owner; it cannot lower an assurance requirement because a queue is busy. Limitations include unknown fraud intent, accessibility needs, and client-specific risk thresholds. The conclusion is that dignity and control are compatible when the safe boundary is explicit."
       }
     ]
   },
@@ -451,26 +379,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"NIST Computer Security Incident Handling Guide, SP 800-61","url":"https://csrc.nist.gov/pubs/sp/800/61/r2/final"},
+      {"name":"ISO 10002 Quality Management—Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
+      {"name":"NIST Cybersecurity Framework 2.0","url":"https://www.nist.gov/cyberframework"}
     ],
     "sections": [
       {
@@ -516,6 +428,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "The customer clock still runs during ownership gaps",
         "body": "An internal pause does not pause the customer’s expectation unless the service promise says so and the customer is told truthfully. When an owner is unavailable, the queue should record the gap, provide the approved fallback, and trigger the backup path. A latency report that excludes this interval hides the very dependency the client needs to repair. The measure should show both internal elapsed time and customer-facing promise performance."
+      },
+      {
+        "heading": "Decision latency is a chain, not one timer",
+        "body": "The evidence should distinguish the moment a customer asks for a decision, the moment a queue recognizes that it lacks authority, the moment an escalation is sent, the moment an owner accepts it, and the moment a customer-facing decision is available. ISO 18295-1 supports measuring contact results, while Zero Trust and Privacy Framework principles explain why a transfer without a valid owner or purpose is not meaningful progress. A fast handoff can therefore coexist with a slow decision. The method for this route preserves each timestamp and returns, then codes the reason for delay: missing evidence, wrong owner, unclear policy, unavailable dependency, or queue capacity. Those categories produce different actions and should not be collapsed into agent speed. The customer clock continues during an ownership gap, so an approved interim update may be needed even when the final remedy belongs to the client. The study does not define a universal latency target. Its evidence-led conclusion is that a decision becomes timely when an authorized owner accepts the question and the next customer communication is accountable."
       }
     ]
   },
@@ -526,26 +442,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"NIST Data Quality Framework","url":"https://www.nist.gov/itl/ai-risk-management-framework"},
+      {"name":"U.S. Census Bureau Statistical Standards","url":"https://www.census.gov/about/policies/quality/standards.html"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -591,6 +491,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Keep category changes explainable",
         "body": "When a code is renamed or split, preserve the reason, effective date, and mapping for historical reporting. Otherwise a manager may interpret a reporting change as a demand change. The queue can apply the current approved code while the client documents how older records should be read. This small amount of version evidence protects the research from false trends and makes ownership decisions auditable."
+      },
+      {
+        "heading": "Taxonomy evidence should preserve ambiguity",
+        "body": "A contact-reason code is evidence about the interaction only when its definition, alternatives, and unknown path are stable. ISO 18295-1 links process categories to outcomes; the Privacy Framework reminds the operator that a reason label can itself expose a sensitive purpose; Zero Trust discourages treating a category as permission to view or change more data. The method should sample routine, compound, and misrouted contacts, ask an independent reviewer to code the primary customer need, and record disagreements without forcing consensus. A tidy distribution can be a warning if agents choose the easiest label or if compound work has no valid category. For CallCenterOutsourced.com, the category should support routing and learning while remaining distinct from identity, severity, sentiment, and outcome. A code cannot prove that the customer caused a delay or that the first owner resolved the need. The limitation is that taxonomy quality depends on the decisions the client intends to make. The evidence-led conclusion is to revise definitions through an owned change record and preserve comparability across versions."
       }
     ]
   },
@@ -601,26 +505,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"},
+      {"name":"NIST Guide to Protecting the Confidentiality of Personally Identifiable Information, SP 800-122","url":"https://csrc.nist.gov/pubs/sp/800/122/final"},
+      {"name":"PCI DSS Document Library","url":"https://www.pcisecuritystandards.org/standards/pci-dss/"},
+      {"name":"CISA Data Protection Guidance","url":"https://www.cisa.gov/topics/cyber-threats-and-advisories/data-security"}
     ],
     "sections": [
       {
@@ -662,6 +550,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Approve the purpose before the format",
         "body": "The same customer evidence can carry different risk depending on why it is copied and who receives it. A quality reviewer may need a redacted interaction, while a policy owner may need a narrow source field. Choosing a spreadsheet first reverses that order and encourages unnecessary inclusion. The safer decision sequence is purpose, minimum fields, recipient, destination, expiry, and deletion. An outsourced team can make that sequence visible in its request; the client owner can approve or reject it. This is a practical inference from purpose limitation and least-privilege principles, not a claim that every export requires the same treatment."
+      },
+      {
+        "heading": "An export is a new handling context",
+        "body": "Support-export risk begins when data leaves the working context, not only when a file is emailed. The Privacy Framework frames processing around purpose and risk; Zero Trust asks for attributable, contextual access; PCI DSS materials make payment-data handling dependent on the environment and approved process. The research unit is therefore an export request with a stated purpose, fields, recipient, retention point, and disposal or return path. A quality sample that includes unnecessary account history may be operationally convenient while creating a second uncontrolled record. The outsourced role is to identify the minimum fields, use an approved transfer route, and escalate when the purpose or recipient is unclear. It is not to decide that a broad export is acceptable because a customer or manager asks for speed. Sampling should include successful and rejected requests, then distinguish policy refusal, missing approval, wrong field selection, and confirmed exposure. The sources do not establish a universal retention period. The conclusion is that governance should be decided before format, because a secure file can still be the wrong disclosure."
       }
     ]
   },
@@ -672,26 +564,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "published": "2026-08-18",
     "sourceDate": "2026-08-18",
     "sources": [
-      {
-        "name": "ISO 18295-1 Customer Contact Centres",
-        "url": "https://www.iso.org/standard/73338.html"
-      },
-      {
-        "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
-      },
-      {
-        "name": "NIST Zero Trust Architecture, SP 800-207",
-        "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
-      },
-      {
-        "name": "NIST Digital Identity Guidelines, SP 800-63B",
-        "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
-      },
-      {
-        "name": "PCI DSS Document Library",
-        "url": "https://www.pcisecuritystandards.org/standards/pci-dss/"
-      }
+      {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
+      {"name":"NIST Contingency Planning Guide, SP 800-34","url":"https://csrc.nist.gov/pubs/sp/800/34/r1/final"},
+      {"name":"U.S. Department of Labor—Work Schedules","url":"https://www.dol.gov/general/topic/workhours"},
+      {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [
       {
@@ -737,6 +613,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Measure the exception path at the same resolution",
         "body": "Coverage research should not use minute-level queue data for ordinary contacts and day-level anecdote for exceptions. Use compatible intervals for answered work, pending decisions, owner acknowledgment, and customer updates. If the exception sample is small, show the cases and state the uncertainty rather than presenting a precise percentage. This keeps a coverage decision proportionate to the evidence and makes a later review possible."
+      },
+      {
+        "heading": "Coverage evidence must include failure states",
+        "body": "A coverage promise describes more than staffed hours. ISO 18295-1 supports connecting contact availability to service outcome; the Privacy Framework and Zero Trust guidance require attention to purpose, access, and accountable ownership when a channel is open. The research question is whether a customer can obtain a truthful next action during the promised window, not merely whether an agent was logged in. Evidence should pair schedule, channel, queue state, source availability, escalation coverage, callback promise, and unresolved age. An open phone line with no authorized decision owner may create access without resolution. Conversely, a closed channel with a clear approved callback path may be a deliberate boundary rather than a service failure. For CallCenterOutsourced.com, the client must define what “available” means for each reason and what fallback applies when a dependency is closed. Measures should separate answered contacts, abandoned contacts, unresolved escalations, missed promises, and owner acknowledgments. The sources do not provide a universal staffing or service-level target. The evidence-led conclusion is that coverage is credible only when its exception path is owned and observable."
       }
     ]
   }
