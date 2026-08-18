@@ -106,6 +106,7 @@ function RichPost({post}:{post:BlogPost}){
 
           <section className="article-copy"><h2>{post.sections[0].title}</h2>{post.sections[0].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[0].items&&<ul className="check-list">{post.sections[0].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
           <section className="article-copy"><h2>{post.sections[1].title}</h2>{post.sections[1].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
+          {post.bodyLink&&<p className="article-context-link">{post.bodyLink.before} <a href={post.bodyLink.href}>{post.bodyLink.label}</a> {post.bodyLink.after}</p>}
 
           <section className="article-table-section"><h2>Data and decision boundary</h2><p className="module-intro">Use this table as a starting point, then match each row to the client's tools and call guide. The manager column stays outside the team member's normal authority.</p><div className="table-scroll-cue">Swipe the table sideways to see the manager column →</div><div className="article-table-wrap" tabIndex={0} aria-label="Scrollable data and decision boundary table"><table><thead><tr><th>Data or request</th><th>Team member can</th><th>Manager keeps</th></tr></thead><tbody>{table.map(row=><tr key={row.data}><th scope="row">{row.data}</th><td>{row.agent}</td><td>{row.manager}</td></tr>)}</tbody></table></div></section>
 

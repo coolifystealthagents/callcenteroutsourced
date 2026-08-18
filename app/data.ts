@@ -130,6 +130,7 @@ export type BlogPost = {
   expertQuote?: { text: string; attribution: string; source: number };
   faqs?: readonly { question: string; answer: string }[];
   sources?: readonly { name: string; organization: string; date: string; url: string; note: string }[];
+  bodyLink?: { href: string; label: string; before: string; after: string };
   related?: readonly { label: string; href: string }[];
   banners?: readonly { label: string; title: string; body: string; href: string; cta: string }[];
 };

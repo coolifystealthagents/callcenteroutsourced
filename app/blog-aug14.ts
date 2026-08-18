@@ -45,7 +45,7 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
   minutes: 8 + (index % 4),
   keyword: draft.title,
   published: draft.published,
-  updated: draft.updated,
+  updated: draft.slug === 'call-center-peak-hour-coverage-planning' ? '2026-08-18' : draft.updated,
   intro: draft.intro,
   sections: [
     { title: 'Start with the customer need', paragraphs: [draft.focus, `Write the request, the next action, and the finished record for ${draft.title.toLowerCase()}.`], items: ['Name the request', 'Show one useful example', 'State the review point', 'Name the owner'] },
@@ -72,12 +72,21 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
     { name: 'Zero Trust Architecture, SP 800-207', organization: 'National Institute of Standards and Technology', date: 'August 2020', url: 'https://csrc.nist.gov/pubs/sp/800/207/final', note: 'Supports explicit access and decision boundaries.' },
     { name: 'ISO 18295-1 overview', organization: 'International Organization for Standardization', date: '2017', url: 'https://www.iso.org/standard/65137.html', note: 'Supports defined contact-centre processes and service outcomes.' },
   ],
+  bodyLink: draft.slug === 'call-center-peak-hour-coverage-planning'
+    ? { href: '/services/inbound-call-handling', label: 'Inbound Call Handling service guide', before: 'Before adding more shifts, define what a person may handle in the live inbound queue.', after: 'shows the approved call work, manager handoffs, and small first-week pilot that make the coverage plan usable.' }
+    : undefined,
   related: draft.slug === 'call-center-appointment-reschedule-handoff'
     ? [
         { label: 'Plan outbound appointment setting', href: '/services/outbound-appointment-setting' },
         { label: 'Set up inbound call handling', href: '/services/inbound-call-handling' },
         { label: 'Build omnichannel customer support', href: '/services/omnichannel-customer-support' },
       ]
+    : draft.slug === 'call-center-peak-hour-coverage-planning'
+      ? [
+          { label: 'Set up inbound call handling', href: '/services/inbound-call-handling' },
+          { label: 'Review reporting support', href: '/services/workforce-reporting-support' },
+          { label: 'Build omnichannel customer support', href: '/services/omnichannel-customer-support' },
+        ]
     : [{ label: 'Review customer support', href: '/services/customer-support' }, { label: 'Review operations support', href: '/services/operations-support' }, { label: 'Review reporting support', href: '/services/reporting-and-qa' }],
   banners: draft.slug === 'call-center-appointment-reschedule-handoff'
     ? [
@@ -85,6 +94,12 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
         { label: 'Call handoff', title: 'Keep the request with the next call owner', body: 'Record the requested time, confirmed availability, and next owner before the customer leaves the queue.', href: '/services/inbound-call-handling', cta: 'Set up inbound call handling' },
         { label: 'Customer update', title: 'Give the customer one clear update path', body: 'Use the approved channel and route uncertain changes to the owner who can confirm them.', href: '/services/omnichannel-customer-support', cta: 'Build customer support coverage' },
       ]
+    : draft.slug === 'call-center-peak-hour-coverage-planning'
+      ? [
+          { label: 'Queue scope', title: 'Define the live inbound lane', body: 'Start with approved call reasons, a small shift, and a manager who can take exceptions.', href: '/services/inbound-call-handling', cta: 'Review inbound call handling' },
+          { label: 'Review', title: 'Keep coverage evidence visible', body: 'Use a small sample of waits, handoffs, and open work before changing the plan.', href: '/services/workforce-reporting-support', cta: 'Review reporting support' },
+          { label: 'Fallback', title: 'Set the customer contact path', body: 'Document when a request moves between phone, chat, and email, and who owns the next update.', href: '/services/omnichannel-customer-support', cta: 'Plan customer support coverage' },
+        ]
     : [{ label: 'Scope', title: 'Define the first queue', body: 'List the work, review points, and approval limits before adding coverage.', href: '/services/operations-support', cta: 'Review operations support' }, { label: 'Review', title: 'Use representative examples', body: 'Sample early work with a named owner and fix unclear rules quickly.', href: '/services/reporting-and-qa', cta: 'Review reporting support' }, { label: 'Handoff', title: 'Keep decisions with the owner', body: 'Document each escalation so the next manager can act without reconstructing the case.', href: '/services/customer-support', cta: 'Review customer support' }],
 });
 
