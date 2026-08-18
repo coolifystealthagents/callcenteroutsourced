@@ -44,6 +44,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and method",
+        "body": "Evidence for this order-exception study comes from ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). The methodology is to sample delayed, damaged, address-conflict, and ordinary cases; preserve the source visible at contact time; code authority, promise, owner acknowledgment, and disposition; and have a second reviewer inspect disagreements. These sources guide controls, not shipping remedies or vendor performance. Limitations include missing event linkage, client-specific policy, and unknown outcomes. The evidence-led conclusion is that a queue improves continuity by naming the decision owner and preserving uncertainty, not by turning a status into a promise."
+      },
+      {
         "heading": "The question: who may decide?",
         "body": "This study asks whether an outsourced order-support queue can identify, preserve, and route an exception without turning an estimate into a promise. An exception is not simply a late status. It can be a conflict between an order record and a fulfillment event, a damaged parcel, an address mismatch, or a request that requires a policy decision. The research scope is the customer-contact layer: what the worker can see, say, record, and hand off. It does not assess a carrier, warehouse, merchant, or particular client. ISO 18295-1 supplies a contact-centre process and outcome lens. NIST privacy and zero-trust guidance supply a way to think about purpose, access, and accountable action. The result is an operating analysis, not a claim about industry performance."
       },
@@ -106,6 +110,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       }
     ],
     "sections": [
+      {
+        "heading": "Research evidence and methodology",
+        "body": "The evidence frame combines ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Digital Identity Guidelines (https://pages.nist.gov/800-63-3/sp800-63b.html). Methodology means matching a defined sample of updates to its trigger, source state, promised interval, channel, owner acknowledgment, and later correction, while reporting unknowns. The sources do not set one correct cadence. Limitations include delivery logs that cannot prove reading, time-zone ambiguity, and changing policies. The conclusion is that an outsourced queue should communicate a supported state and accountable next checkpoint; message frequency alone is not evidence of service."
+      },
       {
         "heading": "Research question and boundary",
         "body": "The question is how support leaders can test whether promised updates arrive at the right time and contain only supported information. The object of study is not message volume. It is the relationship among a customer-impact event, the interval promised, the source state, the channel permitted, and the next accountable owner. An outsourced contact team may send an approved update, but it cannot make uncertainty disappear by repeating an internal target. ISO 18295-1 is relevant because it treats contact processes and results as connected. NIST privacy guidance is relevant because a timely message can still disclose too much or reach the wrong audience. This brief makes no claim about a specific company’s cadence or customer satisfaction."
@@ -174,6 +182,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "This case-chain review uses ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). Methodology is a blind reconstruction test across intake, transfer, correction, and closure: an independent reviewer receives only approved fields and records whether request, source, authority, action, owner, and outcome can be recovered. The sources do not prescribe a CRM schema. Limitations include client-specific retention rules and unavailable system access. The conclusion is that attributable relationships between minimum fields are stronger evidence than longer notes or copied transcripts."
+      },
+      {
         "heading": "What must a second reviewer know?",
         "body": "This research asks what minimum evidence allows an outsourced support case to be reviewed without reconstructing it from disconnected systems. The question is deliberately narrower than “how long should a note be?” A usable chain links the customer’s request, the relevant source fact, the actor and authority, the action taken, the promise made, the next owner, and the eventual disposition. NIST privacy and zero-trust materials support purpose-limited access and attributable action. ISO 18295-1 supports repeatable process and outcome review. These sources do not prescribe a single CRM schema and do not measure CallCenterOutsourced.com performance. The analysis concerns support continuity and minimum necessary evidence."
       },
@@ -241,6 +253,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "Evidence for scope drift is grounded in ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). Methodology is a before-and-after inventory of sampled contacts coded by reason, data action, decision authority, escalation, and outcome, compared with the approved queue definition. The sources do not establish a universal boundary or staffing model. Limitations include seasonality, changing systems, incomplete reason codes, and supervisor changes. The conclusion is that new work belongs in a controlled queue only when its owner, permission, evidence requirement, and exit path are explicit."
+      },
+      {
         "heading": "The operating question",
         "body": "This brief asks how to distinguish healthy demand variation from an outsourced queue performing work outside its approved scope. Scope includes contact reasons, systems touched, data fields viewed or edited, decisions made, hours promised, and escalation obligations. NIST Zero Trust Architecture ties access to a request and role; the Privacy Framework emphasizes purpose and appropriate handling; ISO 18295-1 adds process and outcome discipline. None of these sources can determine a particular contract or employment boundary. They provide a way to test whether observed work still matches an owned approval. Capability is not authorization, and a growing transfer count is not proof that work belongs in a queue."
       },
@@ -307,6 +323,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       }
     ],
     "sections": [
+      {
+        "heading": "Research evidence and methodology",
+        "body": "The appointment study draws on ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Digital Identity Guidelines (https://pages.nist.gov/800-63-3/sp800-63b.html). Methodology is to reconcile scheduled, confirmed, changed, cancelled, and no-show records with the contact attempt, source timestamp, approved channel, customer response, and remedy owner. The guidance does not prove why an individual missed an appointment. Limitations include incomplete attendance evidence, local policy, and channel delivery uncertainty. The conclusion is that a support queue should improve the evidence around the event without converting an unknown cause into blame or an unauthorized remedy."
+      },
       {
         "heading": "Question and evidence boundary",
         "body": "The research question is how an outsourced appointment team can investigate no-shows without assigning blame from a single calendar status. A no-show label may be created by a provider, a customer, a reminder system, or a scheduling mismatch. ISO 18295-1 supports reviewing process and outcome; NIST identity and privacy guidance support controlled handling of appointment and customer information. The sources do not establish cancellation rights, accessibility remedies, or a provider’s attendance rule. This study therefore treats the status as a hypothesis requiring corroboration: confirmed local time, schedule history, reminder delivery, customer response, service-side attendance, and the owner’s later action."
@@ -379,6 +399,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "Identity-recovery evidence is interpreted through NIST Digital Identity Guidelines (https://pages.nist.gov/800-63-3/sp800-63b.html), NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final), and the NIST Privacy Framework (https://www.nist.gov/privacy-framework). Methodology compares recovery cases by failed signal, permitted alternate path, sensitive action requested, owner decision, and customer outcome, with a second reviewer checking whether the record contains secrets or unsupported assumptions. These sources do not certify a client’s identity process. Limitations include client-specific assurance levels, accessibility needs, and incomplete fraud signals. The conclusion is that safe recovery preserves dignity by making refusal actionable while keeping authorization with the approved owner."
+      },
+      {
         "heading": "The recovery question",
         "body": "This study asks which evidence and role boundaries let a support team recover a customer’s service path after ordinary verification fails. Recovery is not one action: answering a low-risk question, restoring access, changing a payment detail, and disclosing account history carry different consequences. NIST Digital Identity Guidelines distinguish assurance from convenience, while Zero Trust Architecture treats authorization as contextual. Privacy guidance supports limiting collection and disclosure. These sources offer design principles, not a universal authenticator or a claim about a particular fraud rate. The scope is the outsourced support interaction and its handoff to the owner of a sensitive decision."
       },
@@ -449,6 +473,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
       }
     ],
     "sections": [
+      {
+        "heading": "Research evidence and methodology",
+        "body": "Decision-latency evidence is framed by ISO 18295-1 (https://www.iso.org/standard/73338.html), NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final), and the NIST Privacy Framework (https://www.nist.gov/privacy-framework). Methodology separates queue wait, transfer time, owner acknowledgment, time to decision, and time to customer update for a defined exception cohort. The guidance does not prescribe a target latency. Limitations include clock differences, missing acknowledgments, changing severity rules, and small samples. The conclusion is that rapid transfer is not rapid resolution unless the receiving owner accepts the decision and the customer-facing clock is preserved."
+      },
       {
         "heading": "What delay are we measuring?",
         "body": "The question is how to determine whether delayed escalations reflect demand, missing evidence, unavailable authority, or an unclear promise. A transfer timestamp alone cannot answer it. ISO 18295-1 connects process design with customer results, and NIST governance material emphasizes defined roles, communication, and response evidence. The study concerns an outsourced support queue that can recognize and route a case but may not own policy, payment, legal, or sensitive-account decisions. It does not set one acceptable response time and does not measure a specific team. The research aim is to make waiting explainable."
@@ -521,6 +549,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "The taxonomy study uses ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). Methodology tests proposed codes against a stratified sample of calls, asks independent reviewers to code ambiguous and compound contacts, and compares disagreement with downstream owner and outcome fields. The sources do not define a universal contact taxonomy. Limitations include language variation, multi-intent work, policy changes, and the risk of forcing uncertainty into a neat label. The conclusion is that codes are useful only when their definitions, exceptions, and decision owners remain explainable."
+      },
+      {
         "heading": "Question and taxonomy purpose",
         "body": "This research asks how a support operation can design contact reasons that improve routing and learning without distorting the customer’s actual need. ISO 18295-1 supports defined processes and results; NIST governance supports traceable responsibility. A category is useful only when its inclusion and exclusion rules, owner, and next action are clear. This is not a recommendation for a universal label set and it is not a claim about a company’s demand mix. The scope is the point where an outsourced agent records a customer request and the organization later uses that record to route, measure, or change work."
       },
@@ -592,6 +624,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "Export governance is evaluated against the NIST Privacy Framework (https://www.nist.gov/privacy-framework), NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final), and PCI DSS guidance (https://www.pcisecuritystandards.org/standards/pci-dss/). Methodology inventories reports, downloads, attachments, screenshots, and integrations for a defined support task, then codes purpose, minimum fields, recipient, destination, approval, expiry, and deletion evidence. The sources do not dictate one retention period. Limitations include unmanaged copies, incomplete logs, client-specific payment scope, and jurisdictional duties. The conclusion is that a filtered, authorized record is safer evidence than a broad export chosen for convenience."
+      },
+      {
         "heading": "The export question",
         "body": "This brief asks how to evaluate whether support exports contain the minimum evidence needed for a decision and reach only the approved audience. A permitted case view does not automatically authorize a spreadsheet, screenshot, attachment, or local copy. NIST Privacy Framework and Zero Trust Architecture support purpose limitation, least privilege, and contextual authorization. PCI DSS is relevant when payment data can enter an export. These sources provide governance principles; they do not determine a client’s retention period or payment scope. The research boundary is an outsourced support workflow that may request or prepare a filtered record for a named owner."
       },
@@ -659,6 +695,10 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
+        "heading": "Research evidence and methodology",
+        "body": "Coverage commitments are studied using ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). Methodology compares ordinary demand and boundary intervals with answered contacts, approved work completed, unresolved exceptions, owner availability, acknowledgment, and customer updates. The sources do not set a service level or staffing ratio. Limitations include demand volatility, policy changes, local employment obligations, and small exception cohorts. The conclusion is that coverage is credible only when the ordinary queue and the decision path behind exceptions can both meet the stated promise."
+      },
+      {
         "heading": "Coverage is more than staffed hours",
         "body": "The research question is how an outsourced call-center service can test whether its coverage promise remains credible across demand, handoffs, and exceptions. ISO 18295-1 treats people, processes, and results as connected. NIST governance emphasizes accountable risk decisions and recovery ownership. Those principles support examining interval, channel, customer impact, backlog, manager availability, access, and exception load. A rostered seat count does not prove that an authorized decision maker is reachable when the ordinary path breaks. This brief does not set a staffing ratio, service level, or claim about a particular operation."
       },
@@ -701,4 +741,3 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ]
   }
 ];
-
