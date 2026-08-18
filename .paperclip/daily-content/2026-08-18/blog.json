@@ -1,0 +1,28 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "blog",
+  "entries": [
+    { "route": "/blog/call-center-morning-queue-readiness", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-peak-hour-staffing-handoff", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-callback-ownership-control", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-script-change-control", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-qa-sample-selection", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-escalation-severity-ladder", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-knowledge-base-stale-answer-review", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-omnichannel-handoff-note", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-shift-change-control", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-complaint-intake-routing", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-appointment-reminder-exceptions", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-access-review-before-new-queue", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-contact-reason-taxonomy", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-reopen-reason-review", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-service-level-exception-log", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-new-hire-nesting-checklist", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-voicemail-triage", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-email-to-phone-escalation", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-weekly-operations-review", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-payment-question-boundary", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-language-access-routing", "sourcePaths": ["app/blog-aug18.ts"] },
+    { "route": "/blog/call-center-queue-backlog-aging", "sourcePaths": ["app/blog-aug18.ts"] }
+  ]
+}
