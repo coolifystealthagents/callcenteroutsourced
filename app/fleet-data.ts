@@ -3,6 +3,7 @@ export type ResearchPost = { slug: string; title: string; excerpt: string; publi
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
 import { august14ResearchBatch } from './research-aug14.ts';
 import { august17ResearchBatch } from './research-aug17.ts';
+import { august18ResearchBatch } from './research-aug18.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
 // loader source so publication proof can bind each route and date directly.
@@ -159,6 +160,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...august18ResearchBatch,
   ...august17ResearchBatch,
   ...august14ResearchBatch,
   ...august13FreshResearchBatch,
