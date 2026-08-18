@@ -5,15 +5,15 @@
   "family": "research",
   "minimum": 10,
   "entries": [
-    {"slug":"call-center-order-exception-ownership-research-brief","route":"/research/call-center-order-exception-ownership-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-customer-update-cadence-research-brief","route":"/research/call-center-customer-update-cadence-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-support-case-evidence-chain-research-brief","route":"/research/call-center-support-case-evidence-chain-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-queue-scope-drift-research-brief","route":"/research/call-center-queue-scope-drift-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-appointment-no-show-evidence-research-brief","route":"/research/call-center-appointment-no-show-evidence-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-customer-identity-recovery-research-brief","route":"/research/call-center-customer-identity-recovery-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-escalation-decision-latency-research-brief","route":"/research/call-center-escalation-decision-latency-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-contact-reason-taxonomy-research-brief","route":"/research/call-center-contact-reason-taxonomy-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-support-export-governance-research-brief","route":"/research/call-center-support-export-governance-research-brief","sourcePath":"app/research-aug18.ts"},
-    {"slug":"call-center-service-coverage-commitment-research-brief","route":"/research/call-center-service-coverage-commitment-research-brief","sourcePath":"app/research-aug18.ts"}
+    {"slug":"call-center-order-exception-ownership-research-brief","route":"/research/call-center-order-exception-ownership-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-customer-update-cadence-research-brief","route":"/research/call-center-customer-update-cadence-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-support-case-evidence-chain-research-brief","route":"/research/call-center-support-case-evidence-chain-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-queue-scope-drift-research-brief","route":"/research/call-center-queue-scope-drift-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-appointment-no-show-evidence-research-brief","route":"/research/call-center-appointment-no-show-evidence-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-customer-identity-recovery-research-brief","route":"/research/call-center-customer-identity-recovery-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-escalation-decision-latency-research-brief","route":"/research/call-center-escalation-decision-latency-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-contact-reason-taxonomy-research-brief","route":"/research/call-center-contact-reason-taxonomy-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-support-export-governance-research-brief","route":"/research/call-center-support-export-governance-research-brief","sourcePath":"app/fleet-data.ts"},
+    {"slug":"call-center-service-coverage-commitment-research-brief","route":"/research/call-center-service-coverage-commitment-research-brief","sourcePath":"app/fleet-data.ts"}
   ]
 }
