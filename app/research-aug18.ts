@@ -28,7 +28,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     ],
     "sections": [
       {
-        "heading": "Research evidence and method",
+        "heading": "Research evidence and methodology",
         "body": "Evidence for this order-exception study comes from ISO 18295-1 (https://www.iso.org/standard/73338.html), the NIST Privacy Framework (https://www.nist.gov/privacy-framework), and NIST Zero Trust Architecture (https://csrc.nist.gov/pubs/sp/800/207/final). The methodology is to sample delayed, damaged, address-conflict, and ordinary cases; preserve the source visible at contact time; code authority, promise, owner acknowledgment, and disposition; and have a second reviewer inspect disagreements. These sources guide controls, not shipping remedies or vendor performance. Limitations include missing event linkage, client-specific policy, and unknown outcomes. The evidence-led conclusion is that a queue improves continuity by naming the decision owner and preserving uncertainty, not by turning a status into a promise."
       },
       {
@@ -52,7 +52,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Measure unsupported promises, stale-source use, wrong-order linkage, missing dependency, delayed ownership, correction, and repeat contact separately. Pair counts with the cohort, observation window, channel, and customer-impact class. A falling transfer count could mean better resolution or silent closure, so inspect owner acknowledgment and reopened cases. Do not use a speed measure as a substitute for evidence quality. Preserve a small, minimized sample for calibration and remove payment or identity data that is not needed for the review. If the operation changes its script or source system, begin a new comparison period rather than presenting a blended trend as proof of improvement."
       },
       {
-        "heading": "Limits and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The cited sources do not define shipping remedies, carrier standards, staffing ratios, or a universal meaning for “in transit.” They also do not establish legal responsibility for a particular order. The bounded conclusion is that order-exception quality depends on explicit source authority and accountable next ownership, not on whether a status field contains a value. CallCenterOutsourced.com’s relevant operating boundary is to capture the customer’s request accurately, use approved information, avoid promises outside authority, and make the next decision visible. A client-side owner must set policy, access, retention, and remedy rules. Further research should compare independently linked cases over a defined period and report unknowns rather than rewarding confident guesses."
       },
       {
@@ -107,7 +107,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Report on-time delivery beside source freshness, customer corrections, repeat contacts, missed promises, owner acknowledgment, and unresolved age. Segment routine status cases from high-impact exceptions. Compare time zones explicitly and keep message retries distinct from successful delivery. A before-and-after cadence change is not causal evidence when staffing, systems, policy, or demand changed simultaneously. Keep a minimized audit sample and record why an update could not be sent. If a customer receives a truthful unresolved update but still needs to contact the queue, that is not automatically a cadence failure; it may identify a decision or product problem. The measurement must preserve that distinction."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "No cited source supplies one correct update interval for every product, customer, channel, or impact class. Delivery logs may not prove reading, and a customer’s later outcome may not have been knowable when the message was written. The evidence-led conclusion is that a useful cadence communicates a truthful state and ownership change, not merely the passage of time. A client owner should set the promise, authorize channels, and decide which events require escalation. An outsourced team can make the promise observable by preserving the source used, the time sent, the next owner, and the safe fallback when the source is incomplete."
       },
       {
@@ -166,7 +166,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Count missing links by case stage and cause. Pair evidence completeness with repeat contact, correction, reopened work, owner acknowledgment, and time to outcome. Keep mixed channels and high-impact cases visible rather than averaging them into one score. Sample both successful and unsuccessful cases because a successful outcome can conceal unsafe handling. Version the review rubric when the workflow changes. Do not infer causation from a correlation between note quality and resolution time: complex cases may naturally require more documentation. An evidence chain should make a decision auditable while limiting exposure, not create a new archive of every customer detail."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "Retention and linkage requirements depend on the client environment, applicable privacy duties, channel, and purpose of review. The sources do not define the exact fields for every support workflow. The conclusion is that case quality is continuity of decision-relevant evidence with minimum necessary exposure. The outsourced boundary is to capture the request faithfully, cite the approved source, record the authorized action and next owner, and escalate when authority or evidence is missing. The client remains responsible for policy, system ownership, access approval, and retention decisions. A follow-up study should test whether independent reviewers reach the same reconstruction without expanding the data copied into the case."
       },
       {
@@ -225,7 +225,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Track new contact reasons, permission additions, sensitive-field edits, exception approvals, returned transfers, work completed without a named owner, and requests that agents handled by improvisation. Report by queue and time period, and preserve scope versions so a trend does not confuse an approved expansion with a breach. Review customer corrections and repeat contacts alongside speed. A low transfer rate can indicate good resolution or unauthorized completion. The decision record should state the scope, risk, approver, effective date, review date, and rollback condition. Data minimization applies to the sample: inspect only fields needed to establish the boundary."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The cited sources cannot determine a client’s contract, local employment responsibility, or legal interpretation. They also do not prescribe the right size of a queue or a universal approval matrix. The evidence-led conclusion is that scope is controlled when observed work, access, and authority are periodically reconciled to an owned decision. CallCenterOutsourced.com can support that control by operating within the written queue, documenting exceptions, and escalating expansion requests. The client must approve permissions, policy, and responsibility. A credible follow-up compares the approved scope to real cases after each material workflow or system change."
       },
       {
@@ -284,7 +284,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Compare no-shows with time-zone corrections, reminder delivery, late changes, repeat contact, reschedule outcome, provider capacity, and unresolved records. Report the unknown category and its reason. Segment by appointment type and channel only when those differences affect interpretation. A reduction in no-shows after a reminder change is suggestive, not proof of causation, if availability or policy also changed. Keep a minimized audit sample and protect identity data. The useful measure is not a leaderboard of agents; it is a decision map showing where the promise, communication, schedule, or ownership broke."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The available sources do not set cancellation rules, local scheduling standards, or one acceptable reminder interval. Calendar delivery does not prove comprehension, and provider attendance evidence may be unavailable to an outsourced queue. The conclusion is that no-show analysis is credible only when the schedule promise and communication evidence are reconciled. The support boundary is to preserve facts, avoid blame claims, offer approved recovery, and route disputes. The client or service owner must decide remedies and policy. Further research should test a defined sample across time zones and distinguish unknown evidence from confirmed customer behavior."
       },
       {
@@ -347,7 +347,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Track recovery completion, safe deferral, repeated failure, escalation acknowledgment, account changes after recovery, and repeat contact. Segment by action risk and channel, not merely success or failure. Inspect whether a successful recovery was followed by a correction or unauthorized change, and whether a refusal left the customer with a documented next step. A lower failure count could result from weaker checks, so measurement must pair convenience with subsequent control evidence. Review only the minimum fields necessary and restrict access to the audit sample. Any incident signal should follow the client’s security path rather than become an ad hoc support investigation."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The cited sources do not specify one recovery factor, retry threshold, or accessibility method for every service. They cannot determine legal duties or the client’s fraud model. The conclusion is that identity recovery is sound when assurance is matched to the requested action and uncertainty has an accountable path. CallCenterOutsourced.com’s boundary is to follow the approved recovery route, avoid secrets and unsupported disclosure, and make safe deferral clear. The client owns policy, access approval, and incident response. A useful follow-up tests recovery outcomes by action risk over a defined period without collecting extra identity data."
       },
       {
@@ -410,7 +410,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Report acknowledgment latency, return count, time waiting for evidence, missed update promises, unowned intervals, oldest open case, and resolution by impact class. Keep averages beside distributions because an average can conceal a small number of severe delays. Compare periods only when the definition, systems, staffing, and policy are stable. A shorter latency after a routing change is suggestive but not causal if demand or decision mix changed. Preserve minimized case examples for calibration. The goal is to identify the owner and repair the dependency, not to pressure agents into making decisions beyond their authority."
       },
       {
-        "heading": "Limits and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The sources cannot set a universal decision time without the service promise, customer impact, jurisdiction, and dependency. Logs may omit conversations or later corrections. The conclusion is that escalation latency becomes actionable when every waiting interval has a reason, owner, and customer-facing expectation. The outsourced boundary is to recognize the trigger, preserve relevant evidence, route to the named authority, and communicate a truthful next update. The client owns policy and receiving capacity. Follow-up research should test whether unowned intervals predict repeat contact or correction in a defined cohort."
       },
       {
@@ -473,7 +473,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Report agreement, reclassification, multi-reason rate, unknown rate, transfer outcomes, repeat contact, and unresolved age by reason. Review code changes as versioned decisions. Do not compare two periods without accounting for a new category or changed inclusion rule. Pair volume with customer-impact evidence; a small category may be important. Quality sampling should inspect whether the code led to the right owner, not only whether the label matched a training key. Minimize copied customer detail and keep the audit record focused on the classification decision. A taxonomy can be statistically stable and operationally wrong if it routes to nobody."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The cited sources do not prescribe taxonomy granularity, a channel-neutral vocabulary, or a universal agreement threshold. Contact reasons may also reflect product design or policy choices beyond the queue. The conclusion is that a good taxonomy preserves the customer need while making the next responsible decision visible. CallCenterOutsourced.com can apply the approved code, preserve ambiguity, and escalate signals outside its authority. The client owns category definitions and reporting interpretation. Further study should test whether code changes improve ownership and reduce repeat contact without increasing unnecessary data capture."
       },
       {
@@ -536,7 +536,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Track export requests, sensitive-field detections, destination type, approval, access expiry, deletion confirmation, and repeat exposure after correction. Report by purpose and system. Review both successful controls and near misses. A decline in export volume may simply mean work moved to screenshots or unmanaged copies, so include all paths in the inventory. Preserve only the evidence needed to establish the control result. Changes to report templates, permissions, or client scope should start a new comparison period. The useful outcome is a reasoned decision about fields, audience, and lifecycle, not a prohibition detached from the work’s purpose."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "The applicable retention period, payment scope, legal duties, and approved destination depend on the client environment and jurisdiction. The sources do not replace a client’s security or privacy review. The conclusion is that export governance is effective when purpose, fields, audience, and lifecycle are all explicitly bounded. The outsourced boundary is to request or use the minimum approved record, avoid local copies, and escalate restricted fields or uncertain authority. The client owns approvals, retention, and incident response. Follow-up research should compare filtered views with exports on decision usefulness while measuring exposure and deletion evidence."
       },
       {
@@ -595,7 +595,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
         "body": "Pair speed and availability with unresolved exceptions, owner acknowledgment, customer corrections, repeat contact, missed update promises, and backlog age by interval. Treat inability to make a required decision as a coverage finding even when contacts are answered. Compare like periods and record policy or system changes. A single service percentage can conceal boundary failures, so report distributions and the oldest cases. Keep a minimized sample for review and remove unnecessary identity or payment data. The measure should help a manager decide whether to change hours, backup ownership, queue scope, or the customer promise."
       },
       {
-        "heading": "Limitations and conclusion",
+        "heading": "Research limitations and conclusion",
         "body": "No cited source sets a universal service level, staffing ratio, operating-hours promise, or manager span. Demand and customer impact differ by service, and local employment or contractual duties require the responsible owner. The conclusion is that coverage is credible when the ordinary queue and the exception decision path can both meet defined customer commitments. CallCenterOutsourced.com can make its boundary visible by handling approved work, documenting dependencies, and escalating when authority is unavailable. The client owns promises, policy, staffing decisions, and exception capacity. A follow-up should compare promised coverage with actual decision availability over a defined peak and boundary sample."
       },
       {
