@@ -9,6 +9,11 @@
     {"slug":"call-center-appointment-no-show-research-brief","route":"/research/call-center-appointment-no-show-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
     {"slug":"call-center-knowledge-search-failure-research-brief","route":"/research/call-center-knowledge-search-failure-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
     {"slug":"call-center-escalation-return-loop-research-brief","route":"/research/call-center-escalation-return-loop-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
-    {"slug":"call-center-customer-preference-conflict-research-brief","route":"/research/call-center-customer-preference-conflict-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"}
+    {"slug":"call-center-customer-preference-conflict-research-brief","route":"/research/call-center-customer-preference-conflict-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
+    {"slug":"call-center-quality-calibration-disagreement-research-brief","route":"/research/call-center-quality-calibration-disagreement-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
+    {"slug":"call-center-queue-forecast-input-research-brief","route":"/research/call-center-queue-forecast-input-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
+    {"slug":"call-center-callback-number-integrity-research-brief","route":"/research/call-center-callback-number-integrity-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
+    {"slug":"call-center-crm-field-ownership-research-brief","route":"/research/call-center-crm-field-ownership-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"},
+    {"slug":"call-center-service-recovery-evidence-research-brief","route":"/research/call-center-service-recovery-evidence-research-brief","sourcePath":"app/research-aug19.ts","sourceDate":"2026-08-19"}
   ]
 }
