@@ -2,6 +2,28 @@ import { august13ReplacementBlogBatch } from './blog-aug13-replacements';
 import { august14BlogBatch } from './blog-aug14';
 import { august17BlogBatch } from './blog-aug17';
 import { august18BlogBatch } from './blog-aug18';
+import { august18Repair01 } from './blog-aug18-repair-2-01';
+import { august18Repair02 } from './blog-aug18-repair-2-02';
+import { august18Repair03 } from './blog-aug18-repair-2-03';
+import { august18Repair04 } from './blog-aug18-repair-2-04';
+import { august18Repair05 } from './blog-aug18-repair-2-05';
+import { august18Repair06 } from './blog-aug18-repair-2-06';
+import { august18Repair07 } from './blog-aug18-repair-2-07';
+import { august18Repair08 } from './blog-aug18-repair-2-08';
+import { august18Repair09 } from './blog-aug18-repair-2-09';
+import { august18Repair10 } from './blog-aug18-repair-2-10';
+import { august18Repair11 } from './blog-aug18-repair-2-11';
+import { august18Repair12 } from './blog-aug18-repair-2-12';
+import { august18Repair13 } from './blog-aug18-repair-2-13';
+import { august18Repair14 } from './blog-aug18-repair-2-14';
+import { august18Repair15 } from './blog-aug18-repair-2-15';
+import { august18Repair16 } from './blog-aug18-repair-2-16';
+import { august18Repair17 } from './blog-aug18-repair-2-17';
+import { august18Repair18 } from './blog-aug18-repair-2-18';
+import { august18Repair19 } from './blog-aug18-repair-2-19';
+import { august18Repair20 } from './blog-aug18-repair-2-20';
+import { august18Repair21 } from './blog-aug18-repair-2-21';
+import { august18Repair22 } from './blog-aug18-repair-2-22';
 
 export const site = {
   "domain": "CallCenterOutsourced.com",
@@ -883,7 +905,9 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
   return value;
 };
 
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch].reduce((posts, post) => {
+const august18RepairBatch: readonly BlogPost[] = [august18Repair01, august18Repair02, august18Repair03, august18Repair04, august18Repair05, august18Repair06, august18Repair07, august18Repair08, august18Repair09, august18Repair10, august18Repair11, august18Repair12, august18Repair13, august18Repair14, august18Repair15, august18Repair16, august18Repair17, august18Repair18, august18Repair19, august18Repair20, august18Repair21, august18Repair22];
+
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18RepairBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;
