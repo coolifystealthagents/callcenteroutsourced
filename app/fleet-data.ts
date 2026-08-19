@@ -3,6 +3,7 @@ export type ResearchPost = { slug: string; title: string; excerpt: string; publi
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
 import { august14ResearchBatch } from './research-aug14.ts';
 import { august17ResearchBatch } from './research-aug17.ts';
+import { august19ResearchBatch } from './research-aug19.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
 // loader source so publication proof can bind each route and date directly.
@@ -886,6 +887,7 @@ export const researchPosts: readonly ResearchPost[] = [
       ]
     },
   ...august17ResearchBatch,
+  ...august19ResearchBatch,
   ...august14ResearchBatch,
   ...august13FreshResearchBatch,
   researchBodyV3('call-center-queue-capacity-review-a-research-brief', 'Call Center Queue Capacity Review: A Research Brief', 'Queue capacity is not just a headcount estimate: it is the amount of demand a defined team can handle while preserving customer access, safe decisions, and review ownership. ISO 18295 emphasizes customer-contact processes and results, while NIST governance guidance supports explicit risk ownership.', 'Define the interval, channel, offered contacts, backlog age, service objective, exception load, and manager coverage before comparing capacity. Review both ordinary demand and escalation work, then pause expansion when the review owner cannot absorb the additional control load.', ['call-center-queue-coverage-a-research-brief', 'call-center-workforce-forecast-inputs-a-research-brief', 'call-center-supervisor-span-of-control-a-research-brief'], '2026-08-12', '2026-08-11'),
