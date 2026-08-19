@@ -45,7 +45,7 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
   minutes: 8 + (index % 4),
   keyword: draft.title,
   published: draft.published,
-  updated: draft.slug === 'call-center-peak-hour-coverage-planning' ? '2026-08-18' : draft.updated,
+  updated: draft.slug === 'call-center-peak-hour-coverage-planning' ? '2026-08-18' : draft.slug === 'call-center-appointment-reschedule-handoff' ? '2026-08-19' : draft.updated,
   intro: draft.intro,
   sections: [
     { title: 'Start with the customer need', paragraphs: [draft.focus, `Write the request, the next action, and the finished record for ${draft.title.toLowerCase()}.`], items: ['Name the request', 'Show one useful example', 'State the review point', 'Name the owner'] },
@@ -74,7 +74,9 @@ const makePost = (draft: August14Draft, index: number): BlogPost => ({
   ],
   bodyLink: draft.slug === 'call-center-peak-hour-coverage-planning'
     ? { href: '/services/inbound-call-handling', label: 'Inbound Call Handling service guide', before: 'Before adding more shifts, define what a person may handle in the live inbound queue.', after: 'shows the approved call work, manager handoffs, and small first-week pilot that make the coverage plan usable.' }
-    : undefined,
+    : draft.slug === 'call-center-appointment-reschedule-handoff'
+      ? { href: '/services/outbound-appointment-setting', label: 'Outbound Appointment Setting service guide', before: 'When a customer asks for a new time, the team needs a clear line between recording the request and confirming the booking.', after: 'sets the approved appointment work, manager handoffs, and first-week review that keep the next update honest.' }
+      : undefined,
   related: draft.slug === 'call-center-appointment-reschedule-handoff'
     ? [
         { label: 'Plan outbound appointment setting', href: '/services/outbound-appointment-setting' },

@@ -5,6 +5,7 @@ import test from 'node:test'
 import { fleetServices } from '../app/fleet-data.ts'
 import { homepageServiceCards } from '../app/homepage-service-cards.ts'
 import { august13ReplacementBlogBatch } from '../app/blog-aug13-replacements.ts'
+import { august14BlogBatch } from '../app/blog-aug14.ts'
 
 const root = process.cwd()
 const homepage = fs.readFileSync(path.join(root, 'app/page.tsx'), 'utf8')
@@ -21,6 +22,19 @@ test('each rendered homepage service card targets a unique generated service rou
   }
   assert.match(homepage, /homepageServiceCards\.map\(\(service, index\) =>/)
   assert.match(homepage, /href=\{`\/services\/\$\{service\.slug\}`\}/)
+})
+
+test('August 14 appointment-reschedule article has a generated contextual service handoff', () => {
+  const post = august14BlogBatch.find((item) => item.slug === 'call-center-appointment-reschedule-handoff')
+  assert.ok(post)
+  assert.deepEqual(post.bodyLink, {
+    href: '/services/outbound-appointment-setting',
+    label: 'Outbound Appointment Setting service guide',
+    before: 'When a customer asks for a new time, the team needs a clear line between recording the request and confirming the booking.',
+    after: 'sets the approved appointment work, manager handoffs, and first-week review that keep the next update honest.',
+  })
+  assert.equal(post.updated, '2026-08-19')
+  assert.ok(routedSlugs.has(post.bodyLink.href.split('/').pop()), `missing generated service route ${post.bodyLink.href}`)
 })
 
 test('all homepage image definitions consumed by rendered images have non-empty labels', () => {
