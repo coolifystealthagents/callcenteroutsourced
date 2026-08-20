@@ -1,28 +1,53 @@
 {
-  "campaignDate": "2026-08-19",
-  "family": "blog",
-  "entries": [
-    {"route":"/blog/call-center-queue-ownership-during-shift-change","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-callback-promise-controls","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-contact-disposition-rules","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-customer-record-correction-handoffs","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-escalation-aging-review","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-same-day-service-recovery-handoffs","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-knowledge-article-change-control","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-multichannel-case-linking-rules","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-after-hours-message-triage","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-script-exception-review","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-qa-sample-design","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-customer-verification-stop-rules","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-appointment-change-controls","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-customer-complaint-fact-patterns","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-coverage-gap-escalation","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-outsourced-ticket-reopen-controls","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-transcript-redaction-review","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-language-assistance-handoff-controls","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-system-outage-workflow","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-manager-approval-queue-design","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/outsourced-call-center-customer-update-source-checks","sourcePaths":["app/blog-aug19.ts"]},
-    {"route":"/blog/call-center-outsourced-call-transfer-quality","sourcePaths":["app/blog-aug19.ts"]}
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/outsourced-call-center-intake-source-register",
+      "source": "content/blog/outsourced-call-center-intake-source-register.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-approval-evidence-matrix",
+      "source": "content/blog/outsourced-call-center-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-exception-queue-triage",
+      "source": "content/blog/outsourced-call-center-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-quality-review-cadence",
+      "source": "content/blog/outsourced-call-center-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-handoff-acceptance-log",
+      "source": "content/blog/outsourced-call-center-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-access-recertification-review",
+      "source": "content/blog/outsourced-call-center-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-weekly-decision-brief",
+      "source": "content/blog/outsourced-call-center-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-source-of-truth-map",
+      "source": "content/blog/outsourced-call-center-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-change-control-record",
+      "source": "content/blog/outsourced-call-center-change-control-record.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-work-queue-ownership",
+      "source": "content/blog/outsourced-call-center-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-escalation-path-design",
+      "source": "content/blog/outsourced-call-center-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/outsourced-call-center-launch-readiness-review",
+      "source": "content/blog/outsourced-call-center-launch-readiness-review.md"
+    }
   ]
 }
