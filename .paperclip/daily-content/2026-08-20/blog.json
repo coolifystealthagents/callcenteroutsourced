@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "contract": "fleet-authoring-contract-v5",
+  "targetDate": "2026-08-20",
+  "family": "blog",
+  "domain": "callcenteroutsourced.com",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "entries": [
+    {"slug":"outsourced-call-center-first-contact-resolution-review","route":"/blog/outsourced-call-center-first-contact-resolution-review","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-first-contact-resolution-review.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-peak-coverage-trigger","route":"/blog/outsourced-call-center-peak-coverage-trigger","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-peak-coverage-trigger.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-knowledge-article-retirement","route":"/blog/outsourced-call-center-knowledge-article-retirement","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-knowledge-article-retirement.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-queue-priority-calibration","route":"/blog/outsourced-call-center-queue-priority-calibration","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-queue-priority-calibration.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-after-call-work-standard","route":"/blog/outsourced-call-center-after-call-work-standard","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-after-call-work-standard.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-channel-switch-continuity","route":"/blog/outsourced-call-center-channel-switch-continuity","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-channel-switch-continuity.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-supervisor-calibration-huddle","route":"/blog/outsourced-call-center-supervisor-calibration-huddle","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-supervisor-calibration-huddle.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-customer-promise-reconciliation","route":"/blog/outsourced-call-center-customer-promise-reconciliation","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-customer-promise-reconciliation.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-qa-sample-selection","route":"/blog/outsourced-call-center-qa-sample-selection","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-qa-sample-selection.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-absence-handoff-protocol","route":"/blog/outsourced-call-center-absence-handoff-protocol","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-absence-handoff-protocol.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-script-change-approval","route":"/blog/outsourced-call-center-script-change-approval","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-script-change-approval.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"},
+    {"slug":"outsourced-call-center-escalation-routing-map","route":"/blog/outsourced-call-center-escalation-routing-map","sourcePaths":["app/blog-aug20.ts"],"imagePath":"public/blog-aug20/outsourced-call-center-escalation-routing-map.png","promptReceipt":".paperclip/daily-content/2026-08-20/blog-image-prompts.json"}
+  ]
+}

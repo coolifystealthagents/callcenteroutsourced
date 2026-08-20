@@ -136,7 +136,7 @@ function RichPost({post}:{post:BlogPost}){
 
 function PlainPost({post}:{post:BlogPost}){
   return <article className="section"><div className="container article-shell">
-    <p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
+    <p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>{post.heroImage&&<img className="article-hero-image" src={post.heroImage} alt="Outsourced call center operations scene" width="1600" height="900" />}
     <p className="article-meta">Published <time dateTime={post.published}>{displayDate(post.published)}</time></p>
     <p className="article-intro">{post.intro}</p>
     <div className="article-copy">{post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0).map(section=><section key={section.title}><h2>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>)}</div>
