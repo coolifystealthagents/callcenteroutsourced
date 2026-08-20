@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "contract": "fleet-authoring-contract-v5",
+  "targetDate": "2026-08-20",
+  "family": "research",
+  "minimum": 5,
+  "entries": [
+    {"route":"/research/call-center-knowledge-article-retirement-research-brief","sourcePaths":["app/research-aug20.ts"]},
+    {"route":"/research/call-center-channel-switch-continuity-research-brief","sourcePaths":["app/research-aug20.ts"]},
+    {"route":"/research/call-center-escalation-path-design-research-brief","sourcePaths":["app/research-aug20.ts"]},
+    {"route":"/research/call-center-absence-handoff-protocol-research-brief","sourcePaths":["app/research-aug20.ts"]},
+    {"route":"/research/call-center-customer-promise-reconciliation-research-brief","sourcePaths":["app/research-aug20.ts"]}
+  ]
+}

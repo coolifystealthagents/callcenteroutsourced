@@ -1,9 +1,10 @@
 export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
-export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[] };
+export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; image?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[] };
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
 import { august14ResearchBatch } from './research-aug14.ts';
 import { august17ResearchBatch } from './research-aug17.ts';
 import { august19ResearchBatch } from './research-aug19.ts';
+import { august20ResearchBatch } from './research-aug20.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
 // loader source so publication proof can bind each route and date directly.
@@ -160,6 +161,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...august20ResearchBatch,
   {
       "slug": "call-center-order-exception-ownership-research-brief",
       "title": "Call Center Order Exception Ownership: A Research Brief",

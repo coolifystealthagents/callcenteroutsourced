@@ -12,7 +12,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   if(!post)return {};
   const url=`${base}/research/${post.slug}`;
   const publishedDate=post.sourceDate ?? post.published;
-  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate}};
+  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate,images:post.image?[post.image]:undefined}};
 }
 export default async function ResearchArticle({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
@@ -27,6 +27,7 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
     <meta property="article:published_time" content={publishedDate}/>
     <p className="eyebrow">{site.brand} research · Published <time dateTime={publishedDate}>{displayDate(publishedDate)}</time></p>
     <h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
+    {post.image?<img src={post.image} alt={`${post.title} editorial illustration`} width="1536" height="1024" style={{width:'100%',height:'auto',borderRadius:'18px'}}/>:null}
     {post.keyStats?.length?<section className="card"><h2>Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
     {post.takeaways?.length?<section className="card"><h2>Key takeaways</h2><ul>{post.takeaways.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
     {post.sections.map(s=><section className="card" key={s.heading}><h2>{s.heading}</h2><p>{s.body}</p></section>)}
