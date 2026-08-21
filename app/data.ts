@@ -136,6 +136,8 @@ export const services = [
 ] as const;
 export type BlogPost = {
   slug: string;
+  /** Non-public route-local editorial proof retained for deterministic audits. */
+  sourceSegment?: string;
   heroImage?: string;
   title: string;
   excerpt: string;

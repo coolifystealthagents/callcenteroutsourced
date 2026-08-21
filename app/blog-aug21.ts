@@ -38,7 +38,7 @@ const para = (d: Draft, n: number) => [
 ];
 
 const make = (d: Draft, i: number): BlogPost => ({
- slug:d.slug, heroImage:`/blog-aug21/${d.slug}.webp`, title:d.title, excerpt:d.excerpt,
+ slug:d.slug, sourceSegment:[d.sourceSegment ?? datedSourceSegment, ...para(d,i)].join(' '), heroImage:`/blog-aug21/${d.slug}.webp`, title:d.title, excerpt:d.excerpt,
  minutes:13 + i % 4, keyword:d.title, published:'2026-08-21', updated:'2026-08-21',
  intro:`${d.excerpt} This August 21, 2026 guide keeps outsourced call center operations, customer contact, evidence, and manager handoffs central.`,
  sections:para(d,i).map((body,n)=>({title:['The operating question','Build the evidence','Keep authority visible','Make the handoff travel','Measure the real outcome','Test a representative case','Repair the right layer','Review and maintain','A practical starting point','Pilot the routine'][n],paragraphs:[body]})),
