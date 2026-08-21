@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "contract": "fleet-authoring-contract-v6",
+  "targetDate": "2026-08-21",
+  "family": "research",
+  "entries": [
+    {"slug":"call-center-callback-timezone-integrity-research-brief","route":"/research/call-center-callback-timezone-integrity-research-brief","sourcePaths":["app/research-aug21.ts"],"sourceDateField":"sourceDate","sourceDate":"2026-08-21","renderedDate":"2026-08-21","renderedDateFields":["datePublished","article:published_time","time[datetime]"],"imagePath":"public/research-aug21/callback-timezone-integrity.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/callback-timezone-integrity.txt"},
+    {"slug":"call-center-multichannel-case-linkage-evidence-research-brief","route":"/research/call-center-multichannel-case-linkage-evidence-research-brief","sourcePaths":["app/research-aug21.ts"],"sourceDateField":"sourceDate","sourceDate":"2026-08-21","renderedDate":"2026-08-21","renderedDateFields":["datePublished","article:published_time","time[datetime]"],"imagePath":"public/research-aug21/case-linkage-evidence.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/case-linkage-evidence.txt"},
+    {"slug":"call-center-qa-sample-representativeness-research-brief","route":"/research/call-center-qa-sample-representativeness-research-brief","sourcePaths":["app/research-aug21.ts"],"sourceDateField":"sourceDate","sourceDate":"2026-08-21","renderedDate":"2026-08-21","renderedDateFields":["datePublished","article:published_time","time[datetime]"],"imagePath":"public/research-aug21/qa-sample-representativeness.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/qa-sample-representativeness.txt"},
+    {"slug":"call-center-consent-capture-provenance-research-brief","route":"/research/call-center-consent-capture-provenance-research-brief","sourcePaths":["app/research-aug21.ts"],"sourceDateField":"sourceDate","sourceDate":"2026-08-21","renderedDate":"2026-08-21","renderedDateFields":["datePublished","article:published_time","time[datetime]"],"imagePath":"public/research-aug21/consent-provenance.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/consent-provenance.txt"},
+    {"slug":"call-center-after-hours-safety-escalation-research-brief","route":"/research/call-center-after-hours-safety-escalation-research-brief","sourcePaths":["app/research-aug21.ts"],"sourceDateField":"sourceDate","sourceDate":"2026-08-21","renderedDate":"2026-08-21","renderedDateFields":["datePublished","article:published_time","time[datetime]"],"imagePath":"public/research-aug21/after-hours-safety-escalation.png","promptReceipt":".paperclip/daily-content/2026-08-21/prompts/after-hours-safety-escalation.txt"}
+  ]
+}
