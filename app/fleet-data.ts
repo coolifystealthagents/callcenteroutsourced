@@ -1,5 +1,5 @@
 export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
-export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; image?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[] };
+export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; image?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[]; serviceHandoff?: { href: string; label: string; body: string } };
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
 import { august14ResearchBatch } from './research-aug14.ts';
 import { august17ResearchBatch } from './research-aug17.ts';

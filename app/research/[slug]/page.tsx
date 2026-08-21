@@ -31,6 +31,7 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
     {post.keyStats?.length?<section className="card"><h2>Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
     {post.takeaways?.length?<section className="card"><h2>Key takeaways</h2><ul>{post.takeaways.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
     {post.sections.map(s=><section className="card" key={s.heading}><h2>{s.heading}</h2><p>{s.body}</p></section>)}
+    {post.serviceHandoff?<section className="card"><h2>Put this into a support lane</h2><p>{post.serviceHandoff.body}</p><a href={post.serviceHandoff.href}>{post.serviceHandoff.label}</a></section>:null}
     {post.internalLinks?.length?<section className="card"><h2>Related operating guides</h2><ul>{post.internalLinks.map(link=><li key={link}><a href={link}>{link.split('/').pop()?.replaceAll('-',' ')}</a></li>)}</ul></section>:null}
     {post.faqs?.length?<section className="card"><h2>FAQs</h2>{post.faqs.map(f=><div key={f.question}><h3>{f.question}</h3><p>{f.answer}</p></div>)}</section>:null}
     {post.sources?.length?<section className="card"><h2>Sources</h2><ol>{post.sources.map(s=><li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a></li>)}</ol></section>:null}
