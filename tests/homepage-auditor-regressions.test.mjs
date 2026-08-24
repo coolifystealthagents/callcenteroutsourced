@@ -7,9 +7,11 @@ import { homepageServiceCards } from '../app/homepage-service-cards.ts'
 import { august13ReplacementBlogBatch } from '../app/blog-aug13-replacements.ts'
 import { august14BlogBatch } from '../app/blog-aug14.ts'
 
+
 const root = process.cwd()
 const homepage = fs.readFileSync(path.join(root, 'app/page.tsx'), 'utf8')
 const components = fs.readFileSync(path.join(root, 'app/components.tsx'), 'utf8')
+const blogData = fs.readFileSync(path.join(root, 'app/data.ts'), 'utf8')
 const routedSlugs = new Set(fleetServices.map((service) => service.slug))
 
 test('each rendered homepage service card targets a unique generated service route', () => {
@@ -35,6 +37,18 @@ test('August 14 appointment-reschedule article has a generated contextual servic
   })
   assert.equal(post.updated, '2026-08-19')
   assert.ok(routedSlugs.has(post.bodyLink.href.split('/').pop()), `missing generated service route ${post.bodyLink.href}`)
+})
+
+test('queue-monitoring article keeps its service handoff inside the generated service set', () => {
+  const start = blogData.indexOf("slug: 'call-center-queue-monitoring'")
+  const end = blogData.indexOf("slug: 'call-center-schedule-adherence'", start)
+  const post = blogData.slice(start, end)
+  assert.ok(start >= 0 && end > start)
+  assert.match(post, /updated: '2026-08-24'/)
+  assert.match(post, /href: '\/services\/workforce-reporting-support'/)
+  assert.match(post, /label: 'Workforce Reporting Support'/)
+  assert.match(post, /Your manager still decides coverage changes and customer promises\./)
+  assert.ok(routedSlugs.has('workforce-reporting-support'))
 })
 
 test('all homepage image definitions consumed by rendered images have non-empty labels', () => {

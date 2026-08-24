@@ -1,4 +1,5 @@
 import type {Metadata} from 'next';
+import {Fragment} from 'react';
 import {notFound} from 'next/navigation';
 import {Header,Footer,JsonLd} from '../../components';
 import {blogPosts,site,type BlogPost} from '../../data';
@@ -139,7 +140,7 @@ function PlainPost({post}:{post:BlogPost}){
     <p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>{post.heroImage&&<img className="article-hero-image" src={post.heroImage} alt="Outsourced call center operations scene" width="1600" height="900" />}
     <p className="article-meta">Published <time dateTime={post.published}>{displayDate(post.published)}</time></p>
     <p className="article-intro">{post.intro}</p>
-    <div className="article-copy">{post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0).map(section=><section key={section.title}><h2>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>)}</div>
+    <div className="article-copy">{post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0).map((section,index)=>(<Fragment key={section.title}><section><h2>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>{index===1&&post.bodyLink&&<p className="article-context-link">{post.bodyLink.before} <a href={post.bodyLink.href}>{post.bodyLink.label}</a> {post.bodyLink.after}</p>}</Fragment>))}</div>
     {post.faqs&&<section className="faq-section"><h2>Questions managers ask</h2>{post.faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>}
   </div></article>;
 }

@@ -522,7 +522,7 @@ const august11BlogBatch: BlogPost[] = [
   },
   {
     slug: 'call-center-queue-monitoring', title: 'Call Center Queue Monitoring: A Manager’s Working View',
-    excerpt: 'Build a queue view that helps managers act on wait time, open work, staffing gaps, and escalations without rewarding unsafe shortcuts.', minutes: 10, keyword: 'call center queue monitoring', published: '2026-08-12', updated: '2026-08-12',
+    excerpt: 'Build a queue view that helps managers act on wait time, open work, staffing gaps, and escalations without rewarding unsafe shortcuts.', minutes: 10, keyword: 'call center queue monitoring', published: '2026-08-12', updated: '2026-08-24',
     intro: 'Queue monitoring is a decision aid, not a scoreboard. A manager needs enough context to see whether a delay comes from demand, coverage, complexity, a tool problem, or an unresolved policy question.',
     sections: [
       { title: 'Name the signals that matter', paragraphs: ['Start with contacts offered, work waiting, oldest item, response timing, and escalations without an owner. Keep each signal tied to a decision the manager can make.', 'Avoid a wall of metrics with no response rule. If a number changes, the view should tell the owner what to inspect next.'], items: ['Current queue state', 'Age of oldest open work', 'Coverage and absences', 'Unowned escalations'] },
@@ -533,6 +533,7 @@ const august11BlogBatch: BlogPost[] = [
       { title: 'Use a concise escalation note', paragraphs: ['A queue alert is easier to act on when it states the observed condition and the requested decision.'], items: ['Queue and time observed', 'Customer or case impact', 'Action already taken', 'Decision or owner needed'] },
       { title: 'Tune the view after real reviews', paragraphs: ['Remove signals that never lead to a decision and add the evidence managers repeatedly request. Record changes with an owner and date.', 'A useful view stays small enough to read during a busy shift and specific enough to support a handoff.'] },
     ],
+    bodyLink: { href: '/services/workforce-reporting-support', label: 'Workforce Reporting Support', before: 'If you need help preparing queue facts for a manager review, the', after: 'service gives a Philippines-based team a bounded way to prepare reports and flag gaps. Your manager still decides coverage changes and customer promises.' },
     faqs: [{ question: 'What should a manager see first?', answer: 'Show current queue state, oldest open work, coverage gaps, and escalations that lack ownership.' }, { question: 'Should agents see the same dashboard?', answer: 'Not always. Give agents the instructions and queue facts needed for their work; keep manager decisions in the manager view.' }, { question: 'How often should the view change?', answer: 'Review it after real queue decisions expose a missing or unused signal.' }],
   },
   {
