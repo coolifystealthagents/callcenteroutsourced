@@ -27,6 +27,7 @@ import { august18Gate322 } from './blog-aug18-gate3-22';
 import { august19BlogBatch } from './blog-aug19';
 import { august20BlogBatch } from './blog-aug20';
 import { august21BlogBatch } from './blog-aug21';
+import { august23BlogBatch } from './blog-aug23';
 
 export const site = {
   "domain": "CallCenterOutsourced.com",
@@ -914,7 +915,7 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
 
 const august18Gate3Batch: readonly BlogPost[] = [august18Gate301, august18Gate302, august18Gate303, august18Gate304, august18Gate305, august18Gate306, august18Gate307, august18Gate308, august18Gate309, august18Gate310, august18Gate311, august18Gate312, august18Gate313, august18Gate314, august18Gate315, august18Gate316, august18Gate317, august18Gate318, august18Gate319, august18Gate320, august18Gate321, august18Gate322];
 
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch].reduce((posts, post) => {
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...august23BlogBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;

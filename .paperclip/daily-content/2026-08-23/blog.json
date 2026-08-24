@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/outsourced-call-center-callback-promise-ledger","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-knowledge-change-notice","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-queue-priority-calibration","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-supervisor-calibration-huddle","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-after-call-work-standard","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-customer-identity-check","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-crm-duplicate-prevention","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-schedule-adherence-exception","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-complaint-deescalation-record","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-consent-capture-review","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-channel-switch-continuity","sourcePaths":["app/blog-aug23.ts"]},
+    {"route":"/blog/outsourced-call-center-intent-taxonomy","sourcePaths":["app/blog-aug23.ts"]}
+  ]
+}
