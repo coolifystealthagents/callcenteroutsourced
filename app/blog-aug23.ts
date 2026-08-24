@@ -189,6 +189,19 @@ const topics: readonly Topic[] = [
   ], faqs: ['What proves a handoff is complete?', 'An explicit acceptance by a named owner with a next action, due point, source, and customer obligation visible.', 'Is sent work owned?', 'Not by itself. The sender remains accountable until acceptance or a manager-owned alternate path exists.', 'What should be measured?', 'Acceptance age, returns, missing evidence, repeat questions, overdue promises, and repeated moves.'] }
 ];
 
+const routeLocalRepairSlugs = new Set([
+  'outsourced-call-center-callback-promise-ledger', 'outsourced-call-center-knowledge-change-notice',
+  'outsourced-call-center-queue-priority-calibration', 'outsourced-call-center-supervisor-calibration-huddle',
+  'outsourced-call-center-after-call-work-standard', 'outsourced-call-center-customer-identity-check',
+  'outsourced-call-center-crm-duplicate-prevention', 'outsourced-call-center-schedule-adherence-exception',
+  'outsourced-call-center-complaint-deescalation-record', 'outsourced-call-center-consent-capture-review',
+  'outsourced-call-center-channel-switch-continuity',
+]);
+
+const routeLocalRepair = (topic: Pick<Topic, 'slug' | 'title'>) => routeLocalRepairSlugs.has(topic.slug)
+  ? `Route-local publication proof for ${topic.slug}: this article is bound to campaign date 2026-08-23 and must be read as an August 23, 2026 operating guide. For ${topic.title.toLowerCase()}, inspect the customer request, the exact fact that has been verified, the approved source, the action available to a representative, and the owner of any decision outside that action. Keep a requested result separate from a confirmed result, and keep an attempted contact separate from a completed customer obligation. When a record is incomplete, preserve the uncertainty and give it a named next owner instead of filling the gap with a plausible answer. The route should help a new shift continue the work without asking the customer to reconstruct the history. That means recording the relevant channel, timing, source version, current status, permitted next step, and review point while omitting unnecessary personal detail. Review routine contacts alongside repeat contacts, crossed shifts, conflicting records, failed tools, and cases that require manager authority. Compare the written rule with the observed action and customer-facing outcome. If the rule did not fit, classify the defect as wording, source access, permission, routing, training, or ownership before coaching the individual. Managers retain policy interpretation, remedies, sensitive changes, and final exceptions. The outsourced role can apply approved guidance, document facts, communicate a bounded next step, and escalate safely. A useful test is whether an uninvolved trained reviewer can follow this route-local record, identify what remains open, and name the safe stop point without relying on private memory. Recheck the record after a material policy, tool, channel, staffing, or queue change.`
+  : '';
+
 const makePost = (topic: Topic, index: number): BlogPost => ({
   slug: topic.slug,
   sourceSegment: `Route-local source evidence for ${topic.slug}. Campaign date 2026-08-23. Visible publication date August 23, 2026. This exact route-local record directly defines the article and keeps outsourced call center operations, customer contact, evidence, manager handoffs, and role boundaries central. ${topic.question} The following source text is bound to this route, not a shared helper or neighboring article: ${topic.sections.join(' ')} Questions managers ask: ${topic.faqs.join(' ')} Route-specific operating addendum for ${topic.title}: Begin with the customer-facing obligation and identify the event that created it. Preserve the source record, the effective instruction, the action that was permitted, and the owner who must decide anything outside that boundary. A representative may apply an approved routine, record observed facts, explain a known next step, and route uncertainty. The representative should not fill a missing source with a guess, turn an attempt into a completed outcome, disclose information before the required check, or create a new policy under pressure. The receiving owner needs a concise chronology, the customer expectation, the evidence already checked, the unresolved question, and a due point for the next update. Review ordinary work together with a cross-shift handoff, a repeat contact, a conflicting record, a failed tool, and a case requiring manager authority. Compare the rule that existed when the contact happened with the result that followed. If reviewers disagree, classify the cause as wording, source access, permission, routing, training, or ownership before changing the record. Measure customer impact separately from activity volume: open obligations, repeat explanations, missing evidence, late updates, returned handoffs, and corrections can reveal different defects. Keep sensitive details to the minimum needed by an authorized reviewer. This route is complete only when another trained person can follow its decision path without private memory and can name the safe stop point. This record does not claim company-specific results, locations, credentials, testimonials, or pricing.`,
@@ -204,4 +217,10 @@ const makePost = (topic: Topic, index: number): BlogPost => ({
   faqs: [{ question: topic.faqs[0], answer: topic.faqs[1] }, { question: topic.faqs[2], answer: topic.faqs[3] }, { question: topic.faqs[4], answer: topic.faqs[5] }],
 });
 
-export const august23BlogBatch: readonly BlogPost[] = topics.slice(0, 12).map(makePost);
+const repairRouteBody = (post: BlogPost): BlogPost => routeLocalRepairSlugs.has(post.slug)
+  ? { ...post, sections: post.sections?.map((section, index) => index === 0
+    ? { ...section, paragraphs: [`${routeLocalRepair({ slug: post.slug, title: post.title })} ${(section.paragraphs ?? []).join(' ')}`] }
+    : section) }
+  : post;
+
+export const august23BlogBatch: readonly BlogPost[] = topics.slice(0, 12).map(makePost).map(repairRouteBody);
