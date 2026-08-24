@@ -1,0 +1,8 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "generator": "Gemini unavailable in this workspace",
+  "status": "text-complete-fallback",
+  "blocker": "No Gemini image-generation connector or tool was available during this run. No stock, retained, or uncertain image was substituted; existing route imagery was preserved.",
+  "assets": []
+}

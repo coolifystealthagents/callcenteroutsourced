@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "entries": [
+    {"route":"/research/call-center-client-decision-latency-research-brief","sourcePaths":["app/research-aug23.ts"]},
+    {"route":"/research/call-center-multilingual-intent-preservation-research-brief","sourcePaths":["app/research-aug23.ts"]},
+    {"route":"/research/call-center-callback-consent-boundaries-research-brief","sourcePaths":["app/research-aug23.ts"]},
+    {"route":"/research/call-center-service-recovery-authority-research-brief","sourcePaths":["app/research-aug23.ts"]},
+    {"route":"/research/call-center-repeat-contact-causation-research-brief","sourcePaths":["app/research-aug23.ts"]}
+  ]
+}
