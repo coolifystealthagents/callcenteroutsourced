@@ -1,5 +1,5 @@
 {
-  "campaignDate": "2026-08-23",
+  "campaignDate": "2026-08-24",
   "generator": "OpenAI built-in image_gen; Gemini connector unavailable in this workspace",
   "assets": [
     {"route":"/blog/outsourced-call-center-callback-promise-ledger","imagePath":"public/blog-aug23/outsourced-call-center-callback-promise-ledger.png","prompt":"Original editorial illustration of a supervisor reviewing a callback promise ledger with a remote customer-contact team; abstract screens, no readable text, no logos or watermark."},
