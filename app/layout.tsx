@@ -1,5 +1,7 @@
+import { AcrClient } from './acr-client';
+import Script from 'next/script';
 import './globals.css';
 import './redesign.css';
 import type { Metadata } from 'next';
 export const metadata: Metadata = { metadataBase: new URL('https://callcenteroutsourced.com'), title: { default: 'Call Center Outsourced | Coverage planning guides', template: '%s | Call Center Outsourced' }, description: 'Independent guides for outsourced call center coverage, scripts, onboarding, quality assurance, reporting, and provider questions.', openGraph: { title: 'Call Center Outsourced', description: 'Practical outsourced call center planning guides for business teams.', url: 'https://callcenteroutsourced.com', siteName: 'Call Center Outsourced', type:'website' } };
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang='en'><body>{children}</body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang='en'><body>{children}<AcrClient/><Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'call-center-outsourced',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/contact',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Booking Confirmed',event:'funnel_booking_confirmed'}]};`}</Script><Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive"/></body></html>}
