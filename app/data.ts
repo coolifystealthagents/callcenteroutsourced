@@ -906,6 +906,66 @@ const dailyBlogBatch: BlogPost[] = dailyBlogTopics.map(([slug, title, excerpt], 
   ],
 }));
 
+const august31BlogTopics = [
+  ['call-center-peak-hour-overflow-plan', 'Call Center Peak-Hour Overflow Plan', 'Build an overflow lane that opens on measurable queue signals and closes with a clean reconciliation of every transferred contact.'],
+  ['outsourced-call-center-pilot-scorecard', 'Outsourced Call Center Pilot Scorecard', 'Judge a limited pilot with balanced measures for customer outcome, accuracy, timeliness, escalation quality, and rework.'],
+  ['call-center-supervisor-escalation-coverage', 'Call Center Supervisor Escalation Coverage', 'Keep a qualified decision owner reachable across every supported shift without turning every exception into an emergency.'],
+  ['call-center-crm-disposition-standards', 'Call Center CRM Disposition Standards', 'Standardize call outcomes, notes, next actions, and ownership so managers can trust queue reports and callbacks.'],
+  ['outsourced-call-center-sop-change-log', 'Outsourced Call Center SOP Change Log', 'Control operating-procedure changes with an owner, effective time, training check, and rollback path.'],
+  ['call-center-first-contact-resolution-review', 'Call Center First-Contact Resolution Review', 'Review resolved contacts without rewarding premature closure or hiding repeat effort in another channel.'],
+  ['call-center-language-proficiency-calibration', 'Call Center Language Proficiency Calibration', 'Calibrate role-specific language skills with realistic calls, observable criteria, and consistent reviewer notes.'],
+  ['call-center-business-continuity-drill', 'Call Center Business Continuity Drill', 'Test how the queue, people, communications, and customer promises behave during a controlled service interruption.'],
+  ['call-center-knowledge-gap-escalation', 'Call Center Knowledge Gap Escalation Workflow', 'Turn unanswered agent questions into tracked knowledge fixes instead of one-off chat replies that disappear.'],
+  ['call-center-customer-authentication-fallback', 'Call Center Customer Authentication Fallback', 'Define a safe fallback when normal customer verification fails, with no improvised questions or weakened controls.'],
+  ['outsourced-call-center-monthly-governance-review', 'Outsourced Call Center Monthly Governance Review', 'Use a monthly operating review to close risks, approve changes, and align staffing decisions with customer outcomes.'],
+  ['call-center-quality-appeal-process', 'Call Center Quality Appeal Process', 'Give agents and reviewers a documented way to challenge a QA result while preserving evidence and scoring consistency.'],
+] as const;
+
+const august31BlogBatch: BlogPost[] = august31BlogTopics.map(([slug, title, excerpt], index) => ({
+  slug, title, excerpt, minutes: 10 + (index % 4), keyword: title, published: '2026-08-31', updated: '2026-08-31',
+  intro: `${excerpt} This guide turns that operating question into a reviewable routine for Call Center Outsourced buyers, with a clear trigger, a bounded agent action, and a manager-owned decision path.`,
+  stats: [
+    { value: '1', label: 'named process owner', note: 'One accountable owner approves the workflow and its exceptions.', source: 1 },
+    { value: '2', label: 'evidence checks', note: 'Review an early sample and a recurring sample against the same rule.', source: 1 },
+    { value: '4', label: 'handoff fields', note: 'Capture the trigger, action, open question, and next owner.', source: 1 },
+  ],
+  sections: [
+    { title: `Set the trigger for ${title.toLowerCase()}`, paragraphs: [`Begin by defining the event that starts this workflow. For ${title.toLowerCase()}, the trigger must be visible in the queue, CRM, schedule, or approved request rather than inferred from pressure or habit.`, 'Write the expected finish condition beside the trigger. The agent should know what a complete record looks like, how quickly it is due, and which outcome requires a manager.'], items: ['Name the source record', 'Define the start signal', 'State the expected finish', 'Assign the process owner'] },
+    { title: 'Pilot the narrowest useful lane', paragraphs: ['Use one channel, shift, customer reason, or work type for the first batch. A narrow lane makes missing inputs and confusing rules easier to see before they affect a larger queue.', 'Keep a reviewer available during the pilot. Record repeated questions in the workflow backlog so the written routine improves instead of relying on private messages.'] },
+    { title: 'Separate handling from authority', paragraphs: ['Agents may collect approved facts, follow the documented step, update permitted fields, and explain the next action. Managers retain exceptions, sensitive account changes, commercial promises, and any decision that changes policy.', 'NIST defines least privilege as restricting access to the minimum necessary for assigned tasks.[1] Apply the same discipline to system permissions and decision rights.'], items: ['Agent completes routine, reversible steps', 'Agent records evidence without unnecessary customer data', 'Manager decides exceptions and sensitive changes', 'Owner publishes any approved rule change'] },
+    { title: 'Use evidence that exposes rework', paragraphs: ['Count completed work together with reopened items, corrected records, repeat contacts, and escalations. A fast closure is not a good outcome when the customer must contact the team again.', `For this ${title.toLowerCase()} routine, sample the source record and the final record together. That comparison shows whether the workflow preserved context, ownership, and the promised next step.`] },
+    { title: 'Make the handoff executable', paragraphs: ['A manager handoff should contain the record identifier, triggering fact, action already taken, open decision, and due time. The next owner should be able to act without searching a private conversation.', 'Mark unknown facts as unknown. Do not copy passwords, authentication codes, full payment data, or unrelated personal information into notes.'], items: ['Link the approved source record', 'State the action already completed', 'Name the unresolved decision', 'Assign an owner and due time'] },
+    { title: 'Give agents words for a safe pause', paragraphs: ['Use a short line that acknowledges the request without promising an unapproved outcome: “I have recorded the details and completed the step I am authorized to take. The named owner will review the remaining decision.”'] },
+    { title: 'Review the routine before expanding it', paragraphs: [`After the first batch of ${title.toLowerCase()} work, review errors, delays, escalations, and customer impact with the process owner. Fix unclear inputs and tool conflicts before adding volume.`, 'Record each approved change with a version, owner, effective date, and reason. Brief the affected shift and verify one live example after the new version takes effect.'], items: ['Compare results with the written finish condition', 'Resolve repeated agent questions', 'Approve and date workflow changes', 'Expand only after the review is stable'] },
+  ],
+  controlTable: [
+    { data: 'Routine, complete request', agent: 'Follow the current workflow and record the result', manager: 'Review the agreed quality sample' },
+    { data: 'Required fact is missing', agent: 'Use the approved question or pause the item', manager: 'Choose the fallback or close the request' },
+    { data: 'Sensitive or irreversible change', agent: 'Preserve the record and escalate', manager: 'Verify evidence and approve or decline' },
+    { data: 'Workflow conflicts with the tool', agent: 'Do not invent a workaround', manager: 'Resolve, document, and version the rule' },
+  ],
+  scripts: [
+    { situation: 'Routine completion', text: '“I have completed the approved step and recorded the next action on the case.”' },
+    { situation: 'Manager decision', text: '“This part requires the named owner. I will send the facts and the open decision for review.”' },
+    { situation: 'Missing input', text: '“I do not have the required information to continue safely, so I will pause and confirm the next step.”' },
+  ],
+  faqs: [
+    { question: `Who should own ${title.toLowerCase()}?`, answer: 'Assign one client-side process owner who can approve the workflow, decide exceptions, and accept changes to scope.' },
+    { question: 'How large should the first batch be?', answer: 'Use the smallest batch that includes representative normal work and at least one manager handoff, then review it before expanding.' },
+    { question: 'What belongs in the weekly report?', answer: 'Include volume, timeliness, sampled accuracy, rework, open escalations, and workflow questions awaiting an owner.' },
+  ],
+  sources: [
+    { name: 'Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations', organization: 'NIST', date: 'May 2024', url: 'https://csrc.nist.gov/pubs/sp/800/171/r3/final', note: 'Least-privilege and documented-control guidance used for access and authority boundaries.' },
+    { name: 'ISO 18295-1:2017 Customer contact centres', organization: 'International Organization for Standardization', date: 'July 2017', url: 'https://www.iso.org/standard/64739.html', note: 'Customer contact centre requirements used as operating context.' },
+  ],
+  related: [{ label: 'Review inbound call handling', href: '/services/inbound-call-handling' }, { label: 'Plan reporting support', href: '/services/workforce-reporting-support' }, { label: 'Explore more operating guides', href: '/blog' }],
+  banners: [
+    { label: 'Scope', title: 'Turn the routine into a role brief', body: 'Document the queue, hours, tools, limits, and review owner before adding coverage.', href: '/contact-us', cta: 'Discuss the workflow' },
+    { label: 'Control', title: 'Start with a reviewable pilot', body: 'Use representative work, narrow access, and a manager who can decide exceptions.', href: '/services/operations-support', cta: 'Review operations support' },
+    { label: 'Scale', title: 'Expand only what is stable', body: 'Use quality samples and handoff evidence to decide when the next lane is ready.', href: '/blog', cta: 'Read more guides' },
+  ],
+}));
+
 const cleanAugust11Editorial = (value: unknown): unknown => {
   if (typeof value === 'string') return value.replace(/agents?/gi, match => match[0] === 'A' ? 'Team member' : 'team member').replace(/prompts?/gi, 'menu wording').replace(/routines?/gi, 'repeatable work');
   if (Array.isArray(value)) return value.map(cleanAugust11Editorial);
@@ -914,14 +974,8 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
 };
 
 const august18Gate3Batch: readonly BlogPost[] = [august18Gate301, august18Gate302, august18Gate303, august18Gate304, august18Gate305, august18Gate306, august18Gate307, august18Gate308, august18Gate309, august18Gate310, august18Gate311, august18Gate312, august18Gate313, august18Gate314, august18Gate315, august18Gate316, august18Gate317, august18Gate318, august18Gate319, august18Gate320, august18Gate321, august18Gate322];
-
-// August 21 is the accepted publication for these identities. Keep later batches
-// from shadowing those route-local records with same-slug replacements.
-const august23NonConflictingBatch: readonly BlogPost[] = august23BlogBatch.filter(
-  (post) => !august21BlogBatch.some((accepted) => accepted.slug === post.slug),
-);
-
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...august23NonConflictingBatch].reduce((posts, post) => {
+const august23NonConflictingBatch: readonly BlogPost[] = august23BlogBatch.filter((post) => !august21BlogBatch.some((accepted) => accepted.slug === post.slug));
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...august23NonConflictingBatch, ...august31BlogBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;
