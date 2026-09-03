@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/call-center-customer-silence-follow-up-stop-rule","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-policy-cutover-first-contact-audit","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-priority-renewal-evidence-check","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-reviewer-disagreement-casebook","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-note-readability-handoff-drill","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-verification-lockout-support-path","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-linked-profile-evidence-review","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-coverage-gap-recovery-window","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-complaint-ownership-transfer-map","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-permission-withdrawal-propagation","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-cross-channel-promise-reconciliation","sourcePaths":["app/blog-sep3.ts"]},
+    {"route":"/blog/call-center-multi-intent-primary-owner-rule","sourcePaths":["app/blog-sep3.ts"]}
+  ]
+}
