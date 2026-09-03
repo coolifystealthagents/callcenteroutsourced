@@ -1,0 +1,8 @@
+{
+  "campaignDate":"2026-09-03",
+  "family":"research",
+  "generator":"Gemini unavailable in this workspace",
+  "status":"text-complete-fallback",
+  "blocker":"No Gemini image-generation connector or tool was available. No stock or uncertain image was substituted.",
+  "assets":[]
+}

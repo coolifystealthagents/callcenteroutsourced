@@ -1,0 +1,11 @@
+{
+  "campaignDate":"2026-09-03",
+  "family":"research",
+  "entries":[
+    {"route":"/research/outsourced-call-center-escalation-acknowledgment-gap-research","sourcePaths":["app/research-sep3.ts"]},
+    {"route":"/research/outsourced-call-center-after-hours-decision-coverage-research","sourcePaths":["app/research-sep3.ts"]},
+    {"route":"/research/outsourced-call-center-customer-promise-dependency-chain-research","sourcePaths":["app/research-sep3.ts"]},
+    {"route":"/research/outsourced-call-center-transfer-context-loss-research","sourcePaths":["app/research-sep3.ts"]},
+    {"route":"/research/outsourced-call-center-policy-exception-drift-research","sourcePaths":["app/research-sep3.ts"]}
+  ]
+}
