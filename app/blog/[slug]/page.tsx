@@ -97,6 +97,7 @@ function RichPost({post}:{post:BlogPost}){
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
         <div className="article-meta"><span>Published <time dateTime={post.published}>{displayDate(post.published)}</time></span><span>{post.minutes} minute read</span><span>Evidence checked</span></div>
+        {post.heroImage&&<img className="article-hero-image" src={post.heroImage} alt={`${post.title} editorial illustration`} width="1600" height="900" />}
       </div>
     </section>
     <article className="article-page" data-article-marker={post.slug}>
