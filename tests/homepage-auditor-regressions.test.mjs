@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
 import test from 'node:test'
-import { fleetServices } from '../app/fleet-data.ts'
+import { fleetServices, researchPosts } from '../app/fleet-data.ts'
 import { homepageServiceCards } from '../app/homepage-service-cards.ts'
 import { august13ReplacementBlogBatch } from '../app/blog-aug13-replacements.ts'
 import { august14BlogBatch } from '../app/blog-aug14.ts'
@@ -70,4 +70,17 @@ test('August 13 blog internal service links target generated service routes', ()
       assert.ok(routedSlugs.has(match[1]), `${post.slug}: missing generated service route ${link.href}`)
     }
   }
+})
+
+test('order-status research keeps its bounded Order Management Support handoff and freshness contract', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-order-status-evidence-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-17')
+  assert.equal(post.updated, '2026-09-05')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/order-management-support',
+    label: 'Review Order Management Support',
+    body: 'If your team needs to explain approved order updates without turning estimates into promises, review the Order Management Support service. Managers still decide exceptions, customer remedies, and changes to the source record.',
+  })
+  assert.ok(routedSlugs.has('order-management-support'))
 })
