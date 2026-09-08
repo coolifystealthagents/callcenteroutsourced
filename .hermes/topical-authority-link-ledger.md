@@ -15,14 +15,15 @@
 | Inbound Call Handling | Can a team preserve the customer's requested callback window and the owner of a missed promise? | `/research/call-center-callback-window-verification-research-brief` | `/services/inbound-call-handling` | Audit next; no body-level handoff recorded. |
 | Omnichannel Customer Support | Can a case retain its context when a customer changes channel? | `/research/call-center-channel-switch-continuity-research-brief` | `/services/omnichannel-customer-support` | Verified 2026-08-21; block duplicate insertion. |
 | Outbound Appointment Setting | What permission and purpose must be clear before an outbound contact? | `/research/call-center-outbound-contact-permission-research-brief` | `/services/outbound-appointment-setting` | Audit next; no body-level handoff recorded. |
-| Order Management Support | Which source state can a team explain without turning an estimate into a promise? | `/research/call-center-order-status-evidence-research-brief` | `/services/order-management-support` | Audit next; no body-level handoff recorded. |
+| Order Management Support | Which source state can a team explain without turning an estimate into a promise? | `/research/call-center-order-status-evidence-research-brief` | `/services/order-management-support` | Delivered in the generated route-local main; source record already carries the bounded handoff and `updated: 2026-09-05`. Do not duplicate. |
 | Tier-One Technical Support | How can an agent know that an answer is current and route a knowledge exception? | `/research/call-center-knowledge-answer-freshness-research-brief` | `/services/tier-one-technical-support` | Audit next; no body-level handoff recorded. |
-| Collections Reminder Calls | Where must payment-channel information stop and a named owner take over? | `/research/call-center-payment-channel-boundary-research-brief` | `/services/collections-reminder-calls` | Audit next; no body-level handoff recorded. |
 | Customer Win-Back Support | How should a team keep contact purpose and preference records aligned across systems? | `/research/call-center-customer-preference-propagation-research-brief` | `/services/customer-win-back-support` | Audit next; no body-level handoff recorded. |
-| Dispatch Coordination | How can a team keep a customer promise tied to the local time, dependency, and owner? | `/research/call-center-time-zone-promise-reconciliation-research-brief` | `/services/dispatch-coordination` | Audit next; no body-level handoff recorded. |
-| Survey and Feedback Calls | How can a team preserve customer impact without presenting an allegation as a finding? | `/research/call-center-complaint-impact-classification-research-brief` | `/services/survey-and-feedback-calls` | Audit next; no body-level handoff recorded. |
 | Workforce Reporting Support | Which signals show a queue has outgrown its review coverage, rather than merely become busy? | `/research/call-center-queue-capacity-signal-research-brief` | `/services/workforce-reporting-support` | Audit next; no body-level handoff recorded. |
+
+## Reconciled source routes
+
+The former payment-channel, time-zone-promise, and complaint-impact source paths do not generate in the current route inventory. They are not execution candidates until an existing generated research route supports a new, separately reviewed map row.
 
 ## First candidate
 
-Audit `/research/call-center-order-status-evidence-research-brief` for a single contextual path to `/services/order-management-support`. The research already discusses source authority, customer promises, and the client-side decision owner, which matches the service's order-support boundary. Do not add it if the target href has already been introduced by another active writer.
+Audit `/research/call-center-callback-window-verification-research-brief` for one contextual path to `/services/inbound-call-handling`. The generated source and destination are present, and the route-local article does not contain the service href. Add a handoff only after a fresh content-model and ownership-boundary review.
