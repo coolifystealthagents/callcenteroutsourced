@@ -22,7 +22,14 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
     title:post.title,
     description:post.excerpt,
     alternates:{canonical:url},
-    openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:post.published},
+    openGraph:{
+      title:post.title,
+      description:post.excerpt,
+      url,
+      type:'article',
+      publishedTime:post.published,
+      images:post.heroImage?[{url:new URL(post.heroImage,base).toString(),alt:`${post.title} editorial illustration`}]:undefined,
+    },
   };
 }
 
