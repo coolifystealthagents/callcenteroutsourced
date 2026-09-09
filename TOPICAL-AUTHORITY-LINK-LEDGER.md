@@ -1,6 +1,6 @@
 # Call Center Outsourced topical-authority link ledger
 
-Updated: 2026-08-17
+Updated: 2026-09-09
 
 ## Scope
 
@@ -27,7 +27,7 @@ This ledger covers Philippines-based call-center staffing. It records only route
 
 ## First executable gap
 
-`/blog/call-center-peak-hour-coverage-planning` currently uses the generic related-link fallback for legacy, non-generated service paths. The next bounded public change should replace its reader-facing planning handoff with the confirmed `/services/inbound-call-handling` route, after inspecting the built page for the old and new hrefs.
+`/research/call-center-callback-window-verification-research-brief` is the first verified-absent pair in the current map. A fresh production build confirmed its route and `/services/inbound-call-handling` both generate and appear in the sitemap, while the research route's `<main>` contains zero copies of the service href. A future reader-facing change may add one data-owned, Philippines-only handoff after a focused ownership review; it must preserve the service owner's control of callback windows, exceptions, and customer remedies.
 
 ## Authorship and research evidence
 
