@@ -84,3 +84,16 @@ test('order-status research keeps its bounded Order Management Support handoff a
   })
   assert.ok(routedSlugs.has('order-management-support'))
 })
+
+test('callback-window research keeps its bounded inbound handoff and owner boundary', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-callback-window-verification-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-14')
+  assert.equal(post.updated, '2026-09-10')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/inbound-call-handling',
+    label: 'Build a safe inbound callback plan',
+    body: 'Use Inbound Call Handling to set up Filipino agents for approved callback work. Your manager still sets callback windows, exceptions, and customer remedies.',
+  })
+  assert.ok(routedSlugs.has('inbound-call-handling'))
+})
