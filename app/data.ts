@@ -33,6 +33,7 @@ import { september7BlogBatch } from './blog-sep7';
 import { september8BlogBatch } from './blog-sep8';
 import { september9BlogBatch } from './blog-sep9';
 import { september10BlogBatch } from './blog-sep10';
+import { september11BlogBatch } from './blog-sep11';
 import { september1BlogBatch } from './blog-sep1';
 import { september2BlogBatch } from './blog-sep2';
 
@@ -982,7 +983,7 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
 
 const august18Gate3Batch: readonly BlogPost[] = [august18Gate301, august18Gate302, august18Gate303, august18Gate304, august18Gate305, august18Gate306, august18Gate307, august18Gate308, august18Gate309, august18Gate310, august18Gate311, august18Gate312, august18Gate313, august18Gate314, august18Gate315, august18Gate316, august18Gate317, august18Gate318, august18Gate319, august18Gate320, august18Gate321, august18Gate322];
 const september3NonConflictingBatch: readonly BlogPost[] = september3BlogBatch.filter((post) => !august21BlogBatch.some((accepted) => accepted.slug === post.slug));
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...september3NonConflictingBatch, ...august31BlogBatch, ...september1BlogBatch, ...september2BlogBatch, ...september4BlogBatch, ...september7BlogBatch, ...september8BlogBatch, ...september9BlogBatch, ...september10BlogBatch].reduce((posts, post) => {
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...september3NonConflictingBatch, ...august31BlogBatch, ...september1BlogBatch, ...september2BlogBatch, ...september4BlogBatch, ...september7BlogBatch, ...september8BlogBatch, ...september9BlogBatch, ...september10BlogBatch, ...september11BlogBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;
