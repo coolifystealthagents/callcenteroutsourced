@@ -12,7 +12,7 @@
 
 | Service pillar | Existing supporting research question | Supporting route | Controlled next handoff | Status |
 | --- | --- | --- | --- | --- |
-| Inbound Call Handling | Can a team preserve the customer's requested callback window and the owner of a missed promise? | `/research/call-center-callback-window-verification-research-brief` | `/services/inbound-call-handling` | Verified 2026-09-09 in a fresh build: both routes generate and appear in the sitemap; the source `<main>` has zero target hrefs. First executable gap. |
+| Inbound Call Handling | Can a team preserve the customer's requested callback window and the owner of a missed promise? | `/research/call-center-callback-window-verification-research-brief` | `/services/inbound-call-handling` | Delivered locally in `e4974846af0ef0af3aebb856130a0e0c2491204c`; the fresh 2026-09-13 build finds the target href once in the source `<main>`. Public verification remains pending, so do not duplicate. |
 | Omnichannel Customer Support | Can a case retain its context when a customer changes channel? | `/research/call-center-channel-switch-continuity-research-brief` | `/services/omnichannel-customer-support` | Verified 2026-09-09: the generated source `<main>` contains the target href once. Delivered; do not duplicate. |
 | Outbound Appointment Setting | What permission and purpose must be clear before an outbound contact? | `/research/call-center-outbound-contact-permission-research-brief` | `/services/outbound-appointment-setting` | Verified 2026-09-09 in a fresh build: both routes generate and appear in the sitemap; the source `<main>` has zero target hrefs. |
 | Order Management Support | Which source state can a team explain without turning an estimate into a promise? | `/research/call-center-order-status-evidence-research-brief` | `/services/order-management-support` | Verified 2026-09-09: the generated source `<main>` contains the target href once. Delivered; do not duplicate. |
@@ -26,4 +26,4 @@ The former payment-channel, time-zone-promise, and complaint-impact source paths
 
 ## First candidate
 
-Audit `/research/call-center-callback-window-verification-research-brief` for one contextual path to `/services/inbound-call-handling`. The generated source and destination are present, and the route-local article does not contain the service href. Add a handoff only after a fresh content-model and ownership-boundary review.
+Audit `/research/call-center-outbound-contact-permission-research-brief` for one contextual path to `/services/outbound-appointment-setting`. The fresh 2026-09-13 build finds both generated routes in the sitemap and zero target hrefs in the research route's `<main>`. Add a handoff only after a fresh content-model and ownership-boundary review.
