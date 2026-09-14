@@ -42,3 +42,8 @@ This ledger covers Philippines-based call-center staffing. It records only route
 2. Change one chosen page only and keep the link adjacent to the decision it supports.
 3. Preserve the page's Philippines-based staffing boundary and manager-control language.
 4. Build, inspect the generated blog route and sitemap, then complete the single Coolify deployment and cache-busted apex/`www` exact-marker checks before calling a public change complete.
+
+## Public-verification status — 2026-09-14
+
+- Rendered source: `7f59b5185e212718962a4a2070a427da6a7d91ab` added the route-local outbound appointment handoff. The local production artifact has the expected H1, apex canonical, `article:modified_time` of `2026-09-14`, the handoff marker, its target href, and a sitemap entry (this sitemap has no `lastmod` by repository contract).
+- Preserve rendered-source commit `7f59b5185e212718962a4a2070a427da6a7d91ab`; do not duplicate the handoff. Cache-busted apex and `www` each returned `200 text/html` with the expected H1 and apex canonical, but neither served the marker or `2026-09-14` modified date. The public sitemap returned `200 application/xml` and contains the route. No repository-approved deployment target or routine was found, so no deployment was triggered.
