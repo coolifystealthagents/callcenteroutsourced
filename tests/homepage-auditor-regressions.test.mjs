@@ -97,3 +97,16 @@ test('callback-window research keeps its bounded inbound handoff and owner bound
   })
   assert.ok(routedSlugs.has('inbound-call-handling'))
 })
+
+test('outbound-contact-permission research keeps its bounded appointment outreach handoff and owner boundary', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-outbound-contact-permission-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-14')
+  assert.equal(post.updated, '2026-09-14')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/outbound-appointment-setting',
+    label: 'Plan an approved appointment outreach lane',
+    body: 'When your approved process includes appointment outreach, use Outbound Appointment Setting to define the contact reason, source record, and handoff for a blocked attempt. Your client owner still sets contact permission, opt-out handling, customer remedies, and exceptions.',
+  })
+  assert.ok(routedSlugs.has('outbound-appointment-setting'))
+})
