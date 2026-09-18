@@ -3,7 +3,13 @@
   "siteTimezone": "UTC",
   "repository": "coolifystealthagents/callcenteroutsourced",
   "productionBranch": "main",
-  "contentCommit": "389a53dceeb9c6b15863a303b9875e72255e4195",
+  "contentCommit": "9cfb3cca88ce49a0da634693b261d8d5efce4066",
+  "sharedEntryEvidence": {
+    "appliesToEveryEntry": true,
+    "commitSha": "9cfb3cca88ce49a0da634693b261d8d5efce4066",
+    "deploymentEvidence": "Coolify3 application uc0kc33r9hb41yd1tyklgewx deployment 4bd2btsqilszxiqkyryrbwcj finished 2026-09-18T17:29:45Z",
+    "verificationTime": "2026-09-18T17:31:29Z"
+  },
   "sources": ["https://www.nist.gov/cyberframework", "https://www.nist.gov/privacy-framework", "https://www.iso.org/standard/64739.html", "https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule"],
   "entries": [
     {"family":"blog","topic":"pricing quote comparison","slug":"outsourced-call-center-pricing-quote-comparison","contentHash":"bc005385a7ac1aa6b11c4fb4789c82b1fb5ab10b1a671f84738bdccbc858bacc","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-pricing-quote-comparison"},
@@ -19,6 +25,8 @@
     {"family":"blog","topic":"vendor scorecard","slug":"outsourced-call-center-vendor-scorecard","contentHash":"83cfc9f2e7942bde98825b928e3563e5a63adc9c7a6defad032e45fbfa61934d","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-vendor-scorecard"},
     {"family":"blog","topic":"vendor security questionnaire","slug":"call-center-vendor-security-questionnaire","contentHash":"23077a20a80fef16a22b79b4889a4952a4f06541e93ad7f6677630181845fe0d","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/call-center-vendor-security-questionnaire"}
   ],
-  "deployment": {"resource":"Coolify3 application from COOLIFY_APPLICATION_UUID","status":"pending push"},
-  "verificationTime": null
+  "deployment": {"resource":"Coolify3 application uc0kc33r9hb41yd1tyklgewx","deploymentUuid":"4bd2btsqilszxiqkyryrbwcj","status":"finished","finishedAt":"2026-09-18T17:29:45Z","deployedCommit":"9cfb3cca88ce49a0da634693b261d8d5efce4066"},
+  "verificationTime": "2026-09-18T17:31:29Z",
+  "verifiedCount": 12,
+  "requiredCount": 12
 }
