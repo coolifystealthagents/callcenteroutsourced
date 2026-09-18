@@ -7,10 +7,10 @@
   "repository": "coolifystealthagents/callcenteroutsourced",
   "productionBranch": "main",
   "contentCommit": "0583588c852ee2b8c59103d960a29f900b8511bf",
-  "remoteSha": "0583588c852ee2b8c59103d960a29f900b8511bf",
+  "remoteSha": "568fa57a567cffbaf5540a46d3cc00fb65cc404a",
   "deploymentResource": "Coolify3 application from the dedicated runtime configuration",
-  "deploymentAttempts": ["j36no03xue51ph0tanbcodmd", "62tq9tijyspsurychlok8ruy"],
-  "blocker": "Coolify accepted both deployment requests but left them queued, then its deployment-status API returned HTTP 500. Twenty bounded public checks returned HTTP 404 for the first new route.",
+  "deploymentAttempts": ["j36no03xue51ph0tanbcodmd", "62tq9tijyspsurychlok8ruy", "u1nxgw1odcbdcbezmngmybr1"],
+  "blocker": "Coolify left the first two accepted deployments queued. The third and final bounded attempt reported that the commit was already queued, but its returned deployment ID was not retrievable. The application API still reports running:unknown and all five public routes return HTTP 404.",
   "entries": [
     {"slug":"outsourced-support-account-recovery-evidence-research","topic":"account-recovery evidence","sources":["NIST SP 800-63-4","NIST SP 800-63B","NIST Privacy Framework","ISO 18295-1"],"contentHash":"4bb0c4b8ee060d5fc748a22a86d3dd49cd86b3d9f73f9a629b57084d66df6313","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/outsourced-support-account-recovery-evidence-research","verificationTime":null},
     {"slug":"payment-call-recording-suppression-evidence-research","topic":"payment-call recording suppression","sources":["PCI SSC FAQ 1210","NIST Privacy Framework","NIST CSF 2.0","ISO 18295-1"],"contentHash":"d88179b7ee224f2155000bb044e251ba55319585398ca44ba7bd8ccd5a093525","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/payment-call-recording-suppression-evidence-research","verificationTime":null},
