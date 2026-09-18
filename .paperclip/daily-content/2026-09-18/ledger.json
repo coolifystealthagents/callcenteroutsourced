@@ -3,7 +3,7 @@
   "siteTimezone": "UTC",
   "repository": "coolifystealthagents/callcenteroutsourced",
   "productionBranch": "main",
-  "contentCommit": "389a53d3a8a59abfd0f234924f7ed331e290a8fc",
+  "contentCommit": "389a53dceeb9c6b15863a303b9875e72255e4195",
   "sources": ["https://www.nist.gov/cyberframework", "https://www.nist.gov/privacy-framework", "https://www.iso.org/standard/64739.html", "https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule"],
   "entries": [
     {"family":"blog","topic":"pricing quote comparison","slug":"outsourced-call-center-pricing-quote-comparison","contentHash":"bc005385a7ac1aa6b11c4fb4789c82b1fb5ab10b1a671f84738bdccbc858bacc","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-pricing-quote-comparison"},
