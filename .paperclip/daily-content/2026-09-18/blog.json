@@ -1,0 +1,19 @@
+{
+  "publicationDate": "2026-09-18",
+  "family": "blog",
+  "requiredCount": 12,
+  "entries": [
+    {"slug":"outsourced-call-center-pricing-quote-comparison","route":"/blog/outsourced-call-center-pricing-quote-comparison","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"outsourced-call-center-contract-sla-checklist","route":"/blog/outsourced-call-center-contract-sla-checklist","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"outsourced-call-center-pilot-scope-guide","route":"/blog/outsourced-call-center-pilot-scope-guide","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"inbound-vs-outbound-call-center-outsourcing","route":"/blog/inbound-vs-outbound-call-center-outsourcing","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"after-hours-call-center-overflow-planning","route":"/blog/after-hours-call-center-overflow-planning","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"seasonal-call-center-ramp-plan","route":"/blog/seasonal-call-center-ramp-plan","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"multilingual-outsourced-call-center-selection","route":"/blog/multilingual-outsourced-call-center-selection","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"call-center-outsourcing-disaster-recovery-checklist","route":"/blog/call-center-outsourcing-disaster-recovery-checklist","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"call-center-bpo-transition-plan","route":"/blog/call-center-bpo-transition-plan","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"hidden-costs-call-center-outsourcing","route":"/blog/hidden-costs-call-center-outsourcing","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"outsourced-call-center-vendor-scorecard","route":"/blog/outsourced-call-center-vendor-scorecard","sourcePaths":["app/blog-sep18.ts"]},
+    {"slug":"call-center-vendor-security-questionnaire","route":"/blog/call-center-vendor-security-questionnaire","sourcePaths":["app/blog-sep18.ts"]}
+  ]
+}
