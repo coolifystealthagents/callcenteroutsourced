@@ -1,0 +1,24 @@
+{
+  "publicationDate": "2026-09-18",
+  "siteTimezone": "UTC",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "contentCommit": "389a53d3a8a59abfd0f234924f7ed331e290a8fc",
+  "sources": ["https://www.nist.gov/cyberframework", "https://www.nist.gov/privacy-framework", "https://www.iso.org/standard/64739.html", "https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule"],
+  "entries": [
+    {"family":"blog","topic":"pricing quote comparison","slug":"outsourced-call-center-pricing-quote-comparison","contentHash":"bc005385a7ac1aa6b11c4fb4789c82b1fb5ab10b1a671f84738bdccbc858bacc","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-pricing-quote-comparison"},
+    {"family":"blog","topic":"contract and SLA checklist","slug":"outsourced-call-center-contract-sla-checklist","contentHash":"96d7fbc75337d4f19e0107301c8ceb7ccc4a2c6645b02adb7f9535f9fb048d3f","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-contract-sla-checklist"},
+    {"family":"blog","topic":"pilot scope","slug":"outsourced-call-center-pilot-scope-guide","contentHash":"03c9cc84f430b3f8610f4f2dd4eeb6f742dc82a715e7b48fb2f7264f2471c1a6","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-pilot-scope-guide"},
+    {"family":"blog","topic":"inbound versus outbound outsourcing","slug":"inbound-vs-outbound-call-center-outsourcing","contentHash":"1ad13ff8f93056c3b82b30c1bc64f1f56e232aa613b2ee712c035a0996613572","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/inbound-vs-outbound-call-center-outsourcing"},
+    {"family":"blog","topic":"after-hours overflow","slug":"after-hours-call-center-overflow-planning","contentHash":"be9e70d3986df828c5a67325dfa87db02e7753127f5302718160733230f07334","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/after-hours-call-center-overflow-planning"},
+    {"family":"blog","topic":"seasonal ramp","slug":"seasonal-call-center-ramp-plan","contentHash":"ecd604826fae5a5c75f1a1ea58f1edb3eb26c5ab69992db7c8fc6895b10039ff","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/seasonal-call-center-ramp-plan"},
+    {"family":"blog","topic":"multilingual vendor selection","slug":"multilingual-outsourced-call-center-selection","contentHash":"745548f6a8781437e683fc842d1e87ff8936c59b4af32508f8edc3702ceb13fa","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/multilingual-outsourced-call-center-selection"},
+    {"family":"blog","topic":"disaster recovery","slug":"call-center-outsourcing-disaster-recovery-checklist","contentHash":"9e8ea269a41653e44dc26f919379c6537965d4395d623ac31e3af025d64e8e40","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/call-center-outsourcing-disaster-recovery-checklist"},
+    {"family":"blog","topic":"BPO transition","slug":"call-center-bpo-transition-plan","contentHash":"b8da9d099b217df7081aeceb71b97d95ae27d142d5707321cf03a7d04c70372a","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/call-center-bpo-transition-plan"},
+    {"family":"blog","topic":"hidden outsourcing costs","slug":"hidden-costs-call-center-outsourcing","contentHash":"b4fda7548af56d80901a8ac0f70f9f67775187d32e31650701fee473b5e9f953","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/hidden-costs-call-center-outsourcing"},
+    {"family":"blog","topic":"vendor scorecard","slug":"outsourced-call-center-vendor-scorecard","contentHash":"83cfc9f2e7942bde98825b928e3563e5a63adc9c7a6defad032e45fbfa61934d","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/outsourced-call-center-vendor-scorecard"},
+    {"family":"blog","topic":"vendor security questionnaire","slug":"call-center-vendor-security-questionnaire","contentHash":"23077a20a80fef16a22b79b4889a4952a4f06541e93ad7f6677630181845fe0d","publicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/blog/call-center-vendor-security-questionnaire"}
+  ],
+  "deployment": {"resource":"Coolify3 application from COOLIFY_APPLICATION_UUID","status":"pending push"},
+  "verificationTime": null
+}
