@@ -18,7 +18,7 @@ body:has(.cco-home) .legit-footer{margin-top:0;background:#071e24}
 .cco-orbit:before{inset:100px}.cco-orbit:after{inset:210px}
 .cco-hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,.92fr) minmax(460px,1.08fr);align-items:center;gap:72px}
 .cco-hero-copy{padding:26px 0 92px;position:relative;z-index:2}
-.cco-hero-copy h1{font-size:clamp(58px,6.4vw,94px);line-height:.91;letter-spacing:-.045em;max-width:690px;margin:0 0 26px}
+.cco-hero-copy h1{font-size:clamp(58px,4.8vw,74px);line-height:.96;letter-spacing:-.045em;max-width:690px;margin:0 0 26px}
 .cco-hero-lead{max-width:630px;color:#bbcac7;font-size:19px;line-height:1.65;margin-bottom:30px}
 .cco-btn-lime{background:#c9ff63;color:#092127;box-shadow:0 18px 40px rgba(109,171,42,.18)}
 .cco-btn-lime:hover{transform:translateY(-2px);background:#dbff97}

@@ -32,7 +32,7 @@ This ledger covers Philippines-based call-center staffing. It records only route
 ## Authorship and research evidence
 
 - Blog `BlogPosting` schema currently names `Call Center Outsourced` as the organization author and publisher.
-- Research `ResearchProject` schema currently names the same organization as author.
+- Evidence briefs use `Article` schema and name the site organization as author; they are not presented as original empirical research.
 - No individual byline or staff profile is present in the reviewed route model. Do not create a personal author identity without on-site evidence.
 - Research uses transparent desk-review language and lists external source URLs. A future research upgrade must retain method and limitation statements; it must not imply provider performance data or a Philippines-wide measurement without defensible data.
 

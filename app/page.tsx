@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import { Footer, Header, JsonLd } from './components';
 import { blogPosts, site } from './data';
 import { homepageServiceCards } from './homepage-service-cards';
+
+export const metadata: Metadata = {
+  title: 'Outsourced Call Center Services | Call Center Outsourced',
+  description: 'Plan Philippines-based outsourced call center coverage for phone, chat, email, tickets, quality review, and documented manager handoffs.',
+  alternates: { canonical: '/' },
+};
 
 export default function Home() {
   const schema = {
@@ -14,14 +21,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="cco-home" data-gi-rollout="two-illustration-packs-one-icon-pack">
+      <main className="cco-home">
         <JsonLd data={schema} />
         <section className="cco-hero">
           <div className="cco-orbit" aria-hidden="true" />
           <div className="container cco-hero-grid">
             <div className="cco-hero-copy">
               <p className="eyebrow cco-eyebrow-light"><span className="status-dot" /> Outsourced call center planning</p>
-              <h1>Every call gets a clear next step.</h1>
+              <h1>Outsourced call center coverage for your real queues.</h1>
               <p className="cco-hero-lead">Build dependable phone, chat, and ticket coverage around your hours, scripts, escalation rules, and quality standards.</p>
               <div className="actions">
                 <a className="btn cco-btn-lime" href="/contact-us">Request a coverage plan</a>
@@ -36,7 +43,7 @@ export default function Home() {
 
             <div className="cco-visual">
               <div className="cco-photo-frame">
-                <img src="/illustrations/getillustrations/communication-illustrations-pack-svg/call-coverage-team.webp" alt="Illustration of a customer support professional providing clear call coverage" />
+                <img src="/illustrations/call-center-original/call-coverage-team.svg" alt="Illustration of a customer support professional providing clear call coverage" />
               </div>
               <aside className="cco-queue-card" aria-label="Example coverage brief">
                 <div className="cco-card-head"><span>Coverage brief</span><i>Example</i></div>
@@ -76,8 +83,8 @@ export default function Home() {
               <p className="eyebrow cco-eyebrow-light">The operating brief</p>
               <h2>A calmer queue starts with written rules.</h2>
               <p>Good outsourced support runs on a written brief. Your team should be able to inspect the work, coach the agent, and fix unclear rules.</p>
-              <img src="/illustrations/getillustrations/inkdex-team-illustrations-svg/quality-operations-review.svg" alt="Customer support team reviewing quality operations" style={{ width: '100%', maxWidth: 360, marginTop: '1.5rem' }} loading="lazy" />
-              <a className="cco-text-link light" href="/services/workforce-reporting-support">See the QA scope <span>↗</span></a>
+              <img src="/illustrations/call-center-original/quality-operations-review.svg" alt="Customer support team reviewing quality operations" style={{ width: '100%', maxWidth: 360, marginTop: '1.5rem' }} loading="lazy" />
+              <a className="cco-text-link light" href="/services/reporting-and-qa">See the QA scope <span>↗</span></a>
             </div>
             <div className="cco-desk">
               <div className="cco-desk-top"><b>Shift handoff / Monday</b><span>Manager view</span></div>

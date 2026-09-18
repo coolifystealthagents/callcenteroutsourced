@@ -23,11 +23,11 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
   const url=`${base}/research/${post.slug}`;
   const publishedDate=post.sourceDate ?? post.published;
   const updatedDate=post.updated ?? publishedDate;
-  const schema={'@context':'https://schema.org','@type':'ResearchProject',name:post.title,description:post.excerpt,datePublished:post.published,dateModified:updatedDate,url,author:{'@type':'Organization',name:site.brand},citation:post.sources?.map(s=>s.url)};
+  const schema={'@context':'https://schema.org','@type':'Article',name:post.title,headline:post.title,description:post.excerpt,datePublished:post.published,dateModified:updatedDate,url,author:{'@type':'Organization',name:site.brand},citation:post.sources?.map(s=>s.url)};
   return <><Header/><main><article className="section"><div className="container article-shell">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({...schema,datePublished:publishedDate})}}/>
     <meta property="article:published_time" content={publishedDate}/>
-    <p className="eyebrow">{site.brand} research · Published <time dateTime={publishedDate}>{displayDate(publishedDate)}</time>{updatedDate!==publishedDate?<> · Updated <time dateTime={updatedDate}>{displayDate(updatedDate)}</time></>:null}</p>
+    <p className="eyebrow">{site.brand} evidence brief · Desk review · Published <time dateTime={publishedDate}>{displayDate(publishedDate)}</time>{updatedDate!==publishedDate?<> · Updated <time dateTime={updatedDate}>{displayDate(updatedDate)}</time></>:null}</p>
     <h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
     {post.image?<img src={post.image} alt={`${post.title} editorial illustration`} width="1536" height="1024" style={{width:'100%',height:'auto',borderRadius:'18px'}}/>:null}
     {post.keyStats?.length?<section className="card"><h2>Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
@@ -37,6 +37,6 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
     {post.internalLinks?.length?<section className="card"><h2>Related operating guides</h2><ul>{post.internalLinks.map(link=><li key={link}><a href={link}>{link.split('/').pop()?.replaceAll('-',' ')}</a></li>)}</ul></section>:null}
     {post.faqs?.length?<section className="card"><h2>FAQs</h2>{post.faqs.map(f=><div key={f.question}><h3>{f.question}</h3><p>{f.answer}</p></div>)}</section>:null}
     {post.sources?.length?<section className="card"><h2>Sources</h2><ol>{post.sources.map(s=><li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a></li>)}</ol></section>:null}
-    {related.length===3?<section className="card"><h2>Related Research</h2><div className="research-card-grid">{related.map(r=><a className="research-library-card" href={`/research/${r.slug}`} key={r.slug}><h3>{r.title}</h3><p>{r.excerpt}</p></a>)}</div></section>:null}
+    {related.length===3?<section className="card"><h2>Related evidence briefs</h2><div className="research-card-grid">{related.map(r=><a className="research-library-card" href={`/research/${r.slug}`} key={r.slug}><h3>{r.title}</h3><p>{r.excerpt}</p></a>)}</div></section>:null}
   </div></article></main><Footer/></>;
 }

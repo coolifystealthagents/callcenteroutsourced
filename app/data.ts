@@ -50,8 +50,8 @@ export const site = {
   "dark": "#082f49",
   "color": "#0ea5e9",
   "accent": "#f59e0b",
-  "heroImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
-  "serviceImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+  "heroImage": "/illustrations/call-center-original/call-coverage-team.svg",
+  "serviceImage": "/illustrations/call-center-original/quality-operations-review.svg",
   "alt": "customer service team in outsourced call center",
   "badge": "Call center"
 } as const;

@@ -1,4 +1,4 @@
-export type FleetService = { slug: string; title: string; desc: string; tasks: readonly string[]; controls: readonly string[]; firstWeek: readonly string[] };
+export { fleetServices, type FleetService } from './service-profiles.ts';
 export type ResearchPost = { slug: string; title: string; excerpt: string; published: string; sourceDate?: string; updated?: string; image?: string; sections: readonly { heading: string; body: string }[]; sources?: readonly { name: string; url: string }[]; keyStats?: readonly string[]; takeaways?: readonly string[]; faqs?: readonly { question: string; answer: string }[]; related?: readonly string[]; internalLinks?: readonly string[]; serviceHandoff?: { href: string; label: string; body: string } };
 import { august13ReplacementResearchBatch } from './research-aug13-replacements.ts';
 import { august14ResearchBatch } from './research-aug14.ts';
@@ -34,42 +34,7 @@ const august13FreshResearchBatch: readonly ResearchPost[] = [
   { ...august13ReplacementResearchBatch[9], slug: 'call-center-complaint-impact-evidence-research-brief', title: 'Call Center Complaint Impact Evidence: A Research Brief', excerpt: 'Complaint intake should preserve stated impact, verified facts, requested remedy, and the decision owner without turning allegations into findings.', published: '2026-08-13', sourceDate: '2026-08-13', sections: august13ReplacementResearchBatch[9].sections.map((s, i) => i === 0 ? { ...s, body: `This replacement study focuses on evidence and customer impact in complaint intake. ${s.body}` } : s) },
 ];
 
-export const fleetServices: readonly FleetService[] = [
-  {
-    slug: 'inbound-call-handling',
-    title: 'Inbound Call Handling',
-    desc: 'Add Filipino agents to your inbound queue for approved questions, message taking, appointment help, and clean manager handoffs.',
-    tasks: [
-      'Answer approved billing, order, booking, and account questions',
-      'Take complete messages and confirm the best callback time',
-      'Book or move appointments inside written scheduling rules',
-      'Tag each call and send urgent or unusual cases to a manager',
-    ],
-    controls: [
-      'Give each Filipino agent a named phone and CRM account',
-      'Keep refunds, policy exceptions, and sensitive account changes with your manager',
-      'Review a daily sample of recordings, call notes, and dispositions',
-      'Set one escalation path for safety, legal, payment, or upset-customer calls',
-    ],
-    firstWeek: [
-      'Share ten common call reasons, approved answers, and transfer rules',
-      'Run practice calls before the agent enters the live queue',
-      'Start with one queue and a limited shift while a manager is available',
-      'Review the first twenty calls and fix gaps before adding more hours',
-    ],
-  },
-  { slug: 'omnichannel-customer-support', title: 'Omnichannel Customer Support', desc: 'Build a Philippines-based omnichannel customer support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'outbound-appointment-setting', title: 'Outbound Appointment Setting', desc: 'Build a Philippines-based outbound appointment setting workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'order-management-support', title: 'Order Management Support', desc: 'Build a Philippines-based order management support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'tier-one-technical-support', title: 'Tier-One Technical Support', desc: 'Build a Philippines-based tier-one technical support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'collections-reminder-calls', title: 'Collections Reminder Calls', desc: 'Build a Philippines-based collections reminder calls workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'customer-win-back-support', title: 'Customer Win-Back Support', desc: 'Build a Philippines-based customer win-back support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'dispatch-coordination', title: 'Dispatch Coordination', desc: 'Build a Philippines-based dispatch coordination workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'survey-and-feedback-calls', title: 'Survey and Feedback Calls', desc: 'Build a Philippines-based survey and feedback calls workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] },
-  { slug: 'workforce-reporting-support', title: 'Workforce Reporting Support', desc: 'Build a Philippines-based workforce reporting support workflow with documented responsibilities, access limits, and manager review.', tasks: ['Document the recurring customer contact work', 'Complete approved tasks in the client workflow', 'Record exceptions and next actions'], controls: ['Use named accounts and limited permissions', 'Follow written approval and escalation rules', 'Review work with a client-side owner'], firstWeek: ['Confirm scope and working hours', 'Practice with representative examples', 'Review the first completed work together'] }
-];
-
-// Add reviewed, source-backed original research here. The templates and sitemap update automatically.
+// Add reviewed, source-listed evidence briefs here. The templates and sitemap update automatically.
 const researchSources = [
   { name: 'NIST Privacy Framework', url: 'https://www.nist.gov/privacy-framework' },
   { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' },
@@ -97,7 +62,7 @@ const researchBody = (title: string, finding: string, actions: string, published
 const researchBodyV2 = (title: string, finding: string, actions: string, related: readonly string[]): ResearchPost => ({
   ...researchBody(title, finding, actions),
   published: '2026-08-08',
-  keyStats: ['10 authoritative sources reviewed', '4 operating decisions to document', '3 named review owners required'],
+  keyStats: ['10 bibliography sources listed', '4 operating decisions to document', '3 named review owners required'],
   takeaways: [finding, actions, 'Use the evidence to define scope and controls; do not treat a source as proof of a vendor performance.'],
   related,
   internalLinks: ['/services/inbound-call-handling', '/services/omnichannel-customer-support'],
@@ -118,7 +83,7 @@ const researchBodyV3 = (first: string, second: string, third: string, fourth: st
     ...(explicitSlug ? {slug: explicitSlug} : {}),
     published,
     sourceDate: sourceDate ?? published,
-    keyStats: ['10 authoritative sources reviewed', '4 operating decisions to document', '3 named review owners required'],
+    keyStats: ['10 bibliography sources listed', '4 operating decisions to document', '3 named review owners required'],
   };
 };
 
@@ -150,7 +115,7 @@ const aug13ResearchSources = [
 
 const aug13ResearchPost = (slug: string, title: string, excerpt: string, focus: string, evidence: string, decisions: string, published: string, limits = 'The available sources do not establish a universal operating threshold. Review the applicable business, jurisdiction, channel, and data context with the responsible owner.'): ResearchPost => ({
   slug, title, excerpt, published, sourceDate: published, sources: aug13ResearchSources,
-  keyStats: ['8 authoritative sources reviewed', '4 decision variables to document', '1 named owner for every exception'],
+  keyStats: ['8 bibliography sources listed', '4 decision variables to document', '1 named owner for every exception'],
   sections: [
     { heading: 'Question and method', body: `This brief examines ${focus}. It uses standards and public guidance as control evidence rather than treating any source as a performance claim about a particular provider. The unit of analysis is a customer-contact decision: the request presented, the information available at that moment, the action permitted, and the owner accountable for an exception. ISO 18295 provides a contact-centre lens for customer experience, people, processes, and results. NIST CSF 2.0, the Privacy Framework, Zero Trust Architecture, and Digital Identity Guidelines add governance, data-minimization, access, and assurance considerations. PCI SSC material is relevant when payment data enters the interaction. FTC and FCC material matters when the contact is outbound or consent-sensitive. The comparison is deliberately bounded: these sources describe safeguards and obligations, not a universal staffing model or guaranteed customer outcome. The useful question is therefore not whether a queue is outsourced, but whether its scope, evidence, decision rights, and escalation owner remain visible at the point of service.`, },
     { heading: 'Findings', body: `${evidence} A practical finding follows from that evidence: the customer-facing worker should receive only the information needed for the defined request, while the decision owner should receive enough context to resolve exceptions without replaying the entire interaction. That distinction matters because speed and safety are not opposites; they are managed through different boundaries. A short interaction can still create a large downstream risk if a promise, identity decision, or consent record is unclear. Conversely, a longer interaction may be justified when the customer impact or data sensitivity is high. Reviewers should examine a defined cohort, such as one queue during one week, and separate ordinary contacts from exceptions. Useful measures include contacts by reason, unresolved cases, transfers, repeat contacts, missed promises, and records lacking an owner. Counts should be interpreted with volume, channel, time zone, and case severity, not presented as a standalone quality score.`, },
