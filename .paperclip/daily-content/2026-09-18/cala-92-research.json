@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "runId": "CALA-92",
+  "runDate": "2026-09-18",
+  "timezone": "UTC",
+  "family": "research",
+  "required": 5,
+  "sourceCheckedAt": "2026-09-18",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "entries": [
+    {"slug":"outsourced-support-account-recovery-evidence-research","topic":"account-recovery evidence","route":"/research/outsourced-support-account-recovery-evidence-research","sourcePath":"app/research-sep18-cala92.ts","publicationDate":"2026-09-18","contentHash":"4bb0c4b8ee060d5fc748a22a86d3dd49cd86b3d9f73f9a629b57084d66df6313"},
+    {"slug":"payment-call-recording-suppression-evidence-research","topic":"payment-call recording suppression","route":"/research/payment-call-recording-suppression-evidence-research","sourcePath":"app/research-sep18-cala92.ts","publicationDate":"2026-09-18","contentHash":"d88179b7ee224f2155000bb044e251ba55319585398ca44ba7bd8ccd5a093525"},
+    {"slug":"multilingual-support-interpreter-handoff-evidence-research","topic":"multilingual interpreter handoffs","route":"/research/multilingual-support-interpreter-handoff-evidence-research","sourcePath":"app/research-sep18-cala92.ts","publicationDate":"2026-09-18","contentHash":"17ba22a429069e302ffed7e107a1699a83f5a1cf8c1f1705eedf222ef2cc4359"},
+    {"slug":"outsourced-refund-authorization-chain-research","topic":"refund authorization chains","route":"/research/outsourced-refund-authorization-chain-research","sourcePath":"app/research-sep18-cala92.ts","publicationDate":"2026-09-18","contentHash":"22e46f7e7741bef1dbcf5bc3c90ccfe416bc60f71d4cc9d276ccb66bd66f1163"},
+    {"slug":"call-center-forecast-bias-staffing-decision-research","topic":"forecast bias and staffing decisions","route":"/research/call-center-forecast-bias-staffing-decision-research","sourcePath":"app/research-sep18-cala92.ts","publicationDate":"2026-09-18","contentHash":"96f8f14f6de98b9b27f4c955ca85136e2a7354aae4c24df845fe198929d79fd9"}
+  ]
+}
