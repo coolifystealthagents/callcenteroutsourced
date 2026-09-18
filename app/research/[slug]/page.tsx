@@ -13,7 +13,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   const url=`${base}/research/${post.slug}`;
   const publishedDate=post.sourceDate ?? post.published;
   const updatedDate=post.updated ?? publishedDate;
-  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate,modifiedTime:updatedDate,images:post.image?[post.image]:undefined}};
+  return {title:`${post.title} | ${site.brand}`,description:post.excerpt,alternates:{canonical:url},openGraph:{title:post.title,description:post.excerpt,url,type:'article',publishedTime:publishedDate,modifiedTime:updatedDate,images:post.image?[post.image]:undefined},twitter:{card:'summary_large_image',title:post.title,description:post.excerpt,images:post.image?[post.image]:undefined}};
 }
 export default async function ResearchArticle({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
