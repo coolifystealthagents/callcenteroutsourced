@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "family": "research",
+  "required": 5,
+  "verified": 0,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "contentCommit": "fbc62b50eea7ce8afdc93086365a8ae55f20dae0",
+  "deploymentResource": "Coolify3 application from the dedicated runtime configuration",
+  "entries": [
+    {"slug":"outsourced-call-center-ai-summary-verification-research","topic":"AI call-summary verification","contentHash":"bb70289c95ecb381c5de2b55d39f17213d9cdf9bdd231f8db3994c15c5e1a51f","actualPublicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/research/outsourced-call-center-ai-summary-verification-research","verificationTime":null,"deploymentEvidence":null},
+    {"slug":"outbound-call-center-predictive-dialer-abandonment-research","topic":"predictive-dialer abandonment evidence","contentHash":"7dd09cecf4e14d39466e30e1484a4151827942076d82327f7c5893139debb239","actualPublicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/research/outbound-call-center-predictive-dialer-abandonment-research","verificationTime":null,"deploymentEvidence":null},
+    {"slug":"outsourced-collections-dispute-pause-routing-research","topic":"collections dispute pause routing","contentHash":"02e1cd2f522833029930ba3b211ce743b70fc9e118a08fa0f5cbddf2aa67362f","actualPublicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/research/outsourced-collections-dispute-pause-routing-research","verificationTime":null,"deploymentEvidence":null},
+    {"slug":"outsourced-order-status-synchronization-lag-research","topic":"order-status synchronization lag","contentHash":"d2e6f628f216c68b16fd0c26feccc63660645648d678e495112f5a0a5cb10229","actualPublicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/research/outsourced-order-status-synchronization-lag-research","verificationTime":null,"deploymentEvidence":null},
+    {"slug":"tier-one-support-troubleshooting-rollback-evidence-research","topic":"tier-one troubleshooting rollback evidence","contentHash":"7a7d27b2662ee4bfa34035b32ce8b6b02e7972018cf5ca83063f47260e346bfb","actualPublicationDate":"2026-09-18","liveUrl":"https://callcenteroutsourced.com/research/tier-one-support-troubleshooting-rollback-evidence-research","verificationTime":null,"deploymentEvidence":null}
+  ]
+}

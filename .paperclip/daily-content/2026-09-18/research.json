@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "runDate": "2026-09-18",
+  "timezone": "UTC",
+  "family": "research",
+  "required": 5,
+  "sourceCheckedAt": "2026-09-18",
+  "contentCommit": "fbc62b50eea7ce8afdc93086365a8ae55f20dae0",
+  "entries": [
+    {"slug":"outsourced-call-center-ai-summary-verification-research","topic":"AI call-summary verification","route":"/research/outsourced-call-center-ai-summary-verification-research","sourcePath":"app/research-sep18.ts","publicationDate":"2026-09-18","contentHash":"bb70289c95ecb381c5de2b55d39f17213d9cdf9bdd231f8db3994c15c5e1a51f"},
+    {"slug":"outbound-call-center-predictive-dialer-abandonment-research","topic":"predictive-dialer abandonment evidence","route":"/research/outbound-call-center-predictive-dialer-abandonment-research","sourcePath":"app/research-sep18.ts","publicationDate":"2026-09-18","contentHash":"7dd09cecf4e14d39466e30e1484a4151827942076d82327f7c5893139debb239"},
+    {"slug":"outsourced-collections-dispute-pause-routing-research","topic":"collections dispute pause routing","route":"/research/outsourced-collections-dispute-pause-routing-research","sourcePath":"app/research-sep18.ts","publicationDate":"2026-09-18","contentHash":"02e1cd2f522833029930ba3b211ce743b70fc9e118a08fa0f5cbddf2aa67362f"},
+    {"slug":"outsourced-order-status-synchronization-lag-research","topic":"order-status synchronization lag","route":"/research/outsourced-order-status-synchronization-lag-research","sourcePath":"app/research-sep18.ts","publicationDate":"2026-09-18","contentHash":"d2e6f628f216c68b16fd0c26feccc63660645648d678e495112f5a0a5cb10229"},
+    {"slug":"tier-one-support-troubleshooting-rollback-evidence-research","topic":"tier-one troubleshooting rollback evidence","route":"/research/tier-one-support-troubleshooting-rollback-evidence-research","sourcePath":"app/research-sep18.ts","publicationDate":"2026-09-18","contentHash":"7a7d27b2662ee4bfa34035b32ce8b6b02e7972018cf5ca83063f47260e346bfb"}
+  ]
+}
