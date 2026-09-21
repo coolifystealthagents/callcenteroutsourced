@@ -6,6 +6,7 @@ import nextConfig from '../next.config.mjs'
 import { fleetServices } from '../app/fleet-data.ts'
 import { homepageServiceCards } from '../app/homepage-service-cards.ts'
 import { isTrustedContactOrigin } from '../app/contact-request.ts'
+import { canonicalRedirectUrl } from '../app/canonical-request.ts'
 
 const root = process.cwd()
 const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), 'utf8')
@@ -216,11 +217,21 @@ test('proxy-aware canonical redirect helper handles www and original HTTP safely
   const helperPath = path.join(root, 'app/canonical-request.ts')
   assert.ok(fs.existsSync(helperPath), 'missing app/canonical-request.ts')
   if (!fs.existsSync(helperPath)) return
-  const { canonicalRedirectUrl } = await import('../app/canonical-request.ts')
   assert.equal(canonicalRedirectUrl('https://www.callcenteroutsourced.com/path?q=1', new Headers()), 'https://callcenteroutsourced.com/path?q=1')
   assert.equal(canonicalRedirectUrl('https://internal:3000/path?q=1', new Headers({ host: 'callcenteroutsourced.com', 'x-forwarded-proto': 'http' })), 'https://callcenteroutsourced.com/path?q=1')
   assert.equal(canonicalRedirectUrl('https://internal:3000/path', new Headers({ host: 'evil.example', 'x-forwarded-proto': 'http' })), null)
   assert.equal(canonicalRedirectUrl('https://callcenteroutsourced.com/path', new Headers({ host: 'callcenteroutsourced.com', 'x-forwarded-proto': 'https' })), null)
+  assert.equal(
+    canonicalRedirectUrl('https://callcenteroutsourced.com/path?q=1', new Headers({
+      host: 'callcenteroutsourced.com',
+      'x-forwarded-proto': 'https',
+      'cf-visitor': '{"scheme":"http"}',
+    })),
+    'https://callcenteroutsourced.com/path?q=1',
+  )
+  const config = read('next.config.mjs')
+  assert.match(config, /Strict-Transport-Security/)
+  assert.match(config, /max-age=31536000; includeSubDomains/)
 })
 
 test('current Website Optimization Project ledger records service decisions and media provenance', () => {
