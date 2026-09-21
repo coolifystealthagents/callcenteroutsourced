@@ -245,6 +245,12 @@ test('current Website Optimization Project ledger records service decisions and 
   assert.match(ledger, /historical.*not verified/i)
 })
 
+test('pagination wraps every page link instead of clipping intermediate widths', () => {
+  const css = read('app/globals.css')
+  assert.match(css, /\.pagination\{display:flex;flex-wrap:wrap;[^}]*\}/)
+  assert.match(css, /\.pagination a\{[^}]*flex:0 0 42px[^}]*\}/)
+})
+
 test('production packaging uses the repository lockfile and an explicit tracing root', () => {
   const dockerfile = read('Dockerfile')
   const config = read('next.config.mjs')
