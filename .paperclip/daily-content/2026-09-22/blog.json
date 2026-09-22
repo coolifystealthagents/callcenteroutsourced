@@ -1,0 +1,22 @@
+{
+  "publicationDate": "2026-09-22",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "entries": [
+    {"slug":"dedicated-vs-shared-call-center-team","route":"/blog/dedicated-vs-shared-call-center-team","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"outsourced-call-center-rfp-template","route":"/blog/outsourced-call-center-rfp-template","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-outsourcing-implementation-timeline","route":"/blog/call-center-outsourcing-implementation-timeline","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"outsourced-call-center-quality-assurance-program","route":"/blog/outsourced-call-center-quality-assurance-program","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-workforce-management-requirements","route":"/blog/call-center-workforce-management-requirements","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"customer-support-escalation-matrix-guide","route":"/blog/customer-support-escalation-matrix-guide","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-knowledge-base-migration-plan","route":"/blog/call-center-knowledge-base-migration-plan","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"omnichannel-call-center-outsourcing-guide","route":"/blog/omnichannel-call-center-outsourcing-guide","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-reporting-dashboard-requirements","route":"/blog/call-center-reporting-dashboard-requirements","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"outsourced-call-center-training-nesting-plan","route":"/blog/outsourced-call-center-training-nesting-plan","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-outsourcing-exit-transition-plan","route":"/blog/call-center-outsourcing-exit-transition-plan","sourcePaths":["app/blog-sep22.ts"]},
+    {"slug":"call-center-crm-integration-requirements","route":"/blog/call-center-crm-integration-requirements","sourcePaths":["app/blog-sep22.ts"]}
+  ]
+}
