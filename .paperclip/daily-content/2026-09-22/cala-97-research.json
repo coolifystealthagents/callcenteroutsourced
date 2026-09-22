@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "runId": "CALA-97",
+  "family": "research",
+  "required": 5,
+  "prepared": 5,
+  "verified": 0,
+  "publicationDate": "2026-09-22",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "sourceCheckedDate": "2026-09-22",
+  "deploymentResource": "Coolify3 application from the dedicated runtime configuration",
+  "entries": [
+    {"slug":"outsourced-call-center-continuity-failover-exercise-research","topic":"continuity failover exercises","wordCount":1296,"sources":["NIST SP 800-34 Rev. 1","NIST Cybersecurity Framework 2.0","NIST Privacy Framework","ISO 18295-1"],"contentHash":"e385fb1d8bd774aeb88dc6b2460e614c5ba26916369384546d00b2bc0e051e27","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/outsourced-call-center-continuity-failover-exercise-research","verificationTime":null},
+    {"slug":"outsourced-call-center-vendor-exit-handback-research","topic":"vendor-exit handback evidence","wordCount":1247,"sources":["NIST Cybersecurity Framework 2.0","NIST Privacy Framework","NIST SP 800-34 Rev. 1","ISO 18295-1"],"contentHash":"1aadc0ba415f99f2ef8d4df498e77434fb6784635823eac8815919cc9843e82f","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/outsourced-call-center-vendor-exit-handback-research","verificationTime":null},
+    {"slug":"call-center-ai-agent-assist-answer-provenance-research","topic":"AI agent-assist answer provenance","wordCount":1248,"sources":["NIST AI Risk Management Framework","NIST AI 600-1","NIST Cybersecurity Framework 2.0","NIST Privacy Framework","ISO 18295-1"],"contentHash":"a0bb45579ca4a08ca0b8fc11624ae5b1d8b87aefe57956273ff4a754c5857838","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/call-center-ai-agent-assist-answer-provenance-research","verificationTime":null},
+    {"slug":"call-center-incident-status-communication-evidence-research","topic":"incident-status communication evidence","wordCount":1212,"sources":["NIST SP 800-61 Rev. 3","NIST Cybersecurity Framework 2.0","NIST Privacy Framework","ISO 18295-1"],"contentHash":"d36b94f240d66ef4d5c0ad46e8591912d4f6e2e3bbdc6bd2665c092c63b7d098","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/call-center-incident-status-communication-evidence-research","verificationTime":null},
+    {"slug":"outsourced-support-social-engineering-resistance-research","topic":"social-engineering resistance","wordCount":1212,"sources":["NIST SP 800-63-4","CISA Recognize and Report Phishing","FTC Impersonation Rule","NIST Cybersecurity Framework 2.0","NIST Privacy Framework","ISO 18295-1"],"contentHash":"07d889203ba955adb05e93500aa4b6156e6fb47697a8ad35f669a287815ed2f2","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/outsourced-support-social-engineering-resistance-research","verificationTime":null}
+  ]
+}
