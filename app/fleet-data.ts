@@ -19,6 +19,7 @@ import { september11ResearchBatch } from './research-sep11.ts';
 import { september14ResearchBatch } from './research-sep14.ts';
 import { september18Cala92ResearchBatch } from './research-sep18-cala92.ts';
 import { september22Cala97ResearchBatch } from './research-sep22-cala97.ts';
+import { september23Cala99ResearchBatch } from './research-sep23-cala99.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
 // loader source so publication proof can bind each route and date directly.
@@ -140,6 +141,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...september23Cala99ResearchBatch,
   ...september22Cala97ResearchBatch,
   ...september18Cala92ResearchBatch,
   ...september11ResearchBatch,

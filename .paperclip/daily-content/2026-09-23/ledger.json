@@ -1,0 +1,13 @@
+{
+  "runId": "CALA-99",
+  "family": "research",
+  "required": 5,
+  "verified": 0,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "commitSha": null,
+  "remoteSha": null,
+  "build": null,
+  "deployment": null,
+  "entries": []
+}

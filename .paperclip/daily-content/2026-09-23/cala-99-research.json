@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "runId": "CALA-99",
+  "family": "research",
+  "required": 5,
+  "prepared": 5,
+  "verified": 0,
+  "publicationDate": "2026-09-23",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "sourceCheckedDate": "2026-09-23",
+  "deploymentResource": "Coolify3 application l13ylpiz5n7x3du8pnr1cdlx",
+  "entries": [
+    {"slug":"outbound-appointment-list-suppression-reconciliation-research","topic":"outbound appointment list suppression reconciliation","wordCount":1212,"sources":["FTC Telemarketing Sales Rule","NIST Privacy Framework","NIST Cybersecurity Framework 2.0","ISO 18295-1"],"contentHash":"e82d4cc23c0b6dae62fe8e91136658f631be885c162bf233ec5d6e55221041a0","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/outbound-appointment-list-suppression-reconciliation-research","verificationTime":null},
+    {"slug":"tier-one-technical-support-remote-action-authority-research","topic":"tier-one technical support remote-action authority","wordCount":1210,"sources":["NIST SP 800-207","NIST SP 800-63-4","NIST Cybersecurity Framework 2.0","NIST Privacy Framework","ISO 18295-1"],"contentHash":"372e695475ed67862b88298954ca7c155e75ee553b7d752593f4d7cb802f8c0a","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/tier-one-technical-support-remote-action-authority-research","verificationTime":null},
+    {"slug":"order-support-delivery-address-change-evidence-research","topic":"order support delivery-address change evidence","wordCount":1230,"sources":["NIST SP 800-63-4","NIST SP 800-207","NIST Privacy Framework","NIST Cybersecurity Framework 2.0","ISO 18295-1"],"contentHash":"08d4039c47eb99a4d10ee5832c6a530ba5d851b50df6ca2a9bc2e0228c08444e","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/order-support-delivery-address-change-evidence-research","verificationTime":null},
+    {"slug":"collections-reminder-dispute-pause-handoff-research","topic":"collections reminder dispute-pause handoffs","wordCount":1242,"sources":["CFPB Debt Collection Rule","FTC Telemarketing Sales Rule","NIST Privacy Framework","NIST SP 800-63-4","ISO 18295-1"],"contentHash":"5f71560f82cd25b4d4fedaf30db90796424d0ea09ad5e260023fdc483cb73fbc","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/collections-reminder-dispute-pause-handoff-research","verificationTime":null},
+    {"slug":"call-center-quality-coaching-evidence-minimization-research","topic":"quality coaching evidence minimization","wordCount":1229,"sources":["NIST Privacy Framework","NIST Cybersecurity Framework 2.0","NIST SP 800-207","PCI DSS","ISO 18295-1"],"contentHash":"fed9898edb693e24d68c7b1cbbdaa51bdd4e6fdb938f0c2cd150ccea9bf88a24","actualPublicationDate":null,"commitSha":null,"deploymentEvidence":null,"liveUrl":"https://callcenteroutsourced.com/research/call-center-quality-coaching-evidence-minimization-research","verificationTime":null}
+  ]
+}
