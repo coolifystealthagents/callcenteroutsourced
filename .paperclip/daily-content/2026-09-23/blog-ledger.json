@@ -2,15 +2,15 @@
   "family": "blog",
   "requiredCount": 12,
   "verifiedCount": 0,
-  "status": "pending_deployment",
+  "status": "blocked_pending_deployment",
   "timezone": "UTC",
   "repository": "coolifystealthagents/callcenteroutsourced",
   "productionBranch": "main",
   "contentCommitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-  "remoteShaAtPush": null,
+  "remoteShaAtPush": "7e8f32ee8f83686f186723e17c224f13e73e2805",
   "deploymentResource": "Coolify3 application uc0kc33r9hb41yd1tyklgewx",
-  "deploymentEvidence": "pending",
-  "lastVerificationAttempt": null,
+  "deploymentEvidence": "Push succeeded. Coolify3 authenticated application endpoint redirected to login (HTTP 302); two bounded public checks returned HTTP 404 for sampled new routes.",
+  "lastVerificationAttempt": "2026-09-23T15:50:42Z",
   "entries": [
     {
       "topic": "Call Center Overflow Coverage: A Practical Outsourcing Model",
@@ -204,5 +204,9 @@
       "liveUrl": "https://callcenteroutsourced.com/blog/call-center-outsourcing-contract-sla",
       "verificationTime": null
     }
-  ]
+  ],
+  "blocker": {
+    "owner": "Coolify3 production pipeline owner",
+    "requiredAction": "Restore or trigger deployment of origin/main at the current remote SHA, then wake CALA-98 for live verification and truthful publication-date reconciliation if deployment occurs after September 23 UTC."
+  }
 }
