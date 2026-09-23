@@ -3,11 +3,19 @@
   "family": "research",
   "required": 5,
   "verified": 0,
+  "status": "blocked_pending_deployment",
   "repository": "coolifystealthagents/callcenteroutsourced",
   "branch": "main",
-  "commitSha": null,
-  "remoteSha": null,
-  "build": null,
-  "deployment": null,
-  "entries": []
+  "commitSha": "654a756938ed542004a3ae1b4f1aea469c4cf780",
+  "remoteSha": "5fab256dd1f251fa7568a70a1f313d9908033928",
+  "build": "PASS: TypeScript, repository tests, clean Next.js production build, 5/5 built routes, canonical/date/datePublished/sitemap checks",
+  "deployment": {"resource":"Coolify3 application uc0kc33r9hb41yd1tyklgewx","deploymentUuid":"brnq3ukba84io5rb1esqmkka","status":"queued","pinnedCommitRepair":"updated from stale 0c474891ba069d2633a77ac8f38c3b4a68314a16 to 5fab256dd1f251fa7568a70a1f313d9908033928"},
+  "entries": [
+    {"slug":"outbound-appointment-list-suppression-reconciliation-research","contentHash":"e82d4cc23c0b6dae62fe8e91136658f631be885c162bf233ec5d6e55221041a0","actualPublicationDate":null,"commitSha":"654a756938ed542004a3ae1b4f1aea469c4cf780","deploymentEvidence":"queued: brnq3ukba84io5rb1esqmkka","liveUrl":"https://callcenteroutsourced.com/research/outbound-appointment-list-suppression-reconciliation-research","verificationTime":null},
+    {"slug":"tier-one-technical-support-remote-action-authority-research","contentHash":"372e695475ed67862b88298954ca7c155e75ee553b7d752593f4d7cb802f8c0a","actualPublicationDate":null,"commitSha":"654a756938ed542004a3ae1b4f1aea469c4cf780","deploymentEvidence":"queued: brnq3ukba84io5rb1esqmkka","liveUrl":"https://callcenteroutsourced.com/research/tier-one-technical-support-remote-action-authority-research","verificationTime":null},
+    {"slug":"order-support-delivery-address-change-evidence-research","contentHash":"08d4039c47eb99a4d10ee5832c6a530ba5d851b50df6ca2a9bc2e0228c08444e","actualPublicationDate":null,"commitSha":"654a756938ed542004a3ae1b4f1aea469c4cf780","deploymentEvidence":"queued: brnq3ukba84io5rb1esqmkka","liveUrl":"https://callcenteroutsourced.com/research/order-support-delivery-address-change-evidence-research","verificationTime":null},
+    {"slug":"collections-reminder-dispute-pause-handoff-research","contentHash":"5f71560f82cd25b4d4fedaf30db90796424d0ea09ad5e260023fdc483cb73fbc","actualPublicationDate":null,"commitSha":"654a756938ed542004a3ae1b4f1aea469c4cf780","deploymentEvidence":"queued: brnq3ukba84io5rb1esqmkka","liveUrl":"https://callcenteroutsourced.com/research/collections-reminder-dispute-pause-handoff-research","verificationTime":null},
+    {"slug":"call-center-quality-coaching-evidence-minimization-research","contentHash":"fed9898edb693e24d68c7b1cbbdaa51bdd4e6fdb938f0c2cd150ccea9bf88a24","actualPublicationDate":null,"commitSha":"654a756938ed542004a3ae1b4f1aea469c4cf780","deploymentEvidence":"queued: brnq3ukba84io5rb1esqmkka","liveUrl":"https://callcenteroutsourced.com/research/call-center-quality-coaching-evidence-minimization-research","verificationTime":null}
+  ],
+  "blocker": {"owner":"Coolify3 production pipeline owner","requiredAction":"Allow queued deployment brnq3ukba84io5rb1esqmkka to run, then wake CALA-99 for live verification. All five public probes currently return HTTP 404."}
 }
