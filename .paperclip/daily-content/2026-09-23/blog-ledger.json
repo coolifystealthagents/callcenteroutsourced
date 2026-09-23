@@ -1,0 +1,208 @@
+{
+  "family": "blog",
+  "requiredCount": 12,
+  "verifiedCount": 0,
+  "status": "pending_deployment",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "contentCommitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+  "remoteShaAtPush": null,
+  "deploymentResource": "Coolify3 application uc0kc33r9hb41yd1tyklgewx",
+  "deploymentEvidence": "pending",
+  "lastVerificationAttempt": null,
+  "entries": [
+    {
+      "topic": "Call Center Overflow Coverage: A Practical Outsourcing Model",
+      "slug": "call-center-overflow-coverage-model",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "44fb56680492b6359006e252290b296bdf1b272889f9dd9295e9f7356c80449e",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-overflow-coverage-model",
+      "verificationTime": null
+    },
+    {
+      "topic": "After-Hours Call Center Outsourcing Guide",
+      "slug": "after-hours-call-center-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "44336677ae1749443e443b41ee4b9fd140189a7e10a45ff6c2d32af2a5d1e14f",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/after-hours-call-center-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "Peak-Season Call Center Outsourcing Plan",
+      "slug": "call-center-peak-season-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "185cd7e160b10df8900478a86be0eeedc319cb36e7c4878669bd4cc82b542915",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-peak-season-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "Multilingual Call Center Outsourcing: Buyer Requirements",
+      "slug": "multilingual-call-center-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "7db2f03dc9e3e5506b76b3ade590303682f7d4db46485ebd1ecac39416f8428c",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/multilingual-call-center-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "Call Center Disaster Recovery Plan for Outsourced Operations",
+      "slug": "call-center-disaster-recovery-plan",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "133b6bf0ab5bf91ec4a107b37fd6778e194099060ebb797eec0545e9d4dc8ba8",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-disaster-recovery-plan",
+      "verificationTime": null
+    },
+    {
+      "topic": "PCI-Compliant Call Center Outsourcing: Due-Diligence Guide",
+      "slug": "pci-compliant-call-center-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "ae6e711806a4536bc3a5b66be4d784b3b1cc6430f884d8ea5ceb119a63ad6b89",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/pci-compliant-call-center-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "HIPAA Call Center Outsourcing: Operating Requirements",
+      "slug": "hipaa-call-center-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "2fd971140fc30c015c4dbdd7e256e087194a606c0a7df4fec9014e6998062afa",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/hipaa-call-center-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "Ecommerce Call Center Outsourcing Guide",
+      "slug": "ecommerce-call-center-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "3d3001a050aa22e4f953f7a4952699c2eff572d9590bca8866fdf78396d24ef5",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/ecommerce-call-center-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "SaaS Customer Support Outsourcing: Scope and Controls",
+      "slug": "saas-customer-support-outsourcing",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "f67c07915ee6f110e0046d781e656f046c0c91eb9668688c34504026e08dbadd",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/saas-customer-support-outsourcing",
+      "verificationTime": null
+    },
+    {
+      "topic": "Healthcare Appointment Scheduling Call Center Guide",
+      "slug": "healthcare-appointment-scheduling-call-center",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "7a56d283f876800899fe4a0c6353012d1c62f9066ee0bfa5a1e88f614a817055",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/healthcare-appointment-scheduling-call-center",
+      "verificationTime": null
+    },
+    {
+      "topic": "B2B Lead Qualification Call Center Playbook",
+      "slug": "b2b-lead-qualification-call-center",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "e5fc994c16b7d3124720e578774de0cce9d307e992300a662ad73dfc73de2f69",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/b2b-lead-qualification-call-center",
+      "verificationTime": null
+    },
+    {
+      "topic": "Call Center Outsourcing Contract and SLA Checklist",
+      "slug": "call-center-outsourcing-contract-sla",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1",
+        "FTC Telemarketing Sales Rule"
+      ],
+      "contentHash": "85b08e1f2fb0899d1bf986eda773e281db77e0371639fbe8b4c3b9507f186b6a",
+      "actualPublicationDate": null,
+      "commitSha": "fe6fd1c98dbf9cccbc98f94ec90d7eb2b4841098",
+      "deploymentEvidence": "pending",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-outsourcing-contract-sla",
+      "verificationTime": null
+    }
+  ]
+}
