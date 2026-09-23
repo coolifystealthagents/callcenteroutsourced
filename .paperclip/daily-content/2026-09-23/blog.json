@@ -1,0 +1,94 @@
+{
+  "publicationDate": "2026-09-23",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "entries": [
+    {
+      "slug": "call-center-overflow-coverage-model",
+      "route": "/blog/call-center-overflow-coverage-model",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "after-hours-call-center-outsourcing",
+      "route": "/blog/after-hours-call-center-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "call-center-peak-season-outsourcing",
+      "route": "/blog/call-center-peak-season-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "multilingual-call-center-outsourcing",
+      "route": "/blog/multilingual-call-center-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "call-center-disaster-recovery-plan",
+      "route": "/blog/call-center-disaster-recovery-plan",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "pci-compliant-call-center-outsourcing",
+      "route": "/blog/pci-compliant-call-center-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "hipaa-call-center-outsourcing",
+      "route": "/blog/hipaa-call-center-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "ecommerce-call-center-outsourcing",
+      "route": "/blog/ecommerce-call-center-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "saas-customer-support-outsourcing",
+      "route": "/blog/saas-customer-support-outsourcing",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "healthcare-appointment-scheduling-call-center",
+      "route": "/blog/healthcare-appointment-scheduling-call-center",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "b2b-lead-qualification-call-center",
+      "route": "/blog/b2b-lead-qualification-call-center",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    },
+    {
+      "slug": "call-center-outsourcing-contract-sla",
+      "route": "/blog/call-center-outsourcing-contract-sla",
+      "sourcePaths": [
+        "app/blog-sep23.ts"
+      ]
+    }
+  ]
+}
