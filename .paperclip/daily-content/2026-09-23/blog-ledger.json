@@ -9,8 +9,8 @@
   "contentCommitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
   "remoteShaAtPush": "7e8f32ee8f83686f186723e17c224f13e73e2805",
   "deploymentResource": "Coolify3 application uc0kc33r9hb41yd1tyklgewx",
-  "deploymentEvidence": "Push succeeded. Coolify3 authenticated application endpoint redirected to login (HTTP 302); two bounded public checks returned HTTP 404 for sampled new routes.",
-  "lastVerificationAttempt": "2026-09-23T15:50:42Z",
+  "deploymentEvidence": "Push succeeded and origin/main remains at fa9721a497db9abda0e272c1a0dd635a9d93d0b4. On resume, all 12 public routes returned HTTP 404 and the live sitemap contained 0 of 12 routes.",
+  "lastVerificationAttempt": "2026-09-23T15:54:50Z",
   "entries": [
     {
       "topic": "Call Center Overflow Coverage: A Practical Outsourcing Model",
@@ -24,7 +24,7 @@
       "contentHash": "44fb56680492b6359006e252290b296bdf1b272889f9dd9295e9f7356c80449e",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/call-center-overflow-coverage-model",
       "verificationTime": null
     },
@@ -40,7 +40,7 @@
       "contentHash": "44336677ae1749443e443b41ee4b9fd140189a7e10a45ff6c2d32af2a5d1e14f",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/after-hours-call-center-outsourcing",
       "verificationTime": null
     },
@@ -56,7 +56,7 @@
       "contentHash": "185cd7e160b10df8900478a86be0eeedc319cb36e7c4878669bd4cc82b542915",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/call-center-peak-season-outsourcing",
       "verificationTime": null
     },
@@ -72,7 +72,7 @@
       "contentHash": "7db2f03dc9e3e5506b76b3ade590303682f7d4db46485ebd1ecac39416f8428c",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/multilingual-call-center-outsourcing",
       "verificationTime": null
     },
@@ -88,7 +88,7 @@
       "contentHash": "133b6bf0ab5bf91ec4a107b37fd6778e194099060ebb797eec0545e9d4dc8ba8",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/call-center-disaster-recovery-plan",
       "verificationTime": null
     },
@@ -104,7 +104,7 @@
       "contentHash": "ae6e711806a4536bc3a5b66be4d784b3b1cc6430f884d8ea5ceb119a63ad6b89",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/pci-compliant-call-center-outsourcing",
       "verificationTime": null
     },
@@ -120,7 +120,7 @@
       "contentHash": "2fd971140fc30c015c4dbdd7e256e087194a606c0a7df4fec9014e6998062afa",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/hipaa-call-center-outsourcing",
       "verificationTime": null
     },
@@ -136,7 +136,7 @@
       "contentHash": "3d3001a050aa22e4f953f7a4952699c2eff572d9590bca8866fdf78396d24ef5",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/ecommerce-call-center-outsourcing",
       "verificationTime": null
     },
@@ -152,7 +152,7 @@
       "contentHash": "f67c07915ee6f110e0046d781e656f046c0c91eb9668688c34504026e08dbadd",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/saas-customer-support-outsourcing",
       "verificationTime": null
     },
@@ -168,7 +168,7 @@
       "contentHash": "7a56d283f876800899fe4a0c6353012d1c62f9066ee0bfa5a1e88f614a817055",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/healthcare-appointment-scheduling-call-center",
       "verificationTime": null
     },
@@ -184,7 +184,7 @@
       "contentHash": "e5fc994c16b7d3124720e578774de0cce9d307e992300a662ad73dfc73de2f69",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/b2b-lead-qualification-call-center",
       "verificationTime": null
     },
@@ -200,7 +200,7 @@
       "contentHash": "85b08e1f2fb0899d1bf986eda773e281db77e0371639fbe8b4c3b9507f186b6a",
       "actualPublicationDate": null,
       "commitSha": "089e405f3edb5b9d043239f47118cfab1a2d9a98",
-      "deploymentEvidence": "pending",
+      "deploymentEvidence": "HTTP 404 at 2026-09-23T15:54:50Z; absent from live sitemap",
       "liveUrl": "https://callcenteroutsourced.com/blog/call-center-outsourcing-contract-sla",
       "verificationTime": null
     }
