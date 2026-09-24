@@ -1,0 +1,26 @@
+{
+  "publicationDate": "2026-09-24",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "entries": [
+    {"slug":"inbound-call-center-outsourcing-cost-model","route":"/blog/inbound-call-center-outsourcing-cost-model","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/inbound-call-center-outsourcing-cost-model","verificationTime":null},
+    {"slug":"call-center-outsourcing-rfp-template","route":"/blog/call-center-outsourcing-rfp-template","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-outsourcing-rfp-template","verificationTime":null},
+    {"slug":"call-center-vendor-transition-plan","route":"/blog/call-center-vendor-transition-plan","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-vendor-transition-plan","verificationTime":null},
+    {"slug":"call-center-quality-assurance-scorecard","route":"/blog/call-center-quality-assurance-scorecard","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-quality-assurance-scorecard","verificationTime":null},
+    {"slug":"call-center-workforce-management-outsourcing","route":"/blog/call-center-workforce-management-outsourcing","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-workforce-management-outsourcing","verificationTime":null},
+    {"slug":"call-center-knowledge-management-outsourcing","route":"/blog/call-center-knowledge-management-outsourcing","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-knowledge-management-outsourcing","verificationTime":null},
+    {"slug":"call-center-crm-integration-requirements","route":"/blog/call-center-crm-integration-requirements","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-crm-integration-requirements","verificationTime":null},
+    {"slug":"call-center-data-retention-policy","route":"/blog/call-center-data-retention-policy","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-data-retention-policy","verificationTime":null},
+    {"slug":"call-center-customer-escalation-matrix","route":"/blog/call-center-customer-escalation-matrix","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-customer-escalation-matrix","verificationTime":null},
+    {"slug":"call-center-training-ramp-plan","route":"/blog/call-center-training-ramp-plan","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-training-ramp-plan","verificationTime":null},
+    {"slug":"call-center-outsourcing-kpi-dashboard","route":"/blog/call-center-outsourcing-kpi-dashboard","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-outsourcing-kpi-dashboard","verificationTime":null},
+    {"slug":"call-center-business-continuity-test","route":"/blog/call-center-business-continuity-test","sourcePaths":["app/blog-sep24.ts"],"actualPublicationDate":"2026-09-24","liveUrl":"https://callcenteroutsourced.com/blog/call-center-business-continuity-test","verificationTime":null}
+  ],
+  "verifiedCount": 0,
+  "status": "pending-deployment",
+  "deployedCommitSha": null,
+  "verificationTime": null
+}
