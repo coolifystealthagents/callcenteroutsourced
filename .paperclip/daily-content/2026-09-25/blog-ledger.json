@@ -1,0 +1,219 @@
+{
+  "runId": "CALA-103",
+  "family": "blog",
+  "required": 12,
+  "prepared": 12,
+  "verified": 0,
+  "status": "ready-for-combined-release",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "contentCommitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+  "timezone": "UTC",
+  "publicationDate": "2026-09-25",
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "Call Center Outsourcing Discovery Workshop Guide",
+      "slug": "call-center-outsourcing-discovery-workshop",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "dceece48bc6c8e13b4833d2d506691297a34bba870bd1bc5723d2e7d999a41a3",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-outsourcing-discovery-workshop",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Shrinkage Assumptions for Outsourcing Buyers",
+      "slug": "call-center-shrinkage-assumptions",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "eed0d12da7002076ff36d8f718620e66d7e32407f178cd552e49df5f0feb6bcf",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-shrinkage-assumptions",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Omnichannel Concurrency Rules for Outsourced Support",
+      "slug": "outsourcing-omnichannel-concurrency",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "b3b6727977c09dfd7bc3d5c3cb29e1e6b47cdbe82e491b04294af8cac5ba2b3c",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/outsourcing-omnichannel-concurrency",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Callback Program Controls",
+      "slug": "call-center-callback-program-controls",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "1612e4fb95c33f46b2fc8bd6762167cf3126a8cd0caa06097e84668558d313b8",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-callback-program-controls",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Outsourced Call Center Remote Desktop Support Controls",
+      "slug": "outsourced-call-center-remote-desktop-support",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "7dabaa4529109543c85b262c9cc0c6796259c1a492333df15e9d092d3374844f",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/outsourced-call-center-remote-desktop-support",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Speech Analytics Validation Guide",
+      "slug": "call-center-speech-analytics-validation",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "33c17f44120730608a1ec6804ad35123ba1239779c4df1de73d9c097d45d6aa6",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-speech-analytics-validation",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Quality Score Appeal Process",
+      "slug": "call-center-quality-score-appeal-process",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "50201903669a743004f1843783982e350c585910e91b605fd0f79e64e0862774",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-quality-score-appeal-process",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Location Evaluation Framework",
+      "slug": "call-center-location-evaluation-framework",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "3e8228094552c7b7dd8bd4c4d8b78317989dbf622e1f8df9b5ce25c1226f5d28",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-location-evaluation-framework",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Subcontractor Governance Checklist",
+      "slug": "call-center-subcontractor-governance",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "a7b3a4e9179d9c0552ab92a35afc013d9daae57342830336444995c0030c0285",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-subcontractor-governance",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Customer Authentication Design for Outsourced Call Centers",
+      "slug": "customer-authentication-call-center-design",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "8d7f62f193bdb0360ba23ba1142a2c50179c58196901be2ab1869dcd0904d130",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/customer-authentication-call-center-design",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Case Management Integration Requirements",
+      "slug": "call-center-case-management-integration",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "1156abbf74d400f2aa9e89a2b53db8702a8b9264549f3b0dc8e401e814b6ab48",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-case-management-integration",
+      "verificationTime": null
+    },
+    {
+      "family": "blog",
+      "topic": "Call Center Provider Exit Readiness Plan",
+      "slug": "call-center-provider-exit-readiness",
+      "sources": [
+        "NIST Cybersecurity Framework 2.0",
+        "NIST Privacy Framework",
+        "ISO 18295-1:2017 Customer contact centres",
+        "FTC Telemarketing Sales Rule (where applicable)"
+      ],
+      "contentHash": "844aad760b78c956e93aeda4c9c0a0d5fee8cfc273ccfea1610f43284374665b",
+      "actualPublicationDate": "2026-09-25",
+      "commitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
+      "deploymentEvidence": "pending combined production push",
+      "liveUrl": "https://callcenteroutsourced.com/blog/call-center-provider-exit-readiness",
+      "verificationTime": null
+    }
+  ]
+}

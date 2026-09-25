@@ -1,27 +1,75 @@
 {
   "cycleLabel": "2026-09-25 recovery",
   "publicationDate": "2026-09-25",
-  "dateStatus": "provisional-until-first-live",
+  "dateStatus": "reconciled-before-combined-push",
   "timezone": "UTC",
   "family": "blog",
   "requiredCount": 12,
   "repository": "coolifystealthagents/callcenteroutsourced",
   "productionBranch": "main",
-  "sourceCommitSha": null,
+  "sourceCommitSha": "1c7ba492600eb9325e32ae53220e46d22d8d4544",
   "entries": [
-    {"slug":"call-center-outsourcing-discovery-workshop","route":"/blog/call-center-outsourcing-discovery-workshop","actualPublicationDate":null},
-    {"slug":"call-center-shrinkage-assumptions","route":"/blog/call-center-shrinkage-assumptions","actualPublicationDate":null},
-    {"slug":"outsourcing-omnichannel-concurrency","route":"/blog/outsourcing-omnichannel-concurrency","actualPublicationDate":null},
-    {"slug":"call-center-callback-program-controls","route":"/blog/call-center-callback-program-controls","actualPublicationDate":null},
-    {"slug":"outsourced-call-center-remote-desktop-support","route":"/blog/outsourced-call-center-remote-desktop-support","actualPublicationDate":null},
-    {"slug":"call-center-speech-analytics-validation","route":"/blog/call-center-speech-analytics-validation","actualPublicationDate":null},
-    {"slug":"call-center-quality-score-appeal-process","route":"/blog/call-center-quality-score-appeal-process","actualPublicationDate":null},
-    {"slug":"call-center-location-evaluation-framework","route":"/blog/call-center-location-evaluation-framework","actualPublicationDate":null},
-    {"slug":"call-center-subcontractor-governance","route":"/blog/call-center-subcontractor-governance","actualPublicationDate":null},
-    {"slug":"customer-authentication-call-center-design","route":"/blog/customer-authentication-call-center-design","actualPublicationDate":null},
-    {"slug":"call-center-case-management-integration","route":"/blog/call-center-case-management-integration","actualPublicationDate":null},
-    {"slug":"call-center-provider-exit-readiness","route":"/blog/call-center-provider-exit-readiness","actualPublicationDate":null}
+    {
+      "slug": "call-center-outsourcing-discovery-workshop",
+      "route": "/blog/call-center-outsourcing-discovery-workshop",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-shrinkage-assumptions",
+      "route": "/blog/call-center-shrinkage-assumptions",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "outsourcing-omnichannel-concurrency",
+      "route": "/blog/outsourcing-omnichannel-concurrency",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-callback-program-controls",
+      "route": "/blog/call-center-callback-program-controls",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "outsourced-call-center-remote-desktop-support",
+      "route": "/blog/outsourced-call-center-remote-desktop-support",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-speech-analytics-validation",
+      "route": "/blog/call-center-speech-analytics-validation",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-quality-score-appeal-process",
+      "route": "/blog/call-center-quality-score-appeal-process",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-location-evaluation-framework",
+      "route": "/blog/call-center-location-evaluation-framework",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-subcontractor-governance",
+      "route": "/blog/call-center-subcontractor-governance",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "customer-authentication-call-center-design",
+      "route": "/blog/customer-authentication-call-center-design",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-case-management-integration",
+      "route": "/blog/call-center-case-management-integration",
+      "actualPublicationDate": "2026-09-25"
+    },
+    {
+      "slug": "call-center-provider-exit-readiness",
+      "route": "/blog/call-center-provider-exit-readiness",
+      "actualPublicationDate": "2026-09-25"
+    }
   ],
   "verifiedCount": 0,
-  "status": "local-draft"
+  "status": "ready-for-combined-release"
 }
