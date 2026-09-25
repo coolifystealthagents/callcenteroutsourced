@@ -1,6 +1,6 @@
 # Call Center Outsourced topical-authority link ledger
 
-Updated: 2026-09-13
+Updated: 2026-09-25
 
 ## Scope
 
@@ -25,9 +25,13 @@ This ledger covers Philippines-based call-center staffing. It records only route
 | What should happen when a customer request cannot be resolved in the first queue? | `/research/call-center-call-transfer-controls-a-research-brief` | `/services/inbound-call-handling` | Transfer design begins with a defined receiving queue and a clear handoff owner. |
 | How should a team protect customer records during ordinary support work? | `/blog/call-center-customer-data-minimization-notes` | `/services/omnichannel-customer-support` | The article explains note boundaries; the destination gives the related customer-support staffing scope. |
 
-## First executable gap
+## Delivered handoffs and next execution slice
 
-`/research/call-center-callback-window-verification-research-brief` already has one data-owned handoff to `/services/inbound-call-handling`, delivered in source commit `e4974846af0ef0af3aebb856130a0e0c2491204c`. Its public release remains pending verification, so it is not a candidate for another CTA. The first verified-absent pair is now `/research/call-center-outbound-contact-permission-research-brief` to `/services/outbound-appointment-setting`; any future handoff must preserve the client owner's control of contact permission, exceptions, and customer remedies.
+- `/research/call-center-callback-window-verification-research-brief` already has one data-owned handoff to `/services/inbound-call-handling`, delivered in rendered-source commit `e4974846af0ef0af3aebb856130a0e0c2491204c`.
+- `/research/call-center-outbound-contact-permission-research-brief` also already has one data-owned handoff to `/services/outbound-appointment-setting`, delivered in rendered-source commit `7f59b5185e212718962a4a2070a427da6a7d91ab`.
+- Both commits are ancestors of `main`. A fresh local build confirms the outbound-contact route has the apex canonical, its route-local appointment-setting link exactly once, `article:modified_time` of `2026-09-14`, and one sitemap location. The sitemap intentionally has no `lastmod`.
+
+These pairs are delivered locally and non-duplicable. Review the remaining service-led rows above before selecting a future reader-facing handoff; preserve client-owner control of contact permission, exceptions, and customer remedies.
 
 ## Authorship and research evidence
 
