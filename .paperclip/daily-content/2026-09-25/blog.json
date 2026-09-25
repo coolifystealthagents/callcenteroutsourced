@@ -1,0 +1,27 @@
+{
+  "cycleLabel": "2026-09-25 recovery",
+  "publicationDate": "2026-09-25",
+  "dateStatus": "provisional-until-first-live",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "sourceCommitSha": null,
+  "entries": [
+    {"slug":"call-center-outsourcing-discovery-workshop","route":"/blog/call-center-outsourcing-discovery-workshop","actualPublicationDate":null},
+    {"slug":"call-center-shrinkage-assumptions","route":"/blog/call-center-shrinkage-assumptions","actualPublicationDate":null},
+    {"slug":"outsourcing-omnichannel-concurrency","route":"/blog/outsourcing-omnichannel-concurrency","actualPublicationDate":null},
+    {"slug":"call-center-callback-program-controls","route":"/blog/call-center-callback-program-controls","actualPublicationDate":null},
+    {"slug":"outsourced-call-center-remote-desktop-support","route":"/blog/outsourced-call-center-remote-desktop-support","actualPublicationDate":null},
+    {"slug":"call-center-speech-analytics-validation","route":"/blog/call-center-speech-analytics-validation","actualPublicationDate":null},
+    {"slug":"call-center-quality-score-appeal-process","route":"/blog/call-center-quality-score-appeal-process","actualPublicationDate":null},
+    {"slug":"call-center-location-evaluation-framework","route":"/blog/call-center-location-evaluation-framework","actualPublicationDate":null},
+    {"slug":"call-center-subcontractor-governance","route":"/blog/call-center-subcontractor-governance","actualPublicationDate":null},
+    {"slug":"customer-authentication-call-center-design","route":"/blog/customer-authentication-call-center-design","actualPublicationDate":null},
+    {"slug":"call-center-case-management-integration","route":"/blog/call-center-case-management-integration","actualPublicationDate":null},
+    {"slug":"call-center-provider-exit-readiness","route":"/blog/call-center-provider-exit-readiness","actualPublicationDate":null}
+  ],
+  "verifiedCount": 0,
+  "status": "local-draft"
+}
