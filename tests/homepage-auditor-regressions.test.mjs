@@ -110,3 +110,16 @@ test('outbound-contact-permission research keeps its bounded appointment outreac
   })
   assert.ok(routedSlugs.has('outbound-appointment-setting'))
 })
+
+test('knowledge-exception research keeps its bounded Tier-One Technical Support handoff and owner boundary', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-knowledge-exception-routing-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-17')
+  assert.equal(post.updated, '2026-09-27')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/tier-one-technical-support',
+    label: 'Plan a safe Tier-One Technical Support lane',
+    body: 'Use Tier-One Technical Support to define approved first-line answers, the current knowledge source, and the specialist fallback. Your client owner still decides policy, access, remedies, and exceptions.',
+  })
+  assert.ok(routedSlugs.has('tier-one-technical-support'))
+})
