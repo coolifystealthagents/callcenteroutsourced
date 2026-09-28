@@ -24,6 +24,10 @@
 
 The former payment-channel, time-zone-promise, and complaint-impact source paths do not generate in the current route inventory. They are not execution candidates until an existing generated research route supports a new, separately reviewed map row.
 
+### September 28 reconciliation
+
+`/research/inbound-ivr-intent-handoff-drift-research` now has one route-local link to `/services/inbound-call-handling`. Its question concerns the same inbound queue boundary, and both generated routes have self-canonicals and sitemap locations. This pair is delivered in the current source baseline and must not be used as a future duplicate-CTA candidate.
+
 ## First candidate
 
 Audit `/research/call-center-outbound-contact-permission-research-brief` for one contextual path to `/services/outbound-appointment-setting`. The fresh 2026-09-13 build finds both generated routes in the sitemap and zero target hrefs in the research route's `<main>`. Add a handoff only after a fresh content-model and ownership-boundary review.
