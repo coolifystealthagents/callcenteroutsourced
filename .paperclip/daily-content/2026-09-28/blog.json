@@ -1,0 +1,38 @@
+{
+  "cycleLabel": "2026-09-28",
+  "publicationDate": "2026-09-28",
+  "dateStatus": "provisional-until-first-live",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "preparedCount": 12,
+  "verifiedCount": 0,
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "baselineSha": "7e64ae003f3153005fdd33b5661d0278e3ec742a",
+  "taskId": "cc24ca17-b2c4-4301-895f-2778a6530dd5",
+  "runId": "5aacb6e4-9f1f-4d91-8625-2ce1043ed4b8",
+  "worktree": ".worktrees/cala-104-20260928",
+  "branch": "cala-104-blog-20260928",
+  "status": "awaiting-research-handoff-and-combined-release",
+  "audit": {
+    "bodyOnlyWordCounts": [959, 948, 947, 957, 932, 941, 953, 942, 931, 942, 940, 974],
+    "maximumPairwiseFiveWordShingleJaccard": 0.45682888540031397,
+    "maximumPair": ["contact-center-data-retention", "call-recording-consent-outsourcing"],
+    "threshold": 0.5
+  },
+  "entries": [
+    {"slug":"inbound-call-volume-forecasting","route":"/blog/inbound-call-volume-forecasting","actualPublicationDate":"2026-09-28","bodyWords":959},
+    {"slug":"call-center-rfp-scoring-matrix","route":"/blog/call-center-rfp-scoring-matrix","actualPublicationDate":"2026-09-28","bodyWords":948},
+    {"slug":"outsourced-call-center-transition-plan","route":"/blog/outsourced-call-center-transition-plan","actualPublicationDate":"2026-09-28","bodyWords":947},
+    {"slug":"call-center-pricing-models","route":"/blog/call-center-pricing-models","actualPublicationDate":"2026-09-28","bodyWords":957},
+    {"slug":"contact-center-data-retention","route":"/blog/contact-center-data-retention","actualPublicationDate":"2026-09-28","bodyWords":932},
+    {"slug":"call-recording-consent-outsourcing","route":"/blog/call-recording-consent-outsourcing","actualPublicationDate":"2026-09-28","bodyWords":941},
+    {"slug":"call-center-workforce-management-handoff","route":"/blog/call-center-workforce-management-handoff","actualPublicationDate":"2026-09-28","bodyWords":953},
+    {"slug":"call-center-qa-sampling-plan","route":"/blog/call-center-qa-sampling-plan","actualPublicationDate":"2026-09-28","bodyWords":942},
+    {"slug":"outsourced-call-center-knowledge-governance","route":"/blog/outsourced-call-center-knowledge-governance","actualPublicationDate":"2026-09-28","bodyWords":931},
+    {"slug":"call-center-escalation-severity-matrix","route":"/blog/call-center-escalation-severity-matrix","actualPublicationDate":"2026-09-28","bodyWords":942},
+    {"slug":"call-center-vendor-remediation-plan","route":"/blog/call-center-vendor-remediation-plan","actualPublicationDate":"2026-09-28","bodyWords":940},
+    {"slug":"customer-complaint-root-cause-review","route":"/blog/customer-complaint-root-cause-review","actualPublicationDate":"2026-09-28","bodyWords":974}
+  ]
+}
