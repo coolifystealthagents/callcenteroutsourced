@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "runId": "CALA-105",
+  "pairedIntegratorTask": "CALA-104",
+  "family": "research",
+  "required": 5,
+  "prepared": 5,
+  "verified": 0,
+  "status": "local-handoff-only",
+  "cycleLabel": "September 28, 2026",
+  "intendedFirstPublicationDate": "2026-09-28",
+  "publicationDate": null,
+  "timezoneBasis": "UTC runtime; CALA-104 must reconcile every date field to the site's configured local date at first successful public verification",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "baselineSha": "7e64ae003f3153005fdd33b5661d0278e3ec742a",
+  "contentCommitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+  "localBranch": "cala-105-research-20260928",
+  "deploymentResource": "Coolify3 application uc0kc33r9hb41yd1tyklgewx",
+  "deploymentEvidence": "Not submitted by Research; CALA-104 owns the sole combined production push and Browser Operator owns deployment",
+  "validation": {
+    "typescript": "pass",
+    "researchValidator": "pass",
+    "cleanProductionBuild": "pass: 732 static pages",
+    "bodyWordCounts": {
+      "inbound-ivr-intent-handoff-drift-research": 1311,
+      "omnichannel-delayed-message-duplicate-action-research": 1290,
+      "order-support-address-change-fulfillment-boundary-research": 1272,
+      "outbound-appointment-location-eligibility-research": 1250,
+      "tier-one-support-diagnostic-evidence-redaction-research": 1272
+    },
+    "maximumFiveWordShingleJaccardPercent": 47.77,
+    "maximumPair": "omnichannel-delayed-message-duplicate-action-research <> outbound-appointment-location-eligibility-research"
+  },
+  "entries": [
+    {
+      "family": "research",
+      "topic": "Intent Drift Between IVR Selection and Inbound Agent Handoff",
+      "slug": "inbound-ivr-intent-handoff-drift-research",
+      "sources": ["ISO 18295-1:2017, Customer contact centres", "NIST Privacy Framework", "NIST SP 800-63-4, Digital Identity Guidelines", "NIST Cybersecurity Framework 2.0"],
+      "contentHash": "56e88e759140a428493a4369e595c6e522d27f4d8f3e356f60c18986d3e07fb7",
+      "actualPublicationDate": null,
+      "commitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+      "deploymentEvidence": "local handoff only",
+      "liveUrl": null,
+      "verificationTime": null
+    },
+    {
+      "family": "research",
+      "topic": "Duplicate-Action Risk from Delayed Omnichannel Messages",
+      "slug": "omnichannel-delayed-message-duplicate-action-research",
+      "sources": ["NIST Privacy Framework", "NIST Cybersecurity Framework 2.0", "NIST SP 800-207, Zero Trust Architecture", "ISO 18295-1:2017, Customer contact centres"],
+      "contentHash": "e8cba064c971a761c2d8d77222288d2c90eaa034f843b13f3d1f4211c83b07a6",
+      "actualPublicationDate": null,
+      "commitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+      "deploymentEvidence": "local handoff only",
+      "liveUrl": null,
+      "verificationTime": null
+    },
+    {
+      "family": "research",
+      "topic": "Address-Change Boundaries After Order Fulfillment Begins",
+      "slug": "order-support-address-change-fulfillment-boundary-research",
+      "sources": ["eCFR, 16 CFR Part 435, Mail, Internet, or Telephone Order Merchandise", "NIST Privacy Framework", "NIST Cybersecurity Framework 2.0", "ISO 18295-1:2017, Customer contact centres"],
+      "contentHash": "8b136fa6e91f13198a2131341ab35fe765ddb4b277bc61b333a34853086d2f08",
+      "actualPublicationDate": null,
+      "commitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+      "deploymentEvidence": "local handoff only",
+      "liveUrl": null,
+      "verificationTime": null
+    },
+    {
+      "family": "research",
+      "topic": "Location and Eligibility Evidence in Outbound Appointment Setting",
+      "slug": "outbound-appointment-location-eligibility-research",
+      "sources": ["NIST Privacy Framework", "NIST SP 800-63-4, Digital Identity Guidelines", "FTC, Complying with the Telemarketing Sales Rule", "ISO 18295-1:2017, Customer contact centres"],
+      "contentHash": "2cbdbe373ee618ce0c39989930e595694d8eb1726f6e53a2db80407e2daa9ecb",
+      "actualPublicationDate": null,
+      "commitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+      "deploymentEvidence": "local handoff only",
+      "liveUrl": null,
+      "verificationTime": null
+    },
+    {
+      "family": "research",
+      "topic": "Diagnostic-Evidence Redaction Before Tier-One Escalation",
+      "slug": "tier-one-support-diagnostic-evidence-redaction-research",
+      "sources": ["NIST SP 800-207, Zero Trust Architecture", "NIST SP 800-63-4, Digital Identity Guidelines", "NIST Privacy Framework", "NIST Cybersecurity Framework 2.0", "ISO 18295-1:2017, Customer contact centres"],
+      "contentHash": "875858edae630b06784a98655775692bb8ecaf79d29a0bfaf320d7128a73dca1",
+      "actualPublicationDate": null,
+      "commitSha": "cb6e28ecc3b2b73d966ba916ca175112d0d8bd1d",
+      "deploymentEvidence": "local handoff only",
+      "liveUrl": null,
+      "verificationTime": null
+    }
+  ]
+}
