@@ -28,6 +28,8 @@ The former payment-channel, time-zone-promise, and complaint-impact source paths
 
 `/research/inbound-ivr-intent-handoff-drift-research` now has one route-local link to `/services/inbound-call-handling`. Its question concerns the same inbound queue boundary, and both generated routes have self-canonicals and sitemap locations. This pair is delivered in the current source baseline and must not be used as a future duplicate-CTA candidate.
 
-## First candidate
+## Reconciled execution order — 2026-10-01
 
-Audit `/research/call-center-outbound-contact-permission-research-brief` for one contextual path to `/services/outbound-appointment-setting`. The fresh 2026-09-13 build finds both generated routes in the sitemap and zero target hrefs in the research route's `<main>`. Add a handoff only after a fresh content-model and ownership-boundary review.
+A fresh production build confirms that the outbound-contact-permission research route already contains one route-local link to `/services/outbound-appointment-setting`. It is delivered locally and non-duplicable; the prior zero-link note was stale and must not be used to add another CTA.
+
+The first verified-absent candidate is `/research/call-center-knowledge-answer-freshness-research-brief` → `/services/tier-one-technical-support`. Both exact generated routes have self-canonicals and sitemap entries, while the source `<main>` has zero links to that service. Review the record-level handoff model and the owner boundary before any reader-facing change: the client owner still approves knowledge content, policy wording, exceptions, and customer remedies.
