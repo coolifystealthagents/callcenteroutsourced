@@ -16,7 +16,7 @@
   "researchRunId": "6a4e4759-91b2-4f71-9d7d-dcc5832df53d",
   "branch": "cala-107-blog-20261002",
   "worktree": ".worktrees/cala-107-20261002",
-  "status": "research-handoff-integrated-quality-rewrite-required-blog-drafting",
+  "status": "all-blog-first-drafts-present-independent-rewrites-required",
   "pushPolicy": "one-combined-non-force-push",
   "deploymentPolicy": "browser-operator-only-coolify3-uc0kc33r9hb41yd1tyklgewx",
   "researchHandoffSha": "c00df5a0d323c39d7fba3d16b95d466407758d05",
@@ -27,6 +27,14 @@
     "repeatedHeadingLabels": ["Decision question and operating boundary", "Primary-source basis and interpretation"],
     "sharedArgumentSequence": true,
     "decision": "reject-pending-five-independent-rewrites-on-cala-106"
+  },
+  "blogDraftAudit": {
+    "draftCount": 12,
+    "acceptedCount": 0,
+    "bodyWords": [924, 928, 928, 926, 933, 929, 927, 931, 929, 931, 931, 925],
+    "maximumFiveWordShingleJaccardPercent": 76.51,
+    "maximumPair": ["outsourced-call-center-discovery-workshop", "call-center-vendor-exit-plan"],
+    "decision": "reject-first-drafts-and-rewrite-with-distinct-structures"
   },
   "blogTopics": [
     "outsourced-call-center-discovery-workshop",
