@@ -1,0 +1,22 @@
+{
+  "cycleLabel": "2026-10-02",
+  "family": "blog",
+  "requiredCount": 12,
+  "preparedCount": 0,
+  "verifiedCount": 0,
+  "timezone": "UTC",
+  "publicationDate": null,
+  "dateStatus": "awaiting-first-publication",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "baselineSha": "580bb3924a375bdd86756137c495fe38d997e098",
+  "taskId": "ef9d9c10-d7a6-4589-86c0-9072919594d1",
+  "runId": "36a07cd0-917c-4d09-b56f-87a0d77301cd",
+  "researchTask": "CALA-106",
+  "researchRunId": "6a4e4759-91b2-4f71-9d7d-dcc5832df53d",
+  "branch": "cala-107-blog-20261002",
+  "worktree": ".worktrees/cala-107-20261002",
+  "status": "awaiting-research-local-handoff-before-integration",
+  "pushPolicy": "one-combined-non-force-push",
+  "deploymentPolicy": "browser-operator-only-coolify3-uc0kc33r9hb41yd1tyklgewx"
+}
