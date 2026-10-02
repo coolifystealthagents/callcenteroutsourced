@@ -259,6 +259,44 @@ const omnichannelOwnershipPost:BlogPost={
  related:[{label:'Review customer support services',href:'/services/customer-support'},{label:'Read case-reconciliation research',href:'/research/omnichannel-case-reopen-state-reconciliation-research'},{label:'Discuss omnichannel ownership',href:'/contact-us'}]
 };
 
+const appointmentListPost:BlogPost={
+ slug:'appointment-setting-list-readiness',title:'Appointment-Setting List Readiness Before Outbound Calling',excerpt:'Validate purpose, source, suppression, time zone, eligibility, and slot availability before a list reaches agents.',keyword:'appointment setting list readiness',published:october2BlogPublicationDate,minutes:12,heroImage:image,
+ intro:'An outbound appointment list is an operating input, not a pile of telephone numbers. Before an outsourced team calls anyone, the buyer should be able to explain why each record is present, which contact rules apply, whether the person is still eligible, and what appointment can actually be booked. A clean release process prevents agents from discovering list defects during live conversations.',
+ sections:[
+  {title:'Give every record a traceable reason for contact',paragraphs:[
+   'Start with the source event that placed the person in the campaign. It might be a submitted request, an existing-customer service step, a referral workflow, or another buyer-approved purpose. Store the source system, event time, extraction time, campaign purpose, and owner who approved the release. A label such as lead or follow-up is not enough. The calling team needs a specific reason it can explain accurately if the person asks why they were contacted.',
+   'Keep the source evidence connected to the released record without copying unnecessary personal information into a spreadsheet. If the source cannot support the intended use, hold the record for review rather than asking an agent to repair the rationale on the phone. Marketing, legal, compliance, and service owners should determine which rules apply to the campaign. The provider follows those approved rules and records the outcome; it does not decide the lawful basis or campaign classification.'
+  ]},
+  {title:'Reconcile suppression and preference data at release time',paragraphs:[
+   'Check internal do-not-contact records, channel preferences, campaign exclusions, wrong-number reports, completed appointments, open complaints, and any external suppression sources required by the approved program. Define which source wins when preferences conflict and how quickly a new request reaches every calling system. A weekly suppression upload is unsafe if agents work from an older local copy after a person has opted out.',
+   'Treat suppression as an action, not a disposition code. When a person asks not to receive further calls, the representative should confirm the request using approved wording, record it in the authoritative place, and stop any follow-up sequence governed by that choice. The Federal Trade Commission\'s Telemarketing Sales Rule is a primary US source for covered telemarketing requirements, but qualified owners must decide whether and how it applies to the particular calls, relationships, jurisdictions, and technology.'
+  ]},
+  {title:'Resolve time zones before agents see the queue',paragraphs:[
+   'A telephone area code does not reliably prove where a person is located. Use the buyer-approved source for local time and retain how it was derived. Records with missing, conflicting, or uncertain location data need a safe path, such as manual review or a restricted calling window chosen by the responsible owner. Daylight-saving changes, border regions, travel, and reassigned numbers can all expose weak assumptions.',
+   'Configure permitted attempt windows in the dialer or work queue rather than relying only on agent memory. Store the timestamp with a clear zone, and display the person\'s local time where practical. Test records near the opening and closing boundaries. If a system schedules retries, confirm that it recalculates eligibility when the retry occurs instead of copying the original time decision into a later day.'
+  ]},
+  {title:'Check eligibility against the current service state',paragraphs:[
+   'List readiness requires more than valid contact details. Confirm that the person still meets the buyer\'s eligibility rules and has not already booked, cancelled the underlying request, moved to another territory, completed the service, or entered a state that requires specialist handling. Use an extraction close enough to calling time for the business process. When state changes quickly, perform a second check immediately before the representative offers a slot.',
+   'Define what the representative may say when eligibility is uncertain. The safe response may be to collect a limited correction, explain that the request needs review, and create a task for the client owner. Do not let agents stretch an eligibility rule to save a conversation. Record the reason a record was held or rejected so the buyer can repair the source process rather than repeatedly sending the same unsuitable records.'
+  ]},
+  {title:'Prove that bookable capacity exists',paragraphs:[
+   'A campaign should not begin merely because names are available. Confirm appointment types, locations, provider or representative rules, duration, preparation needs, lead time, capacity horizon, and the system that owns availability. Decide whether agents may use a waitlist, offer alternatives, or request a callback from a scheduler. If no eligible slot exists, the script should not manufacture urgency or promise that capacity will appear.',
+   'Test the booking transaction under simultaneous use. Two agents may see the same opening, and a slot can disappear between offer and confirmation. The workflow should reserve or confirm capacity atomically where possible and provide a clear failure result where it cannot. Record the selected time, time zone, location or modality, confirmation channel, and any customer requirement. Reconcile bookings back to the list so completed records leave the dialing sequence promptly.'
+  ]},
+  {title:'Release a small batch and inspect every outcome',paragraphs:[
+   'Sample ordinary records and deliberately include difficult ones: a recent suppression, uncertain time zone, duplicate person, reassigned number, boundary-time call, conflicting eligibility state, and territory with no capacity. Supervisors should compare each attempt with the original source, current preference, local-time decision, script, booking result, and follow-up state. Synthetic records can test system behavior without contacting a person.',
+   'Start with a batch small enough to review before the next release. Measure eligible records, suppressed records, stale states, wrong-time attempts, successful connections, completed bookings, booking reversals, complaints, and unresolved exceptions. Do not reward appointment volume alone. A booking that sales or service later rejects is evidence of a broken acceptance rule, even if the agent met a calendar target.'
+  ]},
+  {title:'Maintain a release ledger',paragraphs:[
+   'For each batch, retain the query or selection version, source period, extraction and release times, record count, exclusion totals, duplicate treatment, time-zone method, eligibility check, capacity snapshot, script version, approving owner, and secure destination. Hash or otherwise identify the exact released file according to the buyer\'s control design. This lets the parties investigate a complaint or unexplained result without circulating more copies of personal data.',
+   'Reconcile final outcomes before declaring the batch complete. Confirm that booked records left future attempts, suppression requests reached the authoritative system, wrong numbers were handled under policy, and unresolved eligibility questions have owners. Call Center Outsourced can help turn these controls into a bounded appointment-setting role, sample review, and reporting routine. The buyer retains decisions about audience, applicable contact rules, eligibility, availability, and exceptions.'
+  ]}
+ ],
+ faqs:[{question:'What makes an appointment list ready?',answer:'Each released record needs a current approved purpose, suppression result, time-zone basis, eligibility state, callable contact method, and a booking workflow with real capacity.'},{question:'Can agents determine whether a campaign is legally permitted?',answer:'No. Qualified buyer owners should classify the campaign and approve the contact rules. Agents apply those rules and escalate uncertainty.'},{question:'How large should the first release be?',answer:'Use a batch small enough for supervisors to inspect every outcome before more records are released.'}],
+ sources:[{name:'Telemarketing Sales Rule',organization:'Federal Trade Commission',date:'accessed October 2, 2026',url:'https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule',note:'Primary US source for covered telemarketing requirements; qualified review determines applicability.'},{name:'National Do Not Call Registry',organization:'Federal Trade Commission',date:'accessed October 2, 2026',url:'https://www.ftc.gov/news-events/topics/do-not-call-registry',note:'Official FTC context for the US National Do Not Call Registry.'},{name:'Privacy Framework',organization:'National Institute of Standards and Technology',date:'January 2020',url:'https://www.nist.gov/privacy-framework',note:'Privacy-risk context for list processing and data minimization.'}],
+ related:[{label:'Review appointment-setting services',href:'/services/customer-support'},{label:'Read reminder-preference research',href:'/research/outbound-appointment-reminder-preference-research'},{label:'Discuss list controls',href:'/contact-us'}]
+};
+
 export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===0)return discoveryWorkshopPost;
  if(index===1)return riskRegisterPost;
@@ -266,6 +304,7 @@ export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===3)return escalationPlaybookPost;
  if(index===4)return orderExceptionPost;
  if(index===5)return omnichannelOwnershipPost;
+ if(index===6)return appointmentListPost;
  const post=makeBuyerGuide(topic,index,october2BlogPublicationDate);
  return {...post,intro:`${topic.excerpt} This guide gives buyers a practical way to define the work, test the weak points, and preserve accountable decisions before outsourced volume expands.`,minutes:13+(index%4)};
 });
