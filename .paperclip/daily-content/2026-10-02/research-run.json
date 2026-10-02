@@ -1,0 +1,45 @@
+{
+  "cycleLabel": "2026-10-02",
+  "family": "research",
+  "requiredCount": 5,
+  "preparedCount": 0,
+  "verifiedCount": 0,
+  "timezone": "UTC",
+  "publicationDate": null,
+  "dateStatus": "awaiting-first-publication",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "baselineSha": "580bb3924a375bdd86756137c495fe38d997e098",
+  "taskId": "3f72c716-b0c2-412e-b20b-5340ccd87453",
+  "runId": "6a4e4759-91b2-4f71-9d7d-dcc5832df53d",
+  "branch": "cala-106-research-20261002",
+  "worktree": ".worktrees/cala-106-20261002",
+  "status": "topic-inventory-complete-drafting",
+  "topics": [
+    {
+      "slug": "inbound-call-abandonment-callback-offer-research",
+      "decision": "When a callback offer reduces customer waiting without obscuring abandonment, consent, queue state, or ownership",
+      "pillar": "/services/inbound-call-handling"
+    },
+    {
+      "slug": "omnichannel-case-reopen-state-reconciliation-research",
+      "decision": "How reopened contacts should reconcile closed-case state, new evidence, duplicate work, and the next accountable owner",
+      "pillar": "/services/omnichannel-customer-support"
+    },
+    {
+      "slug": "order-support-partial-cancellation-evidence-research",
+      "decision": "What evidence supports cancelling only eligible order lines while preserving fulfillment and refund state",
+      "pillar": "/services/order-management-support"
+    },
+    {
+      "slug": "outbound-appointment-reminder-preference-research",
+      "decision": "How contact permission, reminder purpose, channel preference, time zone, and opt-out state should be reconciled",
+      "pillar": "/services/outbound-appointment-setting"
+    },
+    {
+      "slug": "tier-one-support-device-ownership-boundary-research",
+      "decision": "How tier-one support distinguishes client-managed, customer-owned, and unknown devices before giving diagnostic instructions",
+      "pillar": "/services/tier-one-technical-support"
+    }
+  ]
+}
