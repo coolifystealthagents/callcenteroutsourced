@@ -16,7 +16,30 @@
   "researchRunId": "6a4e4759-91b2-4f71-9d7d-dcc5832df53d",
   "branch": "cala-107-blog-20261002",
   "worktree": ".worktrees/cala-107-20261002",
-  "status": "awaiting-research-local-handoff-before-integration",
+  "status": "research-handoff-integrated-quality-rewrite-required-blog-drafting",
   "pushPolicy": "one-combined-non-force-push",
-  "deploymentPolicy": "browser-operator-only-coolify3-uc0kc33r9hb41yd1tyklgewx"
+  "deploymentPolicy": "browser-operator-only-coolify3-uc0kc33r9hb41yd1tyklgewx",
+  "researchHandoffSha": "c00df5a0d323c39d7fba3d16b95d466407758d05",
+  "researchAudit": {
+    "wordCounts": [1554, 1298, 1256, 1241, 1272],
+    "maximumFiveWordShingleJaccardPercent": 48.8,
+    "exactRepeatedSubstantiveParagraphs": 0,
+    "repeatedHeadingLabels": ["Decision question and operating boundary", "Primary-source basis and interpretation"],
+    "sharedArgumentSequence": true,
+    "decision": "reject-pending-five-independent-rewrites-on-cala-106"
+  },
+  "blogTopics": [
+    "outsourced-call-center-discovery-workshop",
+    "call-center-outsourcing-risk-register",
+    "inbound-call-routing-requirements",
+    "customer-support-escalation-playbook",
+    "order-support-exception-matrix",
+    "omnichannel-support-case-ownership",
+    "appointment-setting-list-readiness",
+    "tier-one-support-scope-document",
+    "call-center-transition-knowledge-transfer",
+    "outsourced-call-center-governance-meeting",
+    "call-center-service-recovery-workflow",
+    "call-center-vendor-exit-plan"
+  ]
 }
