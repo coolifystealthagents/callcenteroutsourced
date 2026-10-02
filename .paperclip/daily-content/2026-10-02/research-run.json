@@ -2,7 +2,7 @@
   "cycleLabel": "2026-10-02",
   "family": "research",
   "requiredCount": 5,
-  "preparedCount": 0,
+  "preparedCount": 1,
   "verifiedCount": 0,
   "timezone": "UTC",
   "publicationDate": null,
@@ -14,7 +14,7 @@
   "runId": "6a4e4759-91b2-4f71-9d7d-dcc5832df53d",
   "branch": "cala-106-research-20261002",
   "worktree": ".worktrees/cala-106-20261002",
-  "status": "topic-inventory-complete-drafting",
+  "status": "drafting-1-of-5",
   "topics": [
     {
       "slug": "inbound-call-abandonment-callback-offer-research",
