@@ -373,6 +373,44 @@ const knowledgeTransferPost:BlogPost={
  related:[{label:'Review operations support',href:'/services/operations-support'},{label:'Explore quality assurance',href:'/services/quality-assurance'},{label:'Discuss transition knowledge',href:'/contact-us'}]
 };
 
+const governanceMeetingPost:BlogPost={
+ slug:'outsourced-call-center-governance-meeting',title:'Run an Outsourced Call Center Governance Meeting That Makes Decisions',excerpt:'Use a decision-led operating review instead of reading dashboards aloud and carrying the same actions forward.',keyword:'outsourced call center governance meeting',published:october2BlogPublicationDate,minutes:12,heroImage:image,
+ intro:'A governance meeting earns its place when it closes decisions that the operating teams cannot settle alone. Reading a monthly dashboard aloud does not improve service, especially when severe complaints, disputed measures, and old escalations remain outside the averages. The meeting should connect customer outcomes with evidence, ownership, tradeoffs, and approved change.',
+ sections:[
+  {title:'Build the agenda from decisions due',paragraphs:[
+   'Collect proposed agenda items before the meeting and require each owner to state the decision needed, customer or operating consequence, available evidence, options, recommendation, and deadline. Information that needs no discussion belongs in a pre-read. This leaves meeting time for items where authority, cross-company dependencies, risk acceptance, commercial treatment, or conflicting priorities prevent the delivery teams from proceeding.',
+   'Order the agenda by customer impact and decision timing, not by department. An unresolved safety route or widespread incorrect answer should come before a routine staffing update. Keep a short standing review of prior decisions and overdue actions, but do not let every historical item consume the session. If an owner has not supplied sufficient evidence, decide whether a temporary safe action is needed and set a firm path to the missing decision.'
+  ]},
+  {title:'Use one version of each measure',paragraphs:[
+   'Every reported measure should have a definition, numerator, denominator, source system, time zone, cutoff, exclusions, and owner. Show when client and provider calculations differ. A service-level percentage can change because abandoned contacts, callbacks, short calls, or unavailable-system intervals are treated differently. Governance should resolve the definition against the contract and operating intent rather than choosing whichever dashboard looks stronger.',
+   'Present distributions and relevant segments when an average hides the decision. Queue, channel, interval, contact reason, language, tenure, and exception type can reveal concentrated failure. Keep unresolved work visible across reporting periods. Closing a reporting month must not erase an old complaint, callback, or specialist decision that still affects a customer. Reconcile source records for any disputed measure before attaching commercial or performance consequences.'
+  ]},
+  {title:'Trace one success and one failure end to end',paragraphs:[
+   'Select a successful journey to confirm what the operating model is doing well. Then select a failure with meaningful customer impact, not merely the easiest defect to present. Review the original request, identity and entitlement checks, source information, representative action, promises, transfers, escalation acceptance, final result, and later contact. This sequence often shows that a good response time coexisted with a wrong answer or unfinished obligation.',
+   'Keep the review focused on controls and decisions rather than personal blame. Ask which condition was observable, which rule applied, whether the worker could find it, whether access and authority matched, and what prevented earlier detection. Assign corrective work to the owner able to change the source problem. Coaching is appropriate for an individual error; it is not a substitute for fixing contradictory knowledge, broken routing, missing system state, or an unavailable decision owner.'
+  ]},
+  {title:'Keep a decision log separate from action notes',paragraphs:[
+   'A decision log should state what was approved, scope, owner, evidence considered, effective date, affected documents or systems, review date, and any conditions. Action notes record the work required to implement that decision. Combining them in informal minutes makes it hard to tell whether a proposal was accepted or merely discussed. Use identifiers so later reports, change records, and training updates can point to the governing decision.',
+   'At the end of each agenda item, read back the decision and implementation owner. If no decision is possible, record the exact missing evidence, who will provide it, the temporary operating rule, and the next decision date. Silence is not acceptance. Neither is a slide left unchanged after discussion. Circulate the decision log promptly and correct factual errors while the participants still remember the evidence.'
+  ]},
+  {title:'Review risk and change together',paragraphs:[
+   'Volume, hours, channels, products, tools, locations, subcontractors, scripts, access, and policy changes can alter both service performance and risk. Present the proposed change with its customer purpose, dependency, control impact, cost or capacity effect, test plan, rollback condition, and approving owners. Avoid treating a small configuration edit as harmless when it changes routing, identity handling, recording, or the authority visible to a representative.',
+   'Link accepted changes to the risk register, knowledge updates, training, access roles, and quality sample. Confirm adoption with operating evidence after the effective date. If results differ from the forecast, return the change to governance instead of allowing local workarounds. NIST Cybersecurity Framework 2.0 places governance around organizational context, roles, policy, oversight, and supply-chain risk, which is useful context when the outsourced service depends on several parties.'
+  ]},
+  {title:'Give customer recovery its own review',paragraphs:[
+   'High-impact failures deserve more than a closure count. Review whether the customer was acknowledged, the immediate harm contained, the original need completed, an authorized remedy decided, and future contact prevented where appropriate. Track missed update promises and cases reopened after apparent closure. A financial credit can be part of recovery, but it does not correct an unresolved order, inaccessible service, or repeated misinformation.',
+   'Look for recurrence across queues and channels. Several individually small failures may share a policy gap or integration defect. Decide who owns the systemic correction and how effectiveness will be tested. Keep sensitive case detail within approved access; governance usually needs a minimized chronology and control evidence rather than unrestricted customer records. Client owners retain decisions about compensation, liability, policy, and risk acceptance.'
+  ]},
+  {title:'Close with accountable dates and evidence',paragraphs:[
+   'Review each new action for one accountable owner, due date, expected evidence, dependency, and escalation point. Avoid assigning actions to a department or both companies. Shared work can have contributors, but one person must report whether the result is complete. Age overdue actions visibly and distinguish work that is late from work genuinely blocked by another named decision.',
+   'After the meeting, update affected sources rather than leaving the outcome in presentation files. The next session should test whether decisions changed customer and operating results. Track decision cycle time, overdue actions, repeat failures, accepted evidence, dependency closure, customer recovery, and forecast accuracy. Call Center Outsourced can help buyers define the reporting pack, ownership boundaries, and pilot evidence that make governance practical instead of ceremonial.'
+  ]}
+ ],
+ faqs:[{question:'How often should governance meetings occur?',answer:'Match cadence to service risk and change. Launch periods may need weekly decisions, while a stable service can use monthly governance supported by faster incident paths.'},{question:'What belongs in the pre-read?',answer:'Include defined measures, customer-impact summaries, prior decisions, overdue actions, risks, proposed changes, and a clear decision request for every discussion item.'},{question:'Who should attend?',answer:'Include client and provider owners with authority over the decisions on the agenda, plus specialists needed to explain evidence. Attendance should follow decisions, not titles.'}],
+ sources:[{name:'Cybersecurity Framework 2.0',organization:'National Institute of Standards and Technology',date:'February 2024',url:'https://www.nist.gov/cyberframework',note:'Governance, roles, oversight, and supply-chain risk context.'},{name:'Privacy Framework',organization:'National Institute of Standards and Technology',date:'January 2020',url:'https://www.nist.gov/privacy-framework',note:'Privacy governance and data-minimization context.'},{name:'Customer contact centres, Part 1: Requirements for customer contact centres',organization:'International Organization for Standardization',date:'July 2017',url:'https://www.iso.org/standard/64739.html',note:'Customer contact center operating context.'}],
+ related:[{label:'Review quality assurance services',href:'/services/quality-assurance'},{label:'Read the risk-register guide',href:'/blog/call-center-outsourcing-risk-register'},{label:'Discuss governance reporting',href:'/contact-us'}]
+};
+
 export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===0)return discoveryWorkshopPost;
  if(index===1)return riskRegisterPost;
@@ -383,6 +421,7 @@ export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===6)return appointmentListPost;
  if(index===7)return tierOneScopePost;
  if(index===8)return knowledgeTransferPost;
+ if(index===9)return governanceMeetingPost;
  const post=makeBuyerGuide(topic,index,october2BlogPublicationDate);
  return {...post,intro:`${topic.excerpt} This guide gives buyers a practical way to define the work, test the weak points, and preserve accountable decisions before outsourced volume expands.`,minutes:13+(index%4)};
 });
