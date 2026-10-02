@@ -297,6 +297,44 @@ const appointmentListPost:BlogPost={
  related:[{label:'Review appointment-setting services',href:'/services/customer-support'},{label:'Read reminder-preference research',href:'/research/outbound-appointment-reminder-preference-research'},{label:'Discuss list controls',href:'/contact-us'}]
 };
 
+const tierOneScopePost:BlogPost={
+ slug:'tier-one-support-scope-document',title:'Write a Tier-One Technical Support Scope Document',excerpt:'Translate products, device contexts, diagnostics, access, prohibited actions, and escalation into usable frontline limits.',keyword:'tier one technical support scope document',published:october2BlogPublicationDate,minutes:13,heroImage:image,
+ intro:'Tier-one technical support works when representatives can identify a covered problem, gather bounded evidence, and perform approved reversible steps. It fails when a broad instruction to troubleshoot leaves staff deciding which devices, data, permissions, and changes are safe. The scope document should make those limits usable during a live customer contact.',
+ sections:[
+  {title:'Name the supported product state',paragraphs:[
+   'List the products, editions, versions, integrations, account types, and service regions the outsourced team supports. Include the source that tells representatives whether a version remains supported and how quickly a release change reaches the knowledge base. A product name alone is too broad when settings and recovery steps differ between versions. Define the response for beta features, customized deployments, and products that have reached the end of support.',
+   'Connect each supported item to the customer journey and entitlement rule. A representative may explain a public feature without account access, while diagnostics or configuration help may require an active plan and verified administrator. Do not make frontline staff infer entitlement from how urgent the customer sounds. If systems disagree, preserve the request, avoid a material change, and route the conflict to the owner of account status.'
+  ]},
+  {title:'Record the device and ownership boundary',paragraphs:[
+   'The same symptom can require a different response on a personal device, an employer-managed computer, a shared kiosk, or equipment supplied by the buyer. Ask only the approved ownership and management questions, then place the case in the matching path. A user may control an application but lack permission to change network, security, operating-system, or mobile-management settings. The scope should tell the representative where product support ends.',
+   'Write explicit stop rules for unknown ownership, missing administrator approval, rooted or modified devices, unsupported operating systems, and signs that another organization manages the environment. The safe action may be to collect version and error details, provide a public reference, or direct the user to their administrator. Representatives should not help bypass controls or describe risky workarounds to produce a quick resolution.'
+  ]},
+  {title:'Approve diagnostic evidence field by field',paragraphs:[
+   'Specify which logs, screenshots, identifiers, timestamps, and reproduction details may be requested for each workflow. State where the evidence may be sent, who can view it, and how sensitive information should be removed. Logs can contain names, tokens, paths, message content, or other data unrelated to the fault. "Send the logs" is not a sufficient collection rule.',
+   'Prefer the smallest evidence set that can answer the next diagnostic question. Use synthetic examples in training so staff learn what permitted evidence looks like before handling customer material. If a screenshot or file exposes unapproved data, the representative should stop collection and use the incident or privacy path defined by the responsible owner. NIST privacy guidance can help teams examine data processing risk, but it does not replace service-specific rules.'
+  ]},
+  {title:'Make every frontline step observable and reversible',paragraphs:[
+   'For each approved step, document the starting condition, exact instruction, expected result, evidence to record, and rollback method. Good tier-one steps isolate a cause without creating a larger problem. Checking service status, confirming a version, repeating a failed action with safe inputs, or changing a user-level preference may fit the scope. Deleting data, disabling security controls, altering production configuration, or making an irreversible account change usually requires another owner.',
+   'Do not equate technical access with authority. A support tool may expose a control that the outsourced role must not use. Align permissions with the written scope and review both when the product changes. Require representatives to stop when the observed screen, error, or result differs from the approved procedure. Continuing from intuition makes the case harder for the next team to reconstruct and can erase useful evidence.'
+  ]},
+  {title:'Describe escalation as an engineering handoff',paragraphs:[
+   'A useful technical escalation includes the customer goal, product and version, device context, entitlement and identity state, reproducible steps, actual and expected results, timestamps, approved evidence references, diagnostics completed, and changes already attempted. Separate customer statements from representative observations. Avoid declaring a bug, outage, attack, or root cause unless the authorized team has confirmed it.',
+   'Name destinations for product defects, widespread incidents, security concerns, billing or entitlement conflicts, data questions, accessibility barriers, and unsupported environments. Define acceptance and update timers. If engineering rejects an incomplete case, it should return a specific missing field rather than silently closing it. The frontline owner needs to know who will update the customer while specialist work continues.'
+  ]},
+  {title:'Test the scope with cases that tempt improvisation',paragraphs:[
+   'Use scenarios involving an unknown device, sensitive log, unavailable diagnostic tool, risky settings request, expired version, accessibility need, suspected outage, managed computer, and a recovery step that fails. Include a routine problem that tier one should resolve and an apparent product problem caused by entitlement. Watch whether the representative identifies the boundary, records sufficient evidence, and explains the next step without blaming another team.',
+   'Score scope accuracy, safe resolution, prohibited actions stopped, evidence quality, escalation acceptance, repeat contact, and recovery after a failed step. Review both successful and unsuccessful cases. A low handle time may indicate that representatives transfer everything, while a high resolution rate can hide unsafe changes. Balance customer outcome with adherence to the approved boundary and inspect the underlying records.'
+  ]},
+  {title:'Keep the document synchronized with the product',paragraphs:[
+   'Assign owners for product coverage, diagnostic procedures, access roles, evidence rules, and escalation destinations. Every release that changes screens, permissions, errors, or supported versions should trigger a scope review. Publish effective dates and retire old procedures from search. Urgent updates still need an owner, tested instruction, and confirmation that affected staff received the change.',
+   'Use frontline questions as maintenance evidence. Repeated requests for the same missing decision may show that the scope is unclear or the product creates a new contact reason. Correct the source document rather than relying on private messages. Call Center Outsourced can help translate an approved tier-one boundary into training cases, least-privilege access, quality sampling, and a supervised pilot while product, engineering, security, and billing owners retain specialist decisions.'
+  ]}
+ ],
+ faqs:[{question:'What belongs in tier-one technical support?',answer:'Include repeatable product guidance and approved reversible diagnostics with clear evidence, access, and stop rules.'},{question:'Should tier one collect logs?',answer:'Only when the scope identifies the permitted fields, collection channel, access, retention, and response to unexpected sensitive data.'},{question:'When should a case go to engineering?',answer:'Escalate when approved diagnostics indicate a possible defect, incident, or product decision, using the required reproduction and evidence fields.'}],
+ sources:[{name:'Privacy Framework',organization:'National Institute of Standards and Technology',date:'January 2020',url:'https://www.nist.gov/privacy-framework',note:'Privacy-risk context for diagnostic evidence.'},{name:'Cybersecurity Framework 2.0',organization:'National Institute of Standards and Technology',date:'February 2024',url:'https://www.nist.gov/cyberframework',note:'Access, detection, response, and recovery context.'},{name:'Customer contact centres, Part 1: Requirements for customer contact centres',organization:'International Organization for Standardization',date:'July 2017',url:'https://www.iso.org/standard/64739.html',note:'Customer contact center operating context.'}],
+ related:[{label:'Review technical support services',href:'/services/customer-support'},{label:'Read device-boundary research',href:'/research/tier-one-support-device-ownership-boundary-research'},{label:'Discuss tier-one scope',href:'/contact-us'}]
+};
+
 export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===0)return discoveryWorkshopPost;
  if(index===1)return riskRegisterPost;
@@ -305,6 +343,7 @@ export const october2BlogBatch:readonly BlogPost[]=topics.map((topic,index)=>{
  if(index===4)return orderExceptionPost;
  if(index===5)return omnichannelOwnershipPost;
  if(index===6)return appointmentListPost;
+ if(index===7)return tierOneScopePost;
  const post=makeBuyerGuide(topic,index,october2BlogPublicationDate);
  return {...post,intro:`${topic.excerpt} This guide gives buyers a practical way to define the work, test the weak points, and preserve accountable decisions before outsourced volume expands.`,minutes:13+(index%4)};
 });
