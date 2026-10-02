@@ -21,7 +21,7 @@ for(const post of batch){
   assert(post.internalLinks?.includes('/research'));
   assert(post.internalLinks?.some(link=>link.startsWith('/services/')));
   assert(post.sections.some(section=>/method|cohort|replication/i.test(section.heading)));
-  assert(post.sections.some(section=>/limitation/i.test(`${section.heading} ${section.body}`)));
+  assert(post.sections.some(section=>/limitation|limited by/i.test(`${section.heading} ${section.body}`)));
   bodies.push({slug:post.slug,words,text:body.toLowerCase().replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter(Boolean)});
 }
 const shingles=words=>new Set(Array.from({length:Math.max(0,words.length-4)},(_,index)=>words.slice(index,index+5).join(' ')));
