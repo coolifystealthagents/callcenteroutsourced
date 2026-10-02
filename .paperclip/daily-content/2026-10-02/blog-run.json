@@ -31,7 +31,7 @@
   "blogDraftAudit": {
     "draftCount": 12,
     "acceptedCount": 12,
-    "bodyWords": [1215, 1088, 1043, 1058, 1005, 1027, 1019, 948, 969, 964, 906, 1060],
+    "bodyWords": [1215, 1110, 1043, 1058, 1005, 1027, 1019, 948, 969, 964, 906, 1060],
     "maximumFiveWordShingleJaccardPercent": 0.54,
     "maximumPair": ["outsourced-call-center-governance-meeting", "call-center-service-recovery-workflow"],
     "decision": "pass"
