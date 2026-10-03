@@ -123,3 +123,16 @@ test('knowledge-exception research keeps its bounded Tier-One Technical Support 
   })
   assert.ok(routedSlugs.has('tier-one-technical-support'))
 })
+
+test('knowledge-answer-freshness research keeps its route-local Tier-One handoff and current date', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-knowledge-answer-freshness-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-14')
+  assert.equal(post.updated, '2026-10-03')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/tier-one-technical-support',
+    label: 'Set up a controlled Tier-One Technical Support lane',
+    body: 'Use Tier-One Technical Support to define approved first-line answers, the current knowledge source, and the specialist fallback. Your client owner still approves policy wording, customer remedies, access, and exceptions.',
+  })
+  assert.ok(routedSlugs.has('tier-one-technical-support'))
+})
