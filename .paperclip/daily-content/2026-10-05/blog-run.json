@@ -13,8 +13,8 @@
   "preparedCount": 12,
   "verifiedCount": 0,
   "timezone": "UTC",
-  "publicationDate": null,
-  "dateStatus": "awaiting-first-publication-and-live-verification",
+  "publicationDate": "2026-10-05",
+  "dateStatus": "UTC source-and-rendered-date-reconciled-at-2026-10-05T13:37:40Z; awaiting first-live verification",
   "researchTask": "CALA-108",
   "researchRunId": "1a6bf519-195c-4c2f-9cff-5800ba313890",
   "researchHandoffSha": "a3876fd4995c215bb08e4dd2e5c83695921095cf",
@@ -23,7 +23,7 @@
   "deploymentResource": "uc0kc33r9hb41yd1tyklgewx",
   "deploymentPolicy": "browser-operator-only-after-single-combined-push",
   "pushPolicy": "one-combined-non-force-push-after-all-17-article-gates",
-  "status": "combined-local-release-candidate-awaiting-date-reconciliation-and-browser-operator",
+  "status": "final-gates-passed-authorized-for-sole-combined-push",
   "audit": {
     "remoteMainFetchedAt": "2026-10-05T12:46:00Z",
     "remoteMainSha": "348b7b3073a8b61be6483f2382b0ceb097bbe902",
@@ -41,8 +41,10 @@
     "researchValidator": "pass: 5/5, 1208-1315 words, 14.84% maximum overlap",
     "blogValidator": "pass: 12/12, 1718-1804 words, 21.72% maximum overlap",
     "cleanProductionBuild": "pass: 779 static pages",
-    "renderedRoutes": "pass: full titles, canonicals, dates, final substantive paragraphs and contextual links",
-    "image": "pass: PNG signature and Pillow decode, 1024x1024 RGB",
+    "renderedRoutes": "pass: all 294 substantive paragraphs matched source, 17/17 normalized content hashes, full titles, canonicals, dates, schema and contextual links",
+    "editorialIndependence": "pass: 0 exact repeated substantive paragraphs, 0 shared heading/argument sequences, 0 repeated worked examples",
+    "image": "pass: served HTTP 200 image/png; Blog 1024x1024 RGB and Research 1536x1024 RGB signatures and Pillow decode",
+    "sourceDestinations": "pass: rendered source links present; NIST/PAGASA/DOI HTTP reachable, ISO/DOLE authoritative destinations return access-control 403 to curl",
     "indexesAndSitemap": "pass"
   },
   "blogDraftAudit": {

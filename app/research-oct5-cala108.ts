@@ -7,8 +7,8 @@ const iso={name:'ISO 18295-1:2017, Customer contact centres',url:'https://www.is
 const privacy={name:'NIST Privacy Framework',url:'https://www.nist.gov/privacy-framework'};
 const csf={name:'NIST Cybersecurity Framework 2.0',url:'https://www.nist.gov/cyberframework'};
 const ai={name:'NIST Artificial Intelligence Risk Management Framework 1.0',url:'https://doi.org/10.6028/NIST.AI.100-1'};
-const dole={name:'Philippines Department of Labor and Employment, Labor Advisories',url:'https://bwc.dole.gov.ph/issuances/labor-advisories/'};
-const pagasa={name:'PAGASA Tropical Cyclone Information',url:'https://www.pagasa.dost.gov.ph/tropical-cyclone'};
+const dole={name:'Philippines Department of Labor and Employment, Labor Advisories',url:'https://dole.gov.ph/labor-advisory/'};
+const pagasa={name:'PAGASA Tropical Cyclone Information',url:'https://www.pagasa.dost.gov.ph/climate/tropical-cyclone-information'};
 
 const commonLimits=`Source pages were checked on October 5, 2026. This is a documentary operating analysis, not a controlled experiment, legal opinion, employment instruction, or performance claim about a provider. Public frameworks state broad outcomes; they do not set a universal service level, staffing ratio, contractual allocation, or customer remedy. Local policy, contracts, system behavior, jurisdictions, and the actual customer population can change the correct design. A pilot should therefore record definitions before observation, retain unknown states, and have an authorized client owner review exceptions. Correlation between a control and an outcome does not establish causation. Small samples, seasonal demand, missing records, changed routing, and reviewer judgment can distort results. Replication requires the query window, queue, channel, inclusion rule, exclusions, system versions, source access dates, reviewer, and unresolved data limitations. These cautions are part of the conclusion rather than boilerplate: a buyer should narrow or pause the lane when the evidence cannot support the promised decision.`;
 
