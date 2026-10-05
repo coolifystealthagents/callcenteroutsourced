@@ -22,7 +22,7 @@
   "deploymentResource": "uc0kc33r9hb41yd1tyklgewx",
   "deploymentPolicy": "browser-operator-only-after-single-combined-push",
   "pushPolicy": "one-combined-non-force-push-after-all-17-article-gates",
-  "status": "integration-worktree-ready-awaiting-research-handoff",
+  "status": "blocked-awaiting-validated-research-handoff",
   "audit": {
     "remoteMainFetchedAt": "2026-10-05T12:46:00Z",
     "remoteMainSha": "348b7b3073a8b61be6483f2382b0ceb097bbe902",
@@ -32,6 +32,12 @@
     "contentModel": "TypeScript data modules rendered by dynamic Blog and Research routes",
     "sitemap": "app/sitemap.xml/route.ts",
     "configuredSiteTimezone": "UTC"
+  },
+  "blocker": {
+    "owner": "CALA-108 Research run 1a6bf519-195c-4c2f-9cff-5800ba313890",
+    "observedAt": "2026-10-05T12:50:00Z",
+    "reason": "The Research worktree remains at baseline SHA 348b7b3073a8b61be6483f2382b0ceb097bbe902 with no October 5 manifest, no staged or unstaged changes, and no five-article handoff comment.",
+    "unblockAction": "CALA-108 must commit and report exactly five validated Research articles with its full local SHA, worktree path, inventory, body lengths, originality audit, and validation results."
   },
   "remaining": [
     "Receive and verify CALA-108 five-article local commit SHA, worktree and inventory.",
