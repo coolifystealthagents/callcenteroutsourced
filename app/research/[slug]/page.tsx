@@ -23,7 +23,8 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
   const url=`${base}/research/${post.slug}`;
   const publishedDate=post.sourceDate ?? post.published;
   const updatedDate=post.updated ?? publishedDate;
-  const schema={'@context':'https://schema.org','@type':'Article',name:post.title,headline:post.title,description:post.excerpt,datePublished:post.published,dateModified:updatedDate,url,author:{'@type':'Organization',name:site.brand},citation:post.sources?.map(s=>s.url)};
+  const organization={'@type':'Organization',name:site.brand,url:base};
+  const schema={'@context':'https://schema.org','@type':'Article',name:post.title,headline:post.title,description:post.excerpt,datePublished:post.published,dateModified:updatedDate,url,author:organization,publisher:organization,citation:post.sources?.map(s=>s.url)};
   return <><Header/><main><article className="section"><div className="container article-shell">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({...schema,datePublished:publishedDate})}}/>
     <meta property="article:published_time" content={publishedDate}/>
