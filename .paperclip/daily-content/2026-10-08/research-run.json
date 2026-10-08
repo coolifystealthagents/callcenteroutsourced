@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "cycleLabel": "2026-10-08",
+  "family": "research",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "requiredCount": 5,
+  "preparedCount": 5,
+  "publicationDate": "2026-10-08",
+  "dateStatus": "source and visible dynamic-route date fixed to 2026-10-08",
+  "contentModel": "TypeScript data module rendered by dynamic Research routes",
+  "sourcePath": "app/research-oct8.ts",
+  "slugs": [
+    "outsourced-call-center-callback-promise-aging-research",
+    "call-center-knowledge-expiry-retrieval-research",
+    "outsourced-call-center-complaint-handoff-latency-research",
+    "call-center-recording-review-access-research",
+    "outsourced-call-center-after-call-record-quality-research"
+  ]
+}

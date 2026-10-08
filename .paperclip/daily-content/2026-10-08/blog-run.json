@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "cycleLabel": "2026-10-08",
+  "family": "blog",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "productionBranch": "main",
+  "requiredCount": 12,
+  "preparedCount": 12,
+  "publicationDate": "2026-10-08",
+  "dateStatus": "source and visible dynamic-route date fixed to 2026-10-08",
+  "contentModel": "TypeScript data module rendered by dynamic Blog routes",
+  "sourcePath": "app/blog-oct8.ts",
+  "slugs": [
+    "outsourced-call-center-callback-ownership-ledger",
+    "call-center-contact-reason-change-log",
+    "outsourced-call-center-complaint-update-clock",
+    "call-center-recording-access-review",
+    "outsourced-call-center-after-call-work-sampling",
+    "call-center-knowledge-article-expiry-queue",
+    "outsourced-call-center-language-transfer-record",
+    "call-center-supervisor-decision-queue",
+    "outsourced-call-center-crm-duplicate-case-review",
+    "call-center-outage-message-approval",
+    "outsourced-call-center-refund-escalation-packet",
+    "call-center-service-level-exclusion-register"
+  ]
+}
