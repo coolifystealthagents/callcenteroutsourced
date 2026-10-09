@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-09",
+  "kind": "blog",
+  "count": 12,
+  "publicationDateVisible": true,
+  "items": [
+    {
+      "slug": "callcenteroutsourced-priority-intake-triage",
+      "title": "Outsourced Call Center Priority Intake Triage",
+      "excerpt": "A practical guide to sequence new requests by evidence, impact, and accepted ownership.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-priority-intake-triage"
+    },
+    {
+      "slug": "callcenteroutsourced-exception-owner-map",
+      "title": "Outsourced Call Center Exception Owner Map",
+      "excerpt": "A practical guide to route ambiguous work to an authorized decision owner.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-exception-owner-map"
+    },
+    {
+      "slug": "callcenteroutsourced-source-record-verification",
+      "title": "Outsourced Call Center Source Record Verification",
+      "excerpt": "A practical guide to confirm the governing record before work begins.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-source-record-verification"
+    },
+    {
+      "slug": "callcenteroutsourced-handoff-acceptance-receipt",
+      "title": "Outsourced Call Center Handoff Acceptance Receipt",
+      "excerpt": "A practical guide to prove the receiving team accepted the next action.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-handoff-acceptance-receipt"
+    },
+    {
+      "slug": "callcenteroutsourced-backlog-aging-review",
+      "title": "Outsourced Call Center Backlog Aging Review",
+      "excerpt": "A practical guide to separate active handling from documented waiting states.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-backlog-aging-review"
+    },
+    {
+      "slug": "callcenteroutsourced-quality-sample-calibration",
+      "title": "Outsourced Call Center Quality Sample Calibration",
+      "excerpt": "A practical guide to align reviewers on observable acceptance evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-quality-sample-calibration"
+    },
+    {
+      "slug": "callcenteroutsourced-access-scope-recertification",
+      "title": "Outsourced Call Center Access Scope Recertification",
+      "excerpt": "A practical guide to keep permissions aligned with current duties.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-access-scope-recertification"
+    },
+    {
+      "slug": "callcenteroutsourced-change-control-release-note",
+      "title": "Outsourced Call Center Change Control Release Note",
+      "excerpt": "A practical guide to publish a dated rule change with rollback context.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-change-control-release-note"
+    },
+    {
+      "slug": "callcenteroutsourced-capacity-overflow-trigger",
+      "title": "Outsourced Call Center Capacity Overflow Trigger",
+      "excerpt": "A practical guide to surface demand that exceeds the safe service window.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-capacity-overflow-trigger"
+    },
+    {
+      "slug": "callcenteroutsourced-client-decision-packet",
+      "title": "Outsourced Call Center Client Decision Packet",
+      "excerpt": "A practical guide to prepare facts without transferring client authority.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-client-decision-packet"
+    },
+    {
+      "slug": "callcenteroutsourced-correction-propagation-check",
+      "title": "Outsourced Call Center Correction Propagation Check",
+      "excerpt": "A practical guide to reconcile corrected facts across dependent systems.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-correction-propagation-check"
+    },
+    {
+      "slug": "callcenteroutsourced-monthly-control-closeout",
+      "title": "Outsourced Call Center Monthly Control Closeout",
+      "excerpt": "A practical guide to close open exceptions and preserve review evidence.",
+      "publishedAt": "2026-10-09",
+      "route": "/blog/callcenteroutsourced-monthly-control-closeout"
+    }
+  ]
+}

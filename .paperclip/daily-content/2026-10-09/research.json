@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-09",
+  "kind": "research",
+  "count": 5,
+  "publicationDateVisible": true,
+  "items": [
+    {
+      "slug": "callcenteroutsourced-queue-wait-state-evidence-study",
+      "title": "Outsourced Call Center Queue Wait-State Evidence Study",
+      "excerpt": "A source-backed study of whether waiting reasons explain queue age.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/callcenteroutsourced-queue-wait-state-evidence-study"
+    },
+    {
+      "slug": "callcenteroutsourced-reviewer-agreement-reliability-study",
+      "title": "Outsourced Call Center Reviewer Agreement Reliability Study",
+      "excerpt": "A source-backed study of whether reviewers reproduce the same conclusion.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/callcenteroutsourced-reviewer-agreement-reliability-study"
+    },
+    {
+      "slug": "callcenteroutsourced-minimum-access-effectiveness-study",
+      "title": "Outsourced Call Center Minimum Access Effectiveness Study",
+      "excerpt": "A source-backed study of whether permissions are sufficient but bounded.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/callcenteroutsourced-minimum-access-effectiveness-study"
+    },
+    {
+      "slug": "callcenteroutsourced-handoff-completeness-observation",
+      "title": "Outsourced Call Center Handoff Completeness Observation",
+      "excerpt": "A source-backed study of whether a receiving team can continue without private clarification.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/callcenteroutsourced-handoff-completeness-observation"
+    },
+    {
+      "slug": "callcenteroutsourced-control-change-traceability-research",
+      "title": "Outsourced Call Center Control Change Traceability Research",
+      "excerpt": "A source-backed study of whether operating changes remain attributable and reversible.",
+      "publishedAt": "2026-10-09",
+      "route": "/research/callcenteroutsourced-control-change-traceability-research"
+    }
+  ]
+}
