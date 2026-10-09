@@ -124,6 +124,19 @@ test('knowledge-exception research keeps its bounded Tier-One Technical Support 
   assert.ok(routedSlugs.has('tier-one-technical-support'))
 })
 
+test('customer-preference-propagation research keeps its bounded Customer Win-Back handoff and owner boundary', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-customer-preference-propagation-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-17')
+  assert.equal(post.updated, '2026-10-09')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/customer-win-back-support',
+    label: 'Plan a controlled customer win-back lane',
+    body: 'Use Customer Win-Back Support to organize approved follow-up records and route a customer response to the right owner. Your client owner still decides contact purpose, preference rules, offers, remedies, and exceptions.',
+  })
+  assert.ok(routedSlugs.has('customer-win-back-support'))
+})
+
 test('knowledge-answer-freshness research keeps its route-local Tier-One handoff and current date', () => {
   const post = researchPosts.find((item) => item.slug === 'call-center-knowledge-answer-freshness-research-brief')
   assert.ok(post)
