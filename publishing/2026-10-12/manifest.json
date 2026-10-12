@@ -1,0 +1,193 @@
+{
+  "site": "CallCenterOutsourced.com",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blogCount": 12,
+  "researchCount": 5,
+  "articleCount": 17,
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "slug": "caller-language-preference-verification",
+      "title": "Verify a Caller\u2019s Language Preference before Transfer",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/caller-language-preference-verification.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/caller-language-preference-verification",
+      "thumbnailTitle": "Verify a Caller\u2019s Language Preference before Transfer"
+    },
+    {
+      "section": "Blog",
+      "slug": "weather-volume-surge-playbook",
+      "title": "Build a Weather-Driven Contact Volume Surge Playbook",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/weather-volume-surge-playbook.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/weather-volume-surge-playbook",
+      "thumbnailTitle": "Build a Weather-Driven Contact Volume Surge Playbook"
+    },
+    {
+      "section": "Blog",
+      "slug": "shared-mailbox-voice-escalation",
+      "title": "Connect Shared-Mailbox Cases to Voice Escalations",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/shared-mailbox-voice-escalation.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/shared-mailbox-voice-escalation",
+      "thumbnailTitle": "Connect Shared-Mailbox Cases to Voice Escalations"
+    },
+    {
+      "section": "Blog",
+      "slug": "refund-status-callback-handoff",
+      "title": "Design a Refund-Status Callback Handoff",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/refund-status-callback-handoff.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/refund-status-callback-handoff",
+      "thumbnailTitle": "Design a Refund-Status Callback Handoff"
+    },
+    {
+      "section": "Blog",
+      "slug": "abandoned-chat-reconnection",
+      "title": "Reconnect an Abandoned Chat without Losing the Customer Need",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/abandoned-chat-reconnection.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/abandoned-chat-reconnection",
+      "thumbnailTitle": "Reconnect an Abandoned Chat without Losing the Customer Need"
+    },
+    {
+      "section": "Blog",
+      "slug": "vip-queue-eligibility-audit",
+      "title": "Audit Eligibility for a Priority Customer Queue",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/vip-queue-eligibility-audit.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/vip-queue-eligibility-audit",
+      "thumbnailTitle": "Audit Eligibility for a Priority Customer Queue"
+    },
+    {
+      "section": "Blog",
+      "slug": "customer-bereavement-interaction-route",
+      "title": "Create a Customer Bereavement Interaction Route",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/customer-bereavement-interaction-route.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/customer-bereavement-interaction-route",
+      "thumbnailTitle": "Create a Customer Bereavement Interaction Route"
+    },
+    {
+      "section": "Blog",
+      "slug": "payment-link-delivery-confirmation",
+      "title": "Confirm Delivery of an Approved Payment Link",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/payment-link-delivery-confirmation.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/payment-link-delivery-confirmation",
+      "thumbnailTitle": "Confirm Delivery of an Approved Payment Link"
+    },
+    {
+      "section": "Blog",
+      "slug": "order-cancellation-cutoff-script",
+      "title": "Write an Order-Cancellation Cutoff Script Agents Can Use",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/order-cancellation-cutoff-script.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/order-cancellation-cutoff-script",
+      "thumbnailTitle": "Write an Order-Cancellation Cutoff Script Agents Can Use"
+    },
+    {
+      "section": "Blog",
+      "slug": "emergency-service-closure-message",
+      "title": "Control Emergency Service-Closure Messages",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/emergency-service-closure-message.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/emergency-service-closure-message",
+      "thumbnailTitle": "Control Emergency Service-Closure Messages"
+    },
+    {
+      "section": "Blog",
+      "slug": "contact-reason-other-review",
+      "title": "Review \u201cOther\u201d Contact Reasons before They Hide Demand",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/contact-reason-other-review.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/contact-reason-other-review",
+      "thumbnailTitle": "Review \u201cOther\u201d Contact Reasons before They Hide Demand"
+    },
+    {
+      "section": "Blog",
+      "slug": "new-client-shadow-queue-exit-gate",
+      "title": "Set an Exit Gate for a New Client Shadow Queue",
+      "source": "app/blog-oct12.ts",
+      "thumbnailPath": "public/oct12/new-client-shadow-queue-exit-gate.png",
+      "publicationDate": "2026-10-12",
+      "route": "/blog/new-client-shadow-queue-exit-gate",
+      "thumbnailTitle": "Set an Exit Gate for a New Client Shadow Queue"
+    },
+    {
+      "section": "Research",
+      "slug": "callback-window-time-zone-adherence-study",
+      "title": "Callback Windows across Time Zones: An Adherence Study",
+      "source": "app/research-oct12.ts",
+      "thumbnailPath": "public/oct12/callback-window-time-zone-adherence-study.png",
+      "publicationDate": "2026-10-12",
+      "route": "/research/callback-window-time-zone-adherence-study",
+      "thumbnailTitle": "Callback Windows across Time Zones: An Adherence Study"
+    },
+    {
+      "section": "Research",
+      "slug": "quality-score-appeal-agreement-study",
+      "title": "Quality-Score Appeals: A Reviewer Agreement Study",
+      "source": "app/research-oct12.ts",
+      "thumbnailPath": "public/oct12/quality-score-appeal-agreement-study.png",
+      "publicationDate": "2026-10-12",
+      "route": "/research/quality-score-appeal-agreement-study",
+      "thumbnailTitle": "Quality-Score Appeals: A Reviewer Agreement Study"
+    },
+    {
+      "section": "Research",
+      "slug": "multichannel-repeat-contact-linkage-study",
+      "title": "Multi-Channel Repeat Contacts: A Linkage Reliability Study",
+      "source": "app/research-oct12.ts",
+      "thumbnailPath": "public/oct12/multichannel-repeat-contact-linkage-study.png",
+      "publicationDate": "2026-10-12",
+      "route": "/research/multichannel-repeat-contact-linkage-study",
+      "thumbnailTitle": "Multi-Channel Repeat Contacts: A Linkage Reliability Study"
+    },
+    {
+      "section": "Research",
+      "slug": "agent-access-removal-lag-study",
+      "title": "Agent Access Removal Lag: A Control Effectiveness Study",
+      "source": "app/research-oct12.ts",
+      "thumbnailPath": "public/oct12/agent-access-removal-lag-study.png",
+      "publicationDate": "2026-10-12",
+      "route": "/research/agent-access-removal-lag-study",
+      "thumbnailTitle": "Agent Access Removal Lag: A Control Effectiveness Study"
+    },
+    {
+      "section": "Research",
+      "slug": "queue-forecast-error-service-recovery-study",
+      "title": "Queue Forecast Error and Service Recovery: A Comparative Study",
+      "source": "app/research-oct12.ts",
+      "thumbnailPath": "public/oct12/queue-forecast-error-service-recovery-study.png",
+      "publicationDate": "2026-10-12",
+      "route": "/research/queue-forecast-error-service-recovery-study",
+      "thumbnailTitle": "Queue Forecast Error and Service Recovery: A Comparative Study"
+    }
+  ]
+}
