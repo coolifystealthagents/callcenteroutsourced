@@ -1,0 +1,231 @@
+{
+  "site": "CallCenterOutsourced.com",
+  "canonicalDomain": "https://callcenteroutsourced.com",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "baseSha": "b81628cfa7f37e7431e5ae7f3e2cdb2ea4f8f0a1",
+  "publicationDate": "2026-10-13",
+  "visiblePublicationDate": "October 13, 2026",
+  "blogCount": 12,
+  "researchCount": 5,
+  "articleCount": 17,
+  "thumbnailCount": 17,
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "slug": "interpreter-callback-acceptance",
+      "title": "Preserve Interpreter Callback Acceptance",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/interpreter-callback-acceptance.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/interpreter-callback-acceptance",
+      "thumbnailTitle": "Preserve Interpreter Callback Acceptance",
+      "wordCount": 1033,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "silent-call-follow-up-routing",
+      "title": "Route Silent-Call Follow-Up without Guessing Intent",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/silent-call-follow-up-routing.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/silent-call-follow-up-routing",
+      "thumbnailTitle": "Route Silent-Call Follow-Up without Guessing Intent",
+      "wordCount": 1046,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "duplicate-crm-contact-merge-reconciliation",
+      "title": "Reconcile Duplicate CRM Contact Merges",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/duplicate-crm-contact-merge-reconciliation.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/duplicate-crm-contact-merge-reconciliation",
+      "thumbnailTitle": "Reconcile Duplicate CRM Contact Merges",
+      "wordCount": 1049,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "knowledge-base-hotfix-rollback-control",
+      "title": "Control Knowledge-Base Hotfix Rollback",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/knowledge-base-hotfix-rollback-control.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/knowledge-base-hotfix-rollback-control",
+      "thumbnailTitle": "Control Knowledge-Base Hotfix Rollback",
+      "wordCount": 1015,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "supervisor-whisper-coaching-request-route",
+      "title": "Route Supervisor Whisper-Coaching Requests",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/supervisor-whisper-coaching-request-route.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/supervisor-whisper-coaching-request-route",
+      "thumbnailTitle": "Route Supervisor Whisper-Coaching Requests",
+      "wordCount": 996,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "voicemail-disclosure-permission-check",
+      "title": "Confirm Voicemail Disclosure Permissions",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/voicemail-disclosure-permission-check.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/voicemail-disclosure-permission-check",
+      "thumbnailTitle": "Confirm Voicemail Disclosure Permissions",
+      "wordCount": 1015,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "outage-ticket-id-sequence-control",
+      "title": "Sequence Ticket IDs during a Contact-Center Outage",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/outage-ticket-id-sequence-control.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/outage-ticket-id-sequence-control",
+      "thumbnailTitle": "Sequence Ticket IDs during a Contact-Center Outage",
+      "wordCount": 1061,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "customer-requested-channel-switch-handoff",
+      "title": "Honor Customer-Requested Channel Switches",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/customer-requested-channel-switch-handoff.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/customer-requested-channel-switch-handoff",
+      "thumbnailTitle": "Honor Customer-Requested Channel Switches",
+      "wordCount": 1016,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "partial-call-recording-consent-record",
+      "title": "Document Partial Recording Consent",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/partial-call-recording-consent-record.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/partial-call-recording-consent-record",
+      "thumbnailTitle": "Document Partial Recording Consent",
+      "wordCount": 1083,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "abandoned-callback-ownership-closure",
+      "title": "Close Abandoned Callback Ownership",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/abandoned-callback-ownership-closure.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/abandoned-callback-ownership-closure",
+      "thumbnailTitle": "Close Abandoned Callback Ownership",
+      "wordCount": 1034,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "agent-desktop-macro-expiration-review",
+      "title": "Review Agent Desktop Macro Expirations",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/agent-desktop-macro-expiration-review.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/agent-desktop-macro-expiration-review",
+      "thumbnailTitle": "Review Agent Desktop Macro Expirations",
+      "wordCount": 1029,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Blog",
+      "slug": "emergency-overflow-vendor-activation-test",
+      "title": "Test Emergency Overflow Vendor Activation",
+      "source": "app/blog-oct13.ts",
+      "thumbnailPath": "public/oct13/emergency-overflow-vendor-activation-test.png",
+      "publicationDate": "2026-10-13",
+      "route": "/blog/emergency-overflow-vendor-activation-test",
+      "thumbnailTitle": "Test Emergency Overflow Vendor Activation",
+      "wordCount": 1070,
+      "sha256": "d0597177edc130b00501f82916734da11624f81719835b7f4a98a876ee24ba6b"
+    },
+    {
+      "section": "Research",
+      "slug": "ivr-containment-misclassification-study",
+      "title": "Measure IVR Containment Misclassification",
+      "source": "app/research-oct13.ts",
+      "thumbnailPath": "public/oct13/ivr-containment-misclassification-study.png",
+      "publicationDate": "2026-10-13",
+      "route": "/research/ivr-containment-misclassification-study",
+      "thumbnailTitle": "Measure IVR Containment Misclassification",
+      "wordCount": 1256,
+      "sha256": "8b4ff9a067a88557fe4b613657393c640d64a0bbee107afc3dda6eba4f3ca55a"
+    },
+    {
+      "section": "Research",
+      "slug": "callback-promise-breach-recovery-study",
+      "title": "Study Callback Promise Breach Recovery",
+      "source": "app/research-oct13.ts",
+      "thumbnailPath": "public/oct13/callback-promise-breach-recovery-study.png",
+      "publicationDate": "2026-10-13",
+      "route": "/research/callback-promise-breach-recovery-study",
+      "thumbnailTitle": "Study Callback Promise Breach Recovery",
+      "wordCount": 1292,
+      "sha256": "8b4ff9a067a88557fe4b613657393c640d64a0bbee107afc3dda6eba4f3ca55a"
+    },
+    {
+      "section": "Research",
+      "slug": "knowledge-article-citation-freshness-audit",
+      "title": "Audit Knowledge Article Citation Freshness",
+      "source": "app/research-oct13.ts",
+      "thumbnailPath": "public/oct13/knowledge-article-citation-freshness-audit.png",
+      "publicationDate": "2026-10-13",
+      "route": "/research/knowledge-article-citation-freshness-audit",
+      "thumbnailTitle": "Audit Knowledge Article Citation Freshness",
+      "wordCount": 1318,
+      "sha256": "8b4ff9a067a88557fe4b613657393c640d64a0bbee107afc3dda6eba4f3ca55a"
+    },
+    {
+      "section": "Research",
+      "slug": "queue-transfer-bounce-pattern-analysis",
+      "title": "Analyze Queue Transfer Bounce Patterns",
+      "source": "app/research-oct13.ts",
+      "thumbnailPath": "public/oct13/queue-transfer-bounce-pattern-analysis.png",
+      "publicationDate": "2026-10-13",
+      "route": "/research/queue-transfer-bounce-pattern-analysis",
+      "thumbnailTitle": "Analyze Queue Transfer Bounce Patterns",
+      "wordCount": 1338,
+      "sha256": "8b4ff9a067a88557fe4b613657393c640d64a0bbee107afc3dda6eba4f3ca55a"
+    },
+    {
+      "section": "Research",
+      "slug": "qa-sample-redaction-consistency-evaluation",
+      "title": "Evaluate Redaction Consistency in QA Samples",
+      "source": "app/research-oct13.ts",
+      "thumbnailPath": "public/oct13/qa-sample-redaction-consistency-evaluation.png",
+      "publicationDate": "2026-10-13",
+      "route": "/research/qa-sample-redaction-consistency-evaluation",
+      "thumbnailTitle": "Evaluate Redaction Consistency in QA Samples",
+      "wordCount": 1310,
+      "sha256": "8b4ff9a067a88557fe4b613657393c640d64a0bbee107afc3dda6eba4f3ca55a"
+    }
+  ]
+}
