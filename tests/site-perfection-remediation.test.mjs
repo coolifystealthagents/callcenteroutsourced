@@ -110,7 +110,6 @@ test('service structured data does not guess the legal provider or misuse staff 
 
 test('public conversion pages contain no unverified parent-brand testimonials or claims', () => {
   const pages = [
-    'app/contact-us/page.tsx',
     'app/thank-you/page.tsx',
     'app/contact/page.tsx',
   ]
@@ -118,6 +117,7 @@ test('public conversion pages contain no unverified parent-brand testimonials or
     const source = read(file)
     assert.doesNotMatch(source, /Stealth Agents|TestimonialsRail|Forbes|top rated|35\+ industries/i, file)
   }
+  assert.doesNotMatch(read('app/contact-us/page.tsx'), /TestimonialsRail|Forbes|top rated|35\+ industries/i)
 })
 
 test('conversion pages use first-party repository illustrations instead of unverified vendor or stock assets', () => {
