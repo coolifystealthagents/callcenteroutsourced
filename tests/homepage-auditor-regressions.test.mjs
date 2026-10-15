@@ -39,6 +39,20 @@ test('August 14 appointment-reschedule article has a generated contextual servic
   assert.ok(routedSlugs.has(post.bodyLink.href.split('/').pop()), `missing generated service route ${post.bodyLink.href}`)
 })
 
+test('contact-disposition article keeps its Workforce Reporting Support handoff and owner boundary', () => {
+  const post = august14BlogBatch.find((item) => item.slug === 'call-center-contact-disposition-quality')
+  assert.ok(post)
+  assert.equal(post.updated, '2026-10-15')
+  assert.deepEqual(post.bodyLink, {
+    href: '/services/workforce-reporting-support',
+    label: 'Workforce Reporting Support',
+    before: 'When the same disposition problem keeps returning, the team needs evidence that a manager can review before changing the queue.',
+    after: 'gives the team a place to prepare that evidence while the client owner keeps control of reporting definitions, queue rules, and customer commitments.',
+  })
+  assert.match(post.bodyLink.after, /client owner keeps control/)
+  assert.ok(routedSlugs.has('workforce-reporting-support'))
+})
+
 test('queue-monitoring article keeps its service handoff inside the generated service set', () => {
   const start = blogData.indexOf("slug: 'call-center-queue-monitoring'")
   const end = blogData.indexOf("slug: 'call-center-schedule-adherence'", start)
