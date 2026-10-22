@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { permanentRedirect } from 'next/navigation'
 
 export const metadata: Metadata = {
-  title: 'Contact | Call Center Outsourced',
+  title: 'Contact',
   description: 'Use the canonical coverage request form for Call Center Outsourced.',
   alternates: { canonical: '/contact-us' },
 }

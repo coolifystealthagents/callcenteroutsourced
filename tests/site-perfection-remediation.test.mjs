@@ -108,16 +108,14 @@ test('service structured data does not guess the legal provider or misuse staff 
   assert.doesNotMatch(page, /areaServed\s*:/)
 })
 
-test('public conversion pages contain no unverified parent-brand testimonials or claims', () => {
-  const pages = [
-    'app/thank-you/page.tsx',
-    'app/contact/page.tsx',
-  ]
-  for (const file of pages) {
+test('public conversion pages contain only the approved parent-brand review implementation', () => {
+  for (const file of ['app/thank-you/page.tsx', 'app/contact/page.tsx', 'app/contact-us/page.tsx']) {
     const source = read(file)
-    assert.doesNotMatch(source, /Stealth Agents|TestimonialsRail|Forbes|top rated|35\+ industries/i, file)
+    assert.doesNotMatch(source, /TestimonialsRail|Forbes|top rated|35\+ industries/i, file)
   }
-  assert.doesNotMatch(read('app/contact-us/page.tsx'), /TestimonialsRail|Forbes|top rated|35\+ industries/i)
+  const reviews = read('app/stealth-agents-reviews.ts')
+  assert.match(reviews, /sourceUrl: 'https:\/\/stealthagents\.com\/'/)
+  assert.match(reviews, /rating: 5/)
 })
 
 test('conversion pages use first-party repository illustrations instead of unverified vendor or stock assets', () => {
@@ -127,10 +125,12 @@ test('conversion pages use first-party repository illustrations instead of unver
   const cards = read('app/homepage-service-cards.ts')
   assert.doesNotMatch(contact, /call-center-team\.jpg|images\.unsplash\.com/i)
   assert.doesNotMatch(thankYou, /thank-you-hero\.png|images\.unsplash\.com/i)
-  for (const source of [contact, thankYou, homepage, cards]) {
+  for (const source of [thankYou, homepage, cards]) {
     assert.doesNotMatch(source, /getillustrations|images\.unsplash\.com/i)
     assert.match(source, /\/illustrations\/call-center-original\//)
   }
+  assert.match(contact, /\/brand\/stealth-agents-team-bacolod\.jpg/)
+  assert.match(contact, /\/brand\/stealth-agents-logo\.png/)
   const manifest = read('public/illustrations/call-center-original/PROVENANCE.md')
   assert.match(manifest, /authored for Call Center Outsourced/i)
   assert.match(manifest, /SHA-256/i)

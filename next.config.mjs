@@ -17,10 +17,14 @@ const csp = [
 ].join("; ")
 
 const nextConfig = {
+  poweredByHeader: false,
   outputFileTracingRoot: dirname(fileURLToPath(import.meta.url)),
   async redirects() {
     return [
       { source: '/contact', destination: '/contact-us', permanent: true },
+      { source: '/cancellation', destination: '/cancellation-policy', permanent: true },
+      { source: '/blog/page/1', destination: '/blog', permanent: true },
+      { source: '/research/page/1', destination: '/research', permanent: true },
     ]
   },
   async headers() {
@@ -31,6 +35,7 @@ const nextConfig = {
         { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
         { key: 'X-Content-Type-Options', value: 'nosniff' },
         { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+        { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=()' },
       ],
     }]
   },

@@ -77,7 +77,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "sourceDate": "2026-08-18",
     "sources": [
       {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
-      {"name":"ISO 10002 Quality Management—Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
+      {"name":"ISO 10002 Quality Management - Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
       {"name":"NIST Digital Identity Guidelines, SP 800-63B","url":"https://pages.nist.gov/800-63-3/sp800-63b.html"},
       {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
@@ -381,7 +381,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "sources": [
       {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
       {"name":"NIST Computer Security Incident Handling Guide, SP 800-61","url":"https://csrc.nist.gov/pubs/sp/800/61/r2/final"},
-      {"name":"ISO 10002 Quality Management—Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
+      {"name":"ISO 10002 Quality Management - Customer Satisfaction","url":"https://www.iso.org/standard/71580.html"},
       {"name":"NIST Cybersecurity Framework 2.0","url":"https://www.nist.gov/cyberframework"}
     ],
     "sections": [
@@ -566,7 +566,7 @@ export const august18ResearchBatch: readonly ResearchPost[] = [
     "sources": [
       {"name":"ISO 18295-1 Customer Contact Centres","url":"https://www.iso.org/standard/73338.html"},
       {"name":"NIST Contingency Planning Guide, SP 800-34","url":"https://csrc.nist.gov/pubs/sp/800/34/r1/final"},
-      {"name":"U.S. Department of Labor—Work Schedules","url":"https://www.dol.gov/general/topic/workhours"},
+      {"name":"U.S. Department of Labor - Work Schedules","url":"https://www.dol.gov/general/topic/workhours"},
       {"name":"NIST Privacy Framework","url":"https://www.nist.gov/privacy-framework"}
     ],
     "sections": [

@@ -253,7 +253,7 @@ export const researchPosts: readonly ResearchPost[] = [
           "url": "https://www.iso.org/standard/73338.html"
         },
         {
-          "name": "ISO 10002 Quality Management—Customer Satisfaction",
+          "name": "ISO 10002 Quality Management - Customer Satisfaction",
           "url": "https://www.iso.org/standard/71580.html"
         },
         {
@@ -620,7 +620,7 @@ export const researchPosts: readonly ResearchPost[] = [
           "url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
         },
         {
-          "name": "ISO 10002 Quality Management—Customer Satisfaction",
+          "name": "ISO 10002 Quality Management - Customer Satisfaction",
           "url": "https://www.iso.org/standard/71580.html"
         },
         {
@@ -841,7 +841,7 @@ export const researchPosts: readonly ResearchPost[] = [
           "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/final"
         },
         {
-          "name": "U.S. Department of Labor—Work Schedules",
+          "name": "U.S. Department of Labor - Work Schedules",
           "url": "https://www.dol.gov/general/topic/workhours"
         },
         {
@@ -935,7 +935,7 @@ export const researchPosts: readonly ResearchPost[] = [
   researchBody('Call Center Customer Data Retention: A Research Brief', 'NIST privacy guidance treats data processing as a governed lifecycle, while PCI DSS requires protection of payment account data. Neither source supplies a blanket retention period for every support operation; the client must define purpose, legal, and contractual requirements.', 'Create a retention table by record type: call audio, transcript, ticket, QA sample, export, and incident record. Name the system of record and deletion owner. Limit exports, protect archives, and review whether each retained field is still needed for the stated business purpose.'),
   researchBodyV2('Call Center Knowledge Base Governance: A Research Brief', 'A knowledge base is an operational control when every answer has an owner, effective date, and review path. NIST governance and ISO 18295 process guidance support making responsibilities and outcomes explicit rather than relying on informal agent memory.', 'Give each article an owner, scope label, approval status, effective date, and review date. Separate customer-facing wording from internal notes, flag sensitive exceptions, and sample answers against the current source record before expanding a queue.', ['call-center-script-change-control-a-research-brief', 'call-center-handoff-quality-a-research-brief', 'call-center-qa-sampling-a-research-brief']),
   researchBodyV2('Call Center Authentication Questions: A Research Brief', 'Identity checks should be designed as a bounded workflow, not an improvised conversation. NIST Digital Identity Guidelines support defined assurance and authenticator handling, while Zero Trust guidance supports evaluating each access request in context.', 'List the minimum approved verification steps by action and channel. Prohibit agents from requesting secrets or copying one-time codes into notes. Route failed, unusual, or high-impact requests to a named owner and audit the disposition without retaining unnecessary identity data.', ['customer-support-access-controls-a-research-brief', 'call-center-phishing-escalation-a-research-brief', 'payment-call-handling-controls-a-research-brief']),
-  researchBodyV2('Call Center Backlog Triage: A Research Brief', 'Backlog control depends on age, customer impact, promised response, and risk—not only item count. ISO 18295 emphasizes defined processes and results, while NIST frameworks support explicit ownership and repeatable response decisions.', 'Create priority bands with examples, due-time rules, escalation triggers, and a single backlog owner. Review oldest work first, record the reason for reprioritization, and pair speed reporting with reopened cases, unresolved work, and quality findings.', ['call-center-queue-coverage-a-research-brief', 'call-center-metrics-that-managers-can-use-a-research-brief', 'call-center-incident-response-a-research-brief']),
+  researchBodyV2('Call Center Backlog Triage: A Research Brief', 'Backlog control depends on age, customer impact, promised response, and risk - not only item count. ISO 18295 emphasizes defined processes and results, while NIST frameworks support explicit ownership and repeatable response decisions.', 'Create priority bands with examples, due-time rules, escalation triggers, and a single backlog owner. Review oldest work first, record the reason for reprioritization, and pair speed reporting with reopened cases, unresolved work, and quality findings.', ['call-center-queue-coverage-a-research-brief', 'call-center-metrics-that-managers-can-use-a-research-brief', 'call-center-incident-response-a-research-brief']),
   researchBodyV2('Call Center Callback Promise Controls: A Research Brief', 'A callback promise is a customer-impact commitment that needs a clock, owner, and exception path. Contact-center process guidance supports measuring outcomes, while privacy and identity guidance caution against putting unnecessary sensitive data in callback notes.', 'Record the requested outcome, safe callback channel, time window, owner, and escalation flag. Prevent silent expiry by aging open promises daily. Keep payment, legal, safety, and identity-sensitive callbacks with the approved manager workflow.', ['call-center-handoff-quality-a-research-brief', 'call-center-queue-coverage-a-research-brief', 'outbound-appointment-calls-a-research-brief']),
   researchBodyV2('Call Center Multichannel Case Linking: A Research Brief', 'Linking phone, email, chat, and ticket activity can reduce repeated explanations, but it also increases the risk of overexposure. NIST Privacy Framework and Zero Trust guidance support purpose limitation, scoped access, and explicit record ownership.', 'Define the system of record and allowed linkage keys. Show agents only the history needed for the assigned task, preserve channel and timestamp provenance, and escalate suspected account mismatches instead of merging records by guesswork.', ['customer-support-access-controls-a-research-brief', 'call-center-customer-data-retention-a-research-brief', 'call-center-handoff-quality-a-research-brief']),
   researchBodyV2('Call Center Refund Escalation: A Research Brief', 'Refund handling should separate customer communication from authorization. PCI DSS materials and NIST governance guidance support minimizing payment-data exposure and making approval boundaries explicit.', 'Document which cases an agent may explain, request, or submit for review. Keep approval and exception authority with a named owner, never store full payment data in notes, and reconcile the final decision to the original case record.', ['payment-call-handling-controls-a-research-brief', 'customer-support-access-controls-a-research-brief', 'call-center-incident-response-a-research-brief']),
@@ -983,3 +983,4 @@ export const researchPosts: readonly ResearchPost[] = [
   ...september14ResearchBatch,
 ].slice().sort((a, b) => b.published.localeCompare(a.published));
 export const postsPerPage = 20;
+export const researchPostsPerPage = 24;

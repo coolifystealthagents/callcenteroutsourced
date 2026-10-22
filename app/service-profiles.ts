@@ -10,9 +10,18 @@ export type FleetService = {
   controls: readonly string[]
   boundaries: readonly string[]
   firstWeek: readonly string[]
+  heroImage: string
+  audience: readonly string[]
+  startingScenarios: readonly string[]
+  workflow: readonly string[]
+  example: string
+  faqs: readonly { question: string; answer: string }[]
+  relatedServices: readonly string[]
 }
 
-export const fleetServices: readonly FleetService[] = [
+type CoreFleetService = Omit<FleetService, 'heroImage' | 'audience' | 'startingScenarios' | 'workflow' | 'example' | 'faqs' | 'relatedServices'>
+
+const coreFleetServices: readonly CoreFleetService[] = [
   {
     slug: 'inbound-call-handling',
     title: 'Inbound Call Handling',
@@ -183,3 +192,109 @@ export const fleetServices: readonly FleetService[] = [
     firstWeek: ['Day 1: choose the channel, period, sample, and rubric version', 'Day 2: score ten contacts with the manager', 'Day 3: reconcile reviewer disagreements and unclear criteria', 'Day 5: issue a bounded report with evidence and open decisions'],
   },
 ]
+
+type ServiceDecisionProfile = Pick<FleetService, 'audience' | 'startingScenarios' | 'example' | 'relatedServices'>
+
+const decisionProfiles: Record<string, ServiceDecisionProfile> = {
+  'inbound-call-handling': {
+    audience: ['Teams missing calls during peaks, breaks, or after-hours coverage', 'Managers who need routine calls separated from policy decisions'],
+    startingScenarios: ['Overflow one established phone queue while the internal team is busy', 'Cover a defined evening window with a manager available for escalation'],
+    example: 'A customer calls to move an appointment. The agent verifies the approved fields, offers a current slot, records the change, and routes a policy question to the named manager.',
+    relatedServices: ['omnichannel-customer-support', 'customer-support'],
+  },
+  'omnichannel-customer-support': {
+    audience: ['Support teams receiving the same request through several channels', 'Operations leaders who need one owner and history for each case'],
+    startingScenarios: ['Join email and chat contacts under one case identifier', 'Create a controlled handoff when a customer moves from chat to phone'],
+    example: 'A customer starts in chat and later emails supporting details. The agent links both contacts to the verified case, summarizes the new evidence, and keeps the existing owner and response commitment visible.',
+    relatedServices: ['inbound-call-handling', 'customer-support'],
+  },
+  'outbound-appointment-setting': {
+    audience: ['Teams with an approved contact list and documented outreach permission', 'Managers who want qualification and calendar work kept within a script'],
+    startingScenarios: ['Follow up with people who explicitly requested a consultation', 'Call an approved customer cohort about available service appointments'],
+    example: 'An approved contact asks for a later meeting. The agent confirms the time zone, checks live availability, books an allowed slot, and records the campaign disposition and any contact preference.',
+    relatedServices: ['inbound-call-handling', 'survey-and-feedback-calls'],
+  },
+  'order-management-support': {
+    audience: ['Commerce teams with high volumes of routine status questions', 'Fulfillment managers who need complete exception records before deciding remedies'],
+    startingScenarios: ['Answer shipment-status contacts from the order and carrier records', 'Open a documented exception for a damaged or incomplete order'],
+    example: 'A customer reports a missing item. The agent verifies the order, records the item and available evidence, opens the approved exception type, and sends the case to the owner authorized to decide a remedy.',
+    relatedServices: ['customer-support', 'omnichannel-customer-support'],
+  },
+  'tier-one-technical-support': {
+    audience: ['Product teams with repeat setup and documented troubleshooting questions', 'Specialists who need escalations to include reproducible evidence'],
+    startingScenarios: ['Handle one low-risk setup category from an approved runbook', 'Collect environment details before routing a possible product defect'],
+    example: 'A user reports that a documented feature will not load. The agent records the version and environment, follows reversible checks, captures each result, and escalates with reproduction steps when the issue remains.',
+    relatedServices: ['customer-support', 'reporting-and-qa'],
+  },
+  'collections-reminder-calls': {
+    audience: ['Account teams with approved reminder lists and jurisdiction-specific instructions', 'Managers who retain authority over disputes, hardship, and payment arrangements'],
+    startingScenarios: ['Deliver a neutral reminder for an approved account cohort', 'Capture and route customer-stated disputes without deciding their validity'],
+    example: 'After completing the required identity check, the agent states the approved reminder. The customer disputes the balance, so the agent records the statement verbatim and routes it without proposing a settlement.',
+    relatedServices: ['outbound-appointment-setting', 'customer-support'],
+  },
+  'customer-win-back-support': {
+    audience: ['Retention teams with a defined eligible audience and current options', 'Leaders seeking structured cancellation feedback and owned follow-up'],
+    startingScenarios: ['Contact a small approved cohort of recently cancelled customers', 'Route interested former customers to an authorized retention owner'],
+    example: 'A former customer explains that an unavailable feature drove cancellation. The agent records the stated reason, explains only a currently approved option, and creates a follow-up for the authorized owner without promising a discount.',
+    relatedServices: ['survey-and-feedback-calls', 'outbound-appointment-setting'],
+  },
+  'dispatch-coordination': {
+    audience: ['Field-service teams coordinating customer windows and live work orders', 'Dispatch owners who want routine updates separated from route or safety decisions'],
+    startingScenarios: ['Schedule one standard request type from live availability', 'Relay documented delay information and create an owned exception'],
+    example: 'A technician reports a delay to the dispatch board. The agent checks the current record, contacts the customer with an approved window, logs the conversation, and routes a requested priority change to dispatch.',
+    relatedServices: ['inbound-call-handling', 'operations-support'],
+  },
+  'survey-and-feedback-calls': {
+    audience: ['Research teams using an approved questionnaire and respondent list', 'Service managers who need feedback captured separately from complaint resolution'],
+    startingScenarios: ['Pilot a short voluntary survey with one defined customer cohort', 'Collect verbatim comments after a completed service interaction'],
+    example: 'A respondent gives a low score and describes an unresolved safety concern. The agent preserves the stated answer, does not reinterpret the score, and separately opens the required urgent escalation with a named owner.',
+    relatedServices: ['customer-win-back-support', 'reporting-and-qa'],
+  },
+  'workforce-reporting-support': {
+    audience: ['Operations teams reconciling schedule, attendance, and queue reports', 'Managers who need source-linked staffing information before making decisions'],
+    startingScenarios: ['Rebuild one daily coverage report from named source systems', 'Prepare an exception list for missing or conflicting interval data'],
+    example: 'The schedule and queue report disagree for one interval. The agent preserves both source timestamps, flags the mismatch as unresolved, and places it in the manager decision list rather than changing attendance data.',
+    relatedServices: ['operations-support', 'reporting-and-qa'],
+  },
+  'operations-support': {
+    audience: ['Supervisors spending substantial time on repeat queue administration', 'Support teams with callbacks and handoffs spread across several work lists'],
+    startingScenarios: ['Prepare one end-of-shift brief from approved systems', 'Reconcile promised callbacks against their current owners and status'],
+    example: 'At shift end, the agent finds a promised callback without a completed outcome. The agent checks the source case, confirms the assigned owner, and places the open commitment in the handoff instead of closing it.',
+    relatedServices: ['workforce-reporting-support', 'reporting-and-qa'],
+  },
+  'customer-support': {
+    audience: ['Growing teams with a backlog of repeat, documented customer questions', 'Managers who want added capacity while retaining sensitive decisions'],
+    startingScenarios: ['Assign one low-risk ticket category with approved answers', 'Add coverage for routine status checks and documented follow-up'],
+    example: 'A customer asks about an order and then requests a refund. The agent answers the verified status question, records the refund request and relevant facts, and routes the decision to the authorized manager.',
+    relatedServices: ['inbound-call-handling', 'omnichannel-customer-support'],
+  },
+  'reporting-and-qa': {
+    audience: ['Contact-center leaders who need consistent review across calls and tickets', 'Managers preparing evidence for calibration and coaching decisions'],
+    startingScenarios: ['Score a defined sample against one versioned quality rubric', 'Compare two reviewers on the same small calibration set'],
+    example: 'Two reviewers disagree on whether a handoff met the rubric. The analyst links the interaction evidence, records each interpretation, and sends the unclear criterion to the manager instead of forcing agreement.',
+    relatedServices: ['operations-support', 'workforce-reporting-support'],
+  },
+}
+
+const enrichService = (service: CoreFleetService): FleetService => {
+  const profile = decisionProfiles[service.slug]
+  if (!profile) throw new Error(`Missing decision profile for ${service.slug}`)
+  return {
+    ...service,
+    ...profile,
+    heroImage: `/service-heroes/${service.slug}.svg`,
+    workflow: [
+      `Confirm the ${service.title.toLowerCase()} queue, source systems, hours, and accountable owners.`,
+      'Document approved actions, required evidence, authority limits, and escalation triggers.',
+      'Practice ordinary requests and exceptions with redacted examples before handling live work.',
+      'Pilot a narrow queue, review the records with a manager, and revise the operating brief before expansion.',
+    ],
+    faqs: [
+      { question: `What should we define before starting ${service.title.toLowerCase()}?`, answer: 'Define the in-scope requests, source of truth, permitted actions, access, hours, customer wording, and owner for each exception.' },
+      { question: 'Which decisions stay with our managers?', answer: `Your managers retain the approvals listed on this page, plus any request outside the written authority boundary for ${service.title.toLowerCase()}.` },
+      { question: 'How should we begin?', answer: 'Begin with one reviewable queue and a small set of representative examples. Inspect the records and handoffs before adding categories, channels, or hours.' },
+    ],
+  }
+}
+
+export const fleetServices: readonly FleetService[] = coreFleetServices.map(enrichService)

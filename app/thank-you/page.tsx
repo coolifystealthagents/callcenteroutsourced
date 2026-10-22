@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import { Footer, Header } from '../components'
 
 export const metadata: Metadata = {
-  title: 'Request Next Steps | Call Center Outsourced',
-  description: 'Review the next steps after submitting an outsourced call center coverage request.',
+  title: 'Schedule Your Consultation',
+  description: 'Choose a consultation time after submitting your call center staffing request.',
   alternates: { canonical: '/thank-you' },
   robots: { index: false, follow: false },
 }
+
+const schedulerUrl = 'https://go.oncehub.com/StealthAgentsTeam'
 
 export default function ThankYouPage() {
   return <>
@@ -14,26 +16,22 @@ export default function ThankYouPage() {
     <main className="sa-booking-page">
       <div className="container sa-booking-grid">
         <div className="sa-booking-left">
-          <p className="sa-booking-kicker">Coverage request next steps</p>
-          <h1>Let’s prepare a focused call center coverage conversation.</h1>
-          <p className="sa-booking-lead">If you just completed the request form, the next review will use the queues, channels, hours, systems, and authority limits you shared.</p>
-          <img
-            className="sa-booking-image"
-            src="/illustrations/call-center-original/call-coverage-team.svg"
-            alt="Illustration of a customer support professional preparing call coverage"
-            width="720"
-            height="900"
-          />
+          <p className="sa-booking-kicker">Request received</p>
+          <h1>Thank you. Choose a consultation time.</h1>
+          <p className="sa-booking-lead">Your written request gives the staffing team useful context about your queues, hours, systems, and boundaries. Scheduling is the final step.</p>
+          <img className="sa-booking-image" src="/illustrations/call-center-original/reporting-qa.svg" alt="Operations specialist reviewing consultation requirements and reporting" width="960" height="640" />
         </div>
-        <section className="sa-booking-calendar" aria-labelledby="next-steps-title">
-          <h2 id="next-steps-title">What happens next</h2>
-          <ol>
-            <li><strong>Scope review:</strong> the submitted queue, channel, schedule, and task details are reviewed.</li>
-            <li><strong>Boundary check:</strong> manager-only decisions and sensitive access are separated from delegated work.</li>
-            <li><strong>Coverage conversation:</strong> a team member follows up using the contact details in the accepted request.</li>
-          </ol>
-          <p>Need to add context or submit a different request?</p>
-          <a className="btn primary" href="/contact-us">Return to the coverage form</a>
+        <section className="sa-booking-calendar" aria-labelledby="schedule-title">
+          <h2 id="schedule-title">Schedule your staffing consultation</h2>
+          <p>Choose an available time in the secure OnceHub scheduler below. When your booking is complete, OnceHub will continue automatically to the branded <strong>/thanks-whats-next</strong> confirmation page.</p>
+          <iframe
+            className="sa-oncehub-frame"
+            src={schedulerUrl}
+            title="Schedule a consultation with the Stealth Agents team"
+            loading="eager"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allow="fullscreen"
+          />
         </section>
       </div>
     </main>

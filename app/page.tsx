@@ -4,7 +4,7 @@ import { blogPosts, site } from './data';
 import { homepageServiceCards } from './homepage-service-cards';
 
 export const metadata: Metadata = {
-  title: 'Outsourced Call Center Services | Call Center Outsourced',
+  title: 'Outsourced Call Center Services',
   description: 'Plan Philippines-based outsourced call center coverage for phone, chat, email, tickets, quality review, and documented manager handoffs.',
   alternates: { canonical: '/' },
 };
@@ -35,9 +35,9 @@ export default function Home() {
                 <a className="cco-text-link" href="#services">Explore service lanes <span>↘</span></a>
               </div>
               <div className="cco-hero-notes" aria-label="Planning priorities">
-                <span>01&nbsp; Scope the queue</span>
-                <span>02&nbsp; Set escalation rules</span>
-                <span>03&nbsp; Launch with QA</span>
+                <span>Scope the queue</span>
+                <span>Set escalation rules</span>
+                <span>Launch with QA</span>
               </div>
             </div>
 
@@ -67,8 +67,8 @@ export default function Home() {
           </div>
           <div className="cco-service-grid">
             {homepageServiceCards.map((service, index) => (
-              <a href={`/services/${service.slug}`} className="cco-service-card" key={service.slug}>
-                <div><span className="cco-service-icon"><img src={service.icon} alt={service.imageAlt} width="36" height="36" /></span><span className="cco-service-num">0{index + 1}</span></div>
+              <a href={`/services/${service.slug}`} className="cco-service-card" key={`${service.slug}-${index}`}>
+                <div><span className="cco-service-icon"><img src={service.icon} alt={service.imageAlt} width="36" height="36" /></span></div>
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
                 <b>View scope <span>↗</span></b>
@@ -110,18 +110,18 @@ export default function Home() {
             <div><p className="eyebrow">Managed launch</p><h2>Go live without giving up visibility.</h2></div>
             <p>Your coverage plan should connect the role, approved answers, access limits, review rhythm, and escalation path.</p>
           </div>
-          <div className="cco-process-grid">
-            <article><span>01</span><h3>Map demand</h3><p>Share channels, call reasons, hours, volume patterns, and the outcomes customers need.</p></article>
-            <article><span>02</span><h3>Build the playbook</h3><p>Define approved replies, sensitive decisions, tool access, and the exact manager handoff.</p></article>
-            <article><span>03</span><h3>Pilot one lane</h3><p>Start with a reviewable queue, inspect real samples, and tune the brief before scaling.</p></article>
-            <article><span>04</span><h3>Review the signals</h3><p>Use queue notes, QA samples, callbacks, and escalation trends to guide improvements.</p></article>
-          </div>
+          <ol className="cco-process-grid">
+            <li><article><h3>Map demand</h3><p>Share channels, call reasons, hours, volume patterns, and the outcomes customers need.</p></article></li>
+            <li><article><h3>Build the playbook</h3><p>Define approved replies, sensitive decisions, tool access, and the exact manager handoff.</p></article></li>
+            <li><article><h3>Pilot one lane</h3><p>Start with a reviewable queue, inspect real samples, and tune the brief before scaling.</p></article></li>
+            <li><article><h3>Review the signals</h3><p>Use queue notes, QA samples, callbacks, and escalation trends to guide improvements.</p></article></li>
+          </ol>
         </section>
 
         <section className="container cco-guides">
           <div className="cco-guides-intro"><p className="eyebrow">Field notes</p><h2>Plan before the first ring.</h2><p>Plain-language guides for provider comparisons, role scope, onboarding, and quality control.</p><a href="/blog">Read all guides ↗</a></div>
           <div className="cco-guide-list">
-            {blogPosts.slice(0, 3).map((post, index) => <a href={`/blog/${post.slug}`} key={post.slug}><span>0{index + 1}</span><div><small>{post.minutes} min guide</small><h3>{post.title}</h3><p>{post.excerpt}</p></div><b>↗</b></a>)}
+            {blogPosts.slice(0, 3).map((post) => <a href={`/blog/${post.slug}`} key={post.slug}><div><small>{post.minutes} min guide</small><h3>{post.title}</h3><p>{post.excerpt}</p></div><b>↗</b></a>)}
           </div>
         </section>
 

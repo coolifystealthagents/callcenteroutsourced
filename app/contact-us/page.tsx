@@ -1,21 +1,113 @@
-import type { Metadata } from 'next';
-import { Footer, Header, JsonLd } from '../components';
-import StandardContactForm from './StandardContactForm';
-import './contact.css';
-const canonical='https://callcenteroutsourced.com/contact-us';
-export const metadata:Metadata={title:'Contact Call Center Outsourced | Staffing Consultation',description:'Book a consultation to scope outsourced call center coverage, service levels, escalation ownership, quality review, and a controlled launch.',alternates:{canonical:canonical},robots:{index:true,follow:true},openGraph:{title:'Contact Call Center Outsourced',description:'Plan outsourced customer support around real queues, channels, controls, and service standards.',url:canonical,type:'website'}};
-const steps=[['Workflow discovery','Map contact reasons, queues, channels, hours, volume patterns, current owners, and common escalations.'],['Role design','Define agent responsibilities, scripts, permissions, service levels, quality checks, and escalation rules.'],['Candidate matching','Review candidates against the channels, tools, communication needs, schedule, and support context in the brief.'],['Controlled launch','Start with a limited queue, review interactions and records closely, and expand only after the handoff is reliable.']];
-const prep=[['Recurring work','Bring representative contact reasons, volumes, repeat tasks, after-call work, and follow-up queues.'],['Current ownership','Name who answers, reviews quality, approves remedies, manages staffing, and owns escalations today.'],['Systems and access','List telephony, CRM, ticketing, knowledge, identity, payment, and communication systems involved.'],['Service standard','Share hours, response goals, scripts, note requirements, quality rubric, and escalation timing.']];
-const paths=[['/services/inbound-call-handling','Inbound call handling','Handle approved call reasons with clear scripts, records, and escalation ownership.'],['/services/omnichannel-customer-support','Omnichannel customer support','Coordinate phone, email, chat, and ticket work without losing case continuity.'],['/services/workforce-reporting-support','Workforce reporting support','Prepare service-level, coverage, and queue reports for accountable managers.'],['/services/tier-one-technical-support','Tier-one technical support','Triage documented issues and route security, access, and engineering decisions correctly.'],['/services/customer-win-back-support','Customer win-back','Run approved outreach and follow-up workflows within clear offer and consent boundaries.']];
-const faqs=[['Which call center queues can be outsourced?','Inbound service, email, chat, callbacks, appointment coordination, overflow, after-hours coverage, and related back-office queues are common starting points when scripts, permissions, and escalation ownership are clear.'],['Can outsourced agents approve refunds or policy exceptions?','Only within explicit written authority. High-risk refunds, credits, cancellations, account changes, legal or compliance decisions, and policy exceptions remain with authorized client personnel.'],['How should quality be measured?','Use a defined sample and rubric covering accuracy, resolution, required disclosures, documentation, privacy, tone, and escalation behavior. Review service levels beside quality and customer context.'],['Can agents handle sensitive customer information?','Only when necessary and approved, using named accounts, least-privilege access, secure systems, data-minimization rules, and clear incident escalation.'],['What should we bring to the consultation?','Bring queue volumes, channels, hours, top contact reasons, representative tickets or calls, current service levels, systems, scripts, and escalation owners.'],['How does launch work?','Begin with a limited queue, approved knowledge, narrow permissions, and frequent review. Expand channels, hours, volume, or authority only after the process is stable.']];
-export default function ContactUsPage(){const schema={'@context':'https://schema.org','@graph':[{'@type':'ContactPage',name:'Contact Call Center Outsourced',url:canonical,description:metadata.description},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://callcenteroutsourced.com'},{'@type':'ListItem',position:2,name:'Contact Us',item:canonical}]},{'@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}]};return <><Header/><main className="contact-page"><JsonLd data={schema}/>
-<section className="rollout-hero"><div className="container"><p className="rollout-eyebrow">Contact Us</p><h1>Get In Touch</h1><p>Build outsourced customer coverage around measurable service, complete records, and unmistakable escalation ownership.</p><a href="#contactPageForm">Book a staffing consultation</a></div></section>
-<section className="rollout-section rollout-soft"><div className="container rollout-intro"><div><p className="rollout-eyebrow">Call center consultation</p><h2>Turn real queues into a controlled support plan.</h2><p>Tell us about your channels, contact reasons, hours, volumes, tools, service goals, and escalation needs. We will help shape a practical staffing brief.</p><h3>What to Expect</h3><ul className="rollout-list"><li>Queue, channel, volume, system, and ownership review</li><li>Clear scripts, permissions, service levels, and escalation rules</li><li>Candidate matching based on the approved support context</li><li>A limited first queue with a named client reviewer</li></ul><p className="rollout-email">Prefer email? <a href="mailto:hello@callcenteroutsourced.com">hello@callcenteroutsourced.com</a></p></div><StandardContactForm endpoint="/api/contact" encoding="form"/></div></section>
-<section className="rollout-section"><div className="container rollout-split"><img src="/illustrations/call-center-original/quality-operations-review.svg" width="960" height="640" alt="Customer support leaders reviewing outsourced call center quality operations"/><div><p className="rollout-eyebrow">Powered by Stealth Agents</p><h2>Call center expertise. Stealth Agents support.</h2><p>Stealth Agents provides dedicated virtual assistant staffing with recruiting and ongoing support organized around each client’s queues, systems, coverage schedule, and review model.</p><p><strong>Call Center Outsourced is a subsidiary of Stealth Agents.</strong></p><a className="rollout-button" href="#contactPageForm">Book a consultation</a></div></div></section>
-<section className="rollout-section rollout-booking"><div className="container rollout-booking-grid"><div><p className="rollout-eyebrow">Direct scheduling</p><h2>Or Skip the Wait: Book a Call Now</h2><p>Choose a time to discuss queues, coverage hours, service goals, systems, quality controls, and escalation ownership.</p></div><iframe title="Book an outsourced call center consultation" src="https://go.oncehub.com/StealthAgentsTeam" loading="lazy"/></div></section>
-<section className="rollout-section"><div className="container"><p className="rollout-eyebrow">After you reach out</p><h2>A clear path from queue discovery to controlled launch.</h2><div className="rollout-cards">{steps.map(([t,b],i)=><article key={t}><span>0{i+1}</span><h3>{t}</h3><p>{b}</p></article>)}</div></div></section>
-<section className="rollout-section rollout-soft"><div className="container"><p className="rollout-eyebrow">Prepare for a useful call</p><h2>Bring the operating details that make support measurable.</h2><div className="rollout-cards">{prep.map(([t,b])=><article key={t}><h3>{t}</h3><p>{b}</p></article>)}</div></div></section>
-<section className="rollout-section rollout-boundaries"><div className="container rollout-split"><div><p className="rollout-eyebrow">Responsibility and boundaries</p><h2>Delegate customer support, retain accountable authority.</h2><p>Agents can answer approved questions, complete documented actions, record interactions, coordinate follow-up, and escalate exceptions.</p></div><div className="rollout-boundary-card"><h3>Your authorized or qualified team retains</h3><ul className="rollout-list"><li>Policy exceptions, contractual promises, and executive decisions</li><li>High-risk refunds, credits, cancellations, and payment decisions</li><li>Legal, clinical, regulated, safety, and compliance judgment</li><li>Security incidents, identity exceptions, and privileged access changes</li><li>Staffing policy, disciplinary decisions, and final quality standards</li></ul></div></div></section>
-<section className="rollout-section"><div className="container"><p className="rollout-eyebrow">Common starting points</p><h2>Start with queues that are recurring and reviewable.</h2><div className="rollout-paths">{paths.map(([href,t,b])=><a href={href} key={href}><h3>{t}</h3><p>{b}</p><span>Explore this service →</span></a>)}</div><a className="rollout-services" href="/services">View the full services collection →</a></div></section>
-<section className="rollout-section rollout-soft"><div className="container"><p className="rollout-eyebrow">Frequently asked questions</p><h2>Questions about outsourced call center support.</h2><div className="rollout-faq">{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></div></section>
-</main><Footer/></>}
+import { Footer, Header, JsonLd } from '../components'
+import { stealthAgentsReviews } from '../stealth-agents-reviews'
+import StandardContactForm from './StandardContactForm'
+import './contact.css'
+
+const canonical = 'https://callcenteroutsourced.com/contact-us'
+
+export const metadata = {
+  title: 'Contact the Staffing Team',
+  description: 'Share your outsourced call center requirements, then schedule a focused staffing consultation.',
+  alternates: { canonical },
+  robots: { index: true, follow: true },
+}
+
+const preparation = [
+  ['Queues and channels', 'List the call, email, chat, ticket, callback, and administrative work that needs reliable coverage.'],
+  ['Hours and volume', 'Share operating hours, time zones, seasonal patterns, queue volume, and service goals.'],
+  ['Systems and access', 'Name the approved telephony, CRM, ticketing, knowledge, and communication systems involved.'],
+  ['Authority boundaries', 'Identify who owns refunds, exceptions, sensitive access, quality review, and escalations.'],
+]
+
+function ReviewCard({ review, duplicate = false }: { review: (typeof stealthAgentsReviews)[number], duplicate?: boolean }) {
+  return <blockquote className="review-card" aria-hidden={duplicate ? true : undefined}>
+    <div className="review-stars"><span aria-hidden="true">★★★★★</span><span className="sr-only">5 out of 5 stars</span></div>
+    <p>“{review.quote}”</p>
+    <footer>
+      <cite>{review.name}</cite>
+      <span>{review.role}</span>
+    </footer>
+  </blockquote>
+}
+
+export default function ContactUsPage() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Call Center Outsourced',
+    url: canonical,
+    description: metadata.description,
+  }
+
+  return <>
+    <Header />
+    <main className="contact-page">
+      <JsonLd data={schema} />
+
+      <section className="contact-first-fold" aria-labelledby="contact-heading">
+        <div className="container contact-first-grid">
+          <div className="contact-first-copy">
+            <p className="rollout-eyebrow">Contact Us</p>
+            <h1 id="contact-heading">Scope your call center coverage.</h1>
+            <p className="contact-lead">Tell us what your queues, hours, systems, and service standards require. We will review the operating scope before your consultation.</p>
+            <div className="contact-assurances" aria-label="What to expect">
+              <span>Scope reviewed by a staffing specialist</span>
+              <span>No obligation</span>
+            </div>
+
+            <section className="first-fold-reviews" aria-labelledby="reviews-heading">
+              <div className="review-heading-row">
+                <div>
+                  <p className="review-label">Verified client feedback</p>
+                  <h2 id="reviews-heading">StealthAgents reviews</h2>
+                </div>
+                <span className="review-rating"><span aria-hidden="true">★★★★★</span><span className="sr-only">5 out of 5 stars</span></span>
+              </div>
+              <div className="review-marquee" tabIndex={0} aria-label="14 verified Stealth Agents client reviews. Focus or hover to hold the moving reviews.">
+                <div className="review-marquee-track">
+                  <div className="review-set">
+                    {stealthAgentsReviews.map((review) => <ReviewCard review={review} key={review.name} />)}
+                  </div>
+                  <div className="review-set" aria-hidden="true">
+                    {stealthAgentsReviews.map((review) => <ReviewCard review={review} duplicate key={`duplicate-${review.name}`} />)}
+                  </div>
+                </div>
+              </div>
+              <p className="review-source">14 unique verified reviews. Source: <a href="https://stealthagents.com/">Stealth Agents</a></p>
+            </section>
+          </div>
+
+          <StandardContactForm endpoint="/api/contact" encoding="form" />
+        </div>
+      </section>
+
+      <section className="rollout-section rollout-soft" aria-labelledby="team-heading">
+        <div className="container rollout-team">
+          <div className="rollout-team-photo">
+            <img src="/brand/stealth-agents-team-bacolod.jpg" width="1200" height="800" alt="Stealth Agents operations team in Bacolod" />
+          </div>
+          <div className="team-content">
+            <div className="official-team-plate">
+              <img src="/brand/stealth-agents-logo.png" width="150" height="48" alt="Stealth Agents" />
+              <span>Official team, Bacolod</span>
+            </div>
+            <h2 id="team-heading">Managed operations behind your coverage.</h2>
+            <p>Call Center Outsourced is supported by Stealth Agents. The Bacolod team helps recruit, onboard, and manage specialists around documented responsibilities, approved systems, coverage schedules, and escalation paths.</p>
+            <p>Your engagement has operating support beyond placement: managers help maintain attendance, workflow continuity, quality review, and clear ownership as requirements change.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="rollout-section" aria-labelledby="prepare-heading">
+        <div className="container">
+          <p className="rollout-eyebrow">Prepare your request</p>
+          <h2 id="prepare-heading">Bring details that make support measurable.</h2>
+          <div className="rollout-cards">
+            {preparation.map(([title, body]) => <article key={title}><h3>{title}</h3><p>{body}</p></article>)}
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </>
+}

@@ -1,0 +1,31 @@
+{
+  "domain": "callcenteroutsourced.com",
+  "industry": "Outsourced call center coverage and customer operations staffing",
+  "audience": "Operations, support, and business leaders evaluating bounded Philippines-based customer contact support",
+  "designFamily": "Queue operations command center",
+  "heroComposition": "Direct operational headline paired with service-relevant customer support artwork",
+  "typeCharacter": "Confident geometric sans serif with compact operational labels",
+  "paletteFamily": "Deep navy, clear sky blue, warm amber, pale blue, and white",
+  "shapeGrammar": "Structured queue cards, restrained rounded panels, clear boundaries, and review-ready evidence groups",
+  "imageTreatment": "Licensed call center illustrations, unique service diagrams, and official Stealth Agents team photography with descriptive alternative text",
+  "sectionRhythm": "Focused first fold followed by alternating scope, workflow, boundaries, quality, examples, and decision content",
+  "navigationTreatment": "Sticky accessible navigation with Home, Services, and Contact Us plus visible parent-brand attribution",
+  "motionSignature": "Slow horizontal verified client review marquee with a static, horizontally accessible reduced-motion state",
+  "density": "Medium-high operational detail with short paragraphs, inspectable lists, and explicit owners",
+  "signatureElement": "A queue handoff model that keeps scripts, permissions, escalations, quality checks, and owners visible",
+  "settings": {
+    "designVariance": 8,
+    "motionIntensity": 3,
+    "visualDensity": 8,
+    "redesignMode": "evolve",
+    "theme": "light"
+  },
+  "avoid": [
+    "decorative zero-padded labels",
+    "unverified testimonial copy",
+    "vertical testimonial motion",
+    "generic dashboard imitation",
+    "autoplay media",
+    "route-specific navigation"
+  ]
+}

@@ -3,8 +3,14 @@ import {Fragment} from 'react';
 import {notFound} from 'next/navigation';
 import {Header,Footer,JsonLd} from '../../components';
 import {blogPosts,site,type BlogPost} from '../../data';
+import {EditorialShell,type EditorialSidebarLink,type EditorialTocItem} from '../../EditorialShell';
 
 const base=`https://${site.domain.toLowerCase()}`;
+const defaultPlanningLinks:readonly EditorialSidebarLink[]=[
+  {href:'/services/inbound-call-handling',label:'Inbound call handling'},
+  {href:'/services/omnichannel-customer-support',label:'Omnichannel customer support'},
+  {href:'/contact-us',label:'Discuss your coverage plan'},
+];
 
 export function generateStaticParams(){return blogPosts.map(p=>({slug:p.slug}))}
 
@@ -84,7 +90,7 @@ function AccessGraphic(){
 function RotatingBanners({items}:{items:NonNullable<BlogPost['banners']>}){
   return <div className="article-banner-rail" aria-label="Planning links">
     {items.map((item,index)=><aside className={`article-rotating-banner banner-${index+1}`} data-rotation={index+1} key={item.title}>
-      <span>{item.label}</span><h2>{item.title}</h2><div>{item.body}</div><a href={item.href}>{item.cta} →</a>
+      <span>{item.label}</span><h2 id={`planning-checkpoint-${index+1}`}>{item.title}</h2><div>{item.body}</div><a href={item.href}>{item.cta} →</a>
     </aside>)}
   </div>;
 }
@@ -97,6 +103,20 @@ function RichPost({post}:{post:BlogPost}){
   const sources=post.sources??[];
   const related=post.related??[];
   const banners=post.banners??[];
+  const sectionIds=post.sections.map((_,index)=>`article-section-${index+1}`);
+  const tableOfContents:EditorialTocItem[]=[
+    {id:'evidence-snapshot',label:'Evidence snapshot'},
+    ...post.sections.slice(0,2).map((section,index)=>({id:sectionIds[index],label:section.title})),
+    {id:'decision-boundary',label:'Data and decision boundary'},
+    ...post.sections.slice(2,6).map((section,index)=>({id:sectionIds[index+2],label:section.title})),
+    {id:'call-and-handoff-lines',label:'Copy-ready call and handoff lines'},
+    ...post.sections.slice(6).map((section,index)=>({id:sectionIds[index+6],label:section.title})),
+    ...(banners.length===3?banners.map((banner,index)=>({id:`planning-checkpoint-${index+1}`,label:banner.title})):[]),
+    {id:'manager-questions',label:'Questions managers ask'},
+    {id:'keep-planning',label:'Keep planning'},
+    {id:'article-sources',label:'Sources'},
+  ];
+  const sidebarLinks:readonly EditorialSidebarLink[]=related.length?related:defaultPlanningLinks;
   return <>
     <section className="article-hero">
       <div className="container article-hero-inner">
@@ -108,48 +128,60 @@ function RichPost({post}:{post:BlogPost}){
       </div>
     </section>
     <article className="article-page" data-article-marker={post.slug}>
-      <div className="container article-layout">
+      <div className="container article-layout editorial-container">
+        <EditorialShell tableOfContents={tableOfContents} sidebarLinks={sidebarLinks} sidebarHeading="Continue planning">
         <div className="article-main">
           <p className="article-intro">{post.intro}</p>
           <section aria-labelledby="evidence-snapshot"><h2 id="evidence-snapshot">Evidence snapshot</h2><div className="article-stats">{stats.map(stat=><div className="article-stat" key={stat.value+stat.label}><strong>{stat.value}</strong><span>{stat.label}</span><small>{stat.note} [{stat.source}]</small></div>)}</div></section>
 
-          <section className="article-copy"><h2>{post.sections[0].title}</h2>{post.sections[0].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[0].items&&<ul className="check-list">{post.sections[0].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
-          <section className="article-copy"><h2>{post.sections[1].title}</h2>{post.sections[1].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
+          <section className="article-copy"><h2 id={sectionIds[0]}>{post.sections[0].title}</h2>{post.sections[0].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[0].items&&<ul className="check-list">{post.sections[0].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
+          <section className="article-copy"><h2 id={sectionIds[1]}>{post.sections[1].title}</h2>{post.sections[1].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
           {post.bodyLink&&<p className="article-context-link">{post.bodyLink.before} <a href={post.bodyLink.href}>{post.bodyLink.label}</a> {post.bodyLink.after}</p>}
 
-          <section className="article-table-section"><h2>Data and decision boundary</h2><p className="module-intro">Use this table as a starting point, then match each row to the client's tools and call guide. The manager column stays outside the team member's normal authority.</p><div className="table-scroll-cue">Swipe the table sideways to see the manager column →</div><div className="article-table-wrap" tabIndex={0} aria-label="Scrollable data and decision boundary table"><table><thead><tr><th>Data or request</th><th>Team member can</th><th>Manager keeps</th></tr></thead><tbody>{table.map(row=><tr key={row.data}><th scope="row">{row.data}</th><td>{row.agent}</td><td>{row.manager}</td></tr>)}</tbody></table></div></section>
+          <section className="article-table-section"><h2 id="decision-boundary">Data and decision boundary</h2><p className="module-intro">Use this table as a starting point, then match each row to the client's tools and call guide. The manager column stays outside the team member's normal authority.</p><div className="table-scroll-cue">Swipe the table sideways to see the manager column →</div><div className="article-table-wrap" tabIndex={0} aria-label="Scrollable data and decision boundary table"><table><thead><tr><th>Data or request</th><th>Team member can</th><th>Manager keeps</th></tr></thead><tbody>{table.map(row=><tr key={row.data}><th scope="row">{row.data}</th><td>{row.agent}</td><td>{row.manager}</td></tr>)}</tbody></table></div></section>
 
-          <section className="article-copy"><h2>{post.sections[2].title}</h2>{post.sections[2].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
+          <section className="article-copy"><h2 id={sectionIds[2]}>{post.sections[2].title}</h2>{post.sections[2].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
           {post.chart&&<Chart items={post.chart}/>}
-          <section className="article-copy"><h2>{post.sections[3].title}</h2>{post.sections[3].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
+          <section className="article-copy"><h2 id={sectionIds[3]}>{post.sections[3].title}</h2>{post.sections[3].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
           {post.expertQuote&&<blockquote className="expert-quote"><p>"{post.expertQuote.text}"</p><cite>{post.expertQuote.attribution} [{post.expertQuote.source}]</cite></blockquote>}
 
-          <section className="article-copy"><h2>{post.sections[4].title}</h2>{post.sections[4].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[4].items&&<ol className="number-list">{post.sections[4].items.map(item=><li key={item}>{item}</li>)}</ol>}</section>
+          <section className="article-copy"><h2 id={sectionIds[4]}>{post.sections[4].title}</h2>{post.sections[4].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[4].items&&<ol className="number-list">{post.sections[4].items.map(item=><li key={item}>{item}</li>)}</ol>}</section>
           <AccessGraphic/>
-          <section className="article-copy"><h2>{post.sections[5].title}</h2>{post.sections[5].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
+          <section className="article-copy"><h2 id={sectionIds[5]}>{post.sections[5].title}</h2>{post.sections[5].paragraphs?.map(text=><p key={text}>{text}</p>)}</section>
 
-          <section className="script-section"><h2>Copy-ready call and handoff lines</h2><div className="script-grid">{scripts.map(script=><div className="script-card" key={script.situation}><h3>{script.situation}</h3><blockquote>{script.text}</blockquote></div>)}</div></section>
+          <section className="script-section"><h2 id="call-and-handoff-lines">Copy-ready call and handoff lines</h2><div className="script-grid">{scripts.map(script=><div className="script-card" key={script.situation}><h3>{script.situation}</h3><blockquote>{script.text}</blockquote></div>)}</div></section>
 
-          <section className="article-copy"><h2>{post.sections[6].title}</h2>{post.sections[6].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[6].items&&<ul className="check-list">{post.sections[6].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
+          <section className="article-copy"><h2 id={sectionIds[6]}>{post.sections[6].title}</h2>{post.sections[6].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[6].items&&<ul className="check-list">{post.sections[6].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
 
           {banners.length===3&&<RotatingBanners items={banners}/>}
 
-          <section className="faq-section"><h2>Questions managers ask</h2>{faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
-          <section className="related-section"><h2>Keep planning</h2><div className="related-grid">{related.map(link=><a href={link.href} key={link.href}>{link.label} →</a>)}</div></section>
-          <section className="sources-section"><h2>Sources</h2><ol>{sources.map((source,index)=><li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.name}</a><span>{source.organization}, {source.date}. {source.note}</span><b>Source {index+1}</b></li>)}</ol></section>
+          <section className="faq-section"><h2 id="manager-questions">Questions managers ask</h2>{faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
+          <section className="related-section"><h2 id="keep-planning">Keep planning</h2><div className="related-grid">{related.map(link=><a href={link.href} key={link.href}>{link.label} →</a>)}</div></section>
+          <section className="sources-section"><h2 id="article-sources">Sources</h2><ol>{sources.map((source,index)=><li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.name}</a><span>{source.organization}, {source.date}. {source.note}</span><b>Source {index+1}</b></li>)}</ol></section>
         </div>
+        </EditorialShell>
       </div>
     </article>
   </>;
 }
 
 function PlainPost({post}:{post:BlogPost}){
-  return <article className="section"><div className="container article-shell">
+  const renderedSections=post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0);
+  const tableOfContents:EditorialTocItem[]=[
+    ...renderedSections.map((section,index)=>({id:`article-section-${index+1}`,label:section.title})),
+    ...(post.faqs?[{id:'manager-questions',label:'Questions managers ask'}]:[]),
+  ];
+  const sidebarLinks:readonly EditorialSidebarLink[]=post.related?.length?post.related:defaultPlanningLinks;
+  return <article className="section"><div className="container article-shell editorial-container">
     <p className="eyebrow">{site.brand} blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p>{post.heroImage&&<img className="article-hero-image" src={post.heroImage} alt="Outsourced call center operations scene" width="1600" height="900" />}
     <p className="article-meta">Published <time dateTime={post.published}>{displayDate(post.published)}</time></p>
-    <p className="article-intro">{post.intro}</p>
-    <div className="article-copy">{post.sections.filter(section=>(section.paragraphs?.length??0)>0 || (section.items?.length??0)>0).map((section,index)=>(<Fragment key={section.title}><section><h2>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>{index===1&&post.bodyLink&&<p className="article-context-link">{post.bodyLink.before} <a href={post.bodyLink.href}>{post.bodyLink.label}</a> {post.bodyLink.after}</p>}</Fragment>))}</div>
-    {post.faqs&&<section className="faq-section"><h2>Questions managers ask</h2>{post.faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>}
+    <EditorialShell tableOfContents={tableOfContents} sidebarLinks={sidebarLinks} sidebarHeading="Continue planning">
+      <div>
+        <p className="article-intro">{post.intro}</p>
+        <div className="article-copy">{renderedSections.map((section,index)=>(<Fragment key={section.title}><section><h2 id={`article-section-${index+1}`}>{section.title}</h2>{section.paragraphs?.map(paragraph=><p key={paragraph}>{paragraph}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>{index===1&&post.bodyLink&&<p className="article-context-link">{post.bodyLink.before} <a href={post.bodyLink.href}>{post.bodyLink.label}</a> {post.bodyLink.after}</p>}</Fragment>))}</div>
+        {post.faqs&&<section className="faq-section"><h2 id="manager-questions">Questions managers ask</h2>{post.faqs.map(faq=><details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>}
+      </div>
+    </EditorialShell>
   </div></article>;
 }
 

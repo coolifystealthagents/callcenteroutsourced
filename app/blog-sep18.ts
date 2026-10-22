@@ -20,7 +20,7 @@ const topics:readonly Topic[]=[
 const sources=[
  {name:'NIST Cybersecurity Framework 2.0',organization:'National Institute of Standards and Technology',date:'February 2024',url:'https://www.nist.gov/cyberframework',note:'Governance, protection, detection, response, and recovery context.'},
  {name:'NIST Privacy Framework',organization:'National Institute of Standards and Technology',date:'January 2020',url:'https://www.nist.gov/privacy-framework',note:'Data processing, governance, and privacy-risk context.'},
- {name:'Customer contact centres — Part 1: Requirements for customer contact centres',organization:'International Organization for Standardization',date:'July 2017',url:'https://www.iso.org/standard/64739.html',note:'Customer contact center operating context.'},
+ {name:'Customer contact centres  -  Part 1: Requirements for customer contact centres',organization:'International Organization for Standardization',date:'July 2017',url:'https://www.iso.org/standard/64739.html',note:'Customer contact center operating context.'},
  {name:'Telemarketing Sales Rule',organization:'Federal Trade Commission',date:'accessed September 18, 2026',url:'https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule',note:'Primary US source for covered outbound telemarketing requirements; applicability requires qualified review.'},
 ] as const;
 
