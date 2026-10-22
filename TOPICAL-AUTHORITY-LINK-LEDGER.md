@@ -1,6 +1,6 @@
 # Call Center Outsourced topical-authority link ledger
 
-Updated: 2026-10-21
+Updated: 2026-10-22
 
 ## Scope
 
@@ -31,7 +31,7 @@ This ledger covers Philippines-based call-center staffing. It records only route
 - `/research/call-center-outbound-contact-permission-research-brief` also already has one data-owned handoff to `/services/outbound-appointment-setting`, delivered in rendered-source commit `7f59b5185e212718962a4a2070a427da6a7d91ab`.
 - A fresh October 14 production build confirmed the six mapped sources and destinations are generated, self-canonical, and sitemap-listed. The peak-hour and appointment routes already contain their mapped service URLs three times in route-local `<main>`; the channel-selection and transfer research routes contain theirs once. Those four pairs are locally delivered and non-duplicable until a separate route-quality review decides whether repeated generic placements should be reduced.
 - `/blog/call-center-contact-disposition-quality` → `/services/workforce-reporting-support` is locally delivered in rendered-source commit `82631ec21aff5c5d85552e726391182ef3587b2f`. A fresh October 21 production build confirms the source and destination have self-canonicals and sitemap entries; the source `<main>` contains one destination anchor, the exact manager-control copy, and BlogPosting `dateModified` `2026-10-15`.
-- `/blog/call-center-customer-data-minimization-notes` → `/services/omnichannel-customer-support` is the remaining verified-absent row in this six-pair map. Its generated source and destination have self-canonicals and sitemap entries, but the destination anchor occurs zero times inside the source `<main>`.
+- `/blog/call-center-customer-data-minimization-notes` → `/services/omnichannel-customer-support` is the current execution slice. The link is data-owned by the selected blog record and places the customer-note decision beside the matching cross-channel support scope. Local artifact verification is required before this row can be marked delivered.
 
 The next reader-facing release may select one verified-absent row after reviewing the nearby paragraph, typed renderer contract, date ripple, and owner boundary. Preserve client-owner control of contact permission, exceptions, and customer remedies.
 

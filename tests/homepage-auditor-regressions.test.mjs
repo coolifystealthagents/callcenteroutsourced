@@ -53,6 +53,21 @@ test('contact-disposition article keeps its Workforce Reporting Support handoff 
   assert.ok(routedSlugs.has('workforce-reporting-support'))
 })
 
+test('customer-data-minimization article keeps its Omnichannel Customer Support handoff and owner boundary', () => {
+  const post = august14BlogBatch.find((item) => item.slug === 'call-center-customer-data-minimization-notes')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-14')
+  assert.equal(post.updated, '2026-10-22')
+  assert.deepEqual(post.bodyLink, {
+    href: '/services/omnichannel-customer-support',
+    label: 'Review Omnichannel Customer Support',
+    before: 'When note work moves between phone, email, chat, or tickets, a shared support lane can keep the case history and next step together.',
+    after: 'lets a Philippines-based team prepare approved support work while the client owner keeps control of consent changes, record merges, and sensitive customer decisions.',
+  })
+  assert.match(post.bodyLink.after, /client owner keeps control/)
+  assert.ok(routedSlugs.has('omnichannel-customer-support'))
+})
+
 test('queue-monitoring article keeps its service handoff inside the generated service set', () => {
   const start = blogData.indexOf("slug: 'call-center-queue-monitoring'")
   const end = blogData.indexOf("slug: 'call-center-schedule-adherence'", start)
