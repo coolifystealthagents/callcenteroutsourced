@@ -29,6 +29,7 @@ test('shared chrome contains exact parent attribution, official logo, sticky men
   assert.match(header, /Escape/)
   assert.match(css, /\.nav\{[^}]*position:sticky/)
   assert.match(css, /scroll-margin-top/)
+  assert.match(css, /\.parent-brand span,\.footer-parent span\{[^}]*min-width:max-content[^}]*overflow:visible/)
 })
 
 test('contact first fold includes one accessible review marquee, the complete form, and then the official team section', async () => {
