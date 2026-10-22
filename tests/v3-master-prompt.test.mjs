@@ -90,6 +90,7 @@ test('every service profile provides long-form decision content and a unique her
 test('editorial templates provide complete sticky TOCs, supporting sidebars, and mobile fallback', () => {
   const shell = read('app/EditorialShell.tsx')
   const css = read('app/globals.css')
+  const editorialCss = read('app/editorial-shell.css')
   for (const file of ['app/blog/[slug]/page.tsx', 'app/research/[slug]/page.tsx']) {
     assert.match(read(file), /EditorialShell/, file)
   }
@@ -98,6 +99,7 @@ test('editorial templates provide complete sticky TOCs, supporting sidebars, and
   assert.match(shell, /Related services|Continue planning/)
   assert.match(css, /\.editorial-sidebar\{[^}]*position:sticky/)
   assert.match(css, /@media\(max-width:[^)]+\)[\s\S]*\.editorial-sidebar/)
+  assert.match(editorialCss, /@media\(max-width:900px\)[\s\S]*\.editorial-toc\{display:none\}/)
 })
 
 test('commercial layouts contain no decorative zero-padded labels or alphabet markers', () => {

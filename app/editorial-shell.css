@@ -14,8 +14,6 @@
 @media(max-width:900px){
   .editorial-shell{grid-template-columns:minmax(0,1fr)}
   .editorial-sidebar{order:-1;width:100%;max-height:none;overflow:visible;padding:18px}
-  .editorial-toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:560px){
-  .editorial-toc ol{grid-template-columns:1fr}
+  .editorial-toc{display:none}
+  .editorial-support{margin-top:0;padding-top:0;border-top:0}
 }
