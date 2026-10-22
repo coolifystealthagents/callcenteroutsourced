@@ -69,7 +69,7 @@ export default function SiteHeader() {
         </a>
         <a className="parent-brand" href="https://stealthagents.com/" rel="noreferrer">
           <img src="/brand/stealth-agents-logo.png" alt="Stealth Agents" width="150" height="48" />
-          <span>Powered by StealthAgents</span>
+          <img className="parent-attribution-badge" src="/brand/powered-by-stealthagents.png" alt="Powered by StealthAgents" width="210" height="28" />
         </a>
         <button
           ref={buttonRef}
