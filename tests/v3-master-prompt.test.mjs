@@ -29,9 +29,13 @@ test('shared chrome contains exact parent attribution, official logo, sticky men
   assert.match(header, /Escape/)
   assert.match(css, /\.nav\{[^}]*position:sticky/)
   assert.match(css, /scroll-margin-top/)
-  assert.match(header, /powered-by-stealthagents\.png[^>]+alt="Powered by StealthAgents"/)
+  assert.match(header, /<span className="parent-attribution-text">Powered by StealthAgents<\/span>/)
+  assert.doesNotMatch(header, /stealth-agents-logo\.png/)
+  assert.doesNotMatch(header, /powered-by-stealthagents-compact\.svg/)
   assert.match(components, /powered-by-stealthagents\.png[^>]+alt="Powered by StealthAgents"/)
-  assert.match(css, /img\.parent-attribution-badge[^}]*width:210px[^}]*height:28px/)
+  assert.match(css, /\.parent-attribution-text\{[^}]*font-size:13px[^}]*font-weight:850/)
+  assert.doesNotMatch(css, /\.parent-brand span\{[^}]*position:absolute/)
+  assert.match(css, /body:has\(\.cco-home\) \.site-header-brand,body:has\(\.cco-home\) \.parent-brand\{color:#fff\}/)
 })
 
 test('contact first fold includes one accessible review marquee, the complete form, and then the official team section', async () => {
@@ -101,6 +105,7 @@ test('editorial templates provide complete sticky TOCs, supporting sidebars, and
   assert.match(shell, /aria-current/)
   assert.match(shell, /Related services|Continue planning/)
   assert.match(css, /\.editorial-sidebar\{[^}]*position:sticky/)
+  assert.match(editorialCss, /\.editorial-sidebar\{[^}]*max-height:calc\(100vh - 120px\)/)
   assert.match(css, /@media\(max-width:[^)]+\)[\s\S]*\.editorial-sidebar/)
   assert.match(editorialCss, /@media\(max-width:900px\)[\s\S]*\.editorial-toc\{display:none\}/)
 })

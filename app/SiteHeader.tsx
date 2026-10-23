@@ -67,9 +67,8 @@ export default function SiteHeader() {
           <img className="site-logo" src="/logo.svg" alt="" width="44" height="44" />
           <span className="site-header-brand">Call Center Outsourced</span>
         </a>
-        <a className="parent-brand" href="https://stealthagents.com/" rel="noreferrer">
-          <img src="/brand/stealth-agents-logo.png" alt="Stealth Agents" width="150" height="48" />
-          <img className="parent-attribution-badge" src="/brand/powered-by-stealthagents.png" alt="Powered by StealthAgents" width="210" height="28" />
+        <a className="parent-brand" href="https://stealthagents.com/" rel="noreferrer" aria-label="Learn more about StealthAgents">
+          <span className="parent-attribution-text">Powered by StealthAgents</span>
         </a>
         <button
           ref={buttonRef}
