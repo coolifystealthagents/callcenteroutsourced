@@ -129,7 +129,8 @@ function RichPost({post}:{post:BlogPost}){
     </section>
     <article className="article-page" data-article-marker={post.slug}>
       <div className="container article-layout editorial-container">
-        <EditorialShell tableOfContents={tableOfContents} sidebarLinks={sidebarLinks} sidebarHeading="Continue planning">
+        <details className="cct-mobile-toc"><summary>On this page</summary><ol>{tableOfContents.map((item)=><li key={item.id}><a href={`#${item.id}`}>{item.label}</a></li>)}</ol></details>
+      <EditorialShell tableOfContents={tableOfContents} sidebarLinks={sidebarLinks} sidebarHeading="Continue planning">
         <div className="article-main">
           <p className="article-intro">{post.intro}</p>
           <section aria-labelledby="evidence-snapshot"><h2 id="evidence-snapshot">Evidence snapshot</h2><div className="article-stats">{stats.map(stat=><div className="article-stat" key={stat.value+stat.label}><strong>{stat.value}</strong><span>{stat.label}</span><small>{stat.note} [{stat.source}]</small></div>)}</div></section>

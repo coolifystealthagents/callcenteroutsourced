@@ -53,6 +53,7 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
     <p className="eyebrow">{site.brand} evidence brief · Desk review · Published <time dateTime={publishedDate}>{displayDate(publishedDate)}</time>{updatedDate!==publishedDate?<> · Updated <time dateTime={updatedDate}>{displayDate(updatedDate)}</time></>:null}</p>
     <h1>{post.title}</h1><p className="lead">{post.excerpt}</p>
     {post.image?<img src={post.image} alt={`${post.title} editorial illustration`} width="1536" height="1024" style={{width:'100%',height:'auto',borderRadius:'18px'}}/>:null}
+    <details className="cct-mobile-toc"><summary>On this page</summary><ol>{tableOfContents.map((item)=><li key={item.id}><a href={`#${item.id}`}>{item.label}</a></li>)}</ol></details>
     <EditorialShell tableOfContents={tableOfContents} sidebarLinks={sidebarLinks} sidebarHeading="Related services">
       <div>
         {post.keyStats?.length?<section className="card"><h2 id="key-stats">Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
