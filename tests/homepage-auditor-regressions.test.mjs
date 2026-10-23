@@ -68,6 +68,21 @@ test('customer-data-minimization article keeps its Omnichannel Customer Support 
   assert.ok(routedSlugs.has('omnichannel-customer-support'))
 })
 
+test('voice-of-customer tagging keeps its Survey and Feedback Calls handoff and owner boundary', () => {
+  const post = august14BlogBatch.find((item) => item.slug === 'call-center-voice-of-customer-tagging')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-14')
+  assert.equal(post.updated, '2026-10-23')
+  assert.deepEqual(post.bodyLink, {
+    href: '/services/survey-and-feedback-calls',
+    label: 'Plan Survey and Feedback Calls',
+    before: 'When tags show a repeated customer concern, the next step is to collect feedback with the same questions and keep each response clear.',
+    after: 'gives a Philippines-based team a safe way to record approved feedback while the client owner decides what the sample means and what changes.',
+  })
+  assert.match(post.bodyLink.after, /client owner decides/)
+  assert.ok(routedSlugs.has('survey-and-feedback-calls'))
+})
+
 test('queue-monitoring article keeps its service handoff inside the generated service set', () => {
   const start = blogData.indexOf("slug: 'call-center-queue-monitoring'")
   const end = blogData.indexOf("slug: 'call-center-schedule-adherence'", start)
