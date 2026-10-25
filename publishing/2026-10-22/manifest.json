@@ -1,0 +1,422 @@
+{
+  "site": "CallCenterOutsourced.com",
+  "domain": "https://callcenteroutsourced.com",
+  "repository": "coolifystealthagents/callcenteroutsourced",
+  "branch": "main",
+  "baseSha": "f9cf2f3284cb68270cbf4cddcd0c79d3569bdeaa",
+  "publicationDate": "2026-10-22",
+  "visibleDate": "October 22, 2026",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17,
+    "thumbnails": 17
+  },
+  "registryPaths": [
+    "app/data.ts",
+    "app/fleet-data.ts"
+  ],
+  "articles": [
+    {
+      "section": "Blog",
+      "title": "Keep After-Call Work Coding Evidence Traceable",
+      "slug": "after-call-work-coding-evidence",
+      "route": "/blog/after-call-work-coding-evidence",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/after-call-work-coding-evidence.png",
+      "thumbnailSha256": "14ffe5476a494bfbb588ca82513b0ddf7aadb6ff734040282a174cf95efbb4d8",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/after-call-work-coding-evidence-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/after-call-work-coding-evidence-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/after-call-work-coding-evidence-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/after-call-work-coding-evidence-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/after-call-work-coding-evidence-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Run an Authentication Fallback Queue Without Weakening Identity Checks",
+      "slug": "authentication-fallback-queue",
+      "route": "/blog/authentication-fallback-queue",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/authentication-fallback-queue.png",
+      "thumbnailSha256": "735bffa343d87ac8f6c979ad6cc6c678c2db8f3f5bd7daad022b654603166ed6",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-queue-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-queue-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-queue-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-queue-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-queue-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Hold the Refund Status Disclosure Boundary on Every Channel",
+      "slug": "refund-status-disclosure-boundary",
+      "route": "/blog/refund-status-disclosure-boundary",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/refund-status-disclosure-boundary.png",
+      "thumbnailSha256": "df431aef028bd09d3052bae3ed7957fca64fadc960fef2d663b7f3ce4d7b9242",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/refund-status-disclosure-boundary-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/refund-status-disclosure-boundary-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/refund-status-disclosure-boundary-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/refund-status-disclosure-boundary-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/refund-status-disclosure-boundary-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Capture a Warm Transfer Acceptance Before Leaving the Call",
+      "slug": "warm-transfer-acceptance-receipt",
+      "route": "/blog/warm-transfer-acceptance-receipt",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/warm-transfer-acceptance-receipt.png",
+      "thumbnailSha256": "cb306dcdac74d8b39f99e892531126263b3bfe1e15186972ec427b422267f34d",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-receipt-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-receipt-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-receipt-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-receipt-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-receipt-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Log Schedule Adherence Exceptions Without Policing Agents",
+      "slug": "schedule-adherence-exception-log",
+      "route": "/blog/schedule-adherence-exception-log",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/schedule-adherence-exception-log.png",
+      "thumbnailSha256": "6d0358def2c3b250740ef11592cec43f80abc7d0c13887f21fd76576f2e2453d",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/schedule-adherence-exception-log-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/schedule-adherence-exception-log-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/schedule-adherence-exception-log-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/schedule-adherence-exception-log-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/schedule-adherence-exception-log-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Protect QA Calibration Sample Integrity",
+      "slug": "qa-calibration-sample-integrity",
+      "route": "/blog/qa-calibration-sample-integrity",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/qa-calibration-sample-integrity.png",
+      "thumbnailSha256": "8e08e07cdb96ff289cede9db50a178dc83be5ff9d114cd041a164a58f363966c",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-sample-integrity-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-sample-integrity-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-sample-integrity-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-sample-integrity-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-sample-integrity-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Review Knowledge Article Expiries Before Agents Quote Them",
+      "slug": "knowledge-article-expiry-review",
+      "route": "/blog/knowledge-article-expiry-review",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/knowledge-article-expiry-review.png",
+      "thumbnailSha256": "83d8d305ef9edba6fdf4ee63ad84f3d41c0b7c80f8d20205e0c3444cd085c85a",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-review-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-review-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-review-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-review-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-review-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Make Supervisor Escalation Acceptance Explicit",
+      "slug": "supervisor-escalation-acceptance",
+      "route": "/blog/supervisor-escalation-acceptance",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/supervisor-escalation-acceptance.png",
+      "thumbnailSha256": "bbeb60f3a876c98f4636b1d603ba6d4b94e17313a24cada49c5bbc3145849aae",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/supervisor-escalation-acceptance-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/supervisor-escalation-acceptance-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/supervisor-escalation-acceptance-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/supervisor-escalation-acceptance-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/supervisor-escalation-acceptance-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Control Callback Window Promises Across Time Zones",
+      "slug": "callback-window-promise-control",
+      "route": "/blog/callback-window-promise-control",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/callback-window-promise-control.png",
+      "thumbnailSha256": "9e155afe27a90eedc084e4de60304d4043a14f445e456f3e2543bcede0c8b290",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/callback-window-promise-control-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/callback-window-promise-control-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/callback-window-promise-control-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/callback-window-promise-control-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/callback-window-promise-control-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Audit Multilingual Queue Routing Without Assuming Language",
+      "slug": "multilingual-queue-routing-audit",
+      "route": "/blog/multilingual-queue-routing-audit",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/multilingual-queue-routing-audit.png",
+      "thumbnailSha256": "4cbab27ac3e8fd14dd97f43b88ff072185bf26edc7c5aa1c0e825502cc6b9014",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/multilingual-queue-routing-audit-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/multilingual-queue-routing-audit-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/multilingual-queue-routing-audit-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/multilingual-queue-routing-audit-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/multilingual-queue-routing-audit-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Clean Up Disposition Codes Without Losing Historical Meaning",
+      "slug": "disposition-code-cleanup-queue",
+      "route": "/blog/disposition-code-cleanup-queue",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/disposition-code-cleanup-queue.png",
+      "thumbnailSha256": "dfbc06952233f167c068c0eaa832bcfb174240dec42b57a9649124d79d3b69ce",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/disposition-code-cleanup-queue-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/disposition-code-cleanup-queue-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/disposition-code-cleanup-queue-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/disposition-code-cleanup-queue-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/disposition-code-cleanup-queue-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Blog",
+      "title": "Assign Voicemail Callback Ownership Before the Queue Closes",
+      "slug": "voicemail-callback-ownership",
+      "route": "/blog/voicemail-callback-ownership",
+      "sourcePath": "app/blog-oct22.ts",
+      "sourceSha256": "1d0fa26bc2d1e73287a9ad898c2796e09773b14ec4649ada073f001749ac8ad0",
+      "thumbnailPath": "public/oct22/voicemail-callback-ownership.png",
+      "thumbnailSha256": "119d3e776fa948c15c63635836e46a55f9257fa5ac971429fdb9b6c189b0213b",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/voicemail-callback-ownership-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/voicemail-callback-ownership-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/voicemail-callback-ownership-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/voicemail-callback-ownership-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/voicemail-callback-ownership-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Research",
+      "title": "After-Call Work Coding Consistency Study",
+      "slug": "acw-coding-consistency-study",
+      "route": "/research/acw-coding-consistency-study",
+      "sourcePath": "app/research-oct22.ts",
+      "sourceSha256": "792950970b48da042e1e8d3400a6296e998853c8de13271c6e5a5cb71c841a40",
+      "thumbnailPath": "public/oct22/acw-coding-consistency-study.png",
+      "thumbnailSha256": "27af55ecb4008f59758a1fbebd9e27823d22af3cb5c7b8acf77485193de5481b",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/acw-coding-consistency-study-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/acw-coding-consistency-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/acw-coding-consistency-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/acw-coding-consistency-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/acw-coding-consistency-study-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Research",
+      "title": "Authentication Fallback Completion Study",
+      "slug": "authentication-fallback-completion-study",
+      "route": "/research/authentication-fallback-completion-study",
+      "sourcePath": "app/research-oct22.ts",
+      "sourceSha256": "792950970b48da042e1e8d3400a6296e998853c8de13271c6e5a5cb71c841a40",
+      "thumbnailPath": "public/oct22/authentication-fallback-completion-study.png",
+      "thumbnailSha256": "7676df761f0b03e3d036b83fbc82a1c5a7f20d3c19d7934463939a2a833a91c3",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-completion-study-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-completion-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-completion-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-completion-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/authentication-fallback-completion-study-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Research",
+      "title": "Warm Transfer Acceptance Latency Study",
+      "slug": "warm-transfer-acceptance-latency-study",
+      "route": "/research/warm-transfer-acceptance-latency-study",
+      "sourcePath": "app/research-oct22.ts",
+      "sourceSha256": "792950970b48da042e1e8d3400a6296e998853c8de13271c6e5a5cb71c841a40",
+      "thumbnailPath": "public/oct22/warm-transfer-acceptance-latency-study.png",
+      "thumbnailSha256": "a767cf54aee9481bff925d926e2cdf4b1657fbab02307184e027bb36a818815e",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-latency-study-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-latency-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-latency-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-latency-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/warm-transfer-acceptance-latency-study-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Research",
+      "title": "QA Calibration Agreement Study",
+      "slug": "qa-calibration-agreement-study",
+      "route": "/research/qa-calibration-agreement-study",
+      "sourcePath": "app/research-oct22.ts",
+      "sourceSha256": "792950970b48da042e1e8d3400a6296e998853c8de13271c6e5a5cb71c841a40",
+      "thumbnailPath": "public/oct22/qa-calibration-agreement-study.png",
+      "thumbnailSha256": "b4282698dd0f52bdef0978f2e18ed4907367aaddc5867290e87d40e41409ccb1",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-agreement-study-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-agreement-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-agreement-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-agreement-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/qa-calibration-agreement-study-mobile-toc.png"
+      }
+    },
+    {
+      "section": "Research",
+      "title": "Knowledge Article Expiry Exposure Study",
+      "slug": "knowledge-article-expiry-exposure-study",
+      "route": "/research/knowledge-article-expiry-exposure-study",
+      "sourcePath": "app/research-oct22.ts",
+      "sourceSha256": "792950970b48da042e1e8d3400a6296e998853c8de13271c6e5a5cb71c841a40",
+      "thumbnailPath": "public/oct22/knowledge-article-expiry-exposure-study.png",
+      "thumbnailSha256": "11eca1946602b11452bd6d71bc891ca20b4ae425832153a7cf44528aaaaef0b1",
+      "thumbnailDimensions": [
+        1200,
+        630
+      ],
+      "publicationDate": "2026-10-22",
+      "screenshots": {
+        "desktop-top": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-exposure-study-desktop-top.png",
+        "mobile-top": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-exposure-study-mobile-top.png",
+        "desktop-mid": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-exposure-study-desktop-mid.png",
+        "mobile-mid": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-exposure-study-mobile-mid.png",
+        "mobile-toc": "qa/coverage-callcenteroutsourced/render/shots/knowledge-article-expiry-exposure-study-mobile-toc.png"
+      }
+    }
+  ],
+  "errors": [],
+  "generatedAt": "2026-10-25",
+  "coverageJob": "callcenteroutsourced|2026-10-22|render_evidence",
+  "checks": {
+    "contentCounts": "12 blog + 5 research",
+    "publicationDate": "2026-10-22",
+    "thumbnailSize": "1200x630",
+    "uniqueSlugs": true,
+    "uniqueTitles": true,
+    "sourceHashes": "sha256 per source registry",
+    "thumbnailHashes": "sha256 per article",
+    "researchSources": "10 authoritative HTTPS sources per research article",
+    "build": "pass (npm run build through safe_build.sh)",
+    "renderedAudit": "17/17 articles pass desktop+mobile",
+    "visibleDate": "October 22, 2026 observed",
+    "timeDatetime": "2026-10-22 observed",
+    "desktopStickyToc": "pass",
+    "mobileStickyToc": "pass",
+    "horizontalOverflow": "0",
+    "missingAnchors": "none",
+    "brokenImages": "none"
+  },
+  "evidence": {
+    "helperArtifact": "helper-2/qa/coverage-callcenteroutsourced/render/qa.json",
+    "screenshots": "helper-2/qa/coverage-callcenteroutsourced/render/shots",
+    "note": "Evidence generated from local production server at baseSha before this manifest-only commit."
+  }
+}
