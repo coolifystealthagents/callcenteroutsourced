@@ -152,7 +152,7 @@ function RichPost({post}:{post:BlogPost}){
 
           <section className="script-section"><h2 id="call-and-handoff-lines">Copy-ready call and handoff lines</h2><div className="script-grid">{scripts.map(script=><div className="script-card" key={script.situation}><h3>{script.situation}</h3><blockquote>{script.text}</blockquote></div>)}</div></section>
 
-          <section className="article-copy"><h2 id={sectionIds[6]}>{post.sections[6].title}</h2>{post.sections[6].paragraphs?.map(text=><p key={text}>{text}</p>)}{post.sections[6].items&&<ul className="check-list">{post.sections[6].items.map(item=><li key={item}>{item}</li>)}</ul>}</section>
+          {post.sections.slice(6).map((section,index)=><section className="article-copy" key={sectionIds[index+6]}><h2 id={sectionIds[index+6]}>{section.title}</h2>{section.paragraphs?.map(text=><p key={text}>{text}</p>)}{section.items&&<ul className="check-list">{section.items.map(item=><li key={item}>{item}</li>)}</ul>}</section>)}
 
           {banners.length===3&&<RotatingBanners items={banners}/>}
 
