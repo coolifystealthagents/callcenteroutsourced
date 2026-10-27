@@ -1,3 +1,28 @@
+---
+title: "Prevent Duplicate Outsourced Call Center Operations Payments Before Release"
+slug: "cco-duplicate-payment-prevention"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A pre-release control for outsourced call center operations payments that checks invoice identity, amount, vendor, and prior payment."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-duplicate-payment-prevention.png"
+sourceCount: 5
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+---
+
 # Prevent Duplicate Outsourced Call Center Operations Payments Before Release
 
 Published: October 27, 2026

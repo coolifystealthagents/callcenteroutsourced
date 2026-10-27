@@ -1,3 +1,28 @@
+---
+title: "Put Outsourced Call Center Operations Records on a Retention and Disposal Schedule"
+slug: "cco-retention-disposal"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A retention schedule for outsourced call center operations that names the record class, the retention period, the owner, and the disposal evidence."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-retention-disposal.png"
+sourceCount: 5
+sources:
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+---
+
 # Put Outsourced Call Center Operations Records on a Retention and Disposal Schedule
 
 Published: October 27, 2026

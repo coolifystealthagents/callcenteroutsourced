@@ -1,3 +1,38 @@
+---
+title: "Do Outsourced Call Center Operations Records Follow the Retention Schedule?"
+slug: "cco-retention-compliance"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol measuring whether outsourced call center operations records are kept, reviewed, and disposed of according to a written schedule."
+category: "research"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-retention-compliance.png"
+sourceCount: 10
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "American Trucking Associations"
+    url: "https://www.trucking.org/"
+  - name: "SHRM Talent Acquisition"
+    url: "https://www.shrm.org/"
+  - name: "SEC Recordkeeping Guidance"
+    url: "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+  - name: "FTC Data Breach Response Guide"
+    url: "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+  - name: "GAO Assessing Data Reliability"
+    url: "https://www.gao.gov/products/gao-20-283g"
+---
+
 # Do Outsourced Call Center Operations Records Follow the Retention Schedule?
 
 Published: October 27, 2026

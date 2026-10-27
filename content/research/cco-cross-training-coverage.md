@@ -1,3 +1,38 @@
+---
+title: "Does Cross-Training Cover the Outsourced Call Center Operations Queue?"
+slug: "cco-cross-training-coverage"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol testing whether every outsourced call center operations lane has a backup who can complete the task without help."
+category: "research"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-cross-training-coverage.png"
+sourceCount: 10
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NIST SP 800-128, Security-Focused Configuration Management"
+    url: "https://csrc.nist.gov/pubs/sp/800/128/final"
+  - name: "NIST AI Risk Management Framework"
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+  - name: "SEC Investment Adviser Compliance"
+    url: "https://www.sec.gov/investment/investment-adviser-compliance"
+  - name: "HHS HIPAA Privacy Rule"
+    url: "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+  - name: "GAO Assessing Data Reliability"
+    url: "https://www.gao.gov/products/gao-20-283g"
+---
+
 # Does Cross-Training Cover the Outsourced Call Center Operations Queue?
 
 Published: October 27, 2026

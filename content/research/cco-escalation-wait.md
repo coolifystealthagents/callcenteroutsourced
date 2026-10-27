@@ -1,3 +1,38 @@
+---
+title: "Where Does Outsourced Call Center Operations Escalation Time Go?"
+slug: "cco-escalation-wait"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol separating owner wait, dependency wait, system delay, and rework in outsourced call center operations escalations."
+category: "research"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-escalation-wait.png"
+sourceCount: 10
+sources:
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "FTC Advertising and Marketing Basics"
+    url: "https://www.ftc.gov/business-guidance/resources/advertising-marketing-basics"
+  - name: "OECD Employment"
+    url: "https://www.oecd.org/employment/"
+  - name: "ISO 31000 Risk Management"
+    url: "https://www.iso.org/iso-31000-risk-management.html"
+  - name: "W3C Web Content Accessibility Guidelines 2.2"
+    url: "https://www.w3.org/TR/WCAG22/"
+  - name: "NIST Cybersecurity Framework 2.0"
+    url: "https://www.nist.gov/cyberframework"
+---
+
 # Where Does Outsourced Call Center Operations Escalation Time Go?
 
 Published: October 27, 2026

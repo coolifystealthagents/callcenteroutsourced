@@ -1,3 +1,28 @@
+---
+title: "Audit Outsourced Call Center Operations Documentation Drift Before It Bites"
+slug: "cco-documentation-drift"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A documentation audit for outsourced call center operations that compares written steps with the system, the template, and the current owner."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-documentation-drift.png"
+sourceCount: 5
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+---
+
 # Audit Outsourced Call Center Operations Documentation Drift Before It Bites
 
 Published: October 27, 2026

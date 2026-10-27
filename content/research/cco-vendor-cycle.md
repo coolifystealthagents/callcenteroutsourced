@@ -1,3 +1,38 @@
+---
+title: "How Complete Is the Outsourced Call Center Operations Vendor Onboarding Packet at First Review?"
+slug: "cco-vendor-cycle"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol measuring whether outsourced call center operations vendor packets carry identity, insurance, security, access, and owner acceptance before work starts."
+category: "research"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-vendor-cycle.png"
+sourceCount: 10
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "SEC Recordkeeping Guidance"
+    url: "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+  - name: "SBA Business Guide"
+    url: "https://www.sba.gov/business-guide"
+  - name: "NIST Digital Identity Guidelines, SP 800-63-4"
+    url: "https://pages.nist.gov/800-63-4/"
+  - name: "NIST AI Risk Management Framework"
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+  - name: "Association for Supply Chain Management"
+    url: "https://www.ascm.org/"
+---
+
 # How Complete Is the Outsourced Call Center Operations Vendor Onboarding Packet at First Review?
 
 Published: October 27, 2026

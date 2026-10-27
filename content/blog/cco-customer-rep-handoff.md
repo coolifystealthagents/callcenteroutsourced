@@ -1,3 +1,28 @@
+---
+title: "Hand Off an Outsourced Call Center Operations Customer After a Rep Change"
+slug: "cco-customer-rep-handoff"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A customer handoff for outsourced call center operations that preserves commitments, history, access, and the next conversation."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-customer-rep-handoff.png"
+sourceCount: 5
+sources:
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+---
+
 # Hand Off an Outsourced Call Center Operations Customer After a Rep Change
 
 Published: October 27, 2026

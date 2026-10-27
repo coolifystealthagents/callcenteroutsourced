@@ -1,3 +1,28 @@
+---
+title: "Review Outsourced Call Center Operations SLAs With Exception Evidence"
+slug: "cco-sla-review"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "An SLA review for outsourced call center operations that separates measured performance, exclusions, and owner decisions."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-sla-review.png"
+sourceCount: 5
+sources:
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+---
+
 # Review Outsourced Call Center Operations SLAs With Exception Evidence
 
 Published: October 27, 2026

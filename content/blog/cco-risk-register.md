@@ -1,3 +1,28 @@
+---
+title: "Turn the Outsourced Call Center Operations Risk Register Into a Monthly Decision"
+slug: "cco-risk-register"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A monthly risk review for outsourced call center operations that ranks likelihood, impact, owner, and the next action instead of listing everything."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-risk-register.png"
+sourceCount: 5
+sources:
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+---
+
 # Turn the Outsourced Call Center Operations Risk Register Into a Monthly Decision
 
 Published: October 27, 2026

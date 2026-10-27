@@ -1,3 +1,28 @@
+---
+title: "Build an Outsourced Call Center Operations Vendor Onboarding Evidence Packet"
+slug: "cco-vendor-onboarding-packet"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A vendor onboarding packet for outsourced call center operations that keeps required records, approvals, and first-task access together."
+category: "blog"
+cluster: "outsourced call center operations"
+featuredImage: "/daily27/callcenteroutsourced/cco-vendor-onboarding-packet.png"
+sourceCount: 5
+sources:
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+---
+
 # Build an Outsourced Call Center Operations Vendor Onboarding Evidence Packet
 
 Published: October 27, 2026
