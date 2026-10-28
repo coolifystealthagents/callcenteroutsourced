@@ -181,6 +181,19 @@ test('customer-preference-propagation research keeps its bounded Customer Win-Ba
   assert.ok(routedSlugs.has('customer-win-back-support'))
 })
 
+test('queue-capacity research keeps its Workforce Reporting Support handoff and manager boundary', () => {
+  const post = researchPosts.find((item) => item.slug === 'call-center-queue-capacity-signal-research-brief')
+  assert.ok(post)
+  assert.equal(post.published, '2026-08-17')
+  assert.equal(post.updated, '2026-10-28')
+  assert.deepEqual(post.serviceHandoff, {
+    href: '/services/workforce-reporting-support',
+    label: 'Review Workforce Reporting Support',
+    body: 'Use Workforce Reporting Support to prepare queue, schedule, and exception reports from approved records. Your manager still decides staffing levels, schedule changes, employee actions, service targets, and exceptions.',
+  })
+  assert.ok(routedSlugs.has('workforce-reporting-support'))
+})
+
 test('knowledge-answer-freshness research keeps its route-local Tier-One handoff and current date', () => {
   const post = researchPosts.find((item) => item.slug === 'call-center-knowledge-answer-freshness-research-brief')
   assert.ok(post)
