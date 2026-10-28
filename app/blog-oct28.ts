@@ -169,9 +169,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path",
-      "callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      },
+      {
+        "label": "Recover a stalled quality scorecard handoff without rebuilding the case",
+        "href": "/blog/callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      }
     ]
   },
   {
@@ -342,9 +351,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path",
-      "callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      },
+      {
+        "label": "Recover a stalled quality scorecard handoff without rebuilding the case",
+        "href": "/blog/callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      }
     ]
   },
   {
@@ -515,9 +533,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Recover a stalled quality scorecard handoff without rebuilding the case",
+        "href": "/blog/callcenteroutsourced-recover-a-stalled-quality-scorecard-handoff-without-rebuilding-the-case"
+      }
     ]
   },
   {
@@ -688,9 +715,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -861,9 +897,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1034,9 +1079,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1207,9 +1261,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1380,9 +1443,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1553,9 +1625,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1726,9 +1807,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -1899,9 +1989,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   },
   {
@@ -2072,9 +2171,18 @@ export const october28BlogBatch:readonly BlogPost[]=[
       }
     ],
     "related": [
-      "callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review",
-      "callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article",
-      "callcenteroutsourced-document-the-call-disposition-escalation-path"
+      {
+        "label": "Audit the inbound call queue evidence trail before the next review",
+        "href": "/blog/callcenteroutsourced-audit-the-inbound-call-queue-evidence-trail-before-the-next-review"
+      },
+      {
+        "label": "Create a shared status language for the knowledge article",
+        "href": "/blog/callcenteroutsourced-create-a-shared-status-language-for-the-knowledge-article"
+      },
+      {
+        "label": "Document the call disposition escalation path",
+        "href": "/blog/callcenteroutsourced-document-the-call-disposition-escalation-path"
+      }
     ]
   }
 ];
