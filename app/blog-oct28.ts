@@ -134,23 +134,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -292,23 +307,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -450,23 +480,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -608,23 +653,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -766,23 +826,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -924,23 +999,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1082,23 +1172,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1240,23 +1345,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1398,23 +1518,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1556,23 +1691,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1714,23 +1864,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Cybersecurity and Infrastructure Security Agency",
-        "url": "https://www.cisa.gov/"
+        "url": "https://www.cisa.gov/",
+        "organization": "Cybersecurity and Infrastructure Security Agency",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
@@ -1872,23 +2037,38 @@ export const october28BlogBatch:readonly BlogPost[]=[
     "sources": [
       {
         "name": "U.S. Department of Labor",
-        "url": "https://www.dol.gov/"
+        "url": "https://www.dol.gov/",
+        "organization": "U.S. Department of Labor",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "PCI Security Standards Council",
-        "url": "https://www.pcisecuritystandards.org/"
+        "url": "https://www.pcisecuritystandards.org/",
+        "organization": "PCI Security Standards Council",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "Federal Trade Commission",
-        "url": "https://www.ftc.gov/"
+        "url": "https://www.ftc.gov/",
+        "organization": "Federal Trade Commission",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "FCC Telephone Marketing and Spam Guide",
-        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam"
+        "url": "https://www.fcc.gov/consumers/guides/telephone-marketing-and-spam",
+        "organization": "FCC Telephone Marketing and Spam Guide",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       },
       {
         "name": "NIST Privacy Framework",
-        "url": "https://www.nist.gov/privacy-framework"
+        "url": "https://www.nist.gov/privacy-framework",
+        "organization": "NIST Privacy Framework",
+        "date": "2026-10-28",
+        "note": "Primary or authoritative source checked for this guide."
       }
     ],
     "related": [
