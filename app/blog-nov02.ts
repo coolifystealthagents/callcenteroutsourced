@@ -80,13 +80,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -237,13 +237,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -394,13 +394,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -551,13 +551,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -708,13 +708,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -865,13 +865,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1022,13 +1022,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1179,13 +1179,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1336,13 +1336,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1493,13 +1493,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1650,13 +1650,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
@@ -1807,13 +1807,13 @@ export const november02BlogBatch:readonly BlogPost[]=[
         "value": "7",
         "label": "control sections",
         "note": "One section per control question.",
-        "source": "Article structure"
+        "source": 1
       },
       {
         "value": "6",
         "label": "public sources",
         "note": "Cited for recordkeeping and privacy context.",
-        "source": "Reference list"
+        "source": 2
       }
     ],
     "faqs": [
