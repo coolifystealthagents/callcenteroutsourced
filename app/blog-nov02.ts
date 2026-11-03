@@ -107,36 +107,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -264,36 +270,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -421,36 +433,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -578,36 +596,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -735,36 +759,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -892,36 +922,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1049,36 +1085,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1206,36 +1248,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1363,36 +1411,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1520,36 +1574,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1677,36 +1737,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
@@ -1834,36 +1900,42 @@ export const november02BlogBatch:readonly BlogPost[]=[
       {
         "name": "U.S. Small Business Administration",
         "organization": "SBA",
+        "date": "2026-11-02",
         "url": "https://www.sba.gov/business-guide/manage-your-business",
         "note": "Frames operating records for small teams."
       },
       {
         "name": "U.S. Department of Labor",
         "organization": "DOL",
+        "date": "2026-11-02",
         "url": "https://www.dol.gov/",
         "note": "Workforce and recordkeeping context."
       },
       {
         "name": "NIST Cybersecurity Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/cyberframework",
         "note": "Access and record integrity controls."
       },
       {
         "name": "NIST Privacy Framework",
         "organization": "NIST",
+        "date": "2026-11-02",
         "url": "https://www.nist.gov/privacy-framework",
         "note": "Customer data handling context."
       },
       {
         "name": "Federal Trade Commission",
         "organization": "FTC",
+        "date": "2026-11-02",
         "url": "https://www.ftc.gov/",
         "note": "Customer communication and data practice."
       },
       {
         "name": "U.S. Government Accountability Office",
         "organization": "GAO",
+        "date": "2026-11-02",
         "url": "https://www.gao.gov/",
         "note": "Internal control and evidence standards."
       }
