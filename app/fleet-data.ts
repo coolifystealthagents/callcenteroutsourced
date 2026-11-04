@@ -35,6 +35,7 @@ import { october27ResearchBatch } from './research-oct27.ts';
 import { november01ResearchBatch } from './research-nov01';
 import { november02ResearchBatch } from './research-nov02';
 import { november03ResearchBatch } from './research-nov03';
+import { november04ResearchBatch } from './research-nov04';
 import { october28ResearchBatch } from './research-oct28.ts';
 
 // Fresh August 13 replacement identities. Keep these records in the canonical
@@ -157,6 +158,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...november04ResearchBatch,
   ...november03ResearchBatch,
   ...november02ResearchBatch,
   ...november01ResearchBatch,

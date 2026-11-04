@@ -53,6 +53,7 @@ import { october27BlogBatch } from './blog-oct27';
 import { november01BlogBatch } from './blog-nov01';
 import { november02BlogBatch } from './blog-nov02';
 import { november03BlogBatch } from './blog-nov03';
+import { november04BlogBatch } from './blog-nov04';
 import { october28BlogBatch } from './blog-oct28';
 import { september1BlogBatch } from './blog-sep1';
 import { september2BlogBatch } from './blog-sep2';
@@ -1003,7 +1004,7 @@ const cleanAugust11Editorial = (value: unknown): unknown => {
 
 const august18Gate3Batch: readonly BlogPost[] = [august18Gate301, august18Gate302, august18Gate303, august18Gate304, august18Gate305, august18Gate306, august18Gate307, august18Gate308, august18Gate309, august18Gate310, august18Gate311, august18Gate312, august18Gate313, august18Gate314, august18Gate315, august18Gate316, august18Gate317, august18Gate318, august18Gate319, august18Gate320, august18Gate321, august18Gate322];
 const september3NonConflictingBatch: readonly BlogPost[] = september3BlogBatch.filter((post) => !august21BlogBatch.some((accepted) => accepted.slug === post.slug));
-const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...september3NonConflictingBatch, ...august31BlogBatch, ...september1BlogBatch, ...september2BlogBatch, ...september4BlogBatch, ...september7BlogBatch, ...september8BlogBatch, ...september9BlogBatch, ...september10BlogBatch, ...september11BlogBatch, ...september14BlogBatch, ...september18BlogBatch, ...september22BlogBatch, ...september23BlogBatch, ...september24BlogBatch, ...september25BlogBatch, ...september28BlogBatch, ...october2BlogBatch, ...october5BlogBatch, ...october9BlogBatch, ...october12BlogBatch, ...october13BlogBatch, ...october22BlogBatch, ...october26BlogBatch, ...november03BlogBatch, ...november02BlogBatch, ...november01BlogBatch, ...october28BlogBatch, ...october27BlogBatch].reduce((posts, post) => {
+const routedBlogPosts = [...baseBlogPosts, ...dailyBlogBatch, ...august11BlogBatch.map(post => cleanAugust11Editorial(post) as BlogPost), ...august13ReplacementBlogBatch, ...august14BlogBatch, ...august17BlogBatch, ...august18BlogBatch, ...august18Gate3Batch, ...august19BlogBatch, ...august20BlogBatch, ...august21BlogBatch, ...september3NonConflictingBatch, ...august31BlogBatch, ...september1BlogBatch, ...september2BlogBatch, ...september4BlogBatch, ...september7BlogBatch, ...september8BlogBatch, ...september9BlogBatch, ...september10BlogBatch, ...september11BlogBatch, ...september14BlogBatch, ...september18BlogBatch, ...september22BlogBatch, ...september23BlogBatch, ...september24BlogBatch, ...september25BlogBatch, ...september28BlogBatch, ...october2BlogBatch, ...october5BlogBatch, ...october9BlogBatch, ...october12BlogBatch, ...october13BlogBatch, ...october22BlogBatch, ...october26BlogBatch, ...november04BlogBatch, ...november03BlogBatch, ...november02BlogBatch, ...november01BlogBatch, ...october28BlogBatch, ...october27BlogBatch].reduce((posts, post) => {
   const withoutDuplicate = posts.filter((existing) => existing.slug !== post.slug);
   withoutDuplicate.push(post);
   return withoutDuplicate;
