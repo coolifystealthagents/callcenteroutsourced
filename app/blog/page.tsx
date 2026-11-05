@@ -29,7 +29,7 @@ export default function Blog() {
         <div className="container">
           <div className="index-section-heading"><p className="eyebrow">Latest guidance</p><h2>Plan one observable workflow at a time</h2><p>Every card includes publication context and reading time. Open a guide for implementation steps, decision boundaries, and manager questions.</p></div>
           <div className="editorial-index-grid">
-            {posts.map((post, index) => <EditorialIndexCard key={post.slug} href={`/blog/${post.slug}`} title={post.title} excerpt={post.excerpt} published={post.published} minutes={post.minutes} topic={index % 3 === 0 ? 'Queue operations' : index % 3 === 1 ? 'Quality and controls' : 'Buyer planning'} image={editorialCardImages[index % editorialCardImages.length]} imageAlt={`Editorial illustration for ${post.title}`} />)}
+            {posts.map((post, index) => <EditorialIndexCard key={post.slug} href={`/blog/${post.slug}`} title={post.title} excerpt={post.excerpt} published={post.published} minutes={post.minutes} topic={index % 3 === 0 ? 'Queue operations' : index % 3 === 1 ? 'Quality and controls' : 'Buyer planning'} image={post.heroImage ?? editorialCardImages[index % editorialCardImages.length]} imageAlt={`Editorial illustration for ${post.title}`} />)}
           </div>
           <nav className="pagination" aria-label="Blog pages">{Array.from({ length: pages }, (_, i) => <a aria-current={i === 0 ? 'page' : undefined} href={i === 0 ? '/blog' : `/blog/page/${i + 1}`} key={i}>{i + 1}</a>)}</nav>
         </div>
