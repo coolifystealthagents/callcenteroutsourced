@@ -105,3 +105,8 @@ body:has(.cco-home) .site-header .fleet-nav a[aria-current="page"]{color:#fff;ba
 
 /* Preserve the visible publication date in sentence case inside uppercase eyebrows. */
 time{text-transform:none}
+
+/* Continuous research article surface for 2026-11-05 policy */
+.article-shell .card{background:transparent;border:0;border-radius:0;box-shadow:none;padding:0;margin:0}
+.article-shell .card>h2{margin-top:1.8em;margin-bottom:.65em}
+.article-shell .card>p{margin:0 0 1.15em;line-height:1.72}
