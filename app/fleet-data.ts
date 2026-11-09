@@ -36,6 +36,7 @@ import { november01ResearchBatch } from './research-nov01.ts';
 import { november02ResearchBatch } from './research-nov02.ts';
 import { november03ResearchBatch } from './research-nov03.ts';
 import { november06ResearchBatch } from './research-nov06.ts';
+import { november08ResearchBatch } from './research-nov08.ts';
 import { november07ResearchBatch } from './research-nov07.ts';
 import { november05ResearchBatch } from './research-nov05.ts';
 import { november04ResearchBatch } from './research-nov04.ts';
@@ -161,6 +162,7 @@ const supersededAug13ResearchPosts: readonly ResearchPost[] = [
 ];
 
 export const researchPosts: readonly ResearchPost[] = [
+  ...november08ResearchBatch,
   ...november07ResearchBatch,
   ...november06ResearchBatch,
   ...november05ResearchBatch,
