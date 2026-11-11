@@ -63,7 +63,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
         : { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) };
       const response = await fetch(endpoint, request);
       if (!response.ok) throw new Error("Lead endpoint rejected the request");
-      try { (window as TrackerWindow).acrTracker?.trackLead?.(payload); } catch {}
+      try { /* ACR captures the native submit event once. */ } catch {}
       window.location.assign("/thank-you");
     } catch {
       setError("We could not submit your request. Please try again.");
@@ -74,7 +74,7 @@ export default function StandardContactForm({ endpoint = "/api/submit-lead", enc
   return (
     <div className="sa-form-card">
       <h2>Scope outsourced call center coverage around your real queues</h2>
-      <form action={endpoint} method="post" onSubmit={submit} id="contactPageForm" data-acr-handled="1">
+      <form data-acr-managed="react" action={endpoint} method="post" onSubmit={submit} id="contactPageForm" data-acr-handled="1">
         <input className="sa-hp" name="website_url" tabIndex={-1} autoComplete="off" aria-hidden="true" />
         <div className="sa-grid">
           <label>First Name *<input name="firstName" required autoComplete="given-name" /></label>
