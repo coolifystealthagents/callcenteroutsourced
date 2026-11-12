@@ -84,7 +84,7 @@ export default function ContactUsPage() {
       <section className="rollout-section rollout-soft" aria-labelledby="team-heading">
         <div className="container rollout-team">
           <div className="rollout-team-photo">
-            <img src="/brand/stealth-agents-team-bacolod.jpg" width="1200" height="800" alt="Stealth Agents operations team in Bacolod" />
+            <img src="/refresh-20261112/bacolod-team.png" width="1200" height="800" alt="Stealth Agents operations team in Bacolod" />
           </div>
           <div className="team-content">
             <div className="official-team-plate">

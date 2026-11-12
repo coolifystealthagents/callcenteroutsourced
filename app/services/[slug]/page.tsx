@@ -1,3 +1,4 @@
+import {ServicePhoto} from '../../refresh-experience';
 import { notFound } from 'next/navigation'
 import { CTA, Footer, Header, JsonLd } from '../../components'
 import { fleetServices } from '../../fleet-data'
@@ -68,7 +69,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <a className="btn primary" href="/contact-us">Discuss this service</a>
           </div>
           <figure className="service-hero-art">
-            <img src={service.heroImage} alt={`${service.title} workflow illustration`} width="640" height="480" />
+            <ServicePhoto slug={slug}/>
           </figure>
         </div>
       </section>

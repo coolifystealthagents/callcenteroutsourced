@@ -1,0 +1,131 @@
+{
+  "domain": "callcenteroutsourced.com",
+  "brand": "Call Center Outsourced",
+  "theme": "conversation",
+  "eyebrow": "A better experience on the other end",
+  "headline": "Every conversation",
+  "accent": "deserves care.",
+  "intro": "Give your customers a responsive, well-prepared support team. We help you build phone, chat, and back-office coverage around your customers, your hours, and the way your business works.",
+  "cta": "Plan your customer coverage",
+  "serviceTitle": "Support for the moments that matter.",
+  "serviceIntro": "From the first inquiry to a useful follow-up, choose the customer contact services that fit your team. We define scripts, escalation paths, system access, and quality review before the queue grows.",
+  "storyTitle": "Human conversations. Thoughtful operations.",
+  "story": "A customer should not have to repeat the story at every handoff. Clear notes, approved guidance, and an available escalation owner help each conversation move toward a useful next step.",
+  "pillars": [
+    [
+      "Get to know the queue",
+      "Map contact reasons, channels, busy hours, common questions, and the promises your team can make."
+    ],
+    [
+      "Prepare people properly",
+      "Build practical training around your scripts, real scenarios, source systems, and the moments that need a supervisor."
+    ],
+    [
+      "Listen, review, improve",
+      "Review a sample of conversations and records together. Use what you learn to improve the guidance and close recurring gaps."
+    ]
+  ],
+  "tags": [
+    "Phone & chat",
+    "Customer follow-up",
+    "Quality & reporting"
+  ],
+  "footer": "Customer contact and call center support shaped around your service standards, systems, and customer experience.",
+  "homeImage": "/refresh-20261112/7709224.webp",
+  "homeImageAlt": "Focused woman working in a call center with a headset, providing customer support and communication services.",
+  "servicesImage": "/refresh-20261112/8867275.webp",
+  "servicesImageAlt": "Two call center employees using headsets at their desks in an office environment.",
+  "services": [
+    {
+      "slug": "inbound-call-handling",
+      "title": "Inbound Call Handling",
+      "description": "Add Philippines-based agents to an inbound queue for approved questions, message taking, appointment help, and documented manager handoffs.",
+      "image": "/refresh-20261112/8867429.webp",
+      "alt": "Two call center agents wearing headsets working at desks with computers in a modern office."
+    },
+    {
+      "slug": "omnichannel-customer-support",
+      "title": "Omnichannel Customer Support",
+      "description": "Coordinate phone, email, chat, and ticket work so customers keep one case history, one owner, and a visible next step when channels change.",
+      "image": "/refresh-20261112/7709185.webp",
+      "alt": "Customer support agents wearing headsets working on laptops in a modern office setting."
+    },
+    {
+      "slug": "outbound-appointment-setting",
+      "title": "Outbound Appointment Setting",
+      "description": "Run permission-aware outreach from an approved contact list, qualify fit with a bounded script, and place accepted appointments on the right calendar.",
+      "image": "/refresh-20261112/8867471.webp",
+      "alt": "Customer support agents working at a call center with computers and headsets, focusing on tasks"
+    },
+    {
+      "slug": "order-management-support",
+      "title": "Order Management Support",
+      "description": "Handle approved order-status questions, record changes, and exception handoffs while keeping refunds, credits, and fulfillment decisions with client owners.",
+      "image": "/refresh-20261112/8204358.webp",
+      "alt": "Professional woman wearing a headset and reading paper while working on a computer in an office setting. Stock Photo"
+    },
+    {
+      "slug": "tier-one-technical-support",
+      "title": "Tier-One Technical Support",
+      "description": "Resolve documented low-risk issues, collect reproducible evidence, and escalate product, security, or account problems with a complete technical handoff.",
+      "image": "/refresh-20261112/8204360.webp",
+      "alt": "Two professionals with headsets working at computers in a modern office setting."
+    },
+    {
+      "slug": "collections-reminder-calls",
+      "title": "Collections Reminder Calls",
+      "description": "Deliver approved account reminders, capture customer responses, and route disputes or hardship requests without giving agents settlement authority.",
+      "image": "/refresh-20261112/7682339.webp",
+      "alt": "Support agent wearing headset working on a laptop in modern office setting."
+    },
+    {
+      "slug": "customer-win-back-support",
+      "title": "Customer Win-Back Support",
+      "description": "Contact approved former or at-risk customers with a bounded discovery script, document reasons, and route eligible opportunities to an authorized owner.",
+      "image": "/refresh-20261112/8101448.webp",
+      "alt": "woman working as a call center agent wearing a headset in a trendy office setting."
+    },
+    {
+      "slug": "dispatch-coordination",
+      "title": "Dispatch Coordination",
+      "description": "Coordinate approved service requests, technician or driver updates, and customer windows while operational exceptions remain with the dispatch owner.",
+      "image": "/refresh-20261112/8204396.webp",
+      "alt": "Smiling call center agent wearing a headset while working at her desk in a modern office setting."
+    },
+    {
+      "slug": "survey-and-feedback-calls",
+      "title": "Survey and Feedback Calls",
+      "description": "Collect customer feedback with a neutral approved questionnaire, preserve stated answers, and route urgent service or privacy concerns separately.",
+      "image": "/refresh-20261112/8867429.webp",
+      "alt": "Two call center agents wearing headsets working at desks with computers in a modern office."
+    },
+    {
+      "slug": "workforce-reporting-support",
+      "title": "Workforce Reporting Support",
+      "description": "Prepare schedule, queue, and adherence reports from defined source systems while staffing judgments and employee decisions stay with managers.",
+      "image": "/refresh-20261112/7709185.webp",
+      "alt": "Customer support agents wearing headsets working on laptops in a modern office setting."
+    },
+    {
+      "slug": "operations-support",
+      "title": "Call Center Operations Support",
+      "description": "Remove repeat queue administration from supervisors through controlled CRM cleanup, callback tracking, shift handoffs, and operating-list maintenance.",
+      "image": "/refresh-20261112/8867471.webp",
+      "alt": "Customer support agents working at a call center with computers and headsets, focusing on tasks"
+    },
+    {
+      "slug": "customer-support",
+      "title": "Customer Support Staffing",
+      "description": "Add trained support capacity for repeat questions, status checks, basic troubleshooting, and documented follow-up across an approved queue.",
+      "image": "/refresh-20261112/8204358.webp",
+      "alt": "Professional woman wearing a headset and reading paper while working on a computer in an office setting. Stock Photo"
+    },
+    {
+      "slug": "reporting-and-qa",
+      "title": "Call Center Reporting and QA",
+      "description": "Sample customer contacts against a versioned rubric, prepare evidence-linked findings, and give managers a bounded view of quality trends.",
+      "image": "/refresh-20261112/8204360.webp",
+      "alt": "Two professionals with headsets working at computers in a modern office setting."
+    }
+  ]
+}
