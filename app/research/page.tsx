@@ -1,15 +1,3 @@
-import type { Metadata } from 'next'
-import { ResearchIndex } from './ResearchIndex'
-
-const title = 'Call Center Evidence Briefs'
-const description = 'Desk-reviewed evidence briefs for planning Philippines-based support roles, controls, ownership, and handoffs.'
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: '/research' },
-  openGraph: { title, description, url: '/research', images: [{ url: '/index-heroes/research-evidence-map.svg', alt: 'Evidence map connecting published sources to operating decisions' }] },
-}
-
-export default function Research() {
-  return <ResearchIndex currentPage={1} />
-}
+import { ResearchIndex } from './ResearchIndex';
+export const metadata={title:'Research',description:"Explore evidence briefs on call center staffing, operating controls, quality review, and the decisions behind a consistent customer experience.",alternates:{canonical:'/research'},openGraph:{images:[{url:"/library-20261112/conversation-research-7709296.webp",alt:"Customer service colleagues working together with headsets and laptops"}]}};
+export default function Research(){return <ResearchIndex currentPage={1}/>;}

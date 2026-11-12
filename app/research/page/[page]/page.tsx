@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ page: str
     title,
     description,
     alternates: { canonical },
-    openGraph: { title, description, url: canonical, images: [{ url: '/index-heroes/research-evidence-map.svg', alt: 'Evidence map connecting published sources to operating decisions' }] },
+    openGraph: { title, description, url: canonical, images: [{ url: '/library-20261112/conversation-research-7709296.webp', alt: 'Evidence map connecting published sources to operating decisions' }] },
   }
 }
 
