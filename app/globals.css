@@ -101,6 +101,7 @@ body:has(.cco-home) .site-header .fleet-nav a[aria-current="page"]{color:#fff;ba
 .cct-mobile-toc summary::-webkit-details-marker{display:none}
 .cct-mobile-toc ol{max-height:52vh;overflow-y:auto;margin:0;padding:8px 12px 14px;list-style:none}
 .cct-mobile-toc a{display:block;padding:8px 6px;color:#3f5669;text-decoration:none}
+.cct-mobile-toc[open]{position:static;max-height:none}
 }
 
 /* Preserve the visible publication date in sentence case inside uppercase eyebrows. */
