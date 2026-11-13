@@ -1,0 +1,30 @@
+[
+  {
+    "placement": "home hero",
+    "source": "https://www.pexels.com/photo/7682346/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Customer support colleagues working together",
+    "assets": [
+      {
+        "path": "/refresh-20261112/7709224-20261114.webp",
+        "width": 1800,
+        "height": 1200
+      }
+    ],
+    "reason": "Replace a photograph repeated on another portfolio homepage or service hero; preserve the existing display frame."
+  },
+  {
+    "placement": "services hero",
+    "source": "https://www.pexels.com/photo/7682103/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Support specialists working with laptops and headsets",
+    "assets": [
+      {
+        "path": "/refresh-20261112/8867275-20261114.webp",
+        "width": 1800,
+        "height": 1200
+      }
+    ],
+    "reason": "Replace a photograph repeated on another portfolio homepage or service hero; preserve the existing display frame."
+  }
+]
