@@ -58,7 +58,7 @@ export default async function ResearchArticle({params}:{params:Promise<{slug:str
       <div>
         {post.keyStats?.length?<section className="card"><h2 id="key-stats">Key stats</h2><ul>{post.keyStats.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
         {post.takeaways?.length?<section className="card"><h2 id="key-takeaways">Key takeaways</h2><ul>{post.takeaways.map(x=><li key={x}>{x}</li>)}</ul></section>:null}
-        {post.sections.map((s,index)=><section className="card" key={s.heading}><h2 id={`research-section-${index+1}`}>{s.heading}</h2><p>{s.body}</p></section>)}
+        {post.sections.map((s,index)=><section className="card" key={s.heading}><h2 id={`research-section-${index+1}`}>{s.heading}</h2>{s.body.split(/\n\n+/).map((para,i)=><p key={i}>{para}</p>)}</section>)}
         {post.serviceHandoff?<section className="card"><h2 id="support-lane">Put this into a support lane</h2><p>{post.serviceHandoff.body}</p><a href={post.serviceHandoff.href}>{post.serviceHandoff.label}</a></section>:null}
         {post.internalLinks?.length?<section className="card"><h2 id="related-operating-guides">Related operating guides</h2><ul>{post.internalLinks.map(link=><li key={link}><a href={link}>{link.split('/').pop()?.replaceAll('-',' ')}</a></li>)}</ul></section>:null}
         {post.faqs?.length?<section className="card"><h2 id="research-faqs">FAQs</h2>{post.faqs.map(f=><div key={f.question}><h3>{f.question}</h3><p>{f.answer}</p></div>)}</section>:null}
