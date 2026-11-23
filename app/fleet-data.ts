@@ -43,6 +43,7 @@ import { november19ResearchBatch } from './research-nov19.ts';
 import { november20ResearchBatch } from './research-nov20.ts';
 import { november21ResearchBatch } from './research-nov21.ts';
 import { november22ResearchBatch } from './research-nov22.ts';
+import { november23ResearchBatch } from './research-nov23.ts';
 import { november12ResearchBatch } from './research-nov12.ts';
 import { november11ResearchBatch } from './research-nov11.ts';
 import { november10ResearchBatch } from './research-nov10.ts';
@@ -177,6 +178,7 @@ export const researchPosts: readonly ResearchPost[] = [
   ...november20ResearchBatch,
   ...november21ResearchBatch,
   ...november22ResearchBatch,
+  ...november23ResearchBatch,
   ...november18ResearchBatch,
   ...november17ResearchBatch,
   ...november16ResearchBatch,
