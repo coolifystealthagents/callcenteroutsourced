@@ -61,7 +61,7 @@ export default function SiteHeader() {
   const isActive = (href: string) => href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`)
 
   return (
-    <header className={`nav site-header${scrolled ? ' is-scrolled' : ''}`}>
+    <header data-site-header="sticky" className={`nav site-header${scrolled ? ' is-scrolled' : ''}`}>
       <div className="nav-inner">
         <a className="logo site-identity" href="/" aria-label="Call Center Outsourced home">
           <img className="site-logo" src="/logo.svg" alt="" width="44" height="44" />

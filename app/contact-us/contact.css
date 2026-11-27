@@ -127,7 +127,6 @@
   will-change: transform;
 }
 
-.review-marquee:hover .review-marquee-track,
 .review-marquee:focus .review-marquee-track,
 .review-marquee:focus-within .review-marquee-track {
   animation-play-state: paused;

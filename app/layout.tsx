@@ -3,6 +3,8 @@ import Script from 'next/script'
 import './globals.css'
 import './redesign.css'
 import './refresh.css';
+import "./site-chrome-fixes.css";
+
 import type { Metadata } from 'next'
 import SkipLink from './SkipLink'
 
